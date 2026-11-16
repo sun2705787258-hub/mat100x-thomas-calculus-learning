@@ -31,6 +31,7 @@ const runtimePaths = [
   "review",
   "reference",
   "downloads",
+  "docs",
   "archive",
   "batches",
   "quality",

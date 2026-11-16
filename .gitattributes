@@ -5,5 +5,11 @@
 *.mjs text eol=lf
 *.json text eol=lf
 *.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.svg text eol=lf
+*.tex text eol=lf
+*.mmd text eol=lf
+*.py text eol=lf
 *.pdf binary
 *.zip binary

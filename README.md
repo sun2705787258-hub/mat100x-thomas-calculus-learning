@@ -50,6 +50,8 @@ npm run verify:release
 
 GitHub Pages 工作流仅手动触发，启用前必须确认站点公开访问和内容版权边界。
 
+首次 GitHub 初始化和推送步骤见 `docs/GITHUB_SETUP.md`。
+
 ## 内容来源
 
 唯一教材：

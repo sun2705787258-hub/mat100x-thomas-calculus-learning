@@ -1,8 +1,8 @@
 {
   "schemaVersion": "thomas-repository-inventory-v1",
   "summary": {
-    "files": 262,
-    "bytes": 35394136,
+    "files": 263,
+    "bytes": 35404215,
     "html": 39,
     "pdfs": 10
   },
@@ -11,8 +11,8 @@
       "path": ".gitattributes",
       "type": "repository-file",
       "destination": "repository support",
-      "bytes": 146,
-      "sha256": "BF4723A783384ABB68BA523B3C26A788EE2D83A2963B457AD1636DDA4C5CFADD"
+      "bytes": 254,
+      "sha256": "EBA0857EDA9E657EF9FB55B6D9D21A539652A5A4EE93CD9A7753E252502964D3"
     },
     {
       "path": ".github/CODEOWNERS",
@@ -60,8 +60,8 @@
       "path": "ARTIFACT_INVENTORY.md",
       "type": "documentation",
       "destination": "repository or published docs",
-      "bytes": 33031,
-      "sha256": "D130A0F5BC92A03D407B351930FCABAFB9A9E57441920816D3F3BE7187AE43B6"
+      "bytes": 43307,
+      "sha256": "25259DA662F022EC949A410F37D97AE4E00F14F99F582452E140BD3C7273AD92"
     },
     {
       "path": "CHANGELOG.md",
@@ -109,8 +109,8 @@
       "path": "README.md",
       "type": "documentation",
       "destination": "repository or published docs",
-      "bytes": 1563,
-      "sha256": "58603325E9A0941EBF3AC94A083464097F258F1A1D89FBF3C1FF7EB969751218"
+      "bytes": 1632,
+      "sha256": "1BDBA0C08E19231932B0A2D19FAB37302EB10F6DF91D35E0F7E1EE995CE2A697"
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -1520,6 +1520,13 @@
       "sha256": "C5693004150F789C715CB63E295338A9B013E0B4E1ECC852EF75E53787C9E826"
     },
     {
+      "path": "docs/GITHUB_SETUP.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 1580,
+      "sha256": "3D5815A80CEA02535C1AF7C6B418EC81F047E58BD25ED3E7B2EAEBD798768B14"
+    },
+    {
       "path": "docs/RELEASE_PROCESS.md",
       "type": "documentation",
       "destination": "repository or published docs",
@@ -1656,8 +1663,8 @@
       "path": "quality/artifact-inventory.json",
       "type": "quality-evidence",
       "destination": "quality dashboard",
-      "bytes": 68487,
-      "sha256": "A634AFA276AEC61B87BF840D51E1EC395F64B1F3B6FD6D96C5BF339E146AB0C7"
+      "bytes": 66523,
+      "sha256": "73064EF0A480E89C61403DD35B7972647395DEB569490C1AF5B7C3509436D15D"
     },
     {
       "path": "quality/batch-qa.schema.json",
@@ -1726,8 +1733,8 @@
       "path": "scripts/package-release.mjs",
       "type": "automation",
       "destination": "CI and release tooling",
-      "bytes": 3653,
-      "sha256": "0CE57C975DBAFF2AF1DBA81D62BB7A8499D117ACB03009BDF09AE8395CD28561"
+      "bytes": 3663,
+      "sha256": "92EA4B1DE4D8B23BDCAA8E82A65B6FB4CA43EAC372FA654DD5B75BCBA56B36C2"
     },
     {
       "path": "scripts/prepare-pages.mjs",
