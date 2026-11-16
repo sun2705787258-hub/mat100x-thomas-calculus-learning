@@ -2,7 +2,7 @@
   "schemaVersion": "thomas-repository-inventory-v1",
   "summary": {
     "files": 263,
-    "bytes": 35404758,
+    "bytes": 35405175,
     "html": 39,
     "pdfs": 10
   },
@@ -32,8 +32,8 @@
       "path": ".github/workflows/pages.yml",
       "type": "workflow",
       "destination": "CI / release automation",
-      "bytes": 968,
-      "sha256": "A90BA416DCCB2EA66BEEB2B52D3D7EF9875048A3DDF43F2EF663BD3398DE3E95"
+      "bytes": 1003,
+      "sha256": "B360BD243B8BEDBA4DED8758507A8CBE3E3CF009EC7888A49977CFB2AC3E42A4"
     },
     {
       "path": ".github/workflows/release.yml",
@@ -61,7 +61,7 @@
       "type": "documentation",
       "destination": "repository or published docs",
       "bytes": 43457,
-      "sha256": "4A7BF35008E6BE6CFF961A60ADD180FDD546D388E80DE95FACFF096C38F12D04"
+      "sha256": "F5F11F387ECEB6C5D98D73CD3740E41EB18CD2EE4A32404283E52626CBEC219D"
     },
     {
       "path": "CHANGELOG.md",
@@ -109,8 +109,8 @@
       "path": "README.md",
       "type": "documentation",
       "destination": "repository or published docs",
-      "bytes": 1630,
-      "sha256": "6838F4AE9BE87EBCD770CAC4AE2534F878E7FA9CC6EF7E90496915969BED44D5"
+      "bytes": 1782,
+      "sha256": "1E658CD898A2EA8178D3B8729DB27D4899F6041D71710A0B868A7CDD01269258"
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -1495,8 +1495,8 @@
       "path": "config/release.env.example",
       "type": "repository-file",
       "destination": "repository support",
-      "bytes": 202,
-      "sha256": "79C78F5E554303D71B415BDFDB42D10A8E95487FA5D8B7EB5F95C66F584E99A9"
+      "bytes": 324,
+      "sha256": "C85FBA7DCF0B1AA145873533B9552D6957EBB58269F672B581E1E9088212C6E7"
     },
     {
       "path": "content.js",
@@ -1523,8 +1523,8 @@
       "path": "docs/GITHUB_SETUP.md",
       "type": "documentation",
       "destination": "repository or published docs",
-      "bytes": 1634,
-      "sha256": "04F67E3C7526EE4428F056E5154160F60D13B2F024E8B40805ED0A3A8D5D3F21"
+      "bytes": 1742,
+      "sha256": "09A7A4D59AACB7D334EFA6FCFF94CD7445B812BDB1353333F514783CC58B5C02"
     },
     {
       "path": "docs/RELEASE_PROCESS.md",
@@ -1664,7 +1664,7 @@
       "type": "quality-evidence",
       "destination": "quality dashboard",
       "bytes": 66762,
-      "sha256": "566C1750E4A05D2BDAE5998C008D0EC82D93B976B39B4457F362C1F1CD64E5CB"
+      "sha256": "CF698E929EEB2D6940D17C7CB731D73B3C302C960E969AD01E6098D58F7E9BD2"
     },
     {
       "path": "quality/batch-qa.schema.json",

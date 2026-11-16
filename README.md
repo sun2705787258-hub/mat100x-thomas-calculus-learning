@@ -2,6 +2,12 @@
 
 Thomas 微积分的离线 Web 学习站。当前版本是一个静态单仓库，不包含后端、桌面安装包、代码签名或商店发布。
 
+公开站点：
+
+`https://sun2705787258-hub.github.io/mat100x-thomas-calculus-learning/`
+
+Pages 在 `main` 推送后自动部署。仓库和站内 PDF 均为公开内容。
+
 ## 当前范围
 
 - 17 个规范章节。
@@ -48,7 +54,7 @@ npm run verify:release
 5. 人工检查说明和资产。
 6. 手动发布 Release。
 
-GitHub Pages 工作流仅手动触发，启用前必须确认站点公开访问和内容版权边界。
+GitHub Pages 工作流在 `main` 推送后自动触发，也可以手动运行。
 
 首次 GitHub 初始化和推送步骤见 `docs/GITHUB_SETUP.md`。
 

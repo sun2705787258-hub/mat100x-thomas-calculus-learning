@@ -4,7 +4,7 @@
 
 - Owner: `sun2705787258-hub`
 - Repository: `mat100x-thomas-calculus-learning`
-- Visibility: Private
+- Visibility: Public
 - Default branch: `main`
 - Remote: `https://github.com/sun2705787258-hub/mat100x-thomas-calculus-learning.git`
 
@@ -62,8 +62,12 @@ Draft manually.
 
 ## 6. Pages
 
-The Pages workflow is manual-only. Do not enable Pages until:
+The repository is public and Pages deploys the static site after every push to
+`main`.
 
-- the repository visibility is correct;
-- the content rights are confirmed;
-- the public site is intended to be reachable without authentication.
+Public URL:
+
+`https://sun2705787258-hub.github.io/mat100x-thomas-calculus-learning/`
+
+The Pages artifact contains the learning site and public PDF downloads. Source
+code, commit history, batch archives and the 10 PDFs are public.
