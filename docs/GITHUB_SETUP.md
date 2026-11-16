@@ -2,11 +2,11 @@
 
 ## 1. Confirm assumptions
 
-- Owner: `mat100x`
-- Repository: `thomas-calculus-learning`
+- Owner: `sun2705787258-hub`
+- Repository: `mat100x-thomas-calculus-learning`
 - Visibility: Private
 - Default branch: `main`
-- Remote: `https://github.com/mat100x/thomas-calculus-learning.git`
+- Remote: `https://github.com/sun2705787258-hub/mat100x-thomas-calculus-learning.git`
 
 ## 2. Authenticate locally
 
@@ -30,7 +30,7 @@ The local remote already exists. Create the private GitHub repository without
 overwriting the remote:
 
 ```powershell
-gh repo create mat100x/thomas-calculus-learning --private
+gh repo create sun2705787258-hub/mat100x-thomas-calculus-learning --private
 ```
 
 Then push the existing local `main` branch:

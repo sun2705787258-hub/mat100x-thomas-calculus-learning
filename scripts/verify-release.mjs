@@ -15,11 +15,11 @@ if ((await sha256(path.join(dist, manifest.zip))) !== manifest.zipSha256) {
 
 if (manifest.pdfs.length !== 10) throw new Error(`Expected 10 PDFs, found ${manifest.pdfs.length}`);
 for (const pdf of manifest.pdfs) {
-  const folderFile = path.join(dist, `thomas-calculus-learning-v${manifest.version}`, pdf);
+  const folderFile = path.join(dist, `${manifest.app}-v${manifest.version}`, pdf);
   await fs.access(folderFile);
 }
 
-const packageRoot = path.join(dist, `thomas-calculus-learning-v${manifest.version}`);
+const packageRoot = path.join(dist, `${manifest.app}-v${manifest.version}`);
 for (const required of ["index.html", "chapters/index.html", "archive/b0-golden/index.html", "SHA256SUMS.txt"]) {
   await fs.access(path.join(packageRoot, required));
 }

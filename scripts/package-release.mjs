@@ -10,7 +10,7 @@ const tag = process.env.GITHUB_REF_NAME || `v${pkg.version}`;
 if (tag !== `v${pkg.version}`) throw new Error(`Tag ${tag} does not match package version ${pkg.version}`);
 
 const dist = path.join(root, "dist", "release");
-const packageName = `thomas-calculus-learning-v${pkg.version}`;
+const packageName = `${pkg.name}-v${pkg.version}`;
 const packageDir = path.join(dist, packageName);
 await fs.rm(dist, { recursive: true, force: true });
 await fs.mkdir(packageDir, { recursive: true });

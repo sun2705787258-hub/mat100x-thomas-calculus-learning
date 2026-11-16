@@ -2,7 +2,7 @@
   "schemaVersion": "thomas-repository-inventory-v1",
   "summary": {
     "files": 263,
-    "bytes": 35404215,
+    "bytes": 35404669,
     "html": 39,
     "pdfs": 10
   },
@@ -18,8 +18,8 @@
       "path": ".github/CODEOWNERS",
       "type": "workflow",
       "destination": "CI / release automation",
-      "bytes": 11,
-      "sha256": "78884730E56DEACD474DC178D93E801BD832155D039711CBA2765210B469F969"
+      "bytes": 21,
+      "sha256": "47E5E5308BBDB25E4619195B7C476E6A35AF0CE8BC3C2FEA8816FADED835A9A8"
     },
     {
       "path": ".github/workflows/ci.yml",
@@ -60,8 +60,8 @@
       "path": "ARTIFACT_INVENTORY.md",
       "type": "documentation",
       "destination": "repository or published docs",
-      "bytes": 43307,
-      "sha256": "25259DA662F022EC949A410F37D97AE4E00F14F99F582452E140BD3C7273AD92"
+      "bytes": 43457,
+      "sha256": "885118FF2FFF5527EE61F873F0B4038445551636206627E753264A96A5D2EC12"
     },
     {
       "path": "CHANGELOG.md",
@@ -109,8 +109,8 @@
       "path": "README.md",
       "type": "documentation",
       "destination": "repository or published docs",
-      "bytes": 1632,
-      "sha256": "1BDBA0C08E19231932B0A2D19FAB37302EB10F6DF91D35E0F7E1EE995CE2A697"
+      "bytes": 1630,
+      "sha256": "6838F4AE9BE87EBCD770CAC4AE2534F878E7FA9CC6EF7E90496915969BED44D5"
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -1495,8 +1495,8 @@
       "path": "config/release.env.example",
       "type": "repository-file",
       "destination": "repository support",
-      "bytes": 176,
-      "sha256": "C71BBEA91CDCD171B58AD32560C4BB3C8319D4B00381A52FD894E57749136770"
+      "bytes": 202,
+      "sha256": "79C78F5E554303D71B415BDFDB42D10A8E95487FA5D8B7EB5F95C66F584E99A9"
     },
     {
       "path": "content.js",
@@ -1523,8 +1523,8 @@
       "path": "docs/GITHUB_SETUP.md",
       "type": "documentation",
       "destination": "repository or published docs",
-      "bytes": 1580,
-      "sha256": "3D5815A80CEA02535C1AF7C6B418EC81F047E58BD25ED3E7B2EAEBD798768B14"
+      "bytes": 1634,
+      "sha256": "04F67E3C7526EE4428F056E5154160F60D13B2F024E8B40805ED0A3A8D5D3F21"
     },
     {
       "path": "docs/RELEASE_PROCESS.md",
@@ -1572,8 +1572,8 @@
       "path": "package.json",
       "type": "repository-file",
       "destination": "repository support",
-      "bytes": 562,
-      "sha256": "44B62B522EE01F7F1091679F5A9540B93AAE1F15B8C1A967042A54F63E172D41"
+      "bytes": 570,
+      "sha256": "3E6783419E3CD1A8DAE44D1E60E97445E69E6CD431008581C3B3F002394E3680"
     },
     {
       "path": "pdf/Thomas_Calculus_第11章至12章_B6质量校准稿.pdf",
@@ -1663,8 +1663,8 @@
       "path": "quality/artifact-inventory.json",
       "type": "quality-evidence",
       "destination": "quality dashboard",
-      "bytes": 66523,
-      "sha256": "73064EF0A480E89C61403DD35B7972647395DEB569490C1AF5B7C3509436D15D"
+      "bytes": 66762,
+      "sha256": "E5779BE6ACC5709848B119733A9490A77DFBC57D9CC234651D47D458CAF92C01"
     },
     {
       "path": "quality/batch-qa.schema.json",
@@ -1733,8 +1733,8 @@
       "path": "scripts/package-release.mjs",
       "type": "automation",
       "destination": "CI and release tooling",
-      "bytes": 3663,
-      "sha256": "92EA4B1DE4D8B23BDCAA8E82A65B6FB4CA43EAC372FA654DD5B75BCBA56B36C2"
+      "bytes": 3650,
+      "sha256": "EF6A6F3BB088A60063F0F1504F6B64FFA960BF2A6D8BA91132DEAE255A2A9212"
     },
     {
       "path": "scripts/prepare-pages.mjs",
@@ -1754,8 +1754,8 @@
       "path": "scripts/verify-release.mjs",
       "type": "automation",
       "destination": "CI and release tooling",
-      "bytes": 1315,
-      "sha256": "246DD3071F45E65F52456D81F3C63314C1E84981E4822C1CF033FF58A1762B14"
+      "bytes": 1297,
+      "sha256": "00ACB6A7318D28D831528778EC729D2D8D788F12D3A5C78AD0E9A16EC8C868DC"
     },
     {
       "path": "source/audit_unified_site.mjs",

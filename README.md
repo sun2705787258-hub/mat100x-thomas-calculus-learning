@@ -1,4 +1,4 @@
-# mat100x / thomas-calculus-learning
+# mat100x-thomas-calculus-learning
 
 Thomas 微积分的离线 Web 学习站。当前版本是一个静态单仓库，不包含后端、桌面安装包、代码签名或商店发布。
 
