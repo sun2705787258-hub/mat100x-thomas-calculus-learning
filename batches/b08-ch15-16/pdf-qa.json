@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "thomas-pdf-qa-v1",
+  "batch": "B8",
+  "chapters": [15, 16],
+  "scope": "pdf-only",
+  "status": "passed",
+  "integrationStatus": "deferred",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "metrics": {
+    "chapter15Terms": 51,
+    "chapter16Terms": 44,
+    "newTerms": 95,
+    "chapter15Exercises": 15,
+    "chapter16Exercises": 15,
+    "newExercises": 30,
+    "masteryItems": 20,
+    "renderedFormulas": 26,
+    "formulaSourceEntries": 23,
+    "numericChecksPassed": 42,
+    "pdfPages": 25,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440,
+    "desktopFormulaClipped": 0,
+    "desktopFormulaOverflow": 0,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "mobileFormulaClipped": 0,
+    "mobileFormulaScrollable": 17,
+    "printFormulaClipped": 0,
+    "printFormulaOverflow": 0,
+    "katexErrors": 0,
+    "browserErrors": 0,
+    "duplicateIds": 0,
+    "placeholders": 0,
+    "remoteAssets": 0
+  },
+  "checks": {
+    "G1_source": "passed",
+    "G2_coverage": "passed",
+    "G3_terms": "passed",
+    "G4_theorems_formulas": "passed",
+    "G5_examples": "passed",
+    "G6_exercises_answers": "passed",
+    "G7_math_rendering": "passed",
+    "G8_diagrams_links": "passed",
+    "G9_web_print": "passed",
+    "G10_copyright_version": "passed"
+  },
+  "exerciseCoverage": {
+    "types": ["概念辨析", "计算题", "证明/说明", "应用题", "综合题"],
+    "levels": ["基础", "标准", "挑战"],
+    "allHaveHintStepsSolution": true,
+    "uniqueIds": true
+  },
+  "pdfFinalChecks": {
+    "pageSize": "A4",
+    "allExerciseIdsPresent": true,
+    "placeholderHits": 0,
+    "acceptanceTextPresent": true,
+    "allPagesRenderedAndInspected": true
+  },
+  "defectsClosed": [
+    {
+      "id": "B8-P1-01",
+      "issue": "Q16-12 incorrectly listed (0,2) as an equilibrium",
+      "resolution": "corrected the equilibria to (0,0), (2,0), and (1,1)"
+    },
+    {
+      "id": "B8-P1-02",
+      "issue": "print exercise columns displayed questions in column-first order",
+      "resolution": "switched B8 print exercises to a row-major two-column grid"
+    },
+    {
+      "id": "B8-P2-01",
+      "issue": "section heading was separated from its locator and opening summary",
+      "resolution": "wrapped section heading, locator, and opening summary in section-opening"
+    },
+    {
+      "id": "B8-P2-02",
+      "issue": "escaped line-break text appeared in source/status chips",
+      "resolution": "removed literal line-break markup from escaped metadata strings"
+    }
+  ],
+  "pdfSha256": "CA2C8C2152AE57E356ADE80241EEAF7D6ACB319925AB3A74F4C54FD26DD90A17",
+  "deferred": [
+    "book-manifest.json update",
+    "quality-status.json update",
+    "root navigation integration",
+    "B0-B9 cross-batch audit",
+    "batch-qa.json cross-batch record",
+    "B8 package generation"
+  ]
+}

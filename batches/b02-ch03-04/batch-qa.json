@@ -1,0 +1,81 @@
+{
+  "$schema": "../../quality/batch-qa.schema.json",
+  "schemaVersion": "thomas-batch-qa-v2",
+  "batch": "B2",
+  "chapters": [3, 4],
+  "status": "passed",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "metrics": {
+    "newTerms": 47,
+    "newExercises": 15,
+    "chapter3Terms": 47,
+    "chapter3Exercises": 15,
+    "chapter4RegressionTerms": 41,
+    "chapter4RegressionExercises": 15,
+    "renderedFormulas": 12,
+    "numericChecksPassed": 37,
+    "pdfPages": 19,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "desktopFormulaClipped": 0,
+    "mobileFormulaClipped": 0,
+    "mobileFormulaScrollable": 5,
+    "printFormulaClipped": 0,
+    "printFormulaOverflow": 0,
+    "katexErrors": 0,
+    "browserErrors": 0,
+    "crossBatchPagesPassed": 3,
+    "crossBatchPagesTotal": 3,
+    "chapter4RegressionSections": 7,
+    "crossBatchSmokeTest": "passed"
+  },
+  "checks": {
+    "G1_source": "passed",
+    "G2_coverage": "passed",
+    "G3_terms": "passed",
+    "G4_theorems_formulas": "passed",
+    "G5_examples": "passed",
+    "G6_exercises_answers": "passed",
+    "G7_math_rendering": "passed",
+    "G8_diagrams_links": "passed",
+    "G9_web_print": "passed",
+    "G10_copyright_version": "passed"
+  },
+  "defects": {
+    "P0": 0,
+    "P1": 0,
+    "P2Open": 0,
+    "closed": [
+      {
+        "id": "B2-P1-01",
+        "scope": "linearization exercise",
+        "resolution": "corrected sign of the true-value comparison"
+      },
+      {
+        "id": "B2-P2-01",
+        "scope": "print pagination",
+        "resolution": "removed redundant formula card and reflowed PDF"
+      },
+      {
+        "id": "B2-P2-02",
+        "scope": "acceptance wording",
+        "resolution": "updated only after all checks passed"
+      }
+    ]
+  },
+  "pdfSha256": "1A6AB4E97931BB6BF2153BCE2F303AC70C585C68DE9F880D476E5D4837D88449",
+  "nextBatch": {
+    "id": "B3",
+    "chapters": [5, 6],
+    "entryConditionMet": true,
+    "requires": [
+      "formal regression of accepted Chapter 5",
+      "complete Chapter 6",
+      "no advancement before B3 passes"
+    ]
+  }
+}
+

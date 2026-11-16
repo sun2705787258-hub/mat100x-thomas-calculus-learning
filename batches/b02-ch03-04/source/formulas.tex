@@ -1,0 +1,96 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B2 quality-calibration formulas: Chapter 3 new content
+
+\section*{Chapter 3 - Derivatives}
+
+% Derivative at a point; textbook page 122, PDF page 123
+\[
+  f'(x_0)=\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h}.
+\]
+
+% Derivative function; textbook page 124, PDF page 125
+\[
+  f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}.
+\]
+
+% Differentiability implies continuity; textbook page 129, PDF page 130
+\[
+  f\ \text{differentiable at }c
+  \quad\Longrightarrow\quad
+  f\ \text{continuous at }c.
+\]
+
+% Basic differentiation rules; textbook pages 133-138, PDF pages 134-139
+\[
+  \frac{d}{dx}(x^n)=nx^{n-1}.
+\]
+\[
+  (uv)'=u'v+uv'.
+\]
+\[
+  \left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^2},
+  \qquad v\ne0.
+\]
+
+% Higher derivatives; textbook page 139, PDF page 140
+\[
+  f''=(f')',\qquad
+  f^{(n)}=\frac{d^ny}{dx^n}.
+\]
+
+% Motion; textbook pages 143-144, PDF pages 144-145
+\[
+  v(t)=s'(t),\qquad
+  a(t)=v'(t)=s''(t),\qquad
+  j(t)=a'(t)=s'''(t).
+\]
+
+% Trigonometric derivatives; textbook pages 152-155, PDF pages 153-156
+\[
+  \frac{d}{dx}\sin x=\cos x,
+  \qquad
+  \frac{d}{dx}\cos x=-\sin x.
+\]
+\[
+  \frac{d}{dx}\tan x=\sec^2x,
+  \quad
+  \frac{d}{dx}\cot x=-\csc^2x,
+  \quad
+  \frac{d}{dx}\sec x=\sec x\tan x,
+  \quad
+  \frac{d}{dx}\csc x=-\csc x\cot x.
+\]
+
+% Chain Rule; textbook page 160, PDF page 161
+\[
+  (f\circ g)'(x)=f'(g(x))g'(x),
+\]
+or, with \(y=f(u)\) and \(u=g(x)\),
+\[
+  \frac{dy}{dx}=\frac{dy}{du}\frac{du}{dx}.
+\]
+
+% Implicit differentiation; textbook pages 167-169, PDF pages 168-170
+\[
+  \frac{d}{dx}F(x,y)=0
+  \quad\Longrightarrow\quad
+  \text{solve for }\frac{dy}{dx}.
+\]
+
+% Related rates volume example; textbook pages 171-172, PDF pages 172-173
+\[
+  V=\frac43\pi r^3
+  \quad\Longrightarrow\quad
+  \frac{dV}{dt}=4\pi r^2\frac{dr}{dt}.
+\]
+
+% Linearization and differential; textbook pages 180-184, PDF pages 181-185
+\[
+  L(x)=f(a)+f'(a)(x-a).
+\]
+\[
+  dy=f'(x)\,dx,
+  \qquad
+  \Delta f\approx df=f'(x)\,\Delta x.
+\]
+

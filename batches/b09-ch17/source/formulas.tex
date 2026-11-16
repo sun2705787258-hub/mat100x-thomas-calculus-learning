@@ -1,0 +1,113 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B9 quality-calibration formulas: Online Chapter 17
+
+\section*{Chapter 17 - Second-Order Differential Equations}
+
+% Characteristic equation; Online pages 17-1 to 17-6, PDF pages 1054-1059
+\[
+  ay''+by'+cy=0
+  \quad\leadsto\quad
+  ar^2+br+c=0.
+\]
+
+% Distinct real roots; Online pages 17-1 to 17-6, PDF pages 1054-1059
+\[
+  r_1\ne r_2
+  \quad\Longrightarrow\quad
+  y=C_1e^{r_1x}+C_2e^{r_2x}.
+\]
+
+% Repeated root; Online pages 17-1 to 17-6, PDF pages 1054-1059
+\[
+  r_1=r_2=r
+  \quad\Longrightarrow\quad
+  y=(C_1+C_2x)e^{rx}.
+\]
+
+% Complex roots; Online pages 17-1 to 17-6, PDF pages 1054-1059
+\[
+  r=\alpha\pm i\beta
+  \quad\Longrightarrow\quad
+  y=e^{\alpha x}\left(C_1\cos\beta x+C_2\sin\beta x\right).
+\]
+
+% Wronskian; Online pages 17-1 to 17-6, PDF pages 1054-1059
+\[
+  W(y_1,y_2)(x)=y_1y_2'-y_1'y_2.
+\]
+
+% Homogeneous plus particular; Online pages 17-7 to 17-14, PDF pages 1060-1067
+\[
+  Ly=g(x)
+  \quad\Longrightarrow\quad
+  y=y_h+y_p.
+\]
+
+% Variation of parameters; Online pages 17-7 to 17-14, PDF pages 1060-1067
+\[
+  y_p
+  =
+  -y_1\int\frac{y_2g}{aW}\,dx
+  +
+  y_2\int\frac{y_1g}{aW}\,dx.
+\]
+
+% Resonance; Online pages 17-7 to 17-14, PDF pages 1060-1067
+\[
+  y''+\omega_0^2y=F_0\cos\omega t,
+  \qquad
+  \omega=\omega_0.
+\]
+
+% Spring equation; Online pages 17-15 to 17-21, PDF pages 1068-1074
+\[
+  m\frac{d^2y}{dt^2}
+  +
+  b\frac{dy}{dt}
+  +
+  ky
+  =
+  F(t).
+\]
+
+% Damping classification; Online pages 17-15 to 17-21, PDF pages 1068-1074
+\[
+  b^2-4mk
+  \begin{cases}
+    >0 & \text{overdamped},\\
+    =0 & \text{critically damped},\\
+    <0 & \text{underdamped}.
+  \end{cases}
+\]
+
+% Series RLC circuit; Online pages 17-15 to 17-21, PDF pages 1068-1074
+\[
+  L\frac{d^2q}{dt^2}
+  +
+  R\frac{dq}{dt}
+  +
+  \frac1Cq
+  =
+  E(t).
+\]
+
+% Euler equation; Online pages 17-22 to 17-23, PDF pages 1075-1076
+\[
+  ax^2y''+bxy'+cy=0,
+  \qquad x>0.
+\]
+
+% Euler characteristic equation; Online pages 17-22 to 17-23, PDF pages 1075-1076
+\[
+  ar(r-1)+br+c=0.
+\]
+
+% Power series; Online pages 17-24 to 17-29, PDF pages 1077-1082
+\[
+  y=\sum_{n=0}^{\infty}a_nx^n.
+\]
+
+% Coefficient recurrence; Online pages 17-24 to 17-29, PDF pages 1077-1082
+\[
+  (n+2)(n+1)a_{n+2}+\cdots=0.
+\]

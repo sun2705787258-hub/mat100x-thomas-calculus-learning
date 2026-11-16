@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+  <title id="title">第11-12章空间向量、直线平面与空间曲线运动依赖图</title>
+  <desc id="desc">第11章从三维坐标、向量、点积、叉积到直线平面和二次曲面；第12章从向量值函数、积分与抛体运动到弧长、曲率、TNB坐标架和极坐标运动。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#687670"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#19231f" flood-opacity=".08"/></filter>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;fill:#19231f}
+      .lane{font-family:Georgia,serif;font-size:19px;font-weight:700;fill:#315f87}
+      .title{font-size:13px;font-weight:700}.sub{font-size:10.5px;fill:#596660}
+      .row{font-size:10px;font-weight:700;fill:#73817b;letter-spacing:.08em}
+      .node{filter:url(#shadow)}.node rect{stroke-width:1.5;rx:12}
+      .c11 rect{fill:#dfe9f1;stroke:#89aac5}.c12 rect{fill:#f4e3ca;stroke:#d5aa73}
+      .bridge rect{fill:#223330;stroke:#223330}.bridge text{fill:#f5f0e6}
+      .edge{fill:none;stroke:#687670;stroke-width:1.8;marker-end:url(#arrow)}
+      .soft{fill:none;stroke:#95a19b;stroke-width:1.4;stroke-dasharray:5 5}
+    </style>
+  </defs>
+  <rect width="1180" height="760" fill="#fffdf8"/>
+  <path d="M24 374H1156" stroke="#d8d1c4" stroke-dasharray="4 7"/>
+
+  <text x="32" y="38" class="lane">Chapter 11 · Vectors and the Geometry of Space</text>
+  <text x="32" y="58" class="sub">先建立空间坐标与向量运算，再把几何关系写成代数条件。</text>
+  <text x="32" y="91" class="row">A · 坐标、向量与两种乘法</text>
+
+  <g class="node c11" transform="translate(28 108)"><rect width="172" height="82"/><text x="14" y="24" class="title">11.1 3D Coordinates</text><text x="14" y="45" class="sub">右手坐标系 · octants</text><text x="14" y="63" class="sub">距离 · 球面</text><text x="14" y="78" class="sub">坐标平面</text></g>
+  <g class="node c11" transform="translate(224 108)"><rect width="172" height="82"/><text x="14" y="24" class="title">11.2 Vectors</text><text x="14" y="45" class="sub">分量 · 长度 · 方向</text><text x="14" y="63" class="sub">加减 · 数乘 · 单位向量</text><text x="14" y="78" class="sub">中点与合成</text></g>
+  <g class="node c11" transform="translate(420 108)"><rect width="172" height="82"/><text x="14" y="24" class="title">11.3 Dot Product</text><text x="14" y="45" class="sub">角 · orthogonality</text><text x="14" y="63" class="sub">投影 · scalar component</text><text x="14" y="78" class="sub">功</text></g>
+  <g class="node c11" transform="translate(616 108)"><rect width="172" height="82"/><text x="14" y="24" class="title">11.4 Cross Product</text><text x="14" y="45" class="sub">右手法则 · 平行判定</text><text x="14" y="63" class="sub">面积 · torque</text><text x="14" y="78" class="sub">triple scalar product</text></g>
+  <g class="node c11" transform="translate(812 108)"><rect width="172" height="82"/><text x="14" y="24" class="title">11.5 Lines &amp; Planes</text><text x="14" y="45" class="sub">r=r₀+tv · n·(r−r₀)=0</text><text x="14" y="63" class="sub">交点 · 距离</text><text x="14" y="78" class="sub">法向量与方向向量</text></g>
+  <g class="node c11" transform="translate(1008 108)"><rect width="144" height="82"/><text x="14" y="24" class="title">11.6 Quadrics</text><text x="14" y="45" class="sub">cylinders</text><text x="14" y="63" class="sub">ellipsoid</text><text x="14" y="78" class="sub">paraboloids / hyperboloids</text></g>
+
+  <text x="32" y="222" class="row">B · 空间几何的统一表示</text>
+  <g class="node c11" transform="translate(28 240)"><rect width="278" height="84"/><text x="14" y="24" class="title">点积回答“投影与夹角”</text><text x="14" y="45" class="sub">u·v=|u||v|cosθ</text><text x="14" y="63" class="sub">正交 ⇔ 点积为 0；projᵥu 给出沿方向的有效分量。</text></g>
+  <g class="node c11" transform="translate(326 240)"><rect width="278" height="84"/><text x="14" y="24" class="title">叉积回答“法向、面积与扭转”</text><text x="14" y="45" class="sub">|u×v|=|u||v|sinθ，方向由右手法则确定。</text><text x="14" y="63" class="sub">u×v 同时正交于 u、v；平行时叉积为零。</text></g>
+  <g class="node c11" transform="translate(624 240)"><rect width="278" height="84"/><text x="14" y="24" class="title">直线与平面</text><text x="14" y="45" class="sub">线：基点 + 方向向量；平面：点 + 法向量。</text><text x="14" y="63" class="sub">交点、夹角、距离均由投影或叉积实现。</text></g>
+  <g class="node c11" transform="translate(922 240)"><rect width="230" height="84"/><text x="14" y="24" class="title">二次曲面</text><text x="14" y="45" class="sub">先找对称轴与坐标截面</text><text x="14" y="63" class="sub">再用标准方程和配方识别。</text></g>
+
+  <text x="32" y="380" class="lane">Chapter 12 · Vector-Valued Functions and Motion in Space</text>
+  <text x="32" y="400" class="sub">曲线由位置向量随参数变化而产生；速度、切向、曲率和法向描述“如何走”和“如何转弯”。</text>
+  <text x="32" y="432" class="row">C · 向量值函数与运动</text>
+
+  <g class="node c12" transform="translate(28 450)"><rect width="174" height="82"/><text x="14" y="24" class="title">12.1 Curves &amp; Tangents</text><text x="14" y="45" class="sub">r(t), v=r′, a=r″</text><text x="14" y="63" class="sub">连续性 · 切线 · 速度</text><text x="14" y="78" class="sub">光滑曲线</text></g>
+  <g class="node c12" transform="translate(226 450)"><rect x="0" width="174" height="82"/><text x="14" y="24" class="title">12.2 Integrals &amp; Motion</text><text x="14" y="45" class="sub">逐分量积分</text><text x="14" y="63" class="sub">初值问题 · projectile</text><text x="14" y="78" class="sub">range / flight time</text></g>
+  <g class="node c12" transform="translate(424 450)"><rect width="174" height="82"/><text x="14" y="24" class="title">12.3 Arc Length</text><text x="14" y="45" class="sub">L=∫|v|dt</text><text x="14" y="63" class="sub">s(t) · unit tangent T</text><text x="14" y="78" class="sub">弧长参数</text></g>
+  <g class="node c12" transform="translate(622 450)"><rect width="174" height="82"/><text x="14" y="24" class="title">12.4 Curvature</text><text x="14" y="45" class="sub">κ=|dT/ds|</text><text x="14" y="63" class="sub">N · osculating circle</text><text x="14" y="78" class="sub">空间曲率</text></g>
+  <g class="node c12" transform="translate(820 450)"><rect width="174" height="82"/><text x="14" y="24" class="title">12.5 TNB &amp; Accel.</text><text x="14" y="45" class="sub">B=T×N · torsion</text><text x="14" y="63" class="sub">a=a_T T+a_N N</text><text x="14" y="78" class="sub">曲率/扭转公式</text></g>
+  <g class="node c12" transform="translate(1018 450)"><rect width="134" height="82"/><text x="14" y="24" class="title">12.6 Polar</text><text x="14" y="45" class="sub">uᵣ, uθ</text><text x="14" y="63" class="sub">velocity</text><text x="14" y="78" class="sub">acceleration</text></g>
+
+  <text x="32" y="564" class="row">D · 几何不变量与坐标选择</text>
+  <g class="node c12" transform="translate(28 582)"><rect width="350" height="78"/><text x="14" y="24" class="title">参数选择不应改变几何量</text><text x="14" y="45" class="sub">弧长、曲率、扭转都是曲线的性质；速度只改变计算方式。</text><text x="14" y="63" class="sub">只要 v≠0，几何结论与参数化选择无关。</text></g>
+  <g class="node c12" transform="translate(400 582)"><rect width="350" height="78"/><text x="14" y="24" class="title">TNB：从切线到扭转</text><text x="14" y="45" class="sub">T 表示前进方向，N 表示转弯方向，B=T×N 表示脱离平面的方向。</text><text x="14" y="63" class="sub">曲率刻画转弯，torsion 刻画扭转。</text></g>
+  <g class="node c12" transform="translate(772 582)"><rect width="380" height="78"/><text x="14" y="24" class="title">极坐标/圆柱坐标</text><text x="14" y="45" class="sub">把平动与径向、角向变化分开；12.6 用于轨道与圆周运动。</text><text x="14" y="63" class="sub">速度与加速度要乘上 uᵣ、uθ 及其导数。</text></g>
+
+  <g class="node bridge" transform="translate(28 692)"><rect width="1124" height="48"/><text x="18" y="20" class="title">统一策略</text><text x="18" y="38" class="sub">先画空间关系，再选向量运算；先检查参数区间和光滑性，再用导数、曲率和积分读取运动与几何。</text></g>
+
+  <path class="edge" d="M200 149H224"/><path class="edge" d="M396 149H420"/><path class="edge" d="M592 149H616"/><path class="edge" d="M788 149H812"/><path class="edge" d="M984 149H1008"/>
+  <path class="soft" d="M702 190V228C702 234 702 240 702 240"/>
+  <path class="edge" d="M202 492H226"/><path class="edge" d="M400 492H424"/><path class="edge" d="M598 492H622"/><path class="edge" d="M796 492H820"/><path class="edge" d="M994 492H1018"/>
+  <path class="soft" d="M626 324C690 350 716 410 709 450"/>
+  <path class="soft" d="M772 324C772 350 709 410 709 450"/>
+</svg>

@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="仅依据 Thomas' Calculus 14th Edition in SI Units 制作的第 4、5 章中文示范学习资料。"
+    />
+    <title>Thomas 微积分学习站｜第 4–5 章示范版</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+  </head>
+  <body><div style="padding:10px 16px;background:#123a34;color:#fff;font:13px/1.6 Microsoft YaHei,Arial,sans-serif;"><a href="../../index.html" style="color:#fff;font-weight:700;">返回统一学习站</a><span style="margin-left:16px;color:rgba(255,255,255,.7);">历史金样：第 4-5 章</span></div>
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="学习站导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">T</div>
+          <div>
+            <p class="brand-title">微积分学习站</p>
+            <p class="brand-subtitle">THOMAS 14E · SI · CH. 4–5</p>
+          </div>
+        </div>
+
+        <div class="sidebar-search">
+          <label class="sr-only" for="term-search">检索术语</label>
+          <input id="term-search" type="search" placeholder="检索中英术语…" autocomplete="off" />
+          <p id="term-visible-count" class="small-note">当前显示全部术语</p>
+        </div>
+
+        <nav class="side-nav">
+          <a href="../../batches/b01-ch01-02/index.html"><span class="nav-num">B1</span>第 1–2 章</a>
+          <a href="../../batches/b02-ch03-04/index.html"><span class="nav-num">B2</span>第 3–4 章</a>
+          <a href="../../batches/b03-ch05-06/index.html"><span class="nav-num">B3</span>第 5–6 章</a>
+          <a href="../../batches/b04-ch07-08/index.html"><span class="nav-num">B4</span>第 7–8 章</a>
+          <a href="../../batches/b05-ch09-10/index.html"><span class="nav-num">B5</span>第 9–10 章</a>
+          <a href="../../batches/b06-ch11-12/index.html"><span class="nav-num">B6</span>第 11–12 章</a>
+          <a href="../../batches/b07-ch13-14/index.html"><span class="nav-num">B7</span>第 13–14 章</a>
+          <a href="#guide"><span class="nav-num">00</span>使用说明</a>
+          <a href="#map"><span class="nav-num">01</span>知识地图</a>
+          <a href="#terms"><span class="nav-num">02</span>英语术语</a>
+          <a href="#chapter-4"><span class="nav-num">03</span>第 4 章概要</a>
+          <a href="#chapter-5"><span class="nav-num">04</span>第 5 章概要</a>
+          <a href="#practice"><span class="nav-num">05</span>分层练习</a>
+          <a href="#review"><span class="nav-num">06</span>复习自测</a>
+          <a href="#appendix"><span class="nav-num">07</span>公式索引</a>
+          <a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+
+        <details class="chapter-jump">
+          <summary>第 4 章快速定位</summary>
+          <a href="#sec-4-1">4.1 闭区间极值</a>
+          <a href="#sec-4-2">4.2 中值定理</a>
+          <a href="#sec-4-3">4.3 单调性</a>
+          <a href="#sec-4-4">4.4 凹凸与作图</a>
+          <a href="#sec-4-5">4.5 应用最优化</a>
+          <a href="#sec-4-6">4.6 牛顿法</a>
+          <a href="#sec-4-7">4.7 原函数</a>
+        </details>
+
+        <details class="chapter-jump">
+          <summary>第 5 章快速定位</summary>
+          <a href="#sec-5-1">5.1 有限和估计</a>
+          <a href="#sec-5-2">5.2 Sigma 与 Riemann 和</a>
+          <a href="#sec-5-3">5.3 定积分</a>
+          <a href="#sec-5-4">5.4 微积分基本定理</a>
+          <a href="#sec-5-5">5.5 换元法</a>
+          <a href="#sec-5-6">5.6 定积分换元与面积</a>
+        </details>
+
+        <div class="sidebar-note">
+          本示范稿只依据指定教材原本。旧复习稿、课程说明和试卷不进入内容来源链。
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker">
+            <strong>示范与校准版</strong>
+            <span>Thomas’ Calculus · Fourteenth Edition in SI Units</span>
+          </div>
+          <h1>从导数读取图形，<br /><span>从极限走向积分。</span></h1>
+          <p class="hero-lead">
+            第 4、5 章不是两套孤立计算技巧：中值定理把变化率与函数行为连接起来，原函数又与微积分基本定理连接起来。本示范稿用术语、知识依赖、定理条件、例题结论和原创分层练习构成可核查的学习闭环。
+          </p>
+          <div class="hero-meta">
+            <span>教材页 201–331</span>
+            <span>PDF 物理页 202–332</span>
+            <span>13 个节</span>
+            <span>30 道原创练习</span>
+            <span>答案分三层显示</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-light" href="#chapter-4">进入第 4 章</a>
+            <a class="button button-ghost" href="#practice">开始自测</a>
+            <button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">00 · Orientation</p>
+                <h2>使用说明与学习闭环</h2>
+              </div>
+              <div class="source-chip">唯一来源：教材原本<br />无外部补写内容</div>
+            </div>
+
+            <div class="guide-grid">
+              <article class="info-card">
+                <span class="card-number">A</span>
+                <h3>概念闭环</h3>
+                <p>
+                  先读“本章定位”，再核对定理条件，最后用一个教材例题结论验证自己是否理解。术语表中的公式和例子用于回查，不要求孤立背诵。
+                </p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">B</span>
+                <h3>解题闭环</h3>
+                <p>
+                  练习卡先只看题目；依次展开“提示 → 关键步骤 → 完整解析”。每道题都标注章节、题型、难度和对应知识点，便于定位薄弱环节。
+                </p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">C</span>
+                <h3>校准闭环</h3>
+                <p>
+                  用章末掌握清单记录“能否独立完成”。若只记住公式却不能说明条件、不能从图形解释结论，说明仍需回看对应节。
+                </p>
+              </article>
+            </div>
+
+            <div class="route-grid" style="margin-top: 14px">
+              <article class="route-card">
+                <h3>路径一：从头建立体系</h3>
+                <p>知识地图 → 章首目标 → 逐节概要 → 教材例题结论 → 掌握清单。适合第一次系统学习本章。</p>
+              </article>
+              <article class="route-card">
+                <h3>路径二：用题目反查概念</h3>
+                <p>选择练习 → 看对应知识点 → 回到本节公式卡 → 用完整解析校准步骤。适合已有初步基础时检查漏洞。</p>
+              </article>
+            </div>
+
+            <div class="callout">
+              <strong>编号约定</strong>
+              页面中的 <code>Q4-01</code> 等是本文档内部练习编号；教材定理号、例题号和页码单独标注。内部编号不代表教材编号。
+            </div>
+          </section>
+
+          <section class="section" id="map" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">01 · Dependency Map</p>
+                <h2>第 4–5 章知识依赖图</h2>
+              </div>
+              <div class="source-chip">范围限定：仅第 4、5 章<br />相邻章节不展开</div>
+            </div>
+
+            <div class="map-shell">
+              <img
+                src="../../assets/mindmap.svg"
+                alt="第4章从极值、中值定理、单调与凹凸、最优化、牛顿法到原函数；第5章从有限和、黎曼和、定积分、微积分基本定理、换元到曲线间面积。"
+              />
+            </div>
+
+            <div class="map-text">
+              <article class="principle-card">
+                <h3>第 4 章的依赖主线</h3>
+                <p>
+                  4.1 先确认极值存在并给出候选点；4.2 用 Rolle 定理证明中值定理，再推出“导数为零则常数”和单调性；4.3、4.4 把一阶、二阶导数转化为图形信息；4.5 在最优化中完成全局检查；4.6 用切线求根；4.7 反向积分并处理初值条件。
+                </p>
+              </article>
+              <article class="principle-card">
+                <h3>第 5 章的依赖主线</h3>
+                <p>
+                  5.1 用有限和估计面积、位移和平均值；5.2 用 Sigma 记号组织有限和并形成 Riemann 和；5.3 通过分割范数趋于零定义定积分；5.4 用微积分基本定理连接定积分和原函数；5.5、5.6 以换元处理复合函数，并计算对称积分和两曲线间面积。
+                </p>
+              </article>
+            </div>
+
+            <details class="no-print">
+              <summary>展开 Mermaid 源结构</summary>
+              <div class="details-body">
+                <pre class="mermaid-source">
+flowchart TB
+  A["第 3 章：导数工具"] --&gt; B["4.1 闭区间极值"]
+  B --&gt; C["4.2 Mean Value Theorem"]
+  B --&gt; D["4.5 Applied Optimization"]
+  C --&gt; E["4.3 单调性与一阶导数判别法"]
+  C --&gt; F["4.4 凹凸性、拐点、二阶导数判别法"]
+  E --&gt; D
+  F --&gt; D
+  A --&gt; H["4.6 Newton 法"]
+  C --&gt; I["4.7 Antiderivative"]
+  I &lt;--&gt; J["5.4 Fundamental Theorem of Calculus"]
+  J --&gt; K["5.5 Substitution Rule"]
+  K --&gt; L["5.6 定积分换元与曲线间面积"]
+  M["5.1 有限和估计"] --&gt; N["5.2 Sigma 与 Riemann 和"]
+  N --&gt; O["5.3 Definite Integral"]
+  O --&gt; J
+  O --&gt; P["积分性质与平均值"]
+  J --&gt; Q["Net Change Theorem"]
+  D --&gt; R["第 6 章：定积分应用"]
+  L --&gt; R
+                </pre>
+                <p><a href="../../source/mindmap.mmd" download>下载可编辑 Mermaid 源文件</a></p>
+              </div>
+            </details>
+          </section>
+
+          <section class="section" id="terms" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">02 · English Terminology</p>
+                <h2>专业英语数学术语表</h2>
+              </div>
+              <div class="source-chip"><span id="term-count">术语加载中</span><br />按章节 / 英文 / 中文检索</div>
+            </div>
+
+            <p class="section-intro">
+              术语定义以教材语境为准。尤其注意：critical point 包含“导数为 0”与“导数不存在”两种内点；definite integral 是数值，indefinite integral 是含任意常数的一族函数。
+            </p>
+
+            <div class="term-tools no-print">
+              <button class="filter-button is-active" type="button" data-term-filter="all">全部</button>
+              <button class="filter-button" type="button" data-term-filter="4">第 4 章</button>
+              <button class="filter-button" type="button" data-term-filter="5">第 5 章</button>
+              <label class="sr-only" for="term-table-search">筛选术语表</label>
+              <input id="term-table-search" type="search" placeholder="例如：inflection、可积、Riemann…" />
+            </div>
+
+            <div id="term-empty" class="empty-state search-empty">没有匹配的术语。请尝试英文词根或中文关键词。</div>
+
+            <div class="table-wrap">
+              <table class="term-table">
+                <thead>
+                  <tr>
+                    <th>English term</th>
+                    <th>中文译名</th>
+                    <th>简明定义</th>
+                    <th>对应节</th>
+                    <th>关键公式 / 提示</th>
+                  </tr>
+                </thead>
+                <tbody id="term-body"></tbody>
+              </table>
+            </div>
+
+            <h3>易混术语对比</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>易混项</th>
+                    <th>关键区别</th>
+                    <th>检查问题</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>local extremum / absolute extremum</td>
+                    <td>局部极值只与附近点比较；绝对极值要与整个定义域比较。</td>
+                    <td>题目问的是“附近最大值”还是“全局最大/最小值”？</td>
+                  </tr>
+                  <tr>
+                    <td>critical point / extremum</td>
+                    <td>临界点只是极端值可能出现的候选点，可能没有任何极值。</td>
+                    <td>导数符号是否改变？端点值是否参与比较？</td>
+                  </tr>
+                  <tr>
+                    <td>monotonicity / concavity</td>
+                    <td>单调性来自 f′ 的正负；凹凸性来自 f′ 增加或减少，通常看 f″ 的正负。</td>
+                    <td>是在说“升/降”，还是在说“弯曲方向”？</td>
+                  </tr>
+                  <tr>
+                    <td>antiderivative / indefinite integral</td>
+                    <td>antiderivative 是一个函数；indefinite integral 是全部原函数组成的集合。</td>
+                    <td>是否写了任意常数 C？</td>
+                  </tr>
+                  <tr>
+                    <td>definite integral / indefinite integral</td>
+                    <td>定积分是数值；不定积分是一族函数。</td>
+                    <td>结果应为数，还是应含 +C？</td>
+                  </tr>
+                  <tr>
+                    <td>displacement / distance traveled</td>
+                    <td>位移用速度积分，正负可抵消；总路程用速率积分。</td>
+                    <td>速度是否经过零点并改变方向？</td>
+                  </tr>
+                  <tr>
+                    <td>Riemann sum / definite integral</td>
+                    <td>黎曼和是有限近似；定积分是范数趋于 0 时的统一极限。</td>
+                    <td>是否已经取极限？</td>
+                  </tr>
+                  <tr>
+                    <td>upper/lower curve / right/left curve</td>
+                    <td>关于 x 积分用上下函数相减；关于 y 积分用右左函数相减。</td>
+                    <td>矩形条带是竖直还是水平？</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>字母索引</h3>
+            <p class="small-note">点击字母会筛选英文术语的起始字母。</p>
+            <div id="term-letter-index" class="connection-flow no-print"></div>
+          </section>
+
+          <section class="section" id="chapter-4" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">4</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">Chapter Summary</p>
+                <h3>Applications of Derivatives</h3>
+                <p>
+                  本章把导数从“计算变化率”的工具，扩展为读取极值、单调性、凹凸性、最优化和数值求根的方法；最后通过原函数开始逆向恢复函数。
+                </p>
+                <div class="meta-strip">
+                  <span>教材页 201–258</span>
+                  <span>PDF 页 202–259</span>
+                  <span>4.1–4.7</span>
+                  <span>6 项核心能力</span>
+                </div>
+              </div>
+            </div>
+
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>区分绝对极值、局部极值与临界点，并在闭区间上完成全局比较。</li>
+              <li>准确说明 Rolle 定理、中值定理及三个推论的条件与结论。</li>
+              <li>从 f′ 和 f″ 的符号表读出单调区间、局部极值、凹凸区间与拐点。</li>
+              <li>把实际最优化问题写成单变量函数，并检查可行域边界和全局最优性。</li>
+              <li>执行牛顿法迭代，识别初始值、收敛与失败风险。</li>
+              <li>求原函数、计算不定积分，并用初值条件求特解。</li>
+            </ul>
+
+            <div class="section-block" id="sec-4-1">
+              <div class="section-block-head">
+                <h3>4.1 Extreme Values of Functions on Closed Intervals</h3>
+                <span class="locator">教材页 201–208 · PDF 页 202–209</span>
+              </div>
+              <p>
+                极值首先由“在哪个定义域上比较”决定。绝对极值是全局比较，局部极值只与邻域内点比较。若函数在有限闭区间连续，Extreme Value Theorem 保证绝对最大值和最小值存在；但要找位置，还必须比较内临界点与端点。
+              </p>
+              <ul class="topic-list">
+                <li><strong>候选点：</strong>内点 f′(c)=0、内点 f′(c) 不存在、定义域端点。</li>
+                <li><strong>闭区间程序：</strong>列出全部临界点 → 计算这些点和端点的函数值 → 比较最大与最小。</li>
+                <li><strong>关键警告：</strong>临界点不一定产生极值；不可导点可能是极值，也可能不是。</li>
+              </ul>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="EVT">
+                  <h4>Extreme Value Theorem</h4>
+                  <div class="formula" id="formula-evt" data-tex="f continuous on [a,b] => exists x1,x2 with f(x1)=min f, f(x2)=max f">
+                    f 在 [a,b] 连续 ⇒ 必取得全局最小值与全局最大值
+                  </div>
+                  <p class="condition">条件：闭且有限的区间；函数在该区间上连续。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-evt">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="CP">
+                  <h4>First Derivative Theorem for Local Extreme Values</h4>
+                  <div class="formula" id="formula-critical" data-tex="c interior extremum and f'(c) exists => f'(c)=0">
+                    内点局部极值 + f 在该点可导 ⇒ f′(c)=0
+                  </div>
+                  <p class="condition">只是必要条件。端点极值和不存在的导数不包含在这个等式中。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-critical">复制 LaTeX</button>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-4-2">
+              <div class="section-block-head">
+                <h3>4.2 The Mean Value Theorem</h3>
+                <span class="locator">教材页 209–214 · PDF 页 210–215</span>
+              </div>
+              <p>
+                Rolle 定理说明“端点等高时至少有一条水平切线”；中值定理把它倾斜化，声称某一点的瞬时变化率等于整个区间的平均变化率。后续关于常数函数、单调性、原函数只差常数等结论都由此推出。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="R">
+                  <h4>Theorem 3 · Rolle's Theorem</h4>
+                  <div class="formula" id="formula-rolle" data-tex="f(a)=f(b) => exists c in (a,b), f'(c)=0">
+                    f(a)=f(b) ⇒ ∃c∈(a,b)，f′(c)=0
+                  </div>
+                  <p class="condition">[a,b] 连续，(a,b) 可导，且 f(a)=f(b)。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-rolle">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="MVT">
+                  <h4>Theorem 4 · Mean Value Theorem</h4>
+                  <div class="formula" id="formula-mvt" data-tex="(f(b)-f(a))/(b-a)=f'(c), c in (a,b)">
+                    [f(b)−f(a)]/(b−a) = f′(c)，c∈(a,b)
+                  </div>
+                  <p class="condition">[a,b] 连续，(a,b) 可导；不需要在端点可导。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-mvt">复制 LaTeX</button>
+                </article>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>结论</th>
+                    <th>形式</th>
+                    <th>典型用途</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Corollary 1</td><td>区间上 f′≡0 ⇒ f 为常数</td><td>排除看似复杂但导数为零的函数</td></tr>
+                  <tr><td>Corollary 2</td><td>区间上 f′≡g′ ⇒ f−g 为常数</td><td>原函数族只差一个常数</td></tr>
+                  <tr><td>Corollary 3</td><td>f′&gt;0 或 f′&lt;0 ⇒ f 在该区间增或减</td><td>制作单调性符号表</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="section-block" id="sec-4-3">
+              <div class="section-block-head">
+                <h3>4.3 Monotonic Functions and the First Derivative Test</h3>
+                <span class="locator">教材页 215–219 · PDF 页 216–220</span>
+              </div>
+              <p>
+                用临界点把定义域分成互不重叠的区间，在每个区间只抽取一个易算点判断 f′ 的符号。若 f′ 在临界点从左到右由负变正，则出现局部最小；由正变负则出现局部最大；不变号则没有极值。
+              </p>
+              <div class="principle-grid">
+                <article class="principle-card">
+                  <h3>一阶导数符号表</h3>
+                  <p>临界点 | 测试点 | f′ 符号 | 函数行为。四个栏目应同时写，避免只解方程却不判断导数是否变号。</p>
+                </article>
+                <article class="principle-card">
+                  <h3>端点概念</h3>
+                  <p>端点只有一个方向可观察。教材允许按半开区间定义端点局部极值，做闭区间全局比较时仍要把端点值纳入。</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-4-4">
+              <div class="section-block-head">
+                <h3>4.4 Concavity and Curve Sketching</h3>
+                <span class="locator">教材页 220–231 · PDF 页 221–232</span>
+              </div>
+              <p>
+                凹凸性描述斜率如何变化：f′ 增加为 concave up，f′ 减少为 concave down。拐点必须同时满足“曲线有切线”和“凹凸性改变”。二阶导数为零只是候选条件，不是充分条件。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="SDT">
+                  <h4>Theorem 5 · Second Derivative Test</h4>
+                  <div class="formula" id="formula-sdt" data-tex="f'(c)=0 and f''(c)<0 => local max; f'(c)=0 and f''(c)>0 => local min">
+                    f′(c)=0：f″(c)&lt;0 ⇒ 局部最大；f″(c)&gt;0 ⇒ 局部最小
+                  </div>
+                  <p class="condition">f″ 在包含 c 的开区间连续；若 f″(c)=0，检验失效。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-sdt">复制 LaTeX</button>
+                </article>
+                <article class="principle-card">
+                  <h3>曲线作图七步</h3>
+                  <ol>
+                    <li>定义域与对称性；</li>
+                    <li>求 f′ 与 f″；</li>
+                    <li>临界点与极值类型；</li>
+                    <li>增减区间；</li>
+                    <li>拐点与凹凸区间；</li>
+                    <li>渐近线；</li>
+                    <li>绘制关键点和最终图形。</li>
+                  </ol>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-4-5">
+              <div class="section-block-head">
+                <h3>4.5 Applied Optimization</h3>
+                <span class="locator">教材页 232–243 · PDF 页 233–244</span>
+              </div>
+              <p>
+                最优化不是“求一个导数为零的点”就结束。还应写出可行域、用约束消元、比较端点和临界点，并用一阶符号、二阶导数或边界行为论证全局最优。经济模型中，利润 p=r−c 在内部临界点取得时满足边际收益等于边际成本。
+              </p>
+              <div class="connection-flow">
+                <span class="flow-node">读题</span><span class="flow-arrow">→</span>
+                <span class="flow-node">画图</span><span class="flow-arrow">→</span>
+                <span class="flow-node">设变量</span><span class="flow-arrow">→</span>
+                <span class="flow-node">单变量目标函数</span><span class="flow-arrow">→</span>
+                <span class="flow-node">可行域 + 临界点 + 端点</span><span class="flow-arrow">→</span>
+                <span class="flow-node">全局检查</span>
+              </div>
+              <div class="callout">
+                <strong>模型边界不是装饰</strong>
+                盒体边长、圆柱半径、产量等通常要求正数或受限。开区间没有端点值时，仍需通过单调性、二阶导数或极限行为证明所找临界点给出全局最优。
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-4-6">
+              <div class="section-block-head">
+                <h3>4.6 Newton's Method</h3>
+                <span class="locator">教材页 244–248 · PDF 页 245–249</span>
+              </div>
+              <p>
+                牛顿法在当前估计点作切线，把切线与 x 轴的交点作为下一次估计。它通常迭代很快，但不保证收敛；初始值不佳时可能振荡、跑到另一个根或逐步变差。
+              </p>
+              <article class="formula-card" data-id="NM">
+                <h4>Newton–Raphson Iteration</h4>
+                <div class="formula" id="formula-newton" data-tex="x_{n+1}=x_n-f(x_n)/f'(x_n), f'(x_n) != 0">
+                  xₙ₊₁ = xₙ − f(xₙ) / f′(xₙ)
+                </div>
+                <p class="condition">先选 x₀；每步要求 f′(xₙ)≠0。可用 |f(xₙ)| 接近 0 和 |xₙ₊₁−xₙ| 变小检查收敛。</p>
+                <button class="button no-print" type="button" data-copy-tex="formula-newton">复制 LaTeX</button>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-4-7">
+              <div class="section-block-head">
+                <h3>4.7 Antiderivatives</h3>
+                <span class="locator">教材页 249–258 · PDF 页 250–259</span>
+              </div>
+              <p>
+                原函数是导数的逆向恢复。若 F 是 f 的一个原函数，则 f 的全部原函数为 F(x)+C。初值问题通过一个函数值确定 C；若涉及加速度，通常要连续积分两次，并分别使用速度与位置条件。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="ANT">
+                  <h4>Theorem 8 · General Antiderivative</h4>
+                  <div class="formula" id="formula-antiderivative" data-tex="F'(x)=f(x) => general antiderivative is F(x)+C">
+                    F′(x)=f(x) ⇒ ∫f(x)dx = F(x)+C
+                  </div>
+                  <p class="condition">在同一个区间 I 上讨论；C 是任意常数。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-antiderivative">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="PWR">
+                  <h4>Basic Power Formula</h4>
+                  <div class="formula" id="formula-power" data-tex="\int x^n dx = x^{n+1}/(n+1)+C, n != -1">
+                    ∫xⁿdx = xⁿ⁺¹/(n+1) + C，n ≠ −1
+                  </div>
+                  <p class="condition">本题用于幂函数；n=−1 时不能使用此公式。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-power">复制 LaTeX</button>
+                </article>
+              </div>
+            </div>
+
+            <h3>重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>教材例题</th>
+                    <th>可复用结论</th>
+                    <th>位置</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Example 1（4.1）</td><td>同一个 y=x² 在四个不同定义域上具有不同的绝对极值结构。</td><td>教材 p.202 / PDF p.203</td></tr>
+                  <tr><td>Example 4（4.1）</td><td>f(x)=x^(2/3) 在 [−2,3]：最大值 ∛9 于 x=3，最小值 0 于不可导点 x=0。</td><td>教材 p.206 / PDF p.207</td></tr>
+                  <tr><td>Example 2（4.2）</td><td>f(x)=x² 在 [0,2] 上，中值定理中的 c=1。</td><td>教材 p.211 / PDF p.212</td></tr>
+                  <tr><td>Example 2（4.3）</td><td>x^(1/3)(x−4) 在 x=0 有临界点但无极值；x=1 有绝对最小值 −3。</td><td>教材 p.217–218 / PDF p.218–219</td></tr>
+                  <tr><td>Example 8（4.4）</td><td>x⁴−4x³+10：x=3 有局部与绝对最小值 −17；x=0、2 为拐点。</td><td>教材 p.224–225 / PDF p.225–226</td></tr>
+                  <tr><td>Example 1（4.5）</td><td>12 cm 正方形做无盖盒，割去 2 cm 时体积最大，为 128 cm³。</td><td>教材 p.232–233 / PDF p.233–234</td></tr>
+                  <tr><td>Example 2（4.5）</td><td>一升圆柱罐最小表面积在 h=2r；r=(500/π)^(1/3) cm。</td><td>教材 p.233–234 / PDF p.234–235</td></tr>
+                  <tr><td>Example 2（4.6）</td><td>x³−x−1=0 从 x₀=1 迭代，根约为 1.324717957。</td><td>教材 p.246–247 / PDF p.247–248</td></tr>
+                  <tr><td>Example 5（4.7）</td><td>上升气球释放包裹：两次积分并用初值条件，落地时间约 2.63 s。</td><td>教材 p.252–253 / PDF p.253–254</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>把必要条件当充分条件</h3><p>f′(c)=0 并不推出极值；必须检查符号变化或继续比较函数值。</p></article>
+              <article class="mistake-card"><h3>忘记定义域端点</h3><p>闭区间绝对极值常常在端点取得；“所有临界点”并非全部候选。</p></article>
+              <article class="mistake-card"><h3>混淆斜率与弯曲</h3><p>f′ 正表示上升，f″ 正表示斜率增加；曲线可以在递增的同时凹向下。</p></article>
+              <article class="mistake-card"><h3>把二阶导数零点都当拐点</h3><p>f(x)=x⁴ 在 x=0 处 f″=0，但凹向上性质没有改变，不是拐点。</p></article>
+              <article class="mistake-card"><h3>牛顿法无条件相信迭代</h3><p>初始猜测和函数形状会影响收敛；不能把“算了几步”当作“证明收敛”。</p></article>
+              <article class="mistake-card"><h3>积分后漏写常数</h3><p>不定积分必须带 C；定积分是数值，不能再附加积分常数。</p></article>
+            </div>
+
+            <h3>与其他章节的联系</h3>
+            <div class="connection-flow">
+              <span class="flow-node">第 3 章：导数和线性化</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第 4 章：由导数读取函数</span><span class="flow-arrow">→</span>
+              <span class="flow-node">4.7 原函数</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第 5 章：微积分基本定理</span>
+            </div>
+            <div class="callout answer">
+              <strong>本章一句话</strong>
+              极值存在由连续性保证，极值位置由候选点和符号变化确定；中值定理解释“局部的导数信息为何能控制整个区间的函数行为”，原函数则开启第 5 章的积分路线。
+            </div>
+          </section>
+
+          <section class="section" id="chapter-5" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">5</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">Chapter Summary</p>
+                <h3>Integrals</h3>
+                <p>
+                  本章从有限个矩形出发，以分割范数趋于零形成定积分；再用微积分基本定理把复杂极限转化为原函数端点之差，并通过换元与面积计算扩展应用。
+                </p>
+                <div class="meta-strip">
+                  <span>教材页 266–323</span>
+                  <span>PDF 页 267–324</span>
+                  <span>5.1–5.6</span>
+                  <span>6 项核心能力</span>
+                </div>
+              </div>
+            </div>
+
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>用有限和估计面积、位移和平均值，并区分上、下和与中点估计。</li>
+              <li>使用 Sigma 记号和标准求和公式整理 Riemann 和。</li>
+              <li>说明分割、范数、采样点与定积分定义之间的关系。</li>
+              <li>运用定积分性质、平均值和积分中值定理。</li>
+              <li>使用微积分基本定理第一部分求变上限积分导数，使用第二部分求值。</li>
+              <li>用换元、对称性和曲线间面积公式完成综合计算。</li>
+            </ul>
+
+            <div class="section-block" id="sec-5-1">
+              <div class="section-block-head">
+                <h3>5.1 Area and Estimating with Finite Sums</h3>
+                <span class="locator">教材页 266–275 · PDF 页 267–276</span>
+              </div>
+              <p>
+                把一个区间切成若干小段，在每段用采样值乘宽度，再相加。面积、无转向运动的位移和连续函数平均值都能用同一有限和结构估计。更多更细的矩形带来更好的近似，但尚未等于定积分。
+              </p>
+              <ul class="topic-list">
+                <li><strong>upper sum：</strong>每段取函数最大值，面积估计通常偏高。</li>
+                <li><strong>lower sum：</strong>每段取函数最小值，面积估计通常偏低。</li>
+                <li><strong>midpoint sum：</strong>取每段中点；可高于或低于真实值，但通常改善误差。</li>
+                <li><strong>运动：</strong>速度积分给出位移；速度不改变方向时，两者数值相近。若转向，则总路程要用速率 |v|。</li>
+              </ul>
+              <div class="formula-block" id="formula-finite" data-tex="\sum_{k=1}^n f(c_k)\Delta x">
+                Sₙ = f(c₁)Δx + f(c₂)Δx + ⋯ + f(cₙ)Δx
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-5-2">
+              <div class="section-block-head">
+                <h3>5.2 Sigma Notation and Limits of Finite Sums</h3>
+                <span class="locator">教材页 276–282 · PDF 页 277–283</span>
+              </div>
+              <p>
+                Sigma 记号把大量有限项压成一个表达式。应用前先写清“指标从哪开始、到哪结束、项是什么”。Riemann 和允许不等宽分割，但整个分割是否越来越细由最大子区间宽度，也就是范数 ||P|| 控制。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="SUM">
+                  <h4>有限和标准公式</h4>
+                  <div class="formula" id="formula-sums" data-tex="\sum k=n(n+1)/2; \sum k^2=n(n+1)(2n+1)/6">
+                    Σk = n(n+1)/2　　Σk² = n(n+1)(2n+1)/6
+                  </div>
+                  <p class="condition">通常需要这些公式把和表示成 n 的显式函数，再取 n→∞。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-sums">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="RS">
+                  <h4>Riemann 和与范数</h4>
+                  <div class="formula" id="formula-riemann" data-tex="S_P=\sum f(c_k)\Delta x_k; ||P||=\max \Delta x_k">
+                    Sₚ = Σf(cₖ)Δxₖ，　||P|| = max Δxₖ
+                  </div>
+                  <p class="condition">分割 P、采样点 cₖ 和子区间宽度均可变化；定积分要求所有合法选择给出同一极限。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-riemann">复制 LaTeX</button>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-5-3">
+              <div class="section-block-head">
+                <h3>5.3 The Definite Integral</h3>
+                <span class="locator">教材页 283–295 · PDF 页 284–296</span>
+              </div>
+              <p>
+                定积分是 Riemann 和当分割范数趋于零时的统一极限。对连续函数或只有有限个跳跃间断的函数，定积分存在。非负函数的定积分是面积；一般函数的定积分是带符号面积，可以正负抵消。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="DI">
+                  <h4>Definite Integral</h4>
+                  <div class="formula" id="formula-definite" data-tex="\int_a^b f(x)dx=\lim_{||P||\to 0}\sum f(c_k)\Delta x_k">
+                    ∫ₐᵇf(x)dx = lim<sub>||P||→0</sub> Σf(cₖ)Δxₖ
+                  </div>
+                  <p class="condition">极限必须对任意越来越细的分割及任意合法采样点给出同一个数。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-definite">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="AV">
+                  <h4>Average Value</h4>
+                  <div class="formula" id="formula-average" data-tex="av(f)=1/(b-a)\int_a^b f(x)dx">
+                    av(f) = [1/(b−a)] ∫ₐᵇf(x)dx
+                  </div>
+                  <p class="condition">区间长度 b−a 不能为零；平均值的几何意义是“等面积矩形高度”。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-average">复制 LaTeX</button>
+                </article>
+              </div>
+              <h4>定积分运算性质</h4>
+              <ul class="clean-list">
+                <li>反向积分改变符号；同一上下限积分等于 0。</li>
+                <li>常数因子可提出，和与差可逐项积分。</li>
+                <li>区间可加：∫ₐᶜ + ∫ᶜᵇ = ∫ₐᵇ。</li>
+                <li>Max-Min Inequality 用区间上的函数最小、最大值给积分上下界。</li>
+                <li>若 f≥g，则 ∫f≥∫g；若 f≥0，则积分非负。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-5-4">
+              <div class="section-block-head">
+                <h3>5.4 The Fundamental Theorem of Calculus</h3>
+                <span class="locator">教材页 296–305 · PDF 页 297–306</span>
+              </div>
+              <p>
+                定积分中值定理保证连续函数在区间上取到自己的平均值。微积分基本定理把“累计面积函数”的导数还原为被积函数，并说明定积分可由任一原函数在端点的差计算。它同时支持净变化解释：变化率的积分等于终值减初值。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="FTC1">
+                  <h4>Theorem 4 · Part 1</h4>
+                  <div class="formula" id="formula-ftc1" data-tex="\frac{d}{dx}\int_a^x f(t)dt=f(x)">
+                    d/dx ∫ₐˣ f(t)dt = f(x)
+                  </div>
+                  <p class="condition">f 在 [a,b] 连续；若上限是 g(x)，还要使用链式法则乘 g′(x)。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-ftc1">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="FTC2">
+                  <h4>Theorem 4 · Part 2 / Evaluation Theorem</h4>
+                  <div class="formula" id="formula-ftc2" data-tex="\int_a^b f(x)dx=F(b)-F(a)">
+                    ∫ₐᵇ f(x)dx = F(b) − F(a)
+                  </div>
+                  <p class="condition">f 在 [a,b] 连续，F 是 f 在区间上的任一原函数。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-ftc2">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="NC">
+                  <h4>Theorem 5 · Net Change</h4>
+                  <div class="formula" id="formula-net" data-tex="F(b)-F(a)=\int_a^b F'(x)dx">
+                    F(b) − F(a) = ∫ₐᵇ F′(x)dx
+                  </div>
+                  <p class="condition">F 可导且变化率可积；位移可抵消，总路程需要 |v|。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-net">复制 LaTeX</button>
+                </article>
+                <article class="principle-card">
+                  <h3>总面积程序</h3>
+                  <p>在函数零点处分段 → 逐段积分 → 对各段积分取绝对值 → 相加。不能把 ∫|f| 与 |∫f| 混为一谈。</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-5-5">
+              <div class="section-block-head">
+                <h3>5.5 Indefinite Integrals and the Substitution Method</h3>
+                <span class="locator">教材页 307–313 · PDF 页 308–314</span>
+              </div>
+              <p>
+                换元法本质上是反向使用链式法则。关键是选择内层表达式 u=g(x)，把 du=g′(x)dx 替换完整。若缺少常数倍，可以乘除调整；若某些 x 因子无法用 du 表示，可能需要从 u=g(x) 解出 x。
+              </p>
+              <article class="formula-card" data-id="SUB">
+                <h4>Theorem 6 · Substitution Rule</h4>
+                <div class="formula" id="formula-sub" data-tex="\int f(g(x))g'(x)dx=\int f(u)du">
+                  ∫ f(g(x))g′(x)dx = ∫ f(u)du
+                </div>
+                <p class="condition">u=g(x) 可导且其值域是区间；f 在该区间连续。最后要代回 u=g(x)。</p>
+                <button class="button no-print" type="button" data-copy-tex="formula-sub">复制 LaTeX</button>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-5-6">
+              <div class="section-block-head">
+                <h3>5.6 Definite Integral Substitutions and the Area Between Curves</h3>
+                <span class="locator">教材页 314–323 · PDF 页 315–324</span>
+              </div>
+              <p>
+                定积分换元时可直接把 x 的上下限变为 u 的上下限；另一条路线是先求不定积分、代回 x，再用原积分限。对称区间上，偶函数积分为 0 到 a 的两倍，奇函数积分为 0。两曲线间面积用“上减下”或“右减左”，并先求交点分段。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="DSUB">
+                  <h4>Theorem 7 · Substitution in Definite Integrals</h4>
+                  <div class="formula" id="formula-defsub" data-tex="\int_a^b f(g(x))g'(x)dx=\int_{g(a)}^{g(b)}f(u)du">
+                    ∫ₐᵇ f(g(x))g′(x)dx = ∫<sub>g(a)</sub><sup>g(b)</sup> f(u)du
+                  </div>
+                  <p class="condition">g′ 连续；f 在 g 的值域上连续。积分限必须同步变换。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-defsub">复制 LaTeX</button>
+                </article>
+                <article class="formula-card" data-id="AREA">
+                  <h4>Area Between Curves</h4>
+                  <div class="formula" id="formula-area" data-tex="A=\int_a^b(f(x)-g(x))dx, f(x)\ge g(x)">
+                    A = ∫ₐᵇ [f(x)−g(x)]dx，f(x)≥g(x)
+                  </div>
+                  <p class="condition">若曲线关系在区间内变化，必须在交点处分段；也可换成关于 y 的右减左。</p>
+                  <button class="button no-print" type="button" data-copy-tex="formula-area">复制 LaTeX</button>
+                </article>
+              </div>
+            </div>
+
+            <h3>重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>教材例题</th>
+                    <th>可复用结论</th>
+                    <th>位置</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Example 1（5.1）</td><td>v(t)=160−9.8t 在 0≤t≤3：3 段上用左端点得 450.6，用右端点得 421.2；细分提高精度。</td><td>教材 p.270 / PDF p.271</td></tr>
+                  <tr><td>Example 2（5.1）</td><td>同一运动用 v 与 |v| 分别估计位移和总路程；示例最终对应 78.4 m 与 166.6 m。</td><td>教材 p.271–272 / PDF p.272–273</td></tr>
+                  <tr><td>Example 5（5.2）</td><td>用 n 个等高矩形求下和，并取 n→∞，得到 y=1−x² 在 [0,1] 下方面积 2/3。</td><td>教材 p.279–280 / PDF p.280–281</td></tr>
+                  <tr><td>Example 4（5.3）</td><td>从 Riemann 和与三角形面积两种方式得到 ∫₀ᵇ x dx=b²/2。</td><td>教材 p.289–290 / PDF p.290–291</td></tr>
+                  <tr><td>Example 5（5.3）</td><td>半圆函数在 [−2,2] 上的平均值为 π/2。</td><td>教材 p.292 / PDF p.293</td></tr>
+                  <tr><td>Example 2（5.4）</td><td>上限为 x² 时，FTC 第一部分与链式法则给出导数 2x cos(x²)。</td><td>教材 p.298 / PDF p.299</td></tr>
+                  <tr><td>Examples 6–7（5.4）</td><td>负函数定积分可以为负；sin x 在 [0,2π] 的积分为 0，但总面积是 4。</td><td>教材 p.303–304 / PDF p.304–305</td></tr>
+                  <tr><td>Example 2（5.5）</td><td>∫√(2x+1)dx=(1/3)(2x+1)^(3/2)+C。</td><td>教材 p.309 / PDF p.310</td></tr>
+                  <tr><td>Example 1（5.6）</td><td>∫₋₁¹3x²√(x³+1)dx=4√2/3，两种积分限路线结果相同。</td><td>教材 p.315 / PDF p.316</td></tr>
+                  <tr><td>Examples 4–6（5.6）</td><td>y=2−x² 与 y=−x 围成面积 9/2；另一区域分别用 x 与 y 积分都得 10/3。</td><td>教材 p.318–320 / PDF p.319–321</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>把有限和当定积分</h3><p>Riemann 和只是近似；定积分还需要范数趋于 0 并且所有选择共享同一极限。</p></article>
+              <article class="mistake-card"><h3>把定积分直接当面积</h3><p>只有在 f≥0 时，∫f 才直接等于几何面积；一般情况应分段取绝对值。</p></article>
+              <article class="mistake-card"><h3>FTC 上限忘记链式法则</h3><p>∫ₐ^(g(x)) f(t)dt 的导数是 f(g(x))g′(x)，不是简单的 f(x)。</p></article>
+              <article class="mistake-card"><h3>换元后仍用旧积分限</h3><p>若积分变量已从 x 变成 u，上限和下限也必须分别变为 g(a)、g(b)。</p></article>
+              <article class="mistake-card"><h3>奇偶性与区间不匹配</h3><p>对称区间公式要求区间 [−a,a]；对非对称区间不能直接套用。</p></article>
+              <article class="mistake-card"><h3>面积公式方向反了</h3><p>先画图确认谁是上曲线或右曲线；若方向反了，会得到负面积或错误分段。</p></article>
+            </div>
+
+            <h3>与其他章节的联系</h3>
+            <div class="connection-flow">
+              <span class="flow-node">5.1–5.3：构造积分</span><span class="flow-arrow">→</span>
+              <span class="flow-node">5.4：微分与积分互逆</span><span class="flow-arrow">→</span>
+              <span class="flow-node">5.5–5.6：计算方法与面积</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第 6 章：定积分应用</span>
+            </div>
+            <div class="callout answer">
+              <strong>本章一句话</strong>
+              积分先用“切成小片再求和”定义，再由分割极限得到精确值；微积分基本定理把精确值化简为原函数的端点差，从而把第 4 章的原函数变为第 5 章的核心计算工具。
+            </div>
+          </section>
+
+          <section class="section" id="practice" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">05 · Deliberate Practice</p>
+                <h2>逐章练习：概念、计算、证明、应用、综合</h2>
+              </div>
+              <div class="source-chip">原创题目<br />按本章知识点编写</div>
+            </div>
+
+            <p class="section-intro">
+              题目不复制教材课后题，而是覆盖本章核心结构。先独立作答，再逐层展开答案。难度标签表示当前题目的认知跨度，不表示复习顺序。
+            </p>
+
+            <div class="exercise-tools no-print">
+              <label class="sr-only" for="exercise-search">筛选练习</label>
+              <input id="exercise-search" type="search" placeholder="按编号、知识点、题型或难度筛选…" />
+              <span id="exercise-visible-count" class="small-note"></span>
+            </div>
+            <div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div>
+
+            <div class="chapter-divider"><span>CHAPTER 4 · 15 QUESTIONS</span></div>
+            <div id="chapter-4-exercises" class="exercise-grid"></div>
+
+            <div class="chapter-divider"><span>CHAPTER 5 · 15 QUESTIONS</span></div>
+            <div id="chapter-5-exercises" class="exercise-grid"></div>
+          </section>
+
+          <section class="section" id="review" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">06 · Recall &amp; Diagnosis</p>
+                <h2>章节自测与薄弱点记录</h2>
+              </div>
+              <div class="source-chip">勾选状态保存于本机浏览器<br />不设置日期与优先级</div>
+            </div>
+
+            <div class="progress-card">
+              <div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div>
+              <div class="progress-track"><div class="progress-fill"></div></div>
+            </div>
+
+            <div class="review-grid">
+              <article class="review-card">
+                <h3>第 4 章自测清单</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="c4-1" />能在闭区间上列出全部候选点并比较全局极值。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-2" />能准确复述 Rolle 定理和 MVT 的条件与结论。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-3" />能说明三个 MVT 推论各自解决什么问题。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-4" />能根据 f′ 符号变化判断局部极值。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-5" />能根据 f″ 判断凹凸性并检查拐点。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-6" />能把最优化情境写成单变量模型并检查全局最优。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-7" />能完成牛顿法两项迭代并解释失败风险。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-8" />能区分通解、特解、初值条件和积分常数。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-9" />能通过求导反查原函数和初值问题答案。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c4-10" />能用本章方法解释一道跨节综合题。</label></li>
+                </ul>
+              </article>
+
+              <article class="review-card">
+                <h3>第 5 章自测清单</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="c5-1" />能构造上、下和或中点估计并解释偏向。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-2" />能正确展开和改写 Sigma 记号。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-3" />能由 Riemann 和识别并计算定积分。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-4" />能说明可积、连续与跳跃间断的关系。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-5" />能熟练使用定积分运算性质。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-6" />能计算并解释函数平均值。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-7" />能对变上限积分使用 FTC 第一部分和链式法则。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-8" />能用 FTC 第二部分求值并解释净变化。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-9" />能正确变换定积分换元的上下限。</label></li>
+                  <li><label><input type="checkbox" data-mastery="c5-10" />能用奇偶性或曲线间面积公式完成综合计算。</label></li>
+                </ul>
+              </article>
+            </div>
+
+            <h3>错题与薄弱点记录模板</h3>
+            <p class="small-note">输入内容会自动保存在当前浏览器。它不是课程记录，也不设置复习期限。</p>
+            <div class="table-wrap">
+              <table class="error-table">
+                <thead>
+                  <tr>
+                    <th>练习编号 / 知识点</th>
+                    <th>错误类型</th>
+                    <th>应回看的内容</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input data-error-field="row1-id" placeholder="例如 Q4-05 / MVT" /></td>
+                    <td><textarea data-error-field="row1-error" placeholder="漏条件、符号表错误、积分限未变换…"></textarea></td>
+                    <td><textarea data-error-field="row1-review" placeholder="定理条件、公式来源、教材例题与页码…"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td><input data-error-field="row2-id" placeholder="编号 / 知识点" /></td>
+                    <td><textarea data-error-field="row2-error" placeholder="错误类型"></textarea></td>
+                    <td><textarea data-error-field="row2-review" placeholder="回看内容"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td><input data-error-field="row3-id" placeholder="编号 / 知识点" /></td>
+                    <td><textarea data-error-field="row3-error" placeholder="错误类型"></textarea></td>
+                    <td><textarea data-error-field="row3-review" placeholder="回看内容"></textarea></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p id="error-status" class="small-note">尚未编辑</p>
+
+            <h3>不依赖日期的复习动作</h3>
+            <div class="principle-grid">
+              <article class="principle-card">
+                <h3>概念复述</h3>
+                <p>合上页面，分别复述 Extreme Value Theorem、MVT、FTC 两部分的“条件 + 结论 + 一个反例风险”。</p>
+              </article>
+              <article class="principle-card">
+                <h3>计算复现</h3>
+                <p>从 30 道练习中任选一道计算题、一道证明题和一道综合题；只在能独立写出关键步骤时勾选掌握项。</p>
+              </article>
+              <article class="principle-card">
+                <h3>跨章连接</h3>
+                <p>解释“4.7 的原函数如何由 5.4 的 FTC 第二部分进入定积分求值”，并举出本题库中的对应题目。</p>
+              </article>
+              <article class="principle-card">
+                <h3>错误复盘</h3>
+                <p>把错误定位到一个可回查对象：术语、定理条件、例题方法或积分区间；不要只记录“粗心”。</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="appendix" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">07 · Formula Desk</p>
+                <h2>公式速查与索引</h2>
+              </div>
+              <div class="source-chip">所有公式的 LaTeX 源文件<br />随站点一同交付</div>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>主题</th>
+                    <th>公式 / 规则</th>
+                    <th>适用条件或用途</th>
+                    <th>回链</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Extreme Value Theorem</td><td>闭区间连续 ⇒ 存在两端绝对极值</td><td>先保证极值存在</td><td><a href="#sec-4-1">4.1</a></td></tr>
+                  <tr><td>Mean Value Theorem</td><td>[f(b)−f(a)]/(b−a)=f′(c)</td><td>[a,b] 连续，(a,b) 可导</td><td><a href="#sec-4-2">4.2</a></td></tr>
+                  <tr><td>Second Derivative Test</td><td>f′=0 且 f″ 正负决定极值类型</td><td>f″(c)=0 时失效</td><td><a href="#sec-4-4">4.4</a></td></tr>
+                  <tr><td>Newton’s Method</td><td>xₙ₊₁=xₙ−f(xₙ)/f′(xₙ)</td><td>f′(xₙ)≠0，不保证全局收敛</td><td><a href="#sec-4-6">4.6</a></td></tr>
+                  <tr><td>General Antiderivative</td><td>∫f(x)dx=F(x)+C</td><td>同一个区间上讨论</td><td><a href="#sec-4-7">4.7</a></td></tr>
+                  <tr><td>Finite Sum</td><td>Σf(cₖ)Δxₖ</td><td>面积、位移、平均值估计</td><td><a href="#sec-5-1">5.1–5.2</a></td></tr>
+                  <tr><td>Definite Integral</td><td>lim<sub>||P||→0</sub>Σf(cₖ)Δxₖ</td><td>范数趋零且极限统一</td><td><a href="#sec-5-3">5.3</a></td></tr>
+                  <tr><td>Average Value</td><td>av(f)=[1/(b−a)]∫ₐᵇf</td><td>区间长度非零</td><td><a href="#sec-5-3">5.3</a></td></tr>
+                  <tr><td>FTC Part 1</td><td>d/dx∫ₐˣf(t)dt=f(x)</td><td>f 连续；上限复合时加链式法则</td><td><a href="#sec-5-4">5.4</a></td></tr>
+                  <tr><td>FTC Part 2</td><td>∫ₐᵇf=F(b)−F(a)</td><td>F 是连续 f 的原函数</td><td><a href="#sec-5-4">5.4</a></td></tr>
+                  <tr><td>Substitution</td><td>∫f(g(x))g′(x)dx=∫f(u)du</td><td>u=g(x)，最后代回</td><td><a href="#sec-5-5">5.5</a></td></tr>
+                  <tr><td>Area Between Curves</td><td>∫[upper−lower]dx 或 ∫[right−left]dy</td><td>先画图、求交点并分段</td><td><a href="#sec-5-6">5.6</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="guide-grid" style="margin-top: 18px">
+              <article class="info-card">
+                <h3>章节索引</h3>
+                <p><a href="#sec-4-1">4.1</a> · <a href="#sec-4-2">4.2</a> · <a href="#sec-4-3">4.3</a> · <a href="#sec-4-4">4.4</a> · <a href="#sec-4-5">4.5</a> · <a href="#sec-4-6">4.6</a> · <a href="#sec-4-7">4.7</a></p>
+                <p><a href="#sec-5-1">5.1</a> · <a href="#sec-5-2">5.2</a> · <a href="#sec-5-3">5.3</a> · <a href="#sec-5-4">5.4</a> · <a href="#sec-5-5">5.5</a> · <a href="#sec-5-6">5.6</a></p>
+              </article>
+              <article class="info-card">
+                <h3>主题索引</h3>
+                <p>极值与中值定理 → <a href="#sec-4-1">4.1–4.2</a><br />图形分析 → <a href="#sec-4-3">4.3–4.4</a><br />最优化与数值求根 → <a href="#sec-4-5">4.5–4.6</a><br />原函数与 FTC → <a href="#sec-4-7">4.7</a>、<a href="#sec-5-4">5.4</a></p>
+              </article>
+              <article class="info-card">
+                <h3>源文件</h3>
+                <p><a href="../../source/formulas.tex" download>下载全部公式的 LaTeX 源文件</a></p>
+                <p><a href="../../source/mindmap.mmd" download>下载 Mermaid 思维导图源文件</a></p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="source" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">08 · Source Ledger</p>
+                <h2>教材身份、引用与校准记录</h2>
+              </div>
+              <div class="source-chip">只依据“第一个显示的教材原本”<br />其他文件未作为内容来源</div>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>核对项</th>
+                    <th>教材原本信息</th>
+                    <th>本资料处理</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>书名</td><td>Thomas’ Calculus</td><td>保留英文原书名</td></tr>
+                  <tr><td>版本</td><td>Fourteenth Edition in SI Units（2020）</td><td>只按此版本核对章节和页码</td></tr>
+                  <tr><td>作者</td><td>Joel Hass、Christopher Heil、Maurice D. Weir</td><td>来源记录，不将其内容混入其他版本</td></tr>
+                  <tr><td>ISBN 13</td><td>978-1-292-25322-0</td><td>版本校准依据</td></tr>
+                  <tr><td>文件</td><td>Thomas Calculus 14th Edition in SI Units (1).zip 内唯一教材 PDF</td><td>从包内提取只读正文，未使用旧课程说明、试卷或复习稿</td></tr>
+                  <tr><td>页数</td><td>PDF 共 1244 个物理页</td><td>正文页与 PDF 物理页分开标注</td></tr>
+                  <tr><td>章节范围</td><td>第 4 章 Applications of Derivatives；第 5 章 Integrals</td><td>仅制作第 4、5 章，不展开其他章节</td></tr>
+                  <tr><td>文本可读性</td><td>PDF 有文字层；公式排版复杂</td><td>抽取文本后对关键定理与公式做页面视觉复核</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout warning">
+              <strong>来源边界与版权</strong>
+              本资料是原创中文概要、术语整理、知识依赖图和原创练习，不替代教材原文，也不复制整节教材内容。教材例题只记录来源位置、方法结构和必要结论。页码、定理号或例题号若与纸本版式不一致，以指定 PDF 原本的页面视觉证据为准并标注“待确认”。
+            </div>
+
+            <h3>章节页码映射</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>节</th>
+                    <th>教材页</th>
+                    <th>PDF 物理页</th>
+                    <th>本资料内部标题</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>4.1</td><td>201–208</td><td>202–209</td><td>闭区间极值</td></tr>
+                  <tr><td>4.2</td><td>209–214</td><td>210–215</td><td>中值定理</td></tr>
+                  <tr><td>4.3</td><td>215–219</td><td>216–220</td><td>单调性与一阶导数判别法</td></tr>
+                  <tr><td>4.4</td><td>220–231</td><td>221–232</td><td>凹凸性与曲线作图</td></tr>
+                  <tr><td>4.5</td><td>232–243</td><td>233–244</td><td>应用最优化</td></tr>
+                  <tr><td>4.6</td><td>244–248</td><td>245–249</td><td>牛顿法</td></tr>
+                  <tr><td>4.7</td><td>249–258</td><td>250–259</td><td>原函数</td></tr>
+                  <tr><td>5.1</td><td>266–275</td><td>267–276</td><td>有限和估计</td></tr>
+                  <tr><td>5.2</td><td>276–282</td><td>277–283</td><td>Sigma 与 Riemann 和</td></tr>
+                  <tr><td>5.3</td><td>283–295</td><td>284–296</td><td>定积分</td></tr>
+                  <tr><td>5.4</td><td>296–305</td><td>297–306</td><td>微积分基本定理</td></tr>
+                  <tr><td>5.5</td><td>307–313</td><td>308–314</td><td>不定积分与换元</td></tr>
+                  <tr><td>5.6</td><td>314–323</td><td>315–324</td><td>定积分换元与曲线间面积</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>示范稿校验记录</h3>
+            <div class="principle-grid">
+              <article class="principle-card">
+                <h3>版本与范围</h3>
+                <p>已核对封面、版权页、目录和第 4–5 章边界；没有把相邻章节展开到正文中。</p>
+              </article>
+              <article class="principle-card">
+                <h3>结构与来源</h3>
+                <p>13 个节、定理号、代表性例题和教材页／PDF 物理页均保留对应位置；旧资料未混入。</p>
+              </article>
+              <article class="principle-card">
+                <h3>计算与排版</h3>
+                <p>原创练习已完成 33 项代表性数值核对；站点通过桌面与移动端宽度测试，PDF 已完成逐页筛查。</p>
+              </article>
+              <article class="principle-card">
+                <h3>扩展门槛</h3>
+                <p>后续章节沿用同一模板：术语映射、知识依赖、条件化定理、例题结论、分层练习和来源记录缺一不可。</p>
+              </article>
+            </div>
+
+          </section>
+        </div>
+
+        <footer class="footer-note">
+          第 4–5 章示范版 · 仅用于依据所指定 Thomas’ Calculus 14th Edition in SI Units 的校准与学习
+        </footer>
+      </main>
+    </div>
+
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="../../content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

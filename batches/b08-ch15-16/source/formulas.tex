@@ -1,0 +1,149 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B8 quality-calibration formulas: Chapters 15-16
+
+\section*{Chapter 15 - Integrals and Vector Fields}
+
+% Scalar line integral; textbook pages 922-928, PDF pages 923-929
+\[
+  \int_C f(x,y,z)\,ds
+  =
+  \int_a^b f(\mathbf r(t))|\mathbf r'(t)|\,dt.
+\]
+
+% Vector line integral; textbook pages 929-942, PDF pages 930-943
+\[
+  \int_C \mathbf F\cdot d\mathbf r
+  =
+  \int_a^b \mathbf F(\mathbf r(t))\cdot\mathbf r'(t)\,dt.
+\]
+
+% Work, circulation, flux; textbook pages 929-942, PDF pages 930-943
+\[
+  W=\int_C \mathbf F\cdot d\mathbf r,
+  \qquad
+  \oint_C \mathbf F\cdot d\mathbf r,
+  \qquad
+  \oint_C \mathbf F\cdot\mathbf n\,ds.
+\]
+
+% Fundamental Theorem for Line Integrals; textbook pages 942-953, PDF pages 943-954
+\[
+  \int_C \nabla f\cdot d\mathbf r=f(B)-f(A).
+\]
+
+% Conservative component test; textbook pages 942-953, PDF pages 943-954
+\[
+  P_y=Q_x,\qquad Q_z=R_y,\qquad P_z=R_x.
+\]
+
+% Green circulation form; textbook pages 953-964, PDF pages 954-965
+\[
+  \oint_C P\,dx+Q\,dy
+  =
+  \iint_R\left(Q_x-P_y\right)dA.
+\]
+
+% Green flux form; textbook pages 953-964, PDF pages 954-965
+\[
+  \oint_C \mathbf F\cdot\mathbf n\,ds
+  =
+  \iint_R\left(P_x+Q_y\right)dA.
+\]
+
+% Green area formula; textbook pages 953-964, PDF pages 954-965
+\[
+  A=\frac12\oint_C x\,dy-y\,dx.
+\]
+
+% Surface parameterization; textbook pages 965-974, PDF pages 966-975
+\[
+  \mathbf r(u,v)
+  =
+  x(u,v)\mathbf i+y(u,v)\mathbf j+z(u,v)\mathbf k,
+  \qquad (u,v)\in R.
+\]
+
+% Surface area element; textbook pages 965-974, PDF pages 966-975
+\[
+  d\sigma=|\mathbf r_u\times\mathbf r_v|\,du\,dv.
+\]
+
+% Graph surface and area; textbook pages 965-974, PDF pages 966-975
+\[
+  S:z=f(x,y),
+  \qquad
+  d\sigma=\sqrt{1+f_x^2+f_y^2}\,dx\,dy.
+\]
+
+% Scalar and vector surface integrals; textbook pages 975-984, PDF pages 976-985
+\[
+  \iint_S f\,d\sigma
+  =
+  \iint_R f(\mathbf r(u,v))|\mathbf r_u\times\mathbf r_v|\,du\,dv,
+\]
+\[
+  \iint_S \mathbf F\cdot\mathbf n\,d\sigma
+  =
+  \iint_R \mathbf F(\mathbf r(u,v))\cdot(\mathbf r_u\times\mathbf r_v)\,du\,dv.
+\]
+
+% Curl and Stokes' Theorem; textbook pages 985-997, PDF pages 986-998
+\[
+  \nabla\times\mathbf F
+  =
+  (R_y-Q_z)\mathbf i+(P_z-R_x)\mathbf j+(Q_x-P_y)\mathbf k,
+\]
+\[
+  \oint_C \mathbf F\cdot d\mathbf r
+  =
+  \iint_S(\nabla\times\mathbf F)\cdot\mathbf n\,d\sigma.
+\]
+
+% Divergence and Divergence Theorem; textbook pages 998-1009, PDF pages 999-1010
+\[
+  \nabla\cdot\mathbf F=P_x+Q_y+R_z,
+\]
+\[
+  \iint_S \mathbf F\cdot\mathbf n\,d\sigma
+  =
+  \iiint_D(\nabla\cdot\mathbf F)\,dV.
+\]
+
+\section*{Chapter 16 - First-Order Differential Equations}
+
+% Euler's method; textbook pages 1016-1024, PDF pages 1017-1025
+\[
+  x_{n+1}=x_n+h,
+  \qquad
+  y_{n+1}=y_n+h\,f(x_n,y_n).
+\]
+
+% First-order linear equation; textbook pages 1024-1029, PDF pages 1025-1030
+\[
+  y'+P(x)y=Q(x),
+  \qquad
+  \mu(x)=e^{\int P(x)\,dx},
+\]
+\[
+  y=e^{-\int P\,dx}
+  \left(C+\int Q e^{\int P\,dx}dx\right).
+\]
+
+% Logistic equation; textbook pages 1036-1042, PDF pages 1037-1043
+\[
+  \frac{dy}{dt}=ky\left(1-\frac yM\right).
+\]
+
+% Autonomous phase line; textbook pages 1036-1042, PDF pages 1037-1043
+\[
+  \frac{dy}{dt}=f(y),
+  \qquad
+  f(y_*)=0.
+\]
+
+% Linear planar system; textbook pages 1043-1048, PDF pages 1044-1049
+\[
+  \mathbf X'=A\mathbf X,
+  \qquad
+  \det(A-\lambda I)=0.
+\]

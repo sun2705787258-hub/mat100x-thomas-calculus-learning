@@ -1,0 +1,1276 @@
+{
+  "schemaVersion": "thomas-global-audit-v1",
+  "manifest": "book-manifest.json",
+  "summary": {
+    "pagesTotal": 10,
+    "pagesPassed": 10,
+    "failures": 0,
+    "localLinksChecked": 489,
+    "desktopFormulaOverflow": 0,
+    "mobileFormulaScrollable": 84,
+    "formulaClipped": 0,
+    "printFormulaOverflow": 0
+  },
+  "failures": [],
+  "pages": [
+    {
+      "id": "B0",
+      "path": "archive/b0-golden/index.html",
+      "expected": {
+        "terms": 84,
+        "exercises": 30,
+        "formulas": 18
+      },
+      "desktop": {
+        "terms": 84,
+        "exercises": 30,
+        "formulas": 18,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 83
+      },
+      "mobile": {
+        "terms": 84,
+        "exercises": 30,
+        "formulas": 18,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "formula-evt",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-critical",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-rolle",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-mvt",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-sdt",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-newton",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-antiderivative",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-power",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-sums",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-riemann",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-definite",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-sub",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-defsub",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-area",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "formula-evt",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-critical",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-rolle",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-mvt",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-sdt",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-newton",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-antiderivative",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-power",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-sums",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-riemann",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-definite",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-sub",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-defsub",
+            "overflowX": "auto"
+          },
+          {
+            "id": "formula-area",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 83
+      },
+      "print": {
+        "terms": 84,
+        "exercises": 30,
+        "formulas": 18,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 83
+      }
+    },
+    {
+      "id": "B1",
+      "path": "batches/b01-ch01-02/index.html",
+      "expected": {
+        "terms": 66,
+        "exercises": 30,
+        "formulas": 13
+      },
+      "desktop": {
+        "terms": 66,
+        "exercises": 30,
+        "formulas": 13,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 46
+      },
+      "mobile": {
+        "terms": 66,
+        "exercises": 30,
+        "formulas": 13,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "b1-composition",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-shifts",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-sinusoid",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-average-rate",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-epsilon-delta",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-continuity",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-vertical-limit",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "b1-composition",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-shifts",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-sinusoid",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-average-rate",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-epsilon-delta",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-continuity",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b1-vertical-limit",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 46
+      },
+      "print": {
+        "terms": 66,
+        "exercises": 30,
+        "formulas": 13,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 46
+      }
+    },
+    {
+      "id": "B2",
+      "path": "batches/b02-ch03-04/index.html",
+      "expected": {
+        "terms": 47,
+        "exercises": 15,
+        "formulas": 12
+      },
+      "desktop": {
+        "terms": 47,
+        "exercises": 15,
+        "formulas": 12,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 52
+      },
+      "mobile": {
+        "terms": 47,
+        "exercises": 15,
+        "formulas": 12,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "b2-derivative-point",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-diff-cont",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-motion",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-trig",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-implicit",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "b2-derivative-point",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-diff-cont",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-motion",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-trig",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b2-implicit",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 52
+      },
+      "print": {
+        "terms": 47,
+        "exercises": 15,
+        "formulas": 12,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 52
+      }
+    },
+    {
+      "id": "B3",
+      "path": "batches/b03-ch05-06/index.html",
+      "expected": {
+        "terms": 37,
+        "exercises": 15,
+        "formulas": 14
+      },
+      "desktop": {
+        "terms": 37,
+        "exercises": 15,
+        "formulas": 14,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 47
+      },
+      "mobile": {
+        "terms": 37,
+        "exercises": 15,
+        "formulas": 14,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "b3-washer",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b3-shell",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b3-surface",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b3-fluid-force",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "b3-washer",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b3-shell",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b3-surface",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b3-fluid-force",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 47
+      },
+      "print": {
+        "terms": 37,
+        "exercises": 15,
+        "formulas": 14,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 47
+      }
+    },
+    {
+      "id": "B4",
+      "path": "batches/b04-ch07-08/index.html",
+      "expected": {
+        "terms": 44,
+        "exercises": 30,
+        "formulas": 15
+      },
+      "desktop": {
+        "terms": 44,
+        "exercises": 30,
+        "formulas": 15,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 50
+      },
+      "mobile": {
+        "terms": 44,
+        "exercises": 30,
+        "formulas": 15,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "b4-inverse",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-log-deriv",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-exp-deriv",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-invtrig",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-trig-square",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-trig-sub",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-partial",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-simpson",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-p-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-comparison",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "b4-inverse",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-log-deriv",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-exp-deriv",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-invtrig",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-trig-square",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-trig-sub",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-partial",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-simpson",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-p-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b4-comparison",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 50
+      },
+      "print": {
+        "terms": 44,
+        "exercises": 30,
+        "formulas": 15,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 50
+      }
+    },
+    {
+      "id": "B5",
+      "path": "batches/b05-ch09-10/index.html",
+      "expected": {
+        "terms": 60,
+        "exercises": 30,
+        "formulas": 26
+      },
+      "desktop": {
+        "terms": 60,
+        "exercises": 30,
+        "formulas": 26,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 54
+      },
+      "mobile": {
+        "terms": 60,
+        "exercises": 30,
+        "formulas": 26,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 54
+      },
+      "print": {
+        "terms": 60,
+        "exercises": 30,
+        "formulas": 26,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 54
+      }
+    },
+    {
+      "id": "B6",
+      "path": "batches/b06-ch11-12/index.html",
+      "expected": {
+        "terms": 73,
+        "exercises": 30,
+        "formulas": 33
+      },
+      "desktop": {
+        "terms": 73,
+        "exercises": 30,
+        "formulas": 33,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 55
+      },
+      "mobile": {
+        "terms": 73,
+        "exercises": 30,
+        "formulas": 33,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 55
+      },
+      "print": {
+        "terms": 73,
+        "exercises": 30,
+        "formulas": 33,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 55
+      }
+    },
+    {
+      "id": "B7",
+      "path": "batches/b07-ch13-14/index.html",
+      "expected": {
+        "terms": 86,
+        "exercises": 30,
+        "formulas": 36
+      },
+      "desktop": {
+        "terms": 86,
+        "exercises": 30,
+        "formulas": 36,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 56
+      },
+      "mobile": {
+        "terms": 86,
+        "exercises": 30,
+        "formulas": 36,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "b7-mixed",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-implicit-partial",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-tangent-plane-level",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-tangent-plane-graph",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-linearization",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-taylor-quadratic",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-double-riemann",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-polar-element",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-polar-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-triple-riemann",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-triple-iterated",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-joint-density",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-cylindrical-coords",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-cylindrical-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-spherical-coords",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-spherical-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-double-substitution",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-triple-substitution",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "b7-mixed",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-implicit-partial",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-tangent-plane-level",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-tangent-plane-graph",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-linearization",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-taylor-quadratic",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-double-riemann",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-polar-element",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-polar-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-triple-riemann",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-triple-iterated",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-joint-density",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-cylindrical-coords",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-cylindrical-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-spherical-coords",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-spherical-integral",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-double-substitution",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b7-triple-substitution",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 56
+      },
+      "print": {
+        "terms": 86,
+        "exercises": 30,
+        "formulas": 36,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 56
+      }
+    },
+    {
+      "id": "B8",
+      "path": "batches/b08-ch15-16/index.html",
+      "expected": {
+        "terms": 95,
+        "exercises": 30,
+        "formulas": 26
+      },
+      "desktop": {
+        "terms": 95,
+        "exercises": 30,
+        "formulas": 26,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 28
+      },
+      "mobile": {
+        "terms": 95,
+        "exercises": 30,
+        "formulas": 26,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "b8-scalar-line",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-ds",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-vector-line",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-work",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-conservative-test",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-green-curl",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-green-flux",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-surface-param",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-scalar-surface",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-vector-surface",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-curl",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-stokes",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-divergence-theorem",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-euler",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-linear-solution",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-integrating-factor",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-linear-system",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "b8-scalar-line",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-ds",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-vector-line",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-work",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-conservative-test",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-green-curl",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-green-flux",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-surface-param",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-scalar-surface",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-vector-surface",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-curl",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-stokes",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-divergence-theorem",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-euler",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-linear-solution",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-integrating-factor",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b8-linear-system",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 28
+      },
+      "print": {
+        "terms": 95,
+        "exercises": 30,
+        "formulas": 26,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 28
+      }
+    },
+    {
+      "id": "B9",
+      "path": "batches/b09-ch17/index.html",
+      "expected": {
+        "terms": 46,
+        "exercises": 15,
+        "formulas": 15
+      },
+      "desktop": {
+        "terms": 46,
+        "exercises": 15,
+        "formulas": 15,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 1440,
+        "viewportWidth": 1440,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 18
+      },
+      "mobile": {
+        "terms": 46,
+        "exercises": 15,
+        "formulas": 15,
+        "katexErrors": 0,
+        "formulaOverflow": [
+          {
+            "id": "b9-characteristic",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-distinct-real",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-repeated-root",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-complex-roots",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-complementary",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-variation",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-resonance",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-damping",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-euler",
+            "overflowX": "auto"
+          }
+        ],
+        "formulaClipped": [],
+        "formulaScrollable": [
+          {
+            "id": "b9-characteristic",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-distinct-real",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-repeated-root",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-complex-roots",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-complementary",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-variation",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-resonance",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-damping",
+            "overflowX": "auto"
+          },
+          {
+            "id": "b9-euler",
+            "overflowX": "auto"
+          }
+        ],
+        "bodyWidth": 390,
+        "viewportWidth": 390,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 18
+      },
+      "print": {
+        "terms": 46,
+        "exercises": 15,
+        "formulas": 15,
+        "katexErrors": 0,
+        "formulaOverflow": [],
+        "formulaClipped": [],
+        "formulaScrollable": [],
+        "bodyWidth": 794,
+        "viewportWidth": 794,
+        "duplicateIds": [],
+        "placeholders": [],
+        "remoteAssets": [],
+        "browserErrors": [],
+        "localLinksChecked": 18
+      }
+    }
+  ],
+  "pass": true
+}

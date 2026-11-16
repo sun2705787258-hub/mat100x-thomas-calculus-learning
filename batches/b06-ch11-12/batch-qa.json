@@ -1,0 +1,103 @@
+{
+  "$schema": "../../quality/batch-qa.schema.json",
+  "schemaVersion": "thomas-batch-qa-v2",
+  "batch": "B6",
+  "chapters": [11, 12],
+  "status": "passed",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "metrics": {
+    "chapter11Terms": 42,
+    "chapter12Terms": 31,
+    "newTerms": 73,
+    "chapter11Exercises": 15,
+    "chapter12Exercises": 15,
+    "newExercises": 30,
+    "masteryItems": 20,
+    "renderedFormulas": 33,
+    "formulaSourceEntries": 28,
+    "numericChecksPassed": 68,
+    "pdfPages": 29,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440,
+    "desktopFormulaClipped": 0,
+    "desktopFormulaOverflow": 0,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "mobileFormulaClipped": 0,
+    "mobileFormulaScrollable": 0,
+    "printFormulaClipped": 0,
+    "printFormulaOverflow": 0,
+    "mobileFormulaOverflow": 0,
+    "katexErrors": 0,
+    "browserErrors": 0,
+    "crossBatchPagesPassed": 7,
+    "crossBatchPagesTotal": 7,
+    "localLinksChecked": 68,
+    "localLinksMissing": 0
+  },
+  "checks": {
+    "G1_source": "passed",
+    "G2_coverage": "passed",
+    "G3_terms": "passed",
+    "G4_theorems_formulas": "passed",
+    "G5_examples": "passed",
+    "G6_exercises_answers": "passed",
+    "G7_math_rendering": "passed",
+    "G8_diagrams_links": "passed",
+    "G9_web_print": "passed",
+    "G10_copyright_version": "passed"
+  },
+  "exerciseCoverage": {
+    "types": ["概念辨析", "计算题", "证明/说明", "应用题", "综合题"],
+    "levels": ["基础", "标准", "挑战"],
+    "allHaveHintStepsSolution": true,
+    "uniqueIds": true
+  },
+  "pdfFinalChecks": {
+    "pageSize": "A4",
+    "allExerciseIdsPresent": true,
+    "placeholderHits": 0,
+    "acceptanceTextPresent": true,
+    "allPagesRenderedAndInspected": true
+  },
+  "defects": {
+    "P0": 0,
+    "P1": 0,
+    "P2Open": 0,
+    "closed": [
+      {
+        "id": "B6-P1-01",
+        "scope": "exercise renderer chapter range",
+        "resolution": "extended renderer through chapters 11 and 12 and retested B0-B6"
+      },
+      {
+        "id": "B6-P1-02",
+        "scope": "formula overflow",
+        "resolution": "converted long formulas to aligned layouts and reduced B6 mobile formula size; zero overflow"
+      },
+      {
+        "id": "B6-P1-03",
+        "scope": "placeholder text",
+        "resolution": "replaced the radius placeholder with 1/2"
+      },
+      {
+        "id": "B6-P2-01",
+        "scope": "orphan section heading",
+        "resolution": "grouped the 12.6 heading and first paragraph with print-safe break rules"
+      },
+      {
+        "id": "B6-P2-02",
+        "scope": "torsion terminology",
+        "resolution": "replaced torsional wording with torsion"
+      }
+    ]
+  },
+  "pdfSha256": "B09BDF90C9DC1BF01F035E91DFEFE76A052E54A46CBC8F977C4C2F55539F4B55",
+  "nextBatch": {
+    "id": "B7",
+    "chapters": [13, 14],
+    "entryConditionMet": true,
+    "status": "ready"
+  }
+}

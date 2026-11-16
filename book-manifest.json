@@ -1,0 +1,335 @@
+{
+  "schemaVersion": "thomas-book-manifest-v1",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "source": {
+    "pdfFileName": "Thomas Calculus 14th Edition in SI Units (1).pdf",
+    "sha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39"
+  },
+  "policy": {
+    "primaryFormat": "website",
+    "pdfRole": "print-and-offline-export",
+    "wordRole": "optional-editable-export-only",
+    "offlineRequired": true,
+    "projectDashboard": "separate-from-learner-navigation",
+    "batchPageArchivePolicy": "preserve-passed-batches-as-snapshots",
+    "finalNavigationPolicy": "canonical-chapter-pages-only",
+    "externalDependencies": []
+  },
+  "currentState": {
+    "stage": "unified-site-released",
+    "lastPassedBatch": "B9",
+    "currentBatch": null,
+    "currentBatchStatus": "complete",
+    "integrationStatus": "passed",
+    "releaseVersion": "1.0.0",
+    "releasePackage": "../Thomas_Calculus_全书统一学习站_v1.0.0.zip"
+  },
+  "goldenSample": {
+    "batchId": "B0",
+    "chapters": [4, 5],
+    "role": "golden-and-archive",
+    "contentSourcePath": "archive/b0-golden/index.html",
+    "finalNavigationEligible": false,
+    "migrationRequiredForFinalSite": false
+  },
+  "readerPages": [
+    {
+      "id": "B0",
+      "role": "golden-archive",
+      "path": "archive/b0-golden/index.html",
+      "batchQa": null,
+      "expectedTerms": 84,
+      "expectedExercises": 30,
+      "expectedFormulas": 18,
+      "pdfPath": "pdf/Thomas_Calculus_第4章至5章_示范学习资料.pdf",
+      "pdfSha256": "11632762977835B12013B211FD6FCD82D0482106CA17A64082BDD3D026C18B3E"
+    },
+    {
+      "id": "B1",
+      "role": "passed-batch",
+      "path": "batches/b01-ch01-02/index.html",
+      "batchQa": "batches/b01-ch01-02/batch-qa.json",
+      "expectedTerms": 66,
+      "expectedExercises": 30,
+      "expectedFormulas": 13,
+      "pdfPath": "pdf/Thomas_Calculus_第1章至2章_B1质量校准稿.pdf",
+      "pdfSha256": "7662AE9512DB08C97CA2845A47426A34F26A7CBB756DBECEFFBF0C21DD512FC9"
+    },
+    {
+      "id": "B2",
+      "role": "passed-batch",
+      "path": "batches/b02-ch03-04/index.html",
+      "batchQa": "batches/b02-ch03-04/batch-qa.json",
+      "expectedTerms": 47,
+      "expectedExercises": 15,
+      "expectedFormulas": 12,
+      "pdfPath": "pdf/Thomas_Calculus_第3章至4章_B2质量校准稿.pdf",
+      "pdfSha256": "1A6AB4E97931BB6BF2153BCE2F303AC70C585C68DE9F880D476E5D4837D88449"
+    },
+    {
+      "id": "B3",
+      "role": "passed-batch",
+      "path": "batches/b03-ch05-06/index.html",
+      "batchQa": "batches/b03-ch05-06/batch-qa.json",
+      "expectedTerms": 37,
+      "expectedExercises": 15,
+      "expectedFormulas": 14,
+      "pdfPath": "pdf/Thomas_Calculus_第5章至6章_B3质量校准稿.pdf",
+      "pdfSha256": "F1041AC053D9BFBEBD750989D9802BC08C58BD6D8516ADDFF8ED499612398D7D"
+    },
+    {
+      "id": "B4",
+      "role": "passed-batch",
+      "path": "batches/b04-ch07-08/index.html",
+      "batchQa": "batches/b04-ch07-08/batch-qa.json",
+      "expectedTerms": 44,
+      "expectedExercises": 30,
+      "expectedFormulas": 15,
+      "pdfPath": "pdf/Thomas_Calculus_第7章至8章_B4质量校准稿.pdf",
+      "pdfSha256": "99A29B7F69B8D4DA1D5C2DEB83B94EE47330CC3068A090201EDC2FF3A999B7C4"
+    },
+    {
+      "id": "B5",
+      "role": "passed-batch",
+      "path": "batches/b05-ch09-10/index.html",
+      "batchQa": "batches/b05-ch09-10/batch-qa.json",
+      "expectedTerms": 60,
+      "expectedExercises": 30,
+      "expectedFormulas": 26,
+      "pdfPath": "pdf/Thomas_Calculus_第9章至10章_B5质量校准稿.pdf",
+      "pdfSha256": "D9A03C1B55D828EF93A23E73D31116A828AA57392C6ED0C80B802BDA79131412"
+    },
+    {
+      "id": "B6",
+      "role": "passed-batch",
+      "path": "batches/b06-ch11-12/index.html",
+      "batchQa": "batches/b06-ch11-12/batch-qa.json",
+      "expectedTerms": 73,
+      "expectedExercises": 30,
+      "expectedFormulas": 33,
+      "pdfPath": "pdf/Thomas_Calculus_第11章至12章_B6质量校准稿.pdf",
+      "pdfSha256": "B09BDF90C9DC1BF01F035E91DFEFE76A052E54A46CBC8F977C4C2F55539F4B55"
+    },
+    {
+      "id": "B7",
+      "role": "passed-batch",
+      "path": "batches/b07-ch13-14/index.html",
+      "batchQa": "batches/b07-ch13-14/batch-qa.json",
+      "expectedTerms": 86,
+      "expectedExercises": 30,
+      "expectedFormulas": 36,
+      "pdfPath": "pdf/Thomas_Calculus_第13章至14章_B7质量校准稿.pdf",
+      "pdfSha256": "D77D4DC9F052123DE5ABCA0EB80321CEC182411517CF05BEB0328D97E66B4D47"
+    },
+    {
+      "id": "B8",
+      "role": "passed-batch",
+      "path": "batches/b08-ch15-16/index.html",
+      "batchQa": "batches/b08-ch15-16/batch-qa.json",
+      "expectedTerms": 95,
+      "expectedExercises": 30,
+      "expectedFormulas": 26,
+      "pdfPath": "pdf/Thomas_Calculus_第15章至16章_B8质量校准稿.pdf",
+      "pdfSha256": "CA2C8C2152AE57E356ADE80241EEAF7D6ACB319925AB3A74F4C54FD26DD90A17"
+    },
+    {
+      "id": "B9",
+      "role": "passed-batch",
+      "path": "batches/b09-ch17/index.html",
+      "batchQa": "batches/b09-ch17/batch-qa.json",
+      "expectedTerms": 46,
+      "expectedExercises": 15,
+      "expectedFormulas": 15,
+      "pdfPath": "pdf/Thomas_Calculus_第17章_B9质量校准稿.pdf",
+      "pdfSha256": "024065D404DBEC60596543B437912B29FC337BE7096EDFD4ADEB8AE268F1D446"
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Functions",
+      "batch": "B1",
+      "reviewedPages": "19-55",
+      "contentSource": "batches/b01-ch01-02/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 2,
+      "title": "Limits and Continuity",
+      "batch": "B1",
+      "reviewedPages": "56-119",
+      "contentSource": "batches/b01-ch01-02/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 3,
+      "title": "Derivatives",
+      "batch": "B2",
+      "reviewedPages": "120-200",
+      "contentSource": "batches/b02-ch03-04/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 4,
+      "title": "Applications of Derivatives",
+      "batch": "B2",
+      "regressionBatch": "B2",
+      "reviewedPages": "201-265",
+      "contentSource": "index.html#chapter-4",
+      "status": "passed",
+      "finalNavigationEligible": false,
+      "migrationRequiredForFinalSite": true
+    },
+    {
+      "number": 5,
+      "title": "Integrals",
+      "batch": "B3",
+      "regressionBatch": "B3",
+      "reviewedPages": "266-331",
+      "contentSource": "index.html#chapter-5",
+      "status": "passed",
+      "finalNavigationEligible": false,
+      "migrationRequiredForFinalSite": true
+    },
+    {
+      "number": 6,
+      "title": "Applications of Definite Integrals",
+      "batch": "B3",
+      "reviewedPages": "332-387",
+      "contentSource": "batches/b03-ch05-06/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 7,
+      "title": "Transcendental Functions",
+      "batch": "B4",
+      "reviewedPages": "388-459",
+      "contentSource": "batches/b04-ch07-08/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 8,
+      "title": "Techniques of Integration",
+      "batch": "B4",
+      "reviewedPages": "465-523",
+      "contentSource": "batches/b04-ch07-08/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 9,
+      "title": "Infinite Sequences and Series",
+      "batch": "B5",
+      "reviewedPages": "530-609",
+      "contentSource": "batches/b05-ch09-10/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 10,
+      "title": "Parametric Equations and Polar Coordinates",
+      "batch": "B5",
+      "reviewedPages": "616-660",
+      "contentSource": "batches/b05-ch09-10/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 11,
+      "title": "Vectors and the Geometry of Space",
+      "batch": "B6",
+      "reviewedPages": "667-709",
+      "contentSource": "batches/b06-ch11-12/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 12,
+      "title": "Vector-Valued Functions and Motion in Space",
+      "batch": "B6",
+      "reviewedPages": "716-753",
+      "contentSource": "batches/b06-ch11-12/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 13,
+      "title": "Partial Derivatives",
+      "batch": "B7",
+      "reviewedPages": "759-849",
+      "contentSource": "batches/b07-ch13-14/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 14,
+      "title": "Multiple Integrals",
+      "batch": "B7",
+      "reviewedPages": "850-921",
+      "contentSource": "batches/b07-ch13-14/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 15,
+      "title": "Integrals and Vector Fields",
+      "batch": "B8",
+      "reviewedPages": "922-1015",
+      "contentSource": "batches/b08-ch15-16/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 16,
+      "title": "First-Order Differential Equations",
+      "batch": "B8",
+      "reviewedPages": "1016-1052",
+      "contentSource": "batches/b08-ch15-16/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true
+    },
+    {
+      "number": 17,
+      "title": "Second-Order Differential Equations",
+      "batch": "B9",
+      "reviewedPages": "17-1-17-29",
+      "contentSource": "batches/b09-ch17/index.html",
+      "status": "passed",
+      "finalNavigationEligible": true,
+      "onlineChapter": true
+    }
+  ],
+  "integration": {
+    "candidateArchitecture": "unified-offline-static-site",
+    "learnerNavigation": [
+      "learning-path",
+      "chapters",
+      "knowledge-map",
+      "terminology",
+      "exercises",
+      "review",
+      "formula-theorem-example-index",
+      "source-and-version"
+    ],
+    "separateProjectDashboard": true,
+    "blockingItems": [],
+    "completedBaseline": [
+      "normalize all batch QA records to thomas-batch-qa-v2",
+      "derive exercise rendering from DOM chapter containers",
+      "create a 17-chapter book manifest",
+      "add global browser, link, formula-accessibility, and artifact-hash audit",
+      "prevent desktop formula overflow by expanding wide cards",
+      "complete and audit B0-B7 with zero open P0/P1/P2 defects",
+      "complete and audit B8-B9 with zero open P0/P1/P2 defects",
+      "migrate all 17 chapters into data/canonical-book.js",
+      "generate unified learning, reference, review, download, and quality pages",
+      "promote the unified homepage while preserving the B0 golden archive",
+      "pass batch, smoke, and unified-site release audits"
+    ]
+  }
+}

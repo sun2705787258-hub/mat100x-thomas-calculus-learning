@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 610" role="img" aria-labelledby="title desc">
+  <title id="title">第5–6章积分应用依赖图</title>
+  <desc id="desc">第5章的定积分和FTC作为已认可金样支撑第6章；第6章从横截面体积、壳法体积、弧长、旋转曲面面积、功与液体压力，汇合到矩、质心和Pappus定理。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#687670"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#19231f" flood-opacity=".08"/></filter>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;fill:#19231f}
+      .title{font-size:16px;font-weight:700}.sub{font-size:12px;fill:#596660}
+      .node{filter:url(#shadow)}.node rect{stroke-width:1.5;rx:12}
+      .gold rect{fill:#f4e3ca;stroke:#d5aa73}.new rect{fill:#dcebe6;stroke:#8dbbb1}
+      .bridge rect{fill:#223330;stroke:#223330}.bridge text{fill:#f5f0e6}
+      .edge{fill:none;stroke:#687670;stroke-width:1.8;marker-end:url(#arrow)}
+      .accent{fill:none;stroke:#a94b3e;stroke-width:2.2;stroke-dasharray:7 5;marker-end:url(#arrow)}
+      .lane{font-family:Georgia,serif;font-size:19px;font-weight:700;fill:#0f6761}.label{font-size:11px;fill:#925b24;font-weight:700}
+    </style>
+  </defs>
+  <rect width="1120" height="610" fill="#fffdf8"/>
+  <path d="M560 30V580" stroke="#d8d1c4" stroke-dasharray="4 7"/>
+  <text x="32" y="42" class="lane">Chapter 5 · Integrals</text><text x="590" y="42" class="lane">Chapter 6 · Definite Integral Applications</text>
+
+  <g class="node gold" transform="translate(64 92)">
+    <rect width="432" height="120"/><text x="20" y="29" class="title">第5章金样正式回归</text>
+    <text x="20" y="55" class="sub">43 个术语 · 15 道练习 · FTC · 换元 · 面积</text>
+    <text x="20" y="78" class="sub">所有积分应用都由 Riemann 和取极限得到。</text>
+    <text x="20" y="101" class="sub">B3 不重写第5章；只回归并建立下游方法链。</text>
+  </g>
+  <g class="node new" transform="translate(590 78)">
+    <rect width="226" height="74"/><text x="18" y="27" class="title">6.1 横截面体积</text>
+    <text x="18" y="48" class="sub">切片 · 圆盘 · 垫圈</text><text x="18" y="65" class="sub">V=∫A(x)dx</text>
+  </g>
+  <g class="node new" transform="translate(854 78)">
+    <rect width="230" height="74"/><text x="18" y="27" class="title">6.2 圆柱壳</text>
+    <text x="18" y="48" class="sub">半径 × 高 × 厚度</text><text x="18" y="65" class="sub">V=∫2πr h dx</text>
+  </g>
+  <g class="node new" transform="translate(590 192)">
+    <rect width="226" height="74"/><text x="18" y="27" class="title">6.3 弧长</text>
+    <text x="18" y="48" class="sub">折线长度极限</text><text x="18" y="65" class="sub">L=∫ds</text>
+  </g>
+  <g class="node new" transform="translate(854 192)">
+    <rect width="230" height="74"/><text x="18" y="27" class="title">6.4 旋转曲面面积</text>
+    <text x="18" y="48" class="sub">圆锥台狭带</text><text x="18" y="65" class="sub">S=∫2πr ds</text>
+  </g>
+  <g class="node new" transform="translate(590 306)">
+    <rect width="226" height="88"/><text x="18" y="27" class="title">6.5 功</text>
+    <text x="18" y="48" class="sub">变力 · Hooke 定律</text><text x="18" y="65" class="sub">抽液 · 功的单位</text><text x="18" y="82" class="sub">W=∫F dx</text>
+  </g>
+  <g class="node new" transform="translate(854 306)">
+    <rect width="230" height="88"/><text x="18" y="27" class="title">6.5 液体压力</text>
+    <text x="18" y="48" class="sub">压力随深度变化</text><text x="18" y="65" class="sub">F=∫w·depth·L(y)dy</text><text x="18" y="82" class="sub">竖直平板</text>
+  </g>
+  <g class="node new" transform="translate(722 438)">
+    <rect width="362" height="88"/><text x="18" y="27" class="title">6.6 矩、质心与 Pappus 定理</text>
+    <text x="18" y="49" class="sub">M=∫dm；x̄=M_y/M，ȳ=M_x/M</text>
+    <text x="18" y="70" class="sub">V=2πrA；S=2πrL</text>
+  </g>
+  <g class="node bridge" transform="translate(64 292)">
+    <rect width="432" height="126"/><text x="20" y="28" class="title">B3 的统一方法</text>
+    <text x="20" y="52" class="sub">切片 → 写出典型元素 → 求和取极限 → 定积分。</text>
+    <text x="20" y="74" class="sub">体积：面积元素；面积：2πr ds；功：力×位移；力：压力×面积。</text>
+    <text x="20" y="96" class="sub">质心：坐标×质量元素再除以总质量。</text>
+    <text x="20" y="118" class="sub">第5章的FTC负责计算这些定积分。</text>
+  </g>
+  <g class="node" transform="translate(64 462)"><rect width="432" height="70" fill="#f8f5ed" stroke="#bdb6a8" stroke-dasharray="6 5"/><text x="20" y="27" class="title">下一批 B4：第7–8章</text><text x="20" y="49" class="sub">超越函数与积分技巧，本批不展开</text></g>
+
+  <path class="edge" d="M496 150C530 150 540 120 590 115"/>
+  <path class="edge" d="M496 170C560 220 640 250 722 480"/>
+  <path class="edge" d="M816 115H854"/><path class="edge" d="M703 152V192"/>
+  <path class="edge" d="M969 152V192"/><path class="edge" d="M703 266V306"/><path class="edge" d="M969 266V306"/>
+  <path class="edge" d="M816 350H854"/><path class="edge" d="M969 394V438"/><path class="edge" d="M703 394C703 420 734 438 760 438"/>
+  <path class="accent" d="M496 350H590"/><text x="507" y="341" class="label">定积分计算</text>
+</svg>

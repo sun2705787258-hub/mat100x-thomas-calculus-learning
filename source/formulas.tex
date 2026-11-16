@@ -1,0 +1,217 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% Chapter 4-5 demonstration formula source
+% All source locators below refer to this specified textbook only.
+
+\section*{Chapter 4 - Applications of Derivatives}
+
+% Absolute maximum and minimum; textbook page 201, PDF page 202
+\[
+  f(x)\le f(c)\quad\forall x\in D
+\]
+\[
+  f(x)\ge f(c)\quad\forall x\in D
+\]
+
+% Critical point; textbook page 205, PDF page 206
+\[
+  f'(c)=0 \quad\text{or}\quad f'(c)\ \text{does not exist}.
+\]
+
+% Rolle's Theorem; textbook page 209, PDF page 210
+\[
+  f(a)=f(b)
+  \quad\Longrightarrow\quad
+  \exists c\in(a,b),\ f'(c)=0.
+\]
+
+% Mean Value Theorem; textbook page 210, PDF page 211
+\[
+  \frac{f(b)-f(a)}{b-a}=f'(c),
+  \qquad c\in(a,b).
+\]
+
+% Corollaries 1 and 2; textbook page 211-212, PDF page 212-213
+\[
+  f'(x)=0\ \text{on }(a,b)
+  \quad\Longrightarrow\quad
+  f(x)=C.
+\]
+\[
+  f'(x)=g'(x)\ \text{on }(a,b)
+  \quad\Longrightarrow\quad
+  f(x)=g(x)+C.
+\]
+
+% Monotonicity corollary; textbook page 215, PDF page 216
+\[
+  f'(x)>0\ \text{on }(a,b)
+  \quad\Longrightarrow\quad
+  f\ \text{is increasing on }[a,b].
+\]
+
+% Second derivative test; textbook page 224, PDF page 225
+\[
+  f'(c)=0,\ f''(c)<0
+  \quad\Longrightarrow\quad
+  \text{local maximum at }c.
+\]
+\[
+  f'(c)=0,\ f''(c)>0
+  \quad\Longrightarrow\quad
+  \text{local minimum at }c.
+\]
+
+% Newton's method; textbook page 245, PDF page 246
+\[
+  x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)},
+  \qquad f'(x_n)\ne0.
+\]
+
+% Antiderivative and indefinite integral; textbook pages 249-254, PDF pages 250-255
+\[
+  F'(x)=f(x)
+  \quad\Longleftrightarrow\quad
+  F\ \text{is an antiderivative of }f.
+\]
+\[
+  \int f(x)\,dx=F(x)+C.
+\]
+\[
+  \int x^n\,dx=\frac{x^{n+1}}{n+1}+C,
+  \qquad n\ne-1.
+\]
+\[
+  \int \sin(kx)\,dx=-\frac{1}{k}\cos(kx)+C.
+\]
+\[
+  \int \cos(kx)\,dx=\frac{1}{k}\sin(kx)+C.
+\]
+
+\section*{Chapter 5 - Integrals}
+
+% Finite-sum form; textbook page 268, PDF page 269
+\[
+  f(c_1)\Delta x+f(c_2)\Delta x+\cdots+f(c_n)\Delta x.
+\]
+
+% Sigma notation; textbook page 276, PDF page 277
+\[
+  \sum_{k=1}^{n}a_k=a_1+a_2+\cdots+a_n.
+\]
+
+% Standard finite sums; textbook page 279, PDF page 280
+\[
+  \sum_{k=1}^{n}k=\frac{n(n+1)}{2},
+\]
+\[
+  \sum_{k=1}^{n}k^2=\frac{n(n+1)(2n+1)}{6},
+\]
+\[
+  \sum_{k=1}^{n}k^3=\left(\frac{n(n+1)}{2}\right)^2.
+\]
+
+% Partition and Riemann sum; textbook pages 280-281, PDF pages 281-282
+\[
+  \Delta x_k=x_k-x_{k-1},
+  \qquad
+  \|P\|=\max_{1\le k\le n}\Delta x_k.
+\]
+\[
+  S_P=\sum_{k=1}^{n}f(c_k)\Delta x_k.
+\]
+
+% Definite integral; textbook pages 284-285, PDF pages 285-286
+\[
+  \int_a^b f(x)\,dx
+  =
+  \lim_{\|P\|\to0}\sum_{k=1}^{n}f(c_k)\Delta x_k.
+\]
+\[
+  \int_a^b f(x)\,dx
+  =
+  \lim_{n\to\infty}\sum_{k=1}^{n}
+  f\left(a+k\frac{b-a}{n}\right)\frac{b-a}{n}.
+\]
+
+% Basic definite-integral properties; textbook pages 286-288, PDF pages 287-289
+\[
+  \int_b^a f(x)\,dx=-\int_a^b f(x)\,dx,
+  \qquad
+  \int_a^a f(x)\,dx=0.
+\]
+\[
+  (\min f)(b-a)
+  \le
+  \int_a^b f(x)\,dx
+  \le
+  (\max f)(b-a).
+\]
+\[
+  \operatorname{av}(f)
+  =
+  \frac{1}{b-a}\int_a^b f(x)\,dx.
+\]
+
+% Mean Value Theorem for Definite Integrals; textbook page 296, PDF page 297
+\[
+  f(c)=\frac{1}{b-a}\int_a^b f(x)\,dx,
+  \qquad c\in[a,b].
+\]
+
+% Fundamental Theorem of Calculus; textbook pages 298 and 300,
+% PDF pages 299 and 301
+\[
+  \frac{d}{dx}\int_a^x f(t)\,dt=f(x).
+\]
+\[
+  \int_a^b f(x)\,dx=F(b)-F(a).
+\]
+
+% Net Change Theorem; textbook page 301, PDF page 302
+\[
+  F(b)-F(a)=\int_a^b F'(x)\,dx.
+\]
+
+% Total area; textbook pages 303-304, PDF pages 304-305
+\[
+  A=\int_a^b |f(x)|\,dx
+\]
+\[
+  A=\sum_j\left|\int_{x_{j-1}}^{x_j}f(x)\,dx\right|,
+\]
+where the intervals are determined by the sign changes of \(f\).
+
+% Substitution Rule; textbook page 309, PDF page 310
+\[
+  \int f(g(x))g'(x)\,dx=\int f(u)\,du,
+  \qquad u=g(x).
+\]
+
+% Definite substitution; textbook page 314, PDF page 315
+\[
+  \int_a^b f(g(x))g'(x)\,dx
+  =
+  \int_{g(a)}^{g(b)}f(u)\,du.
+\]
+
+% Symmetry; textbook page 316, PDF page 317
+\[
+  f(-x)=f(x)
+  \quad\Longrightarrow\quad
+  \int_{-a}^{a}f(x)\,dx=2\int_0^a f(x)\,dx.
+\]
+\[
+  f(-x)=-f(x)
+  \quad\Longrightarrow\quad
+  \int_{-a}^{a}f(x)\,dx=0.
+\]
+
+% Area between curves; textbook page 317, PDF page 318
+\[
+  A=\int_a^b\left(f(x)-g(x)\right)\,dx,
+  \qquad f(x)\ge g(x).
+\]
+\[
+  A=\int_c^d\left(f(y)-g(y)\right)\,dy,
+  \qquad f(y)\ge g(y).
+\]

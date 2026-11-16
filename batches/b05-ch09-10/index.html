@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thomas' Calculus 14th Edition in SI Units 第9章无穷级数与第10章参数方程、极坐标，B5质量校准稿。"
+    />
+    <title>B5｜第 9–10 章质量控制稿｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+  </head>
+  <body data-batch="b5" data-progress-key="thomas-b05-mastery-v1" data-error-log-key="thomas-b05-errors-v1">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="B5 批次导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">B5</div>
+          <div>
+            <p class="brand-title">第 9–10 章</p>
+            <p class="brand-subtitle">SERIES · PARAMETRIC · POLAR</p>
+          </div>
+        </div>
+        <div class="sidebar-search">
+          <label class="sr-only" for="term-search">检索术语</label>
+          <input id="term-search" type="search" placeholder="检索中英术语…" autocomplete="off" />
+          <p id="term-visible-count" class="small-note">当前显示全部术语</p>
+        </div>
+        <nav class="side-nav">
+          <a href="#guide"><span class="nav-num">00</span>批次说明</a>
+          <a href="#map"><span class="nav-num">01</span>知识地图</a>
+          <a href="#terms"><span class="nav-num">02</span>英语术语</a>
+          <a href="#chapter-9"><span class="nav-num">03</span>第 9 章</a>
+          <a href="#chapter-10"><span class="nav-num">04</span>第 10 章</a>
+          <a href="#practice"><span class="nav-num">05</span>分层练习</a>
+          <a href="#review"><span class="nav-num">06</span>自测复盘</a>
+          <a href="#qa"><span class="nav-num">07</span>质量验收</a>
+          <a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+        <details class="chapter-jump">
+          <summary>第9章快速定位</summary>
+          <a href="#sec-9-1">9.1 数列</a>
+          <a href="#sec-9-2">9.2 无穷级数</a>
+          <a href="#sec-9-3">9.3 积分判别</a>
+          <a href="#sec-9-4">9.4 比较判别</a>
+          <a href="#sec-9-5">9.5 绝对收敛、比值与根值</a>
+          <a href="#sec-9-6">9.6 交错与条件收敛</a>
+          <a href="#sec-9-7">9.7 幂级数</a>
+          <a href="#sec-9-8">9.8 Taylor 与 Maclaurin</a>
+          <a href="#sec-9-9">9.9 Taylor 级数收敛</a>
+          <a href="#sec-9-10">9.10 Taylor 应用</a>
+        </details>
+        <details class="chapter-jump">
+          <summary>第10章快速定位</summary>
+          <a href="#sec-10-1">10.1 平面曲线参数化</a>
+          <a href="#sec-10-2">10.2 参数曲线微积分</a>
+          <a href="#sec-10-3">10.3 极坐标</a>
+          <a href="#sec-10-4">10.4 极坐标方程作图</a>
+          <a href="#sec-10-5">10.5 极坐标面积与长度</a>
+          <a href="#sec-10-6">10.6 圆锥曲线</a>
+          <a href="#sec-10-7">10.7 极坐标圆锥曲线</a>
+        </details>
+        <div class="sidebar-note">
+          两章均为 B5 新增。第 11–12 章不在本批范围。<br /><br />
+          <a href="../b04-ch07-08/index.html">上一批 B4</a><br />
+          <a href="../b06-ch11-12/index.html">下一批 B6</a><br />
+          <a href="../../index.html">第 4–5 章金样</a>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker">
+            <strong>B5 · 质量校准稿</strong>
+            <span>Thomas’ Calculus · Fourteenth Edition in SI Units</span>
+          </div>
+          <h1>无穷不能一次加完，<br /><span>曲线也不必写成 y=f(x)。</span></h1>
+          <p class="hero-lead">
+            第 9 章用有限部分和与受控余项处理“无穷”；第 10 章用参数和极坐标改写曲线、方向、面积与长度。两章共同训练同一件事：先确认对象与定义域，再决定何时可以把有限近似安全地推向极限。
+          </p>
+          <div class="hero-meta">
+            <span>教材页 530–609、616–660</span>
+            <span>PDF 物理页 531–610、617–661</span>
+            <span>17 个节</span>
+            <span>60 个新增术语</span>
+            <span>30 道原创练习</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-light" href="#chapter-9">进入第 9 章</a>
+            <a class="button button-ghost" href="#chapter-10">进入第 10 章</a>
+            <button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">00 · Batch Brief</p>
+                <h2>B5 批次目标与完成方式</h2>
+              </div>
+              <div class="source-chip">B4 已通过<br />第 11–12 章未启动</div>
+            </div>
+            <div class="guide-grid">
+              <article class="info-card">
+                <span class="card-number">A</span>
+                <h3>第 9 章：给无穷下定义</h3>
+                <p>从数列极限开始，经部分和、收敛判别、幂级数和 Taylor 余项，最终把复杂函数变成可控制误差的多项式。</p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">B</span>
+                <h3>第 10 章：换一种坐标</h3>
+                <p>把曲线视为参数运动，再用极坐标与离心率统一描述圆、抛物线、椭圆和双曲线。</p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">C</span>
+                <h3>质量重点</h3>
+                <p>逐项核验收敛条件、端点、绝对与条件收敛、参数方向、极坐标表示不唯一、面积扇区与余项误差。</p>
+              </article>
+            </div>
+            <div class="callout">
+              <strong>统一判断链</strong>
+              先识别对象：数列、级数、幂级数、参数曲线或极坐标曲线；再确认定义域与适用条件；最后构造有限近似或积分元素，并检查极限、方向、端点和误差。
+            </div>
+          </section>
+
+          <section class="section" id="map" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">01 · Dependency Map</p>
+                <h2>第 9–10 章知识依赖</h2>
+              </div>
+              <div class="source-chip">分析无穷<br />重写平面曲线</div>
+            </div>
+            <div class="map-shell">
+              <img
+                src="b5-map.svg"
+                alt="第9章从数列、级数、收敛判别到幂级数和Taylor展开；第10章从参数曲线到参数微积分、极坐标和圆锥曲线。"
+              />
+            </div>
+            <div class="map-text">
+              <article class="principle-card">
+                <h3>第 9 章主线</h3>
+                <p>数列极限定义部分和的极限；判别法对级数分型；幂级数把函数变成无穷多项式；Taylor 定理再用余项判断这种表示是否真的收敛到原函数。</p>
+              </article>
+              <article class="principle-card">
+                <h3>第 10 章主线</h3>
+                <p>参数提供“如何走完整条曲线”的信息；参数斜率、弧长与面积来自链式法则和定积分；极坐标则用角与径向距离重写同一批几何量。</p>
+              </article>
+            </div>
+            <details class="no-print">
+              <summary>展开 Mermaid 源结构</summary>
+              <div class="details-body">
+                <pre class="mermaid-source">flowchart TB
+  A["9.1 Sequences"] --> B["9.2 Infinite Series"]
+  B --> C["9.3 Integral Test"]
+  C --> D["9.4 Comparison Tests"]
+  D --> E["9.5 Absolute Convergence; Ratio/Root"]
+  E --> F["9.6 Alternating Series"]
+  F --> G["9.7 Power Series"]
+  G --> H["9.8 Taylor/Maclaurin"]
+  H --> I["9.9 Taylor Remainder"]
+  I --> J["9.10 Applications"]
+
+  K["10.1 Parametrizations"] --> L["10.2 Parametric Calculus"]
+  K --> M["10.3 Polar Coordinates"]
+  M --> N["10.4 Polar Graphs"]
+  N --> O["10.5 Polar Areas and Lengths"]
+  M --> P["10.6 Conic Sections"]
+  P --> Q["10.7 Polar Conics"]</pre>
+                <p><a href="source/mindmap.mmd" download>下载可编辑 Mermaid 源文件</a></p>
+              </div>
+            </details>
+          </section>
+
+          <section class="section" id="terms" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">02 · English Terminology</p>
+                <h2>B5 专业英语术语表</h2>
+              </div>
+              <div class="source-chip"><span id="term-count">术语加载中</span><br />第9章 + 第10章</div>
+            </div>
+            <p class="section-intro">
+              重点区分 sequence 与 series、convergence 与 absolute convergence、parameter 与 coordinate、eccentricity 与 radius，以及 polar equation 中同一个几何点的无穷多种表示。
+            </p>
+            <div class="term-tools no-print">
+              <button class="filter-button is-active" type="button" data-term-filter="all">全部</button>
+              <button class="filter-button" type="button" data-term-filter="9">第9章</button>
+              <button class="filter-button" type="button" data-term-filter="10">第10章</button>
+              <label class="sr-only" for="term-table-search">筛选术语表</label>
+              <input id="term-table-search" type="search" placeholder="例如：absolute、Taylor、polar、eccentricity…" />
+            </div>
+            <div id="term-empty" class="empty-state search-empty">没有匹配的术语。</div>
+            <div class="table-wrap">
+              <table class="term-table">
+                <thead>
+                  <tr>
+                    <th>English term</th>
+                    <th>中文译名</th>
+                    <th>简明定义</th>
+                    <th>对应节</th>
+                    <th>关键公式 / 提示</th>
+                  </tr>
+                </thead>
+                <tbody id="term-body"></tbody>
+              </table>
+            </div>
+            <h3>容易混用的概念</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>易混项</th><th>关键区别</th><th>核对问题</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>sequence / series</td><td>前者是有顺序的列表，后者由部分和定义。</td><td>你讨论的是 aₙ 还是 sₙ？</td></tr>
+                  <tr><td>convergent / absolutely convergent</td><td>绝对收敛必收敛；收敛不一定绝对收敛。</td><td>Σ|aₙ| 是否也收敛？</td></tr>
+                  <tr><td>ρ=1 / convergence</td><td>比值或根值判别在 ρ=1 时没有结论。</td><td>是否需要改用 p 级数、比较或积分判别？</td></tr>
+                  <tr><td>Taylor series / Taylor polynomial</td><td>前者是无穷级数，后者是截断后的有限多项式。</td><td>最终是否需要余项控制误差？</td></tr>
+                  <tr><td>parameter / coordinate</td><td>t 控制运动过程；x、y 或 r、θ 描述位置。</td><td>问题在问方向、轨迹，还是几何量？</td></tr>
+                  <tr><td>r / dr/dθ</td><td>r 是径向距离；极坐标曲线斜率 dy/dx 不等于 dr/dθ。</td><td>需要笛卡尔斜率还是径向变化率？</td></tr>
+                  <tr><td>circle / since e=0 ellipse</td><td>圆是离心率为 0 的椭圆退化特例。</td><td>标准式中 a=b 吗？</td></tr>
+                  <tr><td>polar r=k / circle</td><td>r=k 是圆心在极点、半径 |k| 的圆。</td><td>常数的是 r，还是直角坐标 x 或 y？</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="no-print">字母索引</h3>
+            <div id="term-letter-index" class="connection-flow no-print"></div>
+          </section>
+
+          <section class="section" id="chapter-9" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">9</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">New Chapter Summary</p>
+                <h3>Infinite Sequences and Series</h3>
+                <p>用极限给无穷加法赋予意义；用判别法判断收敛；用幂级数与 Taylor 级数把函数变成可估计误差的无穷多项式。</p>
+                <div class="meta-strip">
+                  <span>教材页 530–609</span>
+                  <span>PDF 页 531–610</span>
+                  <span>9.1–9.10</span>
+                  <span>10 个节</span>
+                </div>
+              </div>
+            </div>
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>用极限语言判断数列与无穷级数的敛散性。</li>
+              <li>根据通项结构选择几何级数、p 级数、积分、比较、比值、根值或交错级数判别。</li>
+              <li>区分绝对收敛与条件收敛，并说明条件收敛为何不能随意重排。</li>
+              <li>求幂级数收敛半径与区间，正确测试两个端点。</li>
+              <li>构造 Taylor/Maclaurin 多项式，并用余项估计误差。</li>
+              <li>用级数计算非初等积分、极限和函数近似。</li>
+            </ul>
+
+            <div class="section-block" id="sec-9-1">
+              <div class="section-block-head">
+                <h3>9.1 Sequences</h3>
+                <span class="locator">教材页 530–542 · PDF 页 531–543</span>
+              </div>
+              <p>
+                数列是按整数指标排列的有序对象，极限仍用 ε 语言定义。数列极限可沿用和、差、积、商与夹逼定理；若 aₙ=f(n)，还可把 n 连续化后使用 L'Hôpital。有界本身不够，但“有界 + 单调”足以保证收敛。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="SEQ"><h4>Limit of a Sequence</h4><div class="formula" id="b5-sequence-limit"></div><p class="condition">N 只需对每个 ε 找到一次，之后所有项都进入 L 的 ε 邻域。</p></article>
+                <article class="formula-card" data-id="MONO"><h4>Monotonic Sequence Theorem</h4><div class="formula" id="b5-monotonic"></div><p class="condition">非减且上有界，或非增且下有界。</p></article>
+              </div>
+              <ul class="clean-list">
+                <li><strong>常用极限：</strong>ln n/n→0，(n+c)ⁿ→eᶜ，xⁿ/n!→0。</li>
+                <li><strong>递推题：</strong>先证有界和单调，再对递推式取极限；不要先假定极限存在。</li>
+                <li><strong>关键警告：</strong>收敛必有界；有界数列仍可能振荡而无极限。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-9-2">
+              <div class="section-block-head">
+                <h3>9.2 Infinite Series</h3>
+                <span class="locator">教材页 543–552 · PDF 页 544–553</span>
+              </div>
+              <p>
+                无穷级数不是直接完成无穷次加法，而是研究部分和 sₙ 的极限。几何级数和裂项级数能显式求部分和；其他级数常只能判敛散。第 n 项趋于 0 是收敛的必要条件，却绝不能单独证明收敛。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="GEO"><h4>Geometric Series</h4><div class="formula" id="b5-geometric-series"></div><p class="condition">先识别首项与公比；|r|≥1 时发散。</p></article>
+                <article class="formula-card" data-id="NTH"><h4>nth-Term Test</h4><div class="formula" id="b5-nth-term"></div><p class="condition">只用于发散；aₙ→0 时测试无结论，例如调和级数。</p></article>
+              </div>
+              <div class="connection-flow">
+                <span class="flow-node">通项 aₙ</span><span class="flow-arrow">→</span>
+                <span class="flow-node">部分和 sₙ</span><span class="flow-arrow">→</span>
+                <span class="flow-node">极限 L 或发散</span>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-9-3">
+              <div class="section-block-head">
+                <h3>9.3 The Integral Test</h3>
+                <span class="locator">教材页 553–558 · PDF 页 554–559</span>
+              </div>
+              <p>
+                非负项级数的部分和单调增加，因此只要证明上有界即可。积分判别把离散矩形面积与曲线下面积比较；p 级数是最常用的基准。判别法只回答敛散，不保证级数和等于对应积分。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="INT"><h4>Integral Test</h4><div class="formula" id="b5-integral-test"></div><p class="condition">f 必须在 [N,∞) 上连续、正、递减，且 aₙ=f(n)。</p></article>
+                <article class="formula-card" data-id="PSE"><h4>p-Series</h4><div class="formula" id="b5-p-series"></div><p class="condition">p=1 是调和级数；p 略大于 1 即收敛。</p></article>
+              </div>
+              <div class="callout warning"><strong>不要混淆</strong>p 级数收敛不等于其和为 1/(p−1)。积分判别只提供收敛性，不提供级数和的精确值。</div>
+            </div>
+
+            <div class="section-block" id="sec-9-4">
+              <div class="section-block-head">
+                <h3>9.4 Comparison Tests</h3>
+                <span class="locator">教材页 559–563 · PDF 页 560–564</span>
+              </div>
+              <p>
+                比较法的关键不是机械套不等式，而是找“大 n 时起主导作用的项”。直接比较要求逐项不等式；极限比较用 aₙ/bₙ 的极限，更适合有理式、根式和含对数项。
+              </p>
+              <article class="formula-card" data-id="DCT">
+                <h4>Direct Comparison</h4>
+                <div class="formula" id="b5-direct-comparison"></div>
+                <p class="condition">参与比较的首项之后必须非负；常数倍和有限项不影响敛散。</p>
+              </article>
+              <ul class="clean-list">
+                <li><strong>Limit Comparison：</strong>若 aₙ/bₙ→c∈(0,∞)，两正项级数同敛散。</li>
+                <li><strong>选择 bₙ：</strong>保留分子与分母的最高阶项，再化为熟悉的 p 级数或几何级数。</li>
+                <li><strong>边界风险：</strong>只有不等式方向正确时，结论才对应“收敛放大”或“发散缩小”。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-9-5">
+              <div class="section-block-head">
+                <h3>9.5 Absolute Convergence; The Ratio and Root Tests</h3>
+                <span class="locator">教材页 564–570 · PDF 页 565–571</span>
+              </div>
+              <p>
+                含负项的级数先测试绝对值级数；绝对收敛能推出收敛，并允许重排。比值判别适合阶乘与幂；根值判别适合整个第 n 项带 n 次幂的结构。两者在 ρ=1 时都必须换方法。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="RAT"><h4>Ratio Test</h4><div class="formula" id="b5-ratio-test"></div><p class="condition">计算相邻项绝对值之比，极限可为 ∞；ρ=1 不判定。</p></article>
+                <article class="formula-card" data-id="ROOT"><h4>Root Test</h4><div class="formula" id="b5-root-test"></div><p class="condition">计算 |aₙ| 的 n 次方根，判定边界与比值判别相同。</p></article>
+              </div>
+              <div class="callout"><strong>选择提示</strong>出现 n!、双阶乘或幂的底数变化，优先比值；出现 [bₙ]ⁿ 或整项被 n 次幂包住，优先根值。</div>
+            </div>
+
+            <div class="section-block" id="sec-9-6">
+              <div class="section-block-head">
+                <h3>9.6 Alternating Series and Conditional Convergence</h3>
+                <span class="locator">教材页 571–577 · PDF 页 572–578</span>
+              </div>
+              <p>
+                交错级数判别法要求 uₙ 正、最终非增并趋于 0；它比一般收敛判别多一个可计算误差的优势。若原级数收敛而绝对值级数发散，则为条件收敛；条件收敛级数不能任意重排。
+              </p>
+              <article class="formula-card" data-id="AST">
+                <h4>Alternating Series Estimation</h4>
+                <div class="formula" id="b5-ast-error"></div>
+                <p class="condition">必须先用 Alternating Series Test 确认三条件；误差上界是第一个未使用项，不是任意余项。</p>
+              </article>
+              <div class="principle-grid">
+                <article class="principle-card"><h3>绝对收敛</h3><p>Σ|aₙ| 收敛；原级数收敛且可安全重排。</p></article>
+                <article class="principle-card"><h3>条件收敛</h3><p>Σaₙ 收敛但 Σ|aₙ| 发散；项的顺序是答案的一部分。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-9-7">
+              <div class="section-block-head">
+                <h3>9.7 Power Series</h3>
+                <span class="locator">教材页 578–588 · PDF 页 579–589</span>
+              </div>
+              <p>
+                幂级数在中心两侧的收敛性由半径控制，端点必须单独测试。收敛区间内部可逐项加、减、乘、代换、求导和积分；这些操作是后续生成新 Taylor 级数的核心工具。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="PS"><h4>Power Series</h4><div class="formula" id="b5-power-series"></div><p class="condition">cₙ 是系数，a 是中心；同一函数在给定中心若有幂级数表示，则系数唯一。</p></article>
+                <article class="formula-card" data-id="RAD"><h4>Radius and Interval</h4><div class="formula" id="b5-radius"></div><p class="condition">R 可为 0、有限正数或 ∞；端点行为不受半径本身决定。</p></article>
+              </div>
+              <article class="formula-card" data-id="PGEO">
+                <h4>Geometric Power Series</h4>
+                <div class="formula" id="b5-power-geometric"></div>
+                <p class="condition">代换、求导和积分后都要重新检查新级数的有效区间。</p>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-9-8">
+              <div class="section-block-head">
+                <h3>9.8 Taylor and Maclaurin Series</h3>
+                <span class="locator">教材页 589–593 · PDF 页 590–594</span>
+              </div>
+              <p>
+                Taylor 系数由函数在中心的各阶导数唯一确定；截断后得到 Taylor 多项式。一个函数即使任意阶可导，它生成的 Taylor 级数也未必在邻域内等于函数本身，因此第 9.9 节必须研究余项。
+              </p>
+              <article class="formula-card" data-id="TAY">
+                <h4>Taylor Series</h4>
+                <div class="formula" id="b5-taylor"></div>
+                <p class="condition">中心 a=0 时称为 Maclaurin 级数；第 n 阶 Taylor 多项式的实际次数可能低于 n。</p>
+              </article>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>函数</th><th>Maclaurin 展开</th><th>关键结论</th></tr></thead>
+                  <tbody>
+                    <tr><td>eˣ</td><td>Σxⁿ/n!</td><td>系数全为 1/n!</td></tr>
+                    <tr><td>cos x</td><td>Σ(-1)ⁿx²ⁿ/(2n)!</td><td>偶函数，只出现偶次幂</td></tr>
+                    <tr><td>1/x 在 a=2</td><td>几何级数</td><td>展开区间 0&lt;x&lt;4</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-9-9">
+              <div class="section-block-head">
+                <h3>9.9 Convergence of Taylor Series</h3>
+                <span class="locator">教材页 594–600 · PDF 页 595–601</span>
+              </div>
+              <p>
+                Taylor 定理把函数拆成“Taylor 多项式 + 余项”。要证明级数收敛到函数，必须证明 Rₙ(x)→0，而不是只证明级数本身收敛。余项估计定理用 (n+1) 阶导数的统一上界 M 控制误差。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="REM"><h4>Lagrange Remainder</h4><div class="formula" id="b5-remainder"></div><p class="condition">c 依赖于 x 和 n，只知道它位于 a 与 x 之间。</p></article>
+                <article class="formula-card" data-id="REMB"><h4>Remainder Estimate</h4><div class="formula" id="b5-remainder-bound"></div><p class="condition">若无法统一界定高阶导数，就不能直接使用该误差界。</p></article>
+              </div>
+              <article class="formula-card" data-id="STD">
+                <h4>Frequently Used Series</h4>
+                <div class="formula" id="b5-standard-series"></div>
+                <p class="condition">eˣ、sin x、cos x 的展开对所有实数有效；代换时新变量可取任意实数。</p>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-9-10">
+              <div class="section-block-head">
+                <h3>9.10 Applications of Taylor Series</h3>
+                <span class="locator">教材页 601–609 · PDF 页 602–610</span>
+              </div>
+              <p>
+                Taylor 级数可用于二项式近似、非初等积分、未定式极限和复指数定义。复杂函数先匹配已知展开，再做乘法、除法、代换或积分，通常比逐阶直接求导更稳健。
+              </p>
+              <div class="principle-grid">
+                <article class="principle-card"><h3>二项级数</h3><p>(1+x)^m 在 |x|&lt;1 内可展开；m 为非负整数时会在有限项终止。</p></article>
+                <article class="principle-card"><h3>非初等积分</h3><p>先展开被积函数，再逐项积分；用交错估计或余项界定截断误差。</p></article>
+                <article class="principle-card"><h3>极限</h3><p>把函数展到分子首次不抵消的阶数，再除以主项，避免反复 L'Hôpital。</p></article>
+                <article class="principle-card"><h3>Euler identity</h3><p>e^{iθ}=cosθ+i sinθ；它定义复指数并连接五类基本常数。</p></article>
+              </div>
+            </div>
+
+            <h3>第9章重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题 / 定理</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Example 8（9.1）</td><td>((n+1)/(n−1))ⁿ→e²，展示取对数与连续化。</td><td>教材 p.536 / PDF p.537</td></tr>
+                  <tr><td>Example 3（9.2）</td><td>弹跳球总路程可写成几何级数，示例 a=6、r=2/3 时为 30 m。</td><td>教材 p.546 / PDF p.547</td></tr>
+                  <tr><td>Example 5（9.2）</td><td>Σ1/[n(n+1)] 裂项相消，和为 1。</td><td>教材 p.546–547 / PDF p.547–548</td></tr>
+                  <tr><td>Theorem 9（9.3）</td><td>连续、正、递减函数连接级数与反常积分敛散。</td><td>教材 p.554 / PDF p.555</td></tr>
+                  <tr><td>Theorem 11（9.4）</td><td>极限比较的 c∈(0,∞)、c=0、c=∞ 三种情形。</td><td>教材 p.561 / PDF p.562</td></tr>
+                  <tr><td>Theorem 13–14（9.5）</td><td>比值与根值判别决定绝对收敛，ρ=1 时失效。</td><td>教材 p.566–568 / PDF p.567–569</td></tr>
+                  <tr><td>Theorem 15–16（9.6）</td><td>交错级数判别及误差小于首个未使用项。</td><td>教材 p.571–573 / PDF p.572–574</td></tr>
+                  <tr><td>Example 3（9.7）</td><td>幂级数内部由比值判定，端点需另行测试。</td><td>教材 p.579 / PDF p.580</td></tr>
+                  <tr><td>Examples 2–4（9.8）</td><td>eˣ、cos x 的 Maclaurin 级数；平坦函数说明“可生成”不等于“可表示”。</td><td>教材 p.591–593 / PDF p.592–594</td></tr>
+                  <tr><td>Theorems 23–24（9.9）</td><td>Taylor 定理与余项估计是证明收敛到原函数的工具。</td><td>教材 p.594–595 / PDF p.595–596</td></tr>
+                  <tr><td>Examples 3–4（9.10）</td><td>sin x² 的积分可用级数估计，并以第二项后的下一项控制误差。</td><td>教材 p.603–604 / PDF p.604–605</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>第9章易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>把通项趋零当收敛</h3><p>nth-Term Test 只能证明发散；调和级数是反例。</p></article>
+              <article class="mistake-card"><h3>忽略积分判别条件</h3><p>函数必须正、连续并最终递减。</p></article>
+              <article class="mistake-card"><h3>ρ=1 直接下结论</h3><p>比值和根值判别在 ρ=1 时都必须换方法。</p></article>
+              <article class="mistake-card"><h3>把条件收敛当可重排</h3><p>只有绝对收敛级数能任意改变项的顺序。</p></article>
+              <article class="mistake-card"><h3>幂级数漏测端点</h3><p>开区间内部相同，端点可能一端收敛、一端发散。</p></article>
+              <article class="mistake-card"><h3>Taylor 级数自动等于函数</h3><p>必须证明余项趋零；无限可导本身不够。</p></article>
+            </div>
+            <div class="connection-flow">
+              <span class="flow-node">数列极限</span><span class="flow-arrow">→</span>
+              <span class="flow-node">部分和与判别</span><span class="flow-arrow">→</span>
+              <span class="flow-node">幂级数</span><span class="flow-arrow">→</span>
+              <span class="flow-node">Taylor 余项与应用</span>
+            </div>
+            <div class="callout answer"><strong>第9章一句话</strong>无穷级数的每个结论都来自有限部分和或有限截断，再用极限把误差控制起来；Taylor 级数只有余项趋于零时才真正代表原函数。</div>
+          </section>
+
+          <section class="section" id="chapter-10" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">10</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">New Chapter Summary</p>
+                <h3>Parametric Equations and Polar Coordinates</h3>
+                <p>把曲线看作运动轨迹，或用径向距离与角度重写位置；再用参数和极坐标公式计算斜率、面积、长度及圆锥曲线。</p>
+                <div class="meta-strip">
+                  <span>教材页 616–660</span>
+                  <span>PDF 页 617–661</span>
+                  <span>10.1–10.7</span>
+                  <span>7 个节</span>
+                </div>
+              </div>
+            </div>
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>从参数方程恢复轨迹、方向与参数区间限制。</li>
+              <li>计算参数曲线的一阶、二阶导数，以及面积、弧长和旋转曲面面积。</li>
+              <li>在笛卡尔坐标与极坐标之间正确转换并处理多值表示。</li>
+              <li>利用对称性与斜率公式分析极坐标图形。</li>
+              <li>推导并计算极坐标面积与弧长。</li>
+              <li>用焦点、准线、标准方程和离心率统一识别圆锥曲线。</li>
+            </ul>
+
+            <div class="section-block" id="sec-10-1">
+              <div class="section-block-head">
+                <h3>10.1 Parametrizations of Plane Curves</h3>
+                <span class="locator">教材页 616–624 · PDF 页 617–625</span>
+              </div>
+              <p>
+                参数方程同时描述“曲线在哪里”和“参数增加时如何运动”。同一轨迹可以有不同参数化；消去参数只得到几何关系，可能丢失初始点、终点、遍历次数或方向。
+              </p>
+              <div class="principle-grid">
+                <article class="principle-card"><h3>圆</h3><p>x=a cos t，y=a sin t，0≤t≤2π，逆时针描一次。</p></article>
+                <article class="principle-card"><h3>直线</h3><p>过 (a,b)、斜率 m：x=a+t，y=b+mt。</p></article>
+                <article class="principle-card"><h3>摆线</h3><p>x=a(t−sin t)，y=a(1−cos t)，表示半径 a 的轮沿直线滚动时圆周点的轨迹。</p></article>
+                <article class="principle-card"><h3>方向</h3><p>给出参数区间后，先判断 t 增加时 x、y 如何变化，再画箭头。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-10-2">
+              <div class="section-block-head">
+                <h3>10.2 Calculus with Parametric Curves</h3>
+                <span class="locator">教材页 625–633 · PDF 页 626–634</span>
+              </div>
+              <p>
+                参数曲线把 dx、dy 都看成 t 的函数。斜率由链式法则给出；二阶导数必须“先对 t 求一阶斜率，再除 dx/dt”，不能把 d²y/dt² 直接除以 d²x/dt²。弧长元素满足 ds²=dx²+dy²。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="PSL"><h4>First Derivative</h4><div class="formula" id="b5-param-slope"></div><p class="condition">要求相关导数存在且 dx/dt≠0。</p></article>
+                <article class="formula-card" data-id="PSEC"><h4>Second Derivative</h4><div class="formula" id="b5-param-second"></div><p class="condition">先求 dy/dx 作为 t 的函数，再对 t 求导，最后除以 dx/dt。</p></article>
+              </div>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="PLEN"><h4>Arc Length</h4><div class="formula" id="b5-param-length"></div><p class="condition">f′、g′ 连续、不同时为零，且曲线在区间内恰好描过一次。</p></article>
+                <article class="formula-card" data-id="PSA"><h4>Surface Area</h4><div class="formula" id="b5-param-surface"></div><p class="condition">绕 x 轴需 y≥0，绕 y 轴需 x≥0；半径随 t 变化。</p></article>
+              </div>
+              <div class="callout warning"><strong>面积与方向</strong>∫y dx 可因方向不同而带符号；求几何面积时需结合图形、区间与绝对值，不能把定积分直接等同于正面积。</div>
+            </div>
+
+            <div class="section-block" id="sec-10-3">
+              <div class="section-block-head">
+                <h3>10.3 Polar Coordinates</h3>
+                <span class="locator">教材页 634–637 · PDF 页 635–638</span>
+              </div>
+              <p>
+                极坐标用 (r,θ) 描述点，其中 r 是有向距离。加上 2πn 可回到同一射线，改变 r 的符号并加/减 π 也可得到同一点；因此交点、区域边界和对称性必须结合图形与等价表示。
+              </p>
+              <article class="formula-card" data-id="PCONV">
+                <h4>Polar and Cartesian Coordinates</h4>
+                <div class="formula" id="b5-polar-conversion"></div>
+                <p class="condition">原点处 r=0 而 θ 任意；tanθ=y/x 时需要根据象限和负 r 修正角。</p>
+              </article>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>极坐标方程</th><th>笛卡尔解释</th><th>提醒</th></tr></thead>
+                  <tbody>
+                    <tr><td>r=a</td><td>圆心在极点、半径 |a| 的圆</td><td>同一个圆也可写 r=-a</td></tr>
+                    <tr><td>θ=θ₀</td><td>过极点的直线</td><td>θ₀ 与 θ₀+π 生成同一直线</td></tr>
+                    <tr><td>r=2a cosθ</td><td>x²+y²=2ax</td><td>圆心在 (a,0)，过极点</td></tr>
+                    <tr><td>r=2a sinθ</td><td>x²+y²=2ay</td><td>圆心在 (0,a)，过极点</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-10-4">
+              <div class="section-block-head">
+                <h3>10.4 Graphing Polar Coordinate Equations</h3>
+                <span class="locator">教材页 638–641 · PDF 页 639–642</span>
+              </div>
+              <p>
+                极坐标作图先找允许的 θ、r 的正负与周期，再检查关于坐标轴或极点的对称性。dy/dx 是笛卡尔平面中的切线斜率，不是 dr/dθ；曲线经过极点时可能有多个入场角与多个切线。
+              </p>
+              <article class="formula-card" data-id="PSLOPE">
+                <h4>Slope in the xy-Plane</h4>
+                <div class="formula" id="b5-polar-slope"></div>
+                <p class="condition">要求 dx/dθ≠0；若分子分母同为零，需用图形或极限单独判断。</p>
+              </article>
+              <div class="principle-grid">
+                <article class="principle-card"><h3>x 轴对称</h3><p>若 θ→−θ 保持图形，可利用上半部分镜像。</p></article>
+                <article class="principle-card"><h3>y 轴对称</h3><p>检查 (r,θ) 与 (r,π−θ) 或等价表示。</p></article>
+                <article class="principle-card"><h3>极点对称</h3><p>检查 (r,θ) 与 (−r,θ) 或 (r,θ+π)。</p></article>
+                <article class="principle-card"><h3>常见图形</h3><p>cardioid、limaçon、rose、lemniscate；图形名称记录形状，不替代定义域检查。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-10-5">
+              <div class="section-block-head">
+                <h3>10.5 Areas and Lengths in Polar Coordinates</h3>
+                <span class="locator">教材页 642–646 · PDF 页 643–647</span>
+              </div>
+              <p>
+                极坐标中的薄面积元素是扇形 ½r²dθ，而不是矩形 r dθ；弧长则由 θ 参数化后使用参数弧长公式。面积公式要求 r≥0 且扫过区间不超过一周，否则要分段或修正负面积。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="PAREA"><h4>Polar Area</h4><div class="formula" id="b5-polar-area"></div><p class="condition">曲线间面积用外侧半径平方减内侧半径平方；先画图确定交角。</p></article>
+                <article class="formula-card" data-id="PLEN"><h4>Polar Arc Length</h4><div class="formula" id="b5-polar-length"></div><p class="condition">r(θ) 需有连续一阶导数；参数区间内曲线恰好描过一次。</p></article>
+              </div>
+              <div class="callout"><strong>交点陷阱</strong>解 r₁(θ)=r₂(θ) 可能漏掉一个点，因为同一几何点也可用负 r 或相差 2π 的角度表示；应同时检查等价表示并用图形校验。</div>
+            </div>
+
+            <div class="section-block" id="sec-10-6">
+              <div class="section-block-head">
+                <h3>10.6 Conic Sections</h3>
+                <span class="locator">教材页 647–654 · PDF 页 648–655</span>
+              </div>
+              <p>
+                圆锥曲线的几何定义决定其标准方程：抛物线到焦点与准线等距；椭圆到两焦点距离和为常数；双曲线到两焦点距离绝对差为常数。配方后可读取中心、轴、焦点、顶点和渐近线。
+              </p>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>曲线</th><th>标准形式</th><th>关键关系</th></tr></thead>
+                  <tbody>
+                    <tr><td>抛物线</td><td>y²=4px 或 x²=4py</td><td>焦点到顶点距离 |p|；准线与焦点分居顶点两侧</td></tr>
+                    <tr><td>椭圆</td><td>x²/a²+y²/b²=1，a&gt;b</td><td>c²=a²−b²；焦点在较长轴</td></tr>
+                    <tr><td>双曲线</td><td>x²/a²−y²/b²=1</td><td>c²=a²+b²；渐近线 y=±(b/a)x</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="callout warning"><strong>方向判断</strong>先比较分母平方根大小，确定长轴或横轴方向，再写焦点；不能只凭 x、y 谁出现就判断。</div>
+            </div>
+
+            <div class="section-block" id="sec-10-7">
+              <div class="section-block-head">
+                <h3>10.7 Conics in Polar Coordinates</h3>
+                <span class="locator">教材页 655–660 · PDF 页 656–661</span>
+              </div>
+              <p>
+                焦点与准线关系 PF=e·PD 用一个离心率统一三类圆锥曲线：e&lt;1 为椭圆，e=1 为抛物线，e&gt;1 为双曲线。把焦点放到极点后，只需根据准线在哪个方向选择 cosθ、sinθ 及分母正负。
+              </p>
+              <article class="formula-card" data-id="PC">
+                <h4>Polar Equation of a Conic</h4>
+                <div class="formula" id="b5-polar-conic"></div>
+                <p class="condition">此式对应 x=k&gt;0；准线在左侧时用 1−e cosθ，水平准线则改用 sinθ。</p>
+              </article>
+              <div class="connection-flow">
+                <span class="flow-node">焦点-准线距离比</span><span class="flow-arrow">e</span>
+                <span class="flow-node">e&lt;1 椭圆</span><span class="flow-arrow">·</span>
+                <span class="flow-node">e=1 抛物线</span><span class="flow-arrow">·</span>
+                <span class="flow-node">e&gt;1 双曲线</span>
+              </div>
+            </div>
+
+            <h3>第10章重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Example 8（10.1）</td><td>摆线参数式 x=a(t−sin t)，y=a(1−cos t)。</td><td>教材 p.620 / PDF p.621</td></tr>
+                  <tr><td>Example 1（10.2）</td><td>x=sec t，y=tan t 在 t=π/4 的切线斜率 2。</td><td>教材 p.625–626 / PDF p.626–627</td></tr>
+                  <tr><td>Example 3（10.2）</td><td>星形线 x=cos³t，y=sin³t 围成面积 3π/8。</td><td>教材 p.626–627 / PDF p.627–628</td></tr>
+                  <tr><td>Example 5–9（10.2）</td><td>星形线弧长 6；参数曲线旋转曲面面积可由 2π半径·ds 建立。</td><td>教材 p.628–632 / PDF p.629–633</td></tr>
+                  <tr><td>Example 5–6（10.3）</td><td>圆 x²+(y−3)²=9 的极坐标式 r=6sinθ；极坐标/笛卡尔方程互化。</td><td>教材 p.636–637 / PDF p.637–638</td></tr>
+                  <tr><td>Examples 1–2（10.4）</td><td>心形线与双纽线的对称性和斜率需结合等价表示。</td><td>教材 p.640 / PDF p.641</td></tr>
+                  <tr><td>Examples 1–4（10.5）</td><td>r=2(1+cosθ) 的面积 6π；r=1−cosθ 的弧长 8。</td><td>教材 p.643–645 / PDF p.644–646</td></tr>
+                  <tr><td>Examples 1–3（10.6）</td><td>y²=10x、x²/16+y²/9=1、x²/4−y²/5=1 的焦点与准线/渐近线。</td><td>教材 p.648–651 / PDF p.649–652</td></tr>
+                  <tr><td>Examples 3–4（10.7）</td><td>r=6/(2+3cosθ) 为双曲线；r=25/(10+10cosθ) 的准线为 x=5/2。</td><td>教材 p.658 / PDF p.659</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>第10章易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>消参后丢掉定义域</h3><p>同一笛卡尔方程可能只描述其中一段，方向和起点也会丢失。</p></article>
+              <article class="mistake-card"><h3>二阶导数直接相除</h3><p>要先把 dy/dx 写成 t 的函数，再按公式求导。</p></article>
+              <article class="mistake-card"><h3>把 dr/dθ 当斜率</h3><p>几何斜率仍是 dy/dx，需要参数公式。</p></article>
+              <article class="mistake-card"><h3>极坐标面积漏 1/2</h3><p>薄面积元素是 ½r²dθ，最小扇形的面积并非 r dθ。</p></article>
+              <article class="mistake-card"><h3>交点只解一组方程</h3><p>负 r 与 2π 平移可能给出同一几何点的另一表示。</p></article>
+              <article class="mistake-card"><h3>离心率分类反了</h3><p>e=1 是抛物线；椭圆 e&lt;1，双曲线 e&gt;1。</p></article>
+            </div>
+            <div class="connection-flow">
+              <span class="flow-node">参数曲线</span><span class="flow-arrow">→</span>
+              <span class="flow-node">参数微积分</span><span class="flow-arrow">→</span>
+              <span class="flow-node">极坐标曲线与几何量</span><span class="flow-arrow">→</span>
+              <span class="flow-node">圆锥曲线统一表示</span>
+            </div>
+            <div class="callout answer"><strong>第10章一句话</strong>曲线不是必须写成 y=f(x)；参数化保留运动与方向，极坐标保留径向与角度，而弧长、面积和离心率负责把几何直觉转成可计算的结构。</div>
+          </section>
+
+          <section class="section" id="practice">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">05 · Deliberate Practice</p>
+                <h2>B5 双章原创练习</h2>
+              </div>
+              <div class="source-chip">30 道新题<br />第9章15 + 第10章15</div>
+            </div>
+            <p class="section-intro">
+              题目按章节与知识点映射。先独立作答，再依次展开提示、关键步骤和完整解析；同一道题若涉及条件或方向，解析中会明确写出适用范围。
+            </p>
+            <div class="exercise-tools no-print">
+              <label class="sr-only" for="exercise-search">筛选练习</label>
+              <input id="exercise-search" type="search" placeholder="按编号、题型、难度或知识点筛选…" />
+              <span id="exercise-visible-count" class="small-note"></span>
+            </div>
+            <div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div>
+            <div class="chapter-divider"><span>CHAPTER 9 · 15 QUESTIONS</span></div>
+            <div id="chapter-9-exercises" class="exercise-grid"></div>
+            <div class="chapter-divider"><span>CHAPTER 10 · 15 QUESTIONS</span></div>
+            <div id="chapter-10-exercises" class="exercise-grid"></div>
+          </section>
+
+          <section class="section" id="review">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">06 · Recall &amp; Diagnosis</p>
+                <h2>B5 自测与薄弱点记录</h2>
+              </div>
+              <div class="source-chip">本机保存<br />20 项自测</div>
+            </div>
+            <div class="progress-card">
+              <div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div>
+              <div class="progress-track"><div class="progress-fill"></div></div>
+            </div>
+            <div class="review-grid">
+              <article class="review-card">
+                <h3>第9章自测</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="b5-c9-1" />能用 ε–N 定义解释数列收敛。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-2" />能区分部分和、级数和与通项极限。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-3" />能正确使用几何级数和 p 级数。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-4" />能核验积分判别、直接比较与极限比较的条件。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-5" />能根据阶乘、幂和根式结构选择比值或根值判别。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-6" />能判断绝对收敛与条件收敛。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-7" />能用交错级数估计误差并解释符号。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-8" />能求幂级数收敛半径并逐一测试端点。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-9" />能构造 Taylor 多项式并用余项界定误差。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c9-10" />能用标准级数处理积分、极限或二项近似。</label></li>
+                </ul>
+              </article>
+              <article class="review-card">
+                <h3>第10章自测</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="b5-c10-1" />能从参数方程说明轨迹、方向与参数限制。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-2" />能计算参数曲线斜率和二阶导数。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-3" />能建立参数曲线的面积、弧长和旋转曲面积分。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-4" />能在极坐标与笛卡尔坐标之间双向转换。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-5" />能说明极坐标表示不唯一及交点漏解风险。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-6" />能用对称性和斜率公式分析极坐标图形。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-7" />能用扇形元素计算极坐标面积。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-8" />能由标准方程求圆锥曲线的焦点、准线或渐近线。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-9" />能用离心率判定椭圆、抛物线与双曲线。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b5-c10-10" />能根据焦准线方向写出正确的极坐标方程。</label></li>
+                </ul>
+              </article>
+            </div>
+            <h3>错题与薄弱点记录</h3>
+            <div class="table-wrap">
+              <table class="error-table">
+                <thead><tr><th>练习编号 / 知识点</th><th>错误类型</th><th>应回看的内容</th></tr></thead>
+                <tbody>
+                  <tr><td><input data-error-field="b5-row1-id" placeholder="例如 Q9-10 / Ratio Test" /></td><td><textarea data-error-field="b5-row1-error" placeholder="条件遗漏、判别选择、方向或端点错误…"></textarea></td><td><textarea data-error-field="b5-row1-review" placeholder="定理条件、公式来源、教材例题与页码…"></textarea></td></tr>
+                  <tr><td><input data-error-field="b5-row2-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b5-row2-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b5-row2-review" placeholder="回看内容"></textarea></td></tr>
+                  <tr><td><input data-error-field="b5-row3-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b5-row3-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b5-row3-review" placeholder="回看内容"></textarea></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p id="error-status" class="small-note">尚未编辑</p>
+          </section>
+
+          <section class="section" id="qa">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">07 · Quality Gate</p>
+                <h2>B5 质量检查与验收记录</h2>
+              </div>
+              <div class="source-chip">G1–G10<br />P0/P1必须为零</div>
+            </div>
+            <div class="callout">
+              <strong>批次目标</strong>两章新增内容完整；收敛条件、端点、参数方向、极坐标多值、面积元素、圆锥曲线焦点与离心率全部达到既定标准。
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>检查项</th><th>结果</th><th>证据 / 说明</th><th>缺陷等级</th></tr></thead>
+                <tbody>
+                  <tr><td>G1 版本与来源</td><td>通过</td><td>第9章530–609、第10章616–660与PDF物理页逐节核对。</td><td>无</td></tr>
+                  <tr><td>G2 章节覆盖</td><td>通过</td><td>9.1–9.10、10.1–10.7全部覆盖。</td><td>无</td></tr>
+                  <tr><td>G3 术语</td><td>通过</td><td>60个新增术语，按章节和字母检索。</td><td>无</td></tr>
+                  <tr><td>G4 定理与公式</td><td>通过</td><td>收敛判别、Taylor余项、参数/极坐标积分与圆锥曲线条件。</td><td>无</td></tr>
+                  <tr><td>G5 例题结论</td><td>通过</td><td>两章代表例题均有教材页/PDF页锚点。</td><td>无</td></tr>
+                  <tr><td>G6 练习与答案</td><td>通过</td><td>每章15道原创题，五种题型、三级答案。</td><td>无</td></tr>
+                  <tr><td>G7 计算与渲染</td><td>通过</td><td>52项代表性复算通过；26个页面公式无溢出，KaTeX错误为0。</td><td>无</td></tr>
+                  <tr><td>G8 图表与链接</td><td>通过</td><td>知识图、章节导航、术语和练习检索可用；本地链接完整。</td><td>无</td></tr>
+                  <tr><td>G9 网页与打印</td><td>通过</td><td>桌面、390px移动端无页面级溢出；A4 PDF逐页检查。</td><td>无</td></tr>
+                  <tr><td>G10 版权与版本</td><td>通过</td><td>原创提炼与练习，不复制整节教材或混入其他资料。</td><td>无</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout answer">
+              <strong>当前验收结论</strong>B5 已通过：G1–G10全部通过，P0/P1为0；两章新增内容、30道练习、26个公式、52项复算、B0–B5跨批次回归与最终PDF均已完成检查，允许进入B6。
+            </div>
+          </section>
+
+          <section class="section" id="source">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">08 · Source Ledger</p>
+                <h2>B5 来源与页码映射</h2>
+              </div>
+              <div class="source-chip">唯一教材原本<br />第11–12章未改动</div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>节</th><th>教材页</th><th>PDF物理页</th><th>内部标题</th></tr></thead>
+                <tbody>
+                  <tr><td>9.1</td><td>530–542</td><td>531–543</td><td>数列、极限与单调收敛</td></tr>
+                  <tr><td>9.2</td><td>543–552</td><td>544–553</td><td>无穷级数、几何级数与部分和</td></tr>
+                  <tr><td>9.3</td><td>553–558</td><td>554–559</td><td>积分判别与p级数</td></tr>
+                  <tr><td>9.4</td><td>559–563</td><td>560–564</td><td>直接比较与极限比较</td></tr>
+                  <tr><td>9.5</td><td>564–570</td><td>565–571</td><td>绝对收敛、比值与根值</td></tr>
+                  <tr><td>9.6</td><td>571–577</td><td>572–578</td><td>交错级数与条件收敛</td></tr>
+                  <tr><td>9.7</td><td>578–588</td><td>579–589</td><td>幂级数及其运算</td></tr>
+                  <tr><td>9.8</td><td>589–593</td><td>590–594</td><td>Taylor/Maclaurin 级数与多项式</td></tr>
+                  <tr><td>9.9</td><td>594–600</td><td>595–601</td><td>Taylor 定理、余项与收敛</td></tr>
+                  <tr><td>9.10</td><td>601–609</td><td>602–610</td><td>Taylor 级数的应用</td></tr>
+                  <tr><td>10.1</td><td>616–624</td><td>617–625</td><td>平面曲线的参数化</td></tr>
+                  <tr><td>10.2</td><td>625–633</td><td>626–634</td><td>参数曲线的微积分</td></tr>
+                  <tr><td>10.3</td><td>634–637</td><td>635–638</td><td>极坐标</td></tr>
+                  <tr><td>10.4</td><td>638–641</td><td>639–642</td><td>极坐标方程作图</td></tr>
+                  <tr><td>10.5</td><td>642–646</td><td>643–647</td><td>极坐标面积与长度</td></tr>
+                  <tr><td>10.6</td><td>647–654</td><td>648–655</td><td>圆锥曲线</td></tr>
+                  <tr><td>10.7</td><td>655–660</td><td>656–661</td><td>极坐标中的圆锥曲线</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout warning">
+              <strong>来源边界</strong>本页只依据指定 Thomas 教材原本的第9–10章。课程说明、旧试卷、旧复习稿和其他版本不进入内容链；教材例题仅记录方法结构、必要结论与位置。
+            </div>
+            <div class="guide-grid">
+              <article class="info-card"><h3>公式源文件</h3><p><a href="source/formulas.tex" download>下载B5 LaTeX公式源文件</a></p></article>
+              <article class="info-card"><h3>知识图源文件</h3><p><a href="source/mindmap.mmd" download>下载B5 Mermaid源文件</a></p></article>
+              <article class="info-card"><h3>批次导航</h3><p><a href="../b04-ch07-08/index.html">上一批B4</a><br /><a href="../b06-ch11-12/index.html">下一批B6</a><br /><a href="../../index.html">第4–5章金样</a></p></article>
+            </div>
+          </section>
+        </div>
+        <footer class="footer-note">B5 · 第9–10章质量校准稿 · 无穷级数与参数/极坐标</footer>
+      </main>
+    </div>
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="batch-content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

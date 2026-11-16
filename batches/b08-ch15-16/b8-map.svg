@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+  <title id="title">B8 第15至16章知识图</title>
+  <desc id="desc">左侧是向量场积分从标量线积分到散度定理的路径，右侧是一阶微分方程从斜率场到相平面的路径。</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf9f2}.panel{fill:#fff}.head{font:700 23px Georgia,serif;fill:#173f38}.node{stroke:#b9c9c3;fill:#f6fbf9;rx:14}.node2{stroke:#d7c9a7;fill:#fffaf0;rx:14}.title{font:700 14px "Microsoft YaHei",Arial,sans-serif;fill:#173f38}.sub{font:12px "Microsoft YaHei",Arial,sans-serif;fill:#536c66}.label{font:700 12px Arial,sans-serif;fill:#7d6c49;letter-spacing:1px}.edge{stroke:#7ba398;stroke-width:2;fill:none;marker-end:url(#arrow)}.dash{stroke:#c2a86d;stroke-width:2;stroke-dasharray:7 6;fill:none;marker-end:url(#arrow2)}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7ba398"/></marker>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c2a86d"/></marker>
+  </defs>
+  <rect width="1120" height="680" class="bg"/>
+  <rect x="22" y="24" width="530" height="632" class="panel" rx="20" opacity=".78"/>
+  <rect x="568" y="24" width="530" height="632" class="panel" rx="20" opacity=".78"/>
+  <text x="42" y="58" class="label">BOUNDARY TO INTERIOR</text>
+  <text x="42" y="88" class="head">第 15 章 · 向量场积分</text>
+  <text x="588" y="58" class="label">FLOW TO DYNAMICS</text>
+  <text x="588" y="88" class="head">第 16 章 · 一阶微分方程</text>
+
+  <g transform="translate(42 112)"><rect width="230" height="74" class="node"/><text x="16" y="27" class="title">15.1 标量线积分</text><text x="16" y="50" class="sub">ds = |r′|dt · mass / moments</text></g>
+  <g transform="translate(294 112)"><rect width="238" height="74" class="node"/><text x="16" y="27" class="title">15.2 向量场与线积分</text><text x="16" y="50" class="sub">work · circulation · flux</text></g>
+  <g transform="translate(42 230)"><rect width="230" height="74" class="node"/><text x="16" y="27" class="title">15.3 路径独立</text><text x="16" y="50" class="sub">potential · component test</text></g>
+  <g transform="translate(294 230)"><rect width="238" height="74" class="node"/><text x="16" y="27" class="title">15.4 Green 定理</text><text x="16" y="50" class="sub">boundary ↔ area derivative</text></g>
+  <g transform="translate(42 348)"><rect width="230" height="74" class="node"/><text x="16" y="27" class="title">15.5 曲面与面积</text><text x="16" y="50" class="sub">ru × rv · dσ</text></g>
+  <g transform="translate(294 348)"><rect width="238" height="74" class="node"/><text x="16" y="27" class="title">15.6 曲面积分</text><text x="16" y="50" class="sub">scalar area · vector flux</text></g>
+  <g transform="translate(42 466)"><rect width="230" height="74" class="node"/><text x="16" y="27" class="title">15.7 Stokes 定理</text><text x="16" y="50" class="sub">curl F · oriented boundary</text></g>
+  <g transform="translate(294 466)"><rect width="238" height="74" class="node"/><text x="16" y="27" class="title">15.8 散度定理</text><text x="16" y="50" class="sub">closed surface · divergence</text></g>
+  <path d="M270 150 H286" class="edge"/><path d="M157 188 V222" class="edge"/><path d="M413 188 V222" class="edge"/>
+  <path d="M272 266 H286" class="edge"/><path d="M157 304 V340" class="edge"/><path d="M413 304 V340" class="edge"/>
+  <path d="M272 384 H286" class="edge"/><path d="M157 422 V458" class="edge"/><path d="M413 422 V458" class="edge"/>
+  <path d="M272 504 H286" class="edge"/>
+
+  <g transform="translate(588 112)"><rect width="230" height="82" class="node2"/><text x="16" y="29" class="title">16.1 斜率场与 Euler 法</text><text x="16" y="52" class="sub">direction field · numerical path</text></g>
+  <g transform="translate(840 112)"><rect width="238" height="82" class="node2"/><text x="16" y="29" class="title">16.2 一阶线性方程</text><text x="16" y="52" class="sub">standard form · μ(x)</text></g>
+  <g transform="translate(588 242)"><rect width="230" height="82" class="node2"/><text x="16" y="29" class="title">16.3 应用</text><text x="16" y="52" class="sub">net rate · mixtures · cooling</text></g>
+  <g transform="translate(840 242)"><rect width="238" height="82" class="node2"/><text x="16" y="29" class="title">16.4 自治方程</text><text x="16" y="52" class="sub">phase line · stability</text></g>
+  <g transform="translate(714 402)"><rect width="320" height="86" class="node2"/><text x="18" y="30" class="title">16.5 方程组与相平面</text><text x="18" y="54" class="sub">null directions · trajectories · critical points</text></g>
+  <path d="M818 152 H832" class="edge"/><path d="M703 194 V234" class="edge"/><path d="M959 194 V234" class="edge"/>
+  <path d="M818 324 V394" class="edge"/><path d="M959 324 C959 368 920 394 902 394" class="edge"/>
+  <path d="M272 542 C390 584 720 584 858 562 C940 548 1000 505 1005 500" class="dash"/>
+  <text x="548" y="625" text-anchor="middle" class="label">BOUNDARY ↔ INTERIOR · EQUATION ↔ BEHAVIOR</text>
+</svg>

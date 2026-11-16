@@ -1,0 +1,109 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B4 quality-calibration formulas: Chapters 7-8
+
+\section*{Chapter 7 - Transcendental Functions}
+
+% Inverse derivative; textbook page 392, PDF page 393
+\[
+  (f^{-1})'(b)=\frac{1}{f'(a)},
+  \qquad b=f(a).
+\]
+
+% Natural logarithm; textbook page 396, PDF page 397
+\[
+  \ln x=\int_1^x\frac1t\,dt,
+  \qquad x>0.
+\]
+\[
+  \frac{d}{dx}\ln x=\frac1x,
+  \qquad
+  \int\frac{du}{u}=\ln|u|+C.
+\]
+
+% Exponential derivatives; textbook pages 404-412, PDF pages 405-413
+\[
+  \frac{d}{dx}e^x=e^x,
+  \qquad
+  \frac{d}{dx}a^x=a^x\ln a.
+\]
+
+% Exponential change; textbook page 415, PDF page 416
+\[
+  \frac{dy}{dt}=ky
+  \quad\Longrightarrow\quad
+  y=y_0e^{kt}.
+\]
+
+% L'Hopital's Rule; textbook page 425, PDF page 426
+\[
+  \lim_{x\to c}\frac{f(x)}{g(x)}
+  =
+  \lim_{x\to c}\frac{f'(x)}{g'(x)}
+\]
+when the original forms satisfy the theorem's hypotheses.
+
+% Inverse trigonometric derivatives; textbook page 436, PDF page 437
+\[
+  \frac{d}{dx}\arcsin x=\frac1{\sqrt{1-x^2}},
+  \qquad
+  \frac{d}{dx}\arctan x=\frac1{1+x^2}.
+\]
+
+% Hyperbolic identity; textbook page 446, PDF page 447
+\[
+  \cosh^2x-\sinh^2x=1.
+\]
+
+\section*{Chapter 8 - Techniques of Integration}
+
+% Integration by parts; textbook page 470, PDF page 471
+\[
+  \int u\,dv=uv-\int v\,du.
+\]
+
+% Trigonometric power reduction; textbook page 478, PDF page 479
+\[
+  \sin^2x=\frac{1-\cos2x}{2},
+  \qquad
+  \cos^2x=\frac{1+\cos2x}{2}.
+\]
+
+% Trigonometric substitutions; textbook page 484, PDF page 485
+\[
+  \sqrt{a^2-x^2}:x=a\sin\theta,
+  \quad
+  \sqrt{a^2+x^2}:x=a\tan\theta,
+  \quad
+  \sqrt{x^2-a^2}:x=a\sec\theta.
+\]
+
+% Partial fractions; textbook page 489, PDF page 490
+\[
+  \frac{P(x)}{Q(x)}
+  =
+  \text{polynomial}+\text{partial fractions}.
+\]
+
+% Simpson's Rule; textbook page 505, PDF page 506
+\[
+  S_n=\frac h3\left(
+  f_0+4f_1+2f_2+\cdots+4f_{n-1}+f_n
+  \right),
+  \qquad h=\frac{b-a}{n}.
+\]
+
+% Improper p-integral and comparison; textbook pages 515 and 518,
+% PDF pages 516 and 519
+\[
+  \int_1^\infty\frac{dx}{x^p}
+  \ \text{converges for }p>1
+  \ \text{and diverges for }p\le1.
+\]
+\[
+  0\le f(x)\le g(x),
+  \quad
+  \int_a^\infty g(x)\,dx<\infty
+  \quad\Longrightarrow\quad
+  \int_a^\infty f(x)\,dx<\infty.
+\]
+

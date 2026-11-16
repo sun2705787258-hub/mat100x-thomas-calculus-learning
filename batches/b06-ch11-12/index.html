@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thomas Calculus 14th Edition in SI Units 第11章空间向量与空间几何、第12章向量值函数与空间运动，B6质量校准稿。"
+    />
+    <title>B6｜第 11–12 章质量控制稿｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+  </head>
+  <body data-batch="b6" data-progress-key="thomas-b06-mastery-v1" data-error-log-key="thomas-b06-errors-v1">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="B6 批次导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">B6</div>
+          <div>
+            <p class="brand-title">第 11–12 章</p>
+            <p class="brand-subtitle">VECTORS · MOTION IN SPACE</p>
+          </div>
+        </div>
+        <div class="sidebar-search">
+          <label class="sr-only" for="term-search">检索术语</label>
+          <input id="term-search" type="search" placeholder="检索中英术语…" autocomplete="off" />
+          <p id="term-visible-count" class="small-note">当前显示全部术语</p>
+        </div>
+        <nav class="side-nav">
+          <a href="#guide"><span class="nav-num">00</span>批次说明</a>
+          <a href="#map"><span class="nav-num">01</span>知识地图</a>
+          <a href="#terms"><span class="nav-num">02</span>英语术语</a>
+          <a href="#chapter-11"><span class="nav-num">03</span>第 11 章</a>
+          <a href="#chapter-12"><span class="nav-num">04</span>第 12 章</a>
+          <a href="#practice"><span class="nav-num">05</span>分层练习</a>
+          <a href="#review"><span class="nav-num">06</span>自测复盘</a>
+          <a href="#qa"><span class="nav-num">07</span>质量验收</a>
+          <a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+        <details class="chapter-jump">
+          <summary>第11章快速定位</summary>
+          <a href="#sec-11-1">11.1 三维坐标系</a>
+          <a href="#sec-11-2">11.2 向量</a>
+          <a href="#sec-11-3">11.3 点积</a>
+          <a href="#sec-11-4">11.4 叉积</a>
+          <a href="#sec-11-5">11.5 空间直线与平面</a>
+          <a href="#sec-11-6">11.6 柱面与二次曲面</a>
+        </details>
+        <details class="chapter-jump">
+          <summary>第12章快速定位</summary>
+          <a href="#sec-12-1">12.1 空间曲线与切线</a>
+          <a href="#sec-12-2">12.2 积分与抛体运动</a>
+          <a href="#sec-12-3">12.3 空间弧长</a>
+          <a href="#sec-12-4">12.4 曲率与法向量</a>
+          <a href="#sec-12-5">12.5 切向/法向加速度</a>
+          <a href="#sec-12-6">12.6 极坐标与柱坐标运动</a>
+        </details>
+        <div class="sidebar-note">
+          两章均为 B6 新增。第 13–14 章不在本批范围。<br /><br />
+          <a href="../b05-ch09-10/index.html">上一批 B5</a><br />
+          <a href="../b07-ch13-14/index.html">下一批 B7</a><br />
+          <a href="../../index.html">第 4–5 章金样</a>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker">
+            <strong>B6 · 质量校准稿</strong>
+            <span>Thomas’ Calculus · Fourteenth Edition in SI Units</span>
+          </div>
+          <h1>先让方向成为代数，<br /><span>再让曲线自己说明如何运动。</span></h1>
+          <p class="hero-lead">
+            第 11 章用点积与叉积把空间中的长度、夹角、面积、平面和体积转成向量运算；第 12 章把曲线看成随时间移动的位置向量，用弧长、曲率、法向与扭转读出运动结构。两章共同强调：坐标只是表示，几何量和运动结论必须经得起参数变化。
+          </p>
+          <div class="hero-meta">
+            <span>教材页 667–709、716–753</span>
+            <span>PDF 物理页 668–710、717–754</span>
+            <span>12 个节</span>
+            <span>73 个新增术语</span>
+            <span>30 道原创练习</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-light" href="#chapter-11">进入第 11 章</a>
+            <a class="button button-ghost" href="#chapter-12">进入第 12 章</a>
+            <button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head">
+              <div><p class="eyebrow">00 · Batch Brief</p><h2>B6 批次目标与完成方式</h2></div>
+              <div class="source-chip">B5 已通过<br />第 13–14 章未启动</div>
+            </div>
+            <div class="guide-grid">
+              <article class="info-card"><span class="card-number">A</span><h3>第11章：建立空间语言</h3><p>从三维坐标、向量和标准基开始，用点积处理投影与角度，用叉积处理法向、面积、扭矩和体积。</p></article>
+              <article class="info-card"><span class="card-number">B</span><h3>第12章：读取空间运动</h3><p>把曲线视为位置向量，用速度、加速度、弧长、单位切向、曲率和 TNB 标架描述怎样运动、怎样转弯、怎样扭转。</p></article>
+              <article class="info-card"><span class="card-number">C</span><h3>质量重点</h3><p>逐项核验右手性、叉积顺序、法向量方向、直线/平面距离、参数不变性、曲率非负与 torsion 符号。</p></article>
+            </div>
+            <div class="callout"><strong>统一判断链</strong>先画空间关系，再选向量运算；若对象是运动，先写位置向量，再求导或积分；若涉及几何不变量，必须检查论证不依赖特定参数化。</div>
+          </section>
+
+          <section class="section" id="map" data-print-break>
+            <div class="section-head">
+              <div><p class="eyebrow">01 · Dependency Map</p><h2>第 11–12 章知识依赖</h2></div>
+              <div class="source-chip">空间几何<br />向量微积分</div>
+            </div>
+            <div class="map-shell"><img src="b6-map.svg" alt="第11章从三维坐标、向量、点积叉积到直线平面与二次曲面；第12章从向量值函数、积分抛体运动到弧长曲率TNB和极坐标运动。" /></div>
+            <div class="map-text">
+              <article class="principle-card"><h3>第11章主线</h3><p>向量提供方向；点积把夹角和投影写成标量；叉积生成法向、面积和体积；直线平面与二次曲面都是这些运算的几何应用。</p></article>
+              <article class="principle-card"><h3>第12章主线</h3><p>位置向量 r 的导数给出运动；弧长与单位切向把几何尺度与时间分离；曲率和 torsion 描述转弯与扭转；TNB 把加速度分解为切向和法向。</p></article>
+            </div>
+          </section>
+
+          <section class="section" id="terms" data-print-break>
+            <div class="section-head">
+              <div><p class="eyebrow">02 · English Terminology</p><h2>B6 专业英语术语表</h2></div>
+              <div class="source-chip"><span id="term-count">术语加载中</span><br />第11章 + 第12章</div>
+            </div>
+            <p class="section-intro">重点区分 vector 与 scalar、projection 与 component、normal 与 binormal、curvature 与 torsion，以及 line 的方向向量与 plane 的法向量。</p>
+            <div class="term-tools no-print">
+              <button class="filter-button is-active" type="button" data-term-filter="all">全部</button>
+              <button class="filter-button" type="button" data-term-filter="11">第11章</button>
+              <button class="filter-button" type="button" data-term-filter="12">第12章</button>
+              <label class="sr-only" for="term-table-search">筛选术语表</label>
+              <input id="term-table-search" type="search" placeholder="例如：dot、cross、curvature、TNB…" />
+            </div>
+            <div id="term-empty" class="empty-state search-empty">没有匹配的术语。</div>
+            <div class="table-wrap">
+              <table class="term-table">
+                <thead><tr><th>English term</th><th>中文译名</th><th>简明定义</th><th>对应节</th><th>关键公式 / 提示</th></tr></thead>
+                <tbody id="term-body"></tbody>
+              </table>
+            </div>
+            <h3>容易混用的概念</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>易混项</th><th>关键区别</th><th>核对问题</th></tr></thead>
+                <tbody>
+                  <tr><td>vector / scalar</td><td>向量有大小和方向；标量只有大小。</td><td>所需答案是一个数还是一个方向对象？</td></tr>
+                  <tr><td>dot product / cross product</td><td>点积得标量；叉积得空间向量。</td><td>问题要投影/夹角，还是法向/面积/旋转？</td></tr>
+                  <tr><td>projection / scalar component</td><td>前者是向量，后者是带符号长度。</td><td>最终是否要保留方向？</td></tr>
+                  <tr><td>line direction / plane normal</td><td>方向向量平行于直线；法向量垂直于平面。</td><td>方程 r=r₀+tv 还是 n·(r−r₀)=0？</td></tr>
+                  <tr><td>position / velocity / speed</td><td>位置是向量，速度是向量，速率是速度大小。</td><td>问题要“在哪里”“往哪走”还是“多快”？</td></tr>
+                  <tr><td>curvature / torsion</td><td>曲率非负，描述转向；torsion 可正可负，描述离开平面扭转。</td><td>曲线是在转弯，还是在扭转？</td></tr>
+                  <tr><td>T / N / B</td><td>T 前进、N 朝弯曲内侧、B=T×N。</td><td>单位标架顺序是否正确？</td></tr>
+                  <tr><td>polar unit vectors / fixed i,j</td><td>uᵣ、uθ 随 θ 改变；i、j 固定。</td><td>求导时是否保留了单位向量的变化？</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="no-print">字母索引</h3>
+            <div id="term-letter-index" class="connection-flow no-print"></div>
+          </section>
+
+          <section class="section" id="chapter-11" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">11</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">New Chapter Summary</p>
+                <h3>Vectors and the Geometry of Space</h3>
+                <p>用坐标和向量描述空间；用点积读取投影与角度；用叉积描述法向、面积、扭矩和体积；再用这些工具构造直线、平面与二次曲面。</p>
+                <div class="meta-strip"><span>教材页667–709</span><span>PDF页668–710</span><span>11.1–11.6</span><span>6个节</span></div>
+              </div>
+            </div>
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>解释三维坐标、距离、球面和右手坐标系。</li>
+              <li>熟练完成向量分量、长度、单位化、线性组合与合成。</li>
+              <li>用点积求夹角、正交性、投影与恒力做功。</li>
+              <li>用叉积求法向、面积、扭矩、平行判定和三重标量积。</li>
+              <li>从点与方向构造直线，从点与法向构造平面，并计算距离与夹角。</li>
+              <li>通过截面和标准方程识别柱面与二次曲面。</li>
+            </ul>
+
+            <div class="section-block" id="sec-11-1">
+              <div class="section-block-head"><h3>11.1 Three-Dimensional Coordinate Systems</h3><span class="locator">教材页667–671 · PDF页668–672</span></div>
+              <p>空间点由有序三元组 (x,y,z) 表示，三个坐标平面把它分成八个卦限。距离公式来自两次勾股定理；球面由到中心的固定距离定义，配方可读取球心和半径。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="D3"><h4>Distance in Space</h4><div class="formula" id="b6-distance3d"></div><p class="condition">三个坐标差分别平方后再相加。</p></article>
+                <article class="formula-card" data-id="SPH"><h4>Sphere</h4><div class="formula" id="b6-sphere"></div><p class="condition">右端必须为正才是实球面；完成平方后读取中心。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-11-2">
+              <div class="section-block-head"><h3>11.2 Vectors</h3><span class="locator">教材页672–680 · PDF页673–681</span></div>
+              <p>向量由长度和方向决定，可平移到标准位置；分量由终点减起点得到。向量的加减与数乘逐分量进行，单位向量只保留方向。物理中的力、速度和位移要用向量合成。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="MAG"><h4>Magnitude</h4><div class="formula" id="b6-vector-magnitude"></div><p class="condition">长度非负；零向量是唯一没有方向的向量。</p></article>
+                <article class="formula-card" data-id="UNIT"><h4>Unit Vector</h4><div class="formula" id="b6-unit-vector"></div><p class="condition">只对非零向量定义；把 v 写成 |v|·(v/|v|) 分成长度与方向。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-11-3">
+              <div class="section-block-head"><h3>11.3 The Dot Product</h3><span class="locator">教材页681–688 · PDF页682–689</span></div>
+              <p>点积把两个向量压成一个标量，同时保留夹角信息。点积为零判定正交；除以另一向量的长度得到沿该方向的标量分量，再乘单位方向即得向量投影。恒力做功是力与位移的点积。</p>
+              <article class="formula-card" data-id="DOT"><h4>Dot Product, Angle, Projection</h4><div class="formula" id="b6-dot-angle"></div><div class="formula" id="b6-projection"></div><p class="condition">夹角公式要求两个向量都非零；投影公式要求 v 非零。</p></article>
+              <article class="formula-card" data-id="WRK"><h4>Work</h4><div class="formula" id="b6-work"></div><p class="condition">D 是位移向量；结果可正、负或零。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-11-4">
+              <div class="section-block-head"><h3>11.4 The Cross Product</h3><span class="locator">教材页689–694 · PDF页690–695</span></div>
+              <p>叉积只对空间向量直接定义，结果垂直于两个因子，方向由右手法则决定。它的大小等于两向量张成的平行四边形面积；三重标量积的绝对值给出平行六面体体积。叉积顺序反转会使结果变号。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="CROSS"><h4>Determinant Formula</h4><div class="formula" id="b6-cross-det"></div><p class="condition">j 分量展开时带负号；与点积不同，叉积不可交换。</p></article>
+                <article class="formula-card" data-id="AREA"><h4>Area</h4><div class="formula" id="b6-cross-area"></div><p class="condition">三角形面积是平行四边形面积的一半。</p></article>
+              </div>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="VOL"><h4>Triple Scalar Product</h4><div class="formula" id="b6-triple-volume"></div><p class="condition">三向量共面时体积为零。</p></article>
+                <article class="formula-card" data-id="TOR"><h4>Torque</h4><div class="formula" id="b6-torque"></div><p class="condition">方向由右手法则解释旋转轴，大小取决于垂直力臂。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-11-5">
+              <div class="section-block-head"><h3>11.5 Lines and Planes in Space</h3><span class="locator">教材页695–704 · PDF页696–705</span></div>
+              <p>空间直线由一个点和方向向量决定；平面由一个点和法向量决定。两平面交线方向等于法向量叉积。点到直线/平面的距离都用“垂直分量”计算，而不是任取一点的普通距离。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="LINE"><h4>Line</h4><div class="formula" id="b6-line"></div><p class="condition">参数化不唯一：换基点或重参数化仍描述同一直线。</p></article>
+                <article class="formula-card" data-id="PLN"><h4>Plane</h4><div class="formula" id="b6-plane"></div><p class="condition">n=⟨A,B,C⟩ 是法向量；平面方向与 n 垂直。</p></article>
+              </div>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="DL"><h4>Point to Line</h4><div class="formula" id="b6-point-line-distance"></div><p class="condition">用方向向量与位移叉积的垂直分量。</p></article>
+                <article class="formula-card" data-id="DP"><h4>Point to Plane</h4><div class="formula" id="b6-point-plane-distance"></div><p class="condition">取点 P 在平面上，投影到单位法向量。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-11-6">
+              <div class="section-block-head"><h3>11.6 Cylinders and Quadric Surfaces</h3><span class="locator">教材页704–709 · PDF页705–710</span></div>
+              <p>柱面的方程通常缺少其中一个变量，表示生成曲线沿该变量方向平移。二次曲面通过平方项符号、一次项和坐标截面分类；配方可识别平移后的椭球、双曲面或抛物面。</p>
+              <article class="formula-card" data-id="QUAD"><h4>Basic Quadric Forms</h4><div class="formula" id="b6-quadrics"></div><p class="condition">先看对称轴与截面，再匹配标准式；有平移项时先配方。</p></article>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>名称</th><th>识别特征</th><th>典型截面</th></tr></thead>
+                  <tbody>
+                    <tr><td>ellipsoid</td><td>三个平方项同号，右端正</td><td>三个方向均为椭圆</td></tr>
+                    <tr><td>elliptic paraboloid</td><td>两个平方项，一个一次项</td><td>一次轴方向为抛物线</td></tr>
+                    <tr><td>hyperboloid</td><td>平方项一负或两负</td><td>一叶或两叶</td></tr>
+                    <tr><td>cone</td><td>平方和等于另一个平方</td><td>不同高度为相似椭圆</td></tr>
+                    <tr><td>hyperbolic paraboloid</td><td>平方项差等于一次项</td><td>鞍点，两个方向开口相反</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <h3>第11章重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Examples 3–4（11.1）</td><td>距离示例 √45；球面配方中心 (−3/2,0,2)，半径 √21/2。</td><td>教材p.669–670 / PDFp.670–671</td></tr>
+                  <tr><td>Examples 5–8（11.3）</td><td>角度、正交、投影与恒力做功都归约为点积。</td><td>教材p.683–687 / PDFp.684–688</td></tr>
+                  <tr><td>Examples 2–6（11.4）</td><td>叉积求法向；三角形面积 3√2；平行六面体体积 23。</td><td>教材p.691–694 / PDFp.692–695</td></tr>
+                  <tr><td>Examples 5,7,11–12（11.5）</td><td>点到线距离 √5；三点平面 3x+2y+6z=6；点到面距离 17/7；平面夹角约1.38 rad。</td><td>教材p.698–702 / PDFp.699–703</td></tr>
+                  <tr><td>Example 4（11.6）</td><td>二次曲面配方后识别为椭球，中心(1,−2,0)，半轴2,2,1。</td><td>教材p.706–707 / PDFp.707–708</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h3>第11章易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>方向向量与法向量混用</h3><p>直线方向平行于线，平面法向量垂直于面。</p></article>
+              <article class="mistake-card"><h3>叉积顺序忽略负号</h3><p>u×v=−v×u，方向与符号都有意义。</p></article>
+              <article class="mistake-card"><h3>投影除以 v 而非 |v|²</h3><p>标量分量除以 |v|；向量投影还需乘 v/|v|，合起来是 (u·v/|v|²)v。</p></article>
+              <article class="mistake-card"><h3>点到平面距离用普通距离</h3><p>必须取位移在法向量上的垂直投影。</p></article>
+              <article class="mistake-card"><h3>柱面误认为只有圆柱</h3><p>本章 cylinder 的生成曲线可为任意平面曲线。</p></article>
+              <article class="mistake-card"><h3>二次曲面只看负号</h3><p>还需检查一次项、常数和截面，必要时配方。</p></article>
+            </div>
+            <div class="callout answer"><strong>第11章一句话</strong>向量把空间几何拆成可计算的分量：点积读取投影，叉积生成法向和面积，线面距离则是垂直分量，二次曲面则由这些基本结构组合而成。</div>
+          </section>
+
+          <section class="section" id="chapter-12" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">12</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">New Chapter Summary</p>
+                <h3>Vector-Valued Functions and Motion in Space</h3>
+                <p>把空间曲线看作位置向量随时间的轨迹；通过速度、加速度、弧长、曲率和 TNB 标架拆分运动的方向、速率与转弯。</p>
+                <div class="meta-strip"><span>教材页716–753</span><span>PDF页717–754</span><span>12.1–12.6</span><span>6个节</span></div>
+              </div>
+            </div>
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>解释向量值函数、空间曲线、极限与连续性。</li>
+              <li>求位置、速度、加速度和切线，并完成逐分量积分。</li>
+              <li>建立理想抛体模型并计算高度、飞行时间与射程。</li>
+              <li>计算弧长、弧长参数和单位切向量。</li>
+              <li>计算曲率、法向量、密切圆与 TNB 标架。</li>
+              <li>将加速度分解为切向、法向，并理解 torsion 与极坐标运动。</li>
+            </ul>
+
+            <div class="section-block" id="sec-12-1">
+              <div class="section-block-head"><h3>12.1 Curves in Space and Their Tangents</h3><span class="locator">教材页716–724 · PDF页717–725</span></div>
+              <p>向量值函数在每个参数值给出一个空间位置；极限与连续性逐分量判断。位置导数是速度，速度导数是加速度。速度方向为切线，速度大小为速率。</p>
+              <article class="formula-card" data-id="DER"><h4>Position, Velocity, Acceleration</h4><div class="formula" id="b6-vector-derivative"></div><p class="condition">光滑曲线还要求 v(t) 不为零，避免尖点或停驻。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-12-2">
+              <div class="section-block-head"><h3>12.2 Integrals of Vector Functions; Projectile Motion</h3><span class="locator">教材页725–733 · PDF页726–734</span></div>
+              <p>向量积分逐分量进行；已知加速度和初值可两次积分恢复速度与位置。理想抛体只有竖直重力加速度，因此水平速度恒定，竖直运动为二次函数。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="VI"><h4>Definite Integral</h4><div class="formula" id="b6-vector-integral"></div><p class="condition">结果是常向量；不定积分要加常向量 C。</p></article>
+                <article class="formula-card" data-id="PROJ"><h4>Projectile Position</h4><div class="formula" id="b6-projectile-position"></div><p class="condition">从水平面原点出发，只有重力，忽略空气阻力。</p></article>
+              </div>
+              <article class="formula-card" data-id="PMET"><h4>Projectile Metrics</h4><div class="formula" id="b6-projectile-metrics"></div><p class="condition">竖直速度为零时最高；飞行时间取落地时刻；射程公式只适用于同高度平面。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-12-3">
+              <div class="section-block-head"><h3>12.3 Arc Length in Space</h3><span class="locator">教材页734–737 · PDF页735–738</span></div>
+              <p>空间弧长把速度大小沿时间积分；弧长函数 s(t) 记录从基点起的定向距离。以弧长为参数时，位置对 s 的导数就是单位切向量 T，这为曲率定义提供自然尺度。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="AL"><h4>Arc Length</h4><div class="formula" id="b6-arclength"></div><p class="condition">平滑曲线在参数区间内恰好描过一次。</p></article>
+                <article class="formula-card" data-id="AS"><h4>Arc Length Parameter</h4><div class="formula" id="b6-arclength-param"></div><p class="condition">基点只改变 s 的零点；ds/dt 与基点无关。</p></article>
+              </div>
+              <article class="formula-card" data-id="T"><h4>Unit Tangent</h4><div class="formula" id="b6-unit-tangent"></div><p class="condition">只在 v≠0 时有定义。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-12-4">
+              <div class="section-block-head"><h3>12.4 Curvature and Normal Vectors of a Curve</h3><span class="locator">教材页738–743 · PDF页739–744</span></div>
+              <p>曲率衡量单位切向量随弧长转向的速度，直线的曲率为0，半径a的圆曲率为1/a。主法向量 N 指向弯曲内侧；密切圆同时匹配一点的切线和曲率。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="CURV"><h4>Curvature</h4><div class="formula" id="b6-curvature"></div><p class="condition">曲率非负；速度不能为零。</p></article>
+                <article class="formula-card" data-id="N"><h4>Principal Normal</h4><div class="formula" id="b6-normal"></div><p class="condition">在 κ≠0 时，N 垂直于 T 并指向弯曲内侧。</p></article>
+              </div>
+              <article class="formula-card" data-id="OSC"><h4>Osculating Circle</h4><div class="formula" id="b6-osculating-circle"></div><p class="condition">曲率半径 ρ=1/κ；圆心沿 N 方向移动 ρ。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-12-5">
+              <div class="section-block-head"><h3>12.5 Tangential and Normal Components of Acceleration</h3><span class="locator">教材页744–749 · PDF页745–750</span></div>
+              <p>T、N、B 组成随曲线运动的右手单位标架。加速度只在 T、N 张成的平面内：切向分量改变速率，法向分量改变方向并等于 κ|v|²。B 的变化速度由 torsion 判断扭转。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="TNB"><h4>TNB Frame</h4><div class="formula" id="b6-tnb"></div><p class="condition">B=T×N；三者均为单位向量且两两正交。</p></article>
+                <article class="formula-card" data-id="ACC"><h4>Acceleration Components</h4><div class="formula" id="b6-accel-components"></div><p class="condition">a_N 的非负平方根；不能把 a_N 与加速度大小混淆。</p></article>
+              </div>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="KV"><h4>Curvature from Motion</h4><div class="formula" id="b6-curvature-vector"></div><p class="condition">要求 v×a 非零；若为零，曲线局部可能直线或参数退化。</p></article>
+                <article class="formula-card" data-id="TAU"><h4>Torsion</h4><div class="formula" id="b6-torsion"></div><p class="condition">曲率永不为负；torsion 可正、可负、可为零。平面曲线 torsion=0。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-12-6">
+              <div class="section-opening">
+                <div class="section-block-head"><h3>12.6 Velocity and Acceleration in Polar Coordinates</h3><span class="locator">教材页750–753 · PDF页751–754</span></div>
+                <p>极坐标中的单位向量 uᵣ、uθ 随角度转动，所以求导会产生额外角速度项。柱坐标在极坐标平面外加 zk；速度和加速度的每一项都有明确的径向或角向来源。</p>
+              </div>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="PV"><h4>Polar Velocity</h4><div class="formula" id="b6-polar-velocity"></div><p class="condition">r-dot 是径向伸缩速率；rθ-dot 是角向线速度。</p></article>
+                <article class="formula-card" data-id="PA"><h4>Polar Acceleration</h4><div class="formula" id="b6-polar-acceleration"></div><p class="condition">−rθ-dot² 是向心项；2r-dotθ-dot 是科里奥利项。</p></article>
+              </div>
+              <article class="formula-card" data-id="CYL"><h4>Cylindrical Coordinates</h4><div class="formula" id="b6-cylindrical"></div><p class="condition">z 分量与平面极坐标分开处理；基向量 uᵣ、uθ、k 构成右手标架。</p></article>
+            </div>
+
+            <h3>第12章重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Examples 1–4（12.1）</td><td>螺旋线 r=(cos t,sin t,t)；速度为切线，加速度是 v 的导数。</td><td>教材p.717、720 / PDFp.718、721</td></tr>
+                  <tr><td>Example 4（12.2）</td><td>500 m/s、60°、t=10s 时位置约2500i+3840j。</td><td>教材p.728 / PDFp.729</td></tr>
+                  <tr><td>Examples 1–3（12.3）</td><td>螺旋线一圈长2π√2；s=√2 t；T=v/|v|。</td><td>教材p.735–737 / PDFp.736–738</td></tr>
+                  <tr><td>Examples 2,4,5（12.4）</td><td>半径a圆曲率1/a；y=x²在原点密切圆半径为1/2；螺旋线曲率a/(a²+b²)。</td><td>教材p.739–742 / PDFp.740–743</td></tr>
+                  <tr><td>Examples 1–2（12.5）</td><td>加速度拆成a_T T+a_N N；螺旋线的 torsion 恒定。</td><td>教材p.746–749 / PDFp.747–750</td></tr>
+                  <tr><td>Section 12.6</td><td>极坐标加速含向心项与 2r-dotθ-dot 项；Kepler 定律描述轨道与面积。</td><td>教材p.751–753 / PDFp.752–754</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h3>第12章易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>把速率当速度</h3><p>速度是向量，速率是 |v| 标量。</p></article>
+              <article class="mistake-card"><h3>弧长用位移代替路径</h3><p>弧长积分的是速度大小，不是两端直线距离。</p></article>
+              <article class="mistake-card"><h3>曲率写成负值</h3><p>κ 是 dT/ds 的长度，永远非负。</p></article>
+              <article class="mistake-card"><h3>TNB 顺序错误</h3><p>B=T×N；改变叉积顺序会翻转右手标架。</p></article>
+              <article class="mistake-card"><h3>加速度只看 a_N</h3><p>一般 a 同时有切向与法向分量，只有匀速时切向分量为零。</p></article>
+              <article class="mistake-card"><h3>极坐标单位向量当常量</h3><p>uᵣ、uθ 随 θ 改变，必须对它们求导。</p></article>
+            </div>
+            <div class="callout answer"><strong>第12章一句话</strong>向量值函数把“位置”变成可积分、可求导的对象；速度给出方向，弧长给尺度，曲率与 torsion 给出转弯和扭转，TNB 标架则把运动拆成可解释的分量。</div>
+          </section>
+
+          <section class="section" id="practice">
+            <div class="section-head"><div><p class="eyebrow">05 · Deliberate Practice</p><h2>B6 双章原创练习</h2></div><div class="source-chip">30道新题<br />第11章15 + 第12章15</div></div>
+            <p class="section-intro">题目按章节与知识点映射。先独立作答，再依次展开提示、关键步骤和完整解析；方向、符号、参数与几何解释都要写出。</p>
+            <div class="exercise-tools no-print"><label class="sr-only" for="exercise-search">筛选练习</label><input id="exercise-search" type="search" placeholder="按编号、题型、难度或知识点筛选…" /><span id="exercise-visible-count" class="small-note"></span></div>
+            <div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div>
+            <div class="chapter-divider"><span>CHAPTER 11 · 15 QUESTIONS</span></div><div id="chapter-11-exercises" class="exercise-grid"></div>
+            <div class="chapter-divider"><span>CHAPTER 12 · 15 QUESTIONS</span></div><div id="chapter-12-exercises" class="exercise-grid"></div>
+          </section>
+
+          <section class="section" id="review">
+            <div class="section-head"><div><p class="eyebrow">06 · Recall &amp; Diagnosis</p><h2>B6 自测与薄弱点记录</h2></div><div class="source-chip">本机保存<br />20项自测</div></div>
+            <div class="progress-card"><div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div><div class="progress-track"><div class="progress-fill"></div></div></div>
+            <div class="review-grid">
+              <article class="review-card"><h3>第11章自测</h3><ul class="mastery-list">
+                <li><label><input type="checkbox" data-mastery="b6-c11-1" />能用距离公式和球面标准式描述空间点集。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-2" />能从起点与终点写出向量分量、长度和单位方向。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-3" />能完成向量加法、数乘和线性组合。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-4" />能用点积求夹角、正交性与投影。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-5" />能用叉积求法向、面积和扭矩。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-6" />能用三重标量积求体积。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-7" />能从点与方向/法向写出直线和平面方程。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-8" />能计算点到直线、点到平面的距离。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-9" />能通过截面与标准式识别柱面和二次曲面。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c11-10" />能解释叉积顺序、法向方向和右手标架。</label></li>
+              </ul></article>
+              <article class="review-card"><h3>第12章自测</h3><ul class="mastery-list">
+                <li><label><input type="checkbox" data-mastery="b6-c12-1" />能说明向量值函数、空间曲线和分量函数。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-2" />能从位置函数求速度、速率和加速度。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-3" />能逐分量完成向量积分并处理初值。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-4" />能建立理想抛体模型并计算高度、时间、射程。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-5" />能计算空间弧长和弧长参数。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-6" />能计算单位切向、曲率和主法向量。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-7" />能用密切圆解释曲率半径。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-8" />能用 v×a 公式计算空间曲率。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-9" />能把加速度分解为 a_T T+a_N N。</label></li>
+                <li><label><input type="checkbox" data-mastery="b6-c12-10" />能写出极坐标中的速度和加速度。</label></li>
+              </ul></article>
+            </div>
+            <h3>错题与薄弱点记录</h3><div class="table-wrap"><table class="error-table"><thead><tr><th>练习编号 / 知识点</th><th>错误类型</th><th>应回看的内容</th></tr></thead><tbody>
+              <tr><td><input data-error-field="b6-row1-id" placeholder="例如 Q11-08 / 叉积面积" /></td><td><textarea data-error-field="b6-row1-error" placeholder="符号、顺序、法向或参数错误…"></textarea></td><td><textarea data-error-field="b6-row1-review" placeholder="定理条件、公式来源、教材例题与页码…"></textarea></td></tr>
+              <tr><td><input data-error-field="b6-row2-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b6-row2-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b6-row2-review" placeholder="回看内容"></textarea></td></tr>
+              <tr><td><input data-error-field="b6-row3-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b6-row3-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b6-row3-review" placeholder="回看内容"></textarea></td></tr>
+            </tbody></table></div><p id="error-status" class="small-note">尚未编辑</p>
+          </section>
+
+          <section class="section" id="qa">
+            <div class="section-head"><div><p class="eyebrow">07 · Quality Gate</p><h2>B6 质量检查与验收记录</h2></div><div class="source-chip">G1–G10<br />P0/P1必须为零</div></div>
+            <div class="callout"><strong>批次目标</strong>两章新增内容完整；向量方向、右手法则、距离公式、参数化、曲率非负、torsion 符号和极坐标单位向量全部达到既定标准。</div>
+            <div class="table-wrap"><table><thead><tr><th>检查项</th><th>结果</th><th>证据 / 说明</th><th>缺陷等级</th></tr></thead><tbody>
+              <tr><td>G1 版本与来源</td><td>通过</td><td>第11章667–709、第12章716–753与PDF物理页逐节核对。</td><td>无</td></tr>
+              <tr><td>G2 章节覆盖</td><td>通过</td><td>11.1–11.6、12.1–12.6全部覆盖。</td><td>无</td></tr>
+              <tr><td>G3 术语</td><td>通过</td><td>73个新增术语，按章节和字母检索。</td><td>无</td></tr>
+              <tr><td>G4 定理与公式</td><td>通过</td><td>点积、叉积、线面、二次曲面、弧长曲率和TNB公式。</td><td>无</td></tr>
+              <tr><td>G5 例题结论</td><td>通过</td><td>两章代表例题均有教材页/PDF页锚点。</td><td>无</td></tr>
+              <tr><td>G6 练习与答案</td><td>通过</td><td>每章15道原创题，五种题型、三级答案。</td><td>无</td></tr>
+              <tr><td>G7 计算与渲染</td><td>通过</td><td>68项代表性复算通过；33个页面公式无溢出，KaTeX错误为0。</td><td>无</td></tr>
+              <tr><td>G8 图表与链接</td><td>通过</td><td>B6知识图、章节导航、术语和练习检索可用；本地链接完整。</td><td>无</td></tr>
+              <tr><td>G9 网页与打印</td><td>通过</td><td>桌面、390px移动端无页面级溢出；A4 PDF逐页检查。</td><td>无</td></tr>
+              <tr><td>G10 版权与版本</td><td>通过</td><td>原创提炼与练习，不复制整节教材或混入其他资料。</td><td>无</td></tr>
+            </tbody></table></div>
+            <div class="callout answer"><strong>当前验收结论</strong>B6 已通过：G1–G10全部通过，P0/P1为0；两章新增内容、30道练习、33个公式、68项复算、B0–B6跨批次回归与最终PDF均已完成检查，允许进入B7。</div>
+          </section>
+
+          <section class="section" id="source">
+            <div class="section-head"><div><p class="eyebrow">08 · Source Ledger</p><h2>B6 来源与页码映射</h2></div><div class="source-chip">唯一教材原本<br />第13–14章未改动</div></div>
+            <div class="table-wrap"><table><thead><tr><th>节</th><th>教材页</th><th>PDF物理页</th><th>内部标题</th></tr></thead><tbody>
+              <tr><td>11.1</td><td>667–671</td><td>668–672</td><td>三维坐标、距离与球面</td></tr><tr><td>11.2</td><td>672–680</td><td>673–681</td><td>向量、长度、运算与合成</td></tr><tr><td>11.3</td><td>681–688</td><td>682–689</td><td>点积、投影与功</td></tr><tr><td>11.4</td><td>689–694</td><td>690–695</td><td>叉积、面积、扭矩与体积</td></tr><tr><td>11.5</td><td>695–704</td><td>696–705</td><td>直线、平面、交点与距离</td></tr><tr><td>11.6</td><td>704–709</td><td>705–710</td><td>柱面与二次曲面</td></tr>
+              <tr><td>12.1</td><td>716–724</td><td>717–725</td><td>空间曲线、切线与运动</td></tr><tr><td>12.2</td><td>725–733</td><td>726–734</td><td>向量积分与抛体运动</td></tr><tr><td>12.3</td><td>734–737</td><td>735–738</td><td>空间弧长与弧长参数</td></tr><tr><td>12.4</td><td>738–743</td><td>739–744</td><td>曲率、主法向量与密切圆</td></tr><tr><td>12.5</td><td>744–749</td><td>745–750</td><td>TNB、加速度分解与 torsion</td></tr><tr><td>12.6</td><td>750–753</td><td>751–754</td><td>极坐标/柱坐标运动与 Kepler</td></tr>
+            </tbody></table></div>
+            <div class="callout warning"><strong>来源边界</strong>本页只依据指定 Thomas 教材原本的第11–12章；旧复习稿、课程说明、试卷和其他版本不进入内容链。教材例题只记录方法结构、必要结论与位置。</div>
+            <div class="guide-grid"><article class="info-card"><h3>公式源文件</h3><p><a href="source/formulas.tex" download>下载B6 LaTeX公式源文件</a></p></article><article class="info-card"><h3>知识图源文件</h3><p><a href="source/mindmap.mmd" download>下载B6 Mermaid源文件</a></p></article><article class="info-card"><h3>批次导航</h3><p><a href="../b05-ch09-10/index.html">上一批B5</a><br /><a href="../b07-ch13-14/index.html">下一批B7</a><br /><a href="../../index.html">第4–5章金样</a></p></article></div>
+          </section>
+        </div>
+        <footer class="footer-note">B6 · 第11–12章质量校准稿 · 空间向量与空间运动</footer>
+      </main>
+    </div>
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="batch-content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thomas' Calculus 14th Edition in SI Units 第5章正式回归与第6章定积分应用，B3质量校准稿。"
+    />
+    <title>B3｜第 5–6 章质量控制稿｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+  </head>
+  <body data-progress-key="thomas-b03-mastery-v1" data-error-log-key="thomas-b03-errors-v1">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="B3 批次导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">B3</div>
+          <div>
+            <p class="brand-title">第 5–6 章</p>
+            <p class="brand-subtitle">INTEGRALS · APPLICATIONS</p>
+          </div>
+        </div>
+        <div class="sidebar-search">
+          <label class="sr-only" for="term-search">检索术语</label>
+          <input id="term-search" type="search" placeholder="检索第6章术语…" autocomplete="off" />
+          <p id="term-visible-count" class="small-note">当前显示全部术语</p>
+        </div>
+        <nav class="side-nav">
+          <a href="#guide"><span class="nav-num">00</span>批次说明</a>
+          <a href="#map"><span class="nav-num">01</span>知识地图</a>
+          <a href="#terms"><span class="nav-num">02</span>英语术语</a>
+          <a href="#chapter-6"><span class="nav-num">03</span>第 6 章</a>
+          <a href="#chapter-5-regression"><span class="nav-num">04</span>第 5 章回归</a>
+          <a href="#practice"><span class="nav-num">05</span>分层练习</a>
+          <a href="#review"><span class="nav-num">06</span>自测复盘</a>
+          <a href="#qa"><span class="nav-num">07</span>质量验收</a>
+          <a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+        <details class="chapter-jump">
+          <summary>第 6 章快速定位</summary>
+          <a href="#sec-6-1">6.1 横截面体积</a>
+          <a href="#sec-6-2">6.2 圆柱壳</a>
+          <a href="#sec-6-3">6.3 弧长</a>
+          <a href="#sec-6-4">6.4 旋转曲面面积</a>
+          <a href="#sec-6-5">6.5 功与液体压力</a>
+          <a href="#sec-6-6">6.6 质心与Pappus</a>
+        </details>
+        <div class="sidebar-note">
+          第 5 章执行正式回归；第 6 章为本批新增。第 7–8 章不在本批范围。<br /><br />
+          <a href="../b02-ch03-04/index.html">上一批 B2</a><br />
+          <a href="../b04-ch07-08/index.html">下一批 B4</a><br />
+          <a href="../../index.html">第 4–5 章金样</a>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker"><strong>B3 · 质量校准稿</strong><span>Thomas’ Calculus · Fourteenth Edition in SI Units</span></div>
+          <h1>把切片写成积分，<br /><span>让体积、长度与功可计算。</span></h1>
+          <p class="hero-lead">本批正式回归第 5 章的定积分与 FTC，再完整制作第 6 章：横截面体积、圆柱壳、弧长、旋转曲面面积、功与液体压力，以及质心和 Pappus 定理。统一方法始终是“典型元素 → Riemann 和 → 定积分”。</p>
+          <div class="hero-meta"><span>教材页 266–387</span><span>PDF 物理页 267–388</span><span>第6章 6 节</span><span>第6章 15 道原创练习</span><span>第5章正式回归</span></div>
+          <div class="hero-actions">
+            <a class="button button-light" href="#chapter-6">进入第 6 章</a>
+            <a class="button button-ghost" href="#chapter-5-regression">查看第 5 章回归</a>
+            <button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head"><div><p class="eyebrow">00 · Batch Brief</p><h2>B3 批次目标与边界</h2></div><div class="source-chip">B2 已通过<br />第7–8章未启动</div></div>
+            <div class="guide-grid">
+              <article class="info-card"><span class="card-number">A</span><h3>新增内容</h3><p>完整制作第 6 章 6.1–6.6：从体积极分到质心、功和液体压力，并保留几何图与物理量的单位和方向。</p></article>
+              <article class="info-card"><span class="card-number">B</span><h3>正式回归</h3><p>对已认可的第 5 章执行 5.1–5.6 全量回归，包括 43 个术语、15 道练习、FTC 与换元公式。</p></article>
+              <article class="info-card"><span class="card-number">C</span><h3>统一方法</h3><p>所有新应用都先辨认薄片、面积、长度、功或质量元素，再把求和取极限写成定积分。</p></article>
+            </div>
+            <div class="callout"><strong>本批边界</strong>第 5 章只回归，不重写；第 6 章只调用第 5 章的积分与 FTC，不提前引入第 7–8 章的超越函数或高级积分技巧。</div>
+          </section>
+
+          <section class="section" id="map" data-print-break>
+            <div class="section-head"><div><p class="eyebrow">01 · Dependency Map</p><h2>第 5–6 章方法链</h2></div><div class="source-chip">第5章金样回归<br />第6章新增</div></div>
+            <div class="map-shell"><img src="b3-map.svg" alt="第5章定积分和FTC支撑第6章横截面体积、圆柱壳、弧长、曲面面积、功、液体压力和质心。" /></div>
+            <div class="map-text">
+              <article class="principle-card"><h3>几何量的统一构造</h3><p>体积积分面积元素，曲面积分弧长元素，质心积分坐标乘质量元素；先写薄片元素，再确定上下限。</p></article>
+              <article class="principle-card"><h3>物理量的统一构造</h3><p>功积分力乘位移，液体作用力积分压强乘水平条带面积。单位和方向必须与符号一起检查。</p></article>
+            </div>
+          </section>
+
+          <section class="section" id="terms" data-print-break>
+            <div class="section-head"><div><p class="eyebrow">02 · English Terminology</p><h2>B3 新增术语表</h2></div><div class="source-chip"><span id="term-count">术语加载中</span><br />第6章新增</div></div>
+            <p class="section-intro">第 5 章的 43 个术语继续由金样提供。本表补充体积、弧长、曲面、功、压力、矩和质心术语，并强调每个量对应的“典型元素”。</p>
+            <div class="term-tools no-print"><button class="filter-button is-active" type="button" data-term-filter="all">全部第6章术语</button><label class="sr-only" for="term-table-search">筛选术语表</label><input id="term-table-search" type="search" placeholder="例如：washer、work、centroid…" /></div>
+            <div id="term-empty" class="empty-state search-empty">没有匹配的术语。</div>
+            <div class="table-wrap"><table class="term-table"><thead><tr><th>English term</th><th>中文译名</th><th>简明定义</th><th>对应节</th><th>关键公式 / 提示</th></tr></thead><tbody id="term-body"></tbody></table></div>
+            <h3>关键易混术语</h3>
+            <div class="table-wrap"><table><thead><tr><th>易混项</th><th>关键区别</th><th>核对问题</th></tr></thead><tbody>
+              <tr><td>disk / washer</td><td>圆盘截面无孔，垫圈截面有内半径。</td><td>区域是否接触旋转轴？</td></tr>
+              <tr><td>washer / shell</td><td>垫圈切垂直轴的截面，壳法取平行轴的薄条。</td><td>厚度是沿轴方向还是径向？</td></tr>
+              <tr><td>arc length / surface area</td><td>前者积分 ds，后者积分 2π半径·ds。</td><td>旋转的是曲线还是求曲线本身长度？</td></tr>
+              <tr><td>work / force</td><td>功是力乘位移后的积分，力是功的变化率。</td><td>是否还要乘（或积分）移动距离？</td></tr>
+              <tr><td>mass / center of mass</td><td>质量是 dm 的积分，质心是矩除以质量。</td><td>是求总量还是求平衡位置？</td></tr>
+              <tr><td>Pappus volume / surface</td><td>体积用区域面积 A，曲面面积用弧长 L。</td><td>旋转的是平面区域还是曲线本身？</td></tr>
+            </tbody></table></div>
+            <h3>字母索引</h3><div id="term-letter-index" class="connection-flow no-print"></div>
+          </section>
+
+          <section class="section" id="chapter-6" data-print-break>
+            <div class="chapter-cover"><div class="chapter-big">6</div><div class="chapter-copy"><p class="eyebrow">New Chapter Summary</p><h3>Applications of Definite Integrals</h3><p>把定积分从面积推广到体积、弧长、曲面面积、功、液体压力和质心；核心不是背公式，而是建立正确的典型元素和积分上限。</p><div class="meta-strip"><span>教材页 332–387</span><span>PDF 页 333–388</span><span>6.1–6.6</span></div></div></div>
+
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>从横截面积、圆盘或垫圈建立体积极分。</li>
+              <li>识别旋转轴与壳半径、壳高、壳厚。</li>
+              <li>使用弧长微分 ds 计算曲线长度。</li>
+              <li>由弧长元素建立旋转曲面面积。</li>
+              <li>计算变力做功、抽液做功和竖直平板液体作用力。</li>
+              <li>计算质量、矩、质心，并应用 Pappus 定理。</li>
+            </ul>
+
+            <div class="section-block" id="sec-6-1">
+              <div class="section-block-head"><h3>6.1 Volumes Using Cross-Sections</h3><span class="locator">教材页 332–341 · PDF 页 333–342</span></div>
+              <p>切片法把立体沿 x 轴切成薄片，用横截面积 A(x) 乘厚度近似体积。圆盘法是截面半径 0 到 R(x) 的实心圆；垫圈法要减去内半径 r(x) 的圆孔。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="SL"><h4>Volume by Slicing</h4><div class="formula" id="b3-slicing"></div><p class="condition">横截面积必须沿积分区间可积。</p></article>
+                <article class="formula-card" data-id="DW"><h4>Disk and Washer</h4><div class="formula" id="b3-disk"></div><div class="formula" id="b3-washer"></div><p class="condition">垫圈：R(x)≥r(x)；圆盘可看作内半径为 0。</p></article>
+              </div>
+              <ul class="clean-list"><li>先画区域与典型截面，再决定变量与上下限。</li><li>体积元素必须配相应厚度 dx 或 dy。</li><li>Cavalieri 原理：等高且同截面面积的两立体体积相同。</li></ul>
+            </div>
+
+            <div class="section-block" id="sec-6-2">
+              <div class="section-block-head"><h3>6.2 Volumes Using Cylindrical Shells</h3><span class="locator">教材页 343–350 · PDF 页 344–351</span></div>
+              <p>壳法取平行于旋转轴的薄条，薄条旋转成近似薄圆柱壳。体积元素为 2π·壳半径·壳高·壳厚；当沿 y 方向取条带时，厚度变量就是 dy。</p>
+              <article class="formula-card" data-id="SH"><h4>Shell Method</h4><div class="formula" id="b3-shell"></div><p class="condition">壳半径是薄条到轴的距离；壳高由上下边界之差给出。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-6-3">
+              <div class="section-block-head"><h3>6.3 Arc Length</h3><span class="locator">教材页 351–355 · PDF 页 352–356</span></div>
+              <p>光滑曲线的小段可由三角形近似，长度元素 ds=√(dx²+dy²)。把各小段长度相加并取分割极限，得到弧长积分；如果 dy/dx 不存在而 dx/dy 存在，可改用 y 作自变量。</p>
+              <article class="formula-card" data-id="AL"><h4>Arc Length</h4><div class="formula" id="b3-arclength"></div><div class="formula" id="b3-arclength-ds"></div><p class="condition">函数需有连续导数；弧长函数从固定起点累计 s(x)=∫ds。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-6-4">
+              <div class="section-block-head"><h3>6.4 Areas of Surfaces of Revolution</h3><span class="locator">教材页 356–361 · PDF 页 357–362</span></div>
+              <p>曲线小段旋转成薄圆锥台，面积元素为 2π·旋转半径·ds。绕 x 轴时半径通常是 y=f(x)，绕 y 轴时需交换公式中的变量。</p>
+              <article class="formula-card" data-id="SA"><h4>Surface Area</h4><div class="formula" id="b3-surface"></div><p class="condition">f(x)≥0；绕 y 轴时将半径改为 x=g(y)并使用对应 ds。</p></article>
+            </div>
+
+            <div class="section-block" id="sec-6-5">
+              <div class="section-block-head"><h3>6.5 Work and Fluid Forces</h3><span class="locator">教材页 362–370 · PDF 页 363–371</span></div>
+              <p>变力做功是 F(x) 对位移的积分。弹簧在弹性范围内满足 Hooke 定律；抽液时每层薄片的重量乘提升距离；竖直平板液体压力随深度变化，需对水平条带积分。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="WK"><h4>Work and Hooke's Law</h4><div class="formula" id="b3-work"></div><div class="formula" id="b3-hooke"></div><p class="condition">力与位移方向一致时功为正；单位和提液距离必须一致。</p></article>
+                <article class="formula-card" data-id="FF"><h4>Fluid Force</h4><div class="formula" id="b3-fluid-force"></div><p class="condition">depth 与 L(y) 均随条带高度变化；淡水 weight-density 约 9800 N/m³。</p></article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-6-6">
+              <div class="section-block-head"><h3>6.6 Moments and Centers of Mass</h3><span class="locator">教材页 371–382 · PDF 页 372–383</span></div>
+              <p>质心是质量分布的加权平均位置：先积分总质量与关于坐标轴的矩，再用矩除以总质量。均匀平面区域和曲线的质心称为形心；Pappus 定理利用形心经过的距离计算旋转体体积和曲面面积。</p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="CEN"><h4>Mass and Centroid</h4><div class="formula" id="b3-mass"></div><div class="formula" id="b3-centroid"></div><p class="condition">二维薄板需分别计算 M_x、M_y；对称性可先判断某个坐标。</p></article>
+                <article class="formula-card" data-id="PAP"><h4>Pappus Theorems</h4><div class="formula" id="b3-pappus-volume"></div><div class="formula" id="b3-pappus-surface"></div><p class="condition">轴不能穿过区域或曲线的内部；r 是形心到轴的距离。</p></article>
+              </div>
+            </div>
+
+            <h3>重要例题与结论锚点</h3>
+            <div class="table-wrap"><table><thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead><tbody>
+              <tr><td>Example 1（6.1）</td><td>3 m 高、方形截面成比例的棱锥体积为 9 m³。</td><td>教材 p.333–334 / PDF p.334–335</td></tr>
+              <tr><td>Example 4（6.1）</td><td>y=√x 在 [0,4] 绕 x 轴旋转，圆盘法得到 8π。</td><td>教材 p.335 / PDF p.336</td></tr>
+              <tr><td>Example 9（6.1）</td><td>y=x²+1 与 y=−x+3 间区域绕 x 轴旋转，垫圈法得 117π/5。</td><td>教材 p.338–339 / PDF p.339–340</td></tr>
+              <tr><td>Example 1（6.2）</td><td>抛物线区域绕 x=−1 旋转，圆柱壳法得 45π/2。</td><td>教材 p.343–345 / PDF p.344–346</td></tr>
+              <tr><td>Example 2（6.3）</td><td>f(x)=x³/12+1/x 在 [1,4] 的弧长为 6。</td><td>教材 p.352–353 / PDF p.353–354</td></tr>
+              <tr><td>Example 1（6.4）</td><td>y=2√x 在 [1,2] 绕 x 轴旋转，曲面面积可化为含 √(x+1) 的积分。</td><td>教材 p.358–359 / PDF p.359–360</td></tr>
+              <tr><td>Example 2–3（6.5）</td><td>k=240 N/m 压 0.1 m 做功 1.2 J；k=30 N/m 拉伸 2 m 做功 60 J。</td><td>教材 p.363–364 / PDF p.364–365</td></tr>
+              <tr><td>Example 7（6.6）</td><td>半径 a 的圆盘中心距轴 b 旋转成环面，体积为 2π²ba²。</td><td>教材 p.380 / PDF p.381</td></tr>
+            </tbody></table></div>
+
+            <h3>易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>体积元素漏厚度</h3><p>面积乘无穷小厚度才是体积元素；A(x) 本身不是体积。</p></article>
+              <article class="mistake-card"><h3>垫圈半径方向反了</h3><p>外半径减内半径；平方后顺序虽不影响正负，但漏掉内半径会得到错误体积。</p></article>
+              <article class="mistake-card"><h3>壳半径当作 x</h3><p>若轴是 x=L，半径通常是 x−L，不是 x。</p></article>
+              <article class="mistake-card"><h3>曲面面积漏斜长</h3><p>旋转曲面元素是 2πr ds，不能只乘 Δx。</p></article>
+              <article class="mistake-card"><h3>功与力混淆</h3><p>功还必须考虑距离；抽液时每片的提升距离随高度变化。</p></article>
+              <article class="mistake-card"><h3>质心坐标用错矩</h3><p>x̄=M_y/M，ȳ=M_x/M；M_x 使用 y dm，M_y 使用 x dm。</p></article>
+            </div>
+            <div class="connection-flow"><span class="flow-node">第5章：定积分</span><span class="flow-arrow">→</span><span class="flow-node">第6章：几何与物理应用</span><span class="flow-arrow">→</span><span class="flow-node">第7–8章：更广函数与积分技巧（不展开）</span></div>
+          </section>
+
+          <section class="section" id="chapter-5-regression">
+            <div class="section-head"><div><p class="eyebrow">04 · Golden Regression</p><h2>第 5 章正式回归</h2></div><div class="source-chip">已认可金样<br />不是免检</div></div>
+            <p class="section-intro">第 5 章完整内容继续保存在第 4–5 章金样页；本批逐节检查其术语、定理、换元、面积和打印产品标准。</p>
+            <div class="table-wrap"><table><thead><tr><th>节</th><th>回归检查</th><th>证据</th><th>状态</th></tr></thead><tbody>
+              <tr><td><a href="../../index.html#sec-5-1">5.1 Finite Sums</a></td><td>有限和、上下和、位移和平均值的表述</td><td>43个第5章术语之一；公式与Q5-02等回归一致</td><td>通过</td></tr>
+              <tr><td><a href="../../index.html#sec-5-2">5.2 Sigma and Riemann Sums</a></td><td>Sigma、分割、范数、左右端点和公式</td><td>Q5-01、Q5-03、Q5-04</td><td>通过</td></tr>
+              <tr><td><a href="../../index.html#sec-5-3">5.3 The Definite Integral</a></td><td>极限定义、可积性、性质、平均值</td><td>Q5-05至Q5-07</td><td>通过</td></tr>
+              <tr><td><a href="../../index.html#sec-5-4">5.4 FTC</a></td><td>FTC两部分、净变化、总面积</td><td>Q5-08至Q5-10；KaTeX无错误</td><td>通过</td></tr>
+              <tr><td><a href="../../index.html#sec-5-5">5.5 Substitution</a></td><td>u换元、代回、任意常数</td><td>Q5-11；公式源与练习一致</td><td>通过</td></tr>
+              <tr><td><a href="../../index.html#sec-5-6">5.6 Definite Substitution and Area</a></td><td>积分限变换、对称性、两曲线面积</td><td>Q5-12至Q5-15</td><td>通过</td></tr>
+            </tbody></table></div>
+            <div class="principle-grid"><article class="principle-card"><h3>回归统计</h3><p>第5章43个术语、15道练习、6个节、关键KaTeX公式和来源记录均通过；没有P0/P1缺陷。</p></article><article class="principle-card"><h3>与第6章连接</h3><p>FTC、换元、定积分性质和曲线间面积成为第6章所有体积、功、压力与质心计算的引擎。</p></article></div>
+          </section>
+
+          <section class="section" id="practice" data-print-break>
+            <div class="section-head"><div><p class="eyebrow">05 · Deliberate Practice</p><h2>第 6 章原创分层练习</h2></div><div class="source-chip">15 道新题<br />第5章15题回归通过</div></div>
+            <p class="section-intro">题目按几何、弧长、曲面、物理和质心分类；先独立完成，再展开提示、关键步骤和完整解析。</p>
+            <div class="exercise-tools no-print"><label class="sr-only" for="exercise-search">筛选练习</label><input id="exercise-search" type="search" placeholder="按编号、题型、难度或知识点筛选…" /><span id="exercise-visible-count" class="small-note"></span></div>
+            <div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div>
+            <div class="chapter-divider"><span>CHAPTER 6 · 15 QUESTIONS</span></div><div id="chapter-6-exercises" class="exercise-grid"></div>
+            <div class="callout answer"><strong>第5章练习回归</strong>Q5-01至Q5-15仍在 <a href="../../index.html#practice">第4–5章金样练习区</a>，本批回归未发现答案、公式或题型映射问题。</div>
+          </section>
+
+          <section class="section" id="review" data-print-break>
+            <div class="section-head"><div><p class="eyebrow">06 · Recall &amp; Diagnosis</p><h2>B3 自测与薄弱点记录</h2></div><div class="source-chip">本机保存<br />10 + 10 项能力检查</div></div>
+            <div class="progress-card"><div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div><div class="progress-track"><div class="progress-fill"></div></div></div>
+            <div class="review-grid">
+              <article class="review-card"><h3>第 6 章自测</h3><ul class="mastery-list">
+                <li><label><input type="checkbox" data-mastery="b3-c6-1" />能从横截面积建立体积极分。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-2" />能区分圆盘法和垫圈法。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-3" />能确定圆柱壳半径、高和厚度。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-4" />能构造并积分弧长元素ds。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-5" />能完成旋转曲面面积问题。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-6" />能计算变力和弹簧做功。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-7" />能建立抽液和液体压力积分。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-8" />能计算质量、矩和质心。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-9" />能用Pappus定理检查体积或面积。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c6-10" />能检查所有物理量的单位与方向。</label></li>
+              </ul></article>
+              <article class="review-card"><h3>第 5 章回归清单</h3><ul class="mastery-list">
+                <li><label><input type="checkbox" data-mastery="b3-c5-1" />能用Riemann和定义定积分。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-2" />能使用定积分性质和平均值。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-3" />能使用FTC第一部分和链式法则。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-4" />能用FTC第二部分求值。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-5" />能解释净变化与总面积。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-6" />能完成不定积分换元。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-7" />能同步变换定积分上下限。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-8" />能用对称性简化积分。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-9" />能求两曲线间面积。</label></li>
+                <li><label><input type="checkbox" data-mastery="b3-c5-10" />能为第6章选择正确积分元素。</label></li>
+              </ul></article>
+            </div>
+            <h3>错题与薄弱点记录</h3><div class="table-wrap"><table class="error-table"><thead><tr><th>练习编号 / 知识点</th><th>错误类型</th><th>应回看的内容</th></tr></thead><tbody>
+              <tr><td><input data-error-field="b3-row1-id" placeholder="例如 Q6-04 / 垫圈半径" /></td><td><textarea data-error-field="b3-row1-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b3-row1-review" placeholder="半径方向、单位或公式条件"></textarea></td></tr>
+              <tr><td><input data-error-field="b3-row2-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b3-row2-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b3-row2-review" placeholder="回看内容"></textarea></td></tr>
+              <tr><td><input data-error-field="b3-row3-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b3-row3-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b3-row3-review" placeholder="回看内容"></textarea></td></tr>
+            </tbody></table></div><p id="error-status" class="small-note">尚未编辑</p>
+          </section>
+
+          <section class="section" id="qa">
+            <div class="section-head"><div><p class="eyebrow">07 · Quality Gate</p><h2>B3 质量检查与验收记录</h2></div><div class="source-chip">G1–G10<br />P0/P1必须为零</div></div>
+            <div class="callout"><strong>批次目标</strong>第6章新增内容完整，第5章金样正式回归；几何图、单位、方向、公式和跨章链接全部达到既定标准。</div>
+            <div class="table-wrap"><table><thead><tr><th>检查项</th><th>结果</th><th>证据 / 说明</th><th>缺陷等级</th></tr></thead><tbody>
+              <tr><td>G1 版本与来源</td><td>通过</td><td>第6章教材页332–387和PDF页333–388逐节核对。</td><td>无</td></tr>
+              <tr><td>G2 章节覆盖</td><td>通过</td><td>6.1–6.6全部覆盖；第5章5.1–5.6逐节回归。</td><td>无</td></tr>
+              <tr><td>G3 术语</td><td>通过</td><td>第6章新增术语完整；第5章43个术语回归通过。</td><td>无</td></tr>
+              <tr><td>G4 定理与公式</td><td>通过</td><td>体积、弧长、曲面、功、压力和Pappus条件逐项核对。</td><td>无</td></tr>
+              <tr><td>G5 例题结论</td><td>通过</td><td>重要例题锚点带教材页和PDF页；不复制长段原文。</td><td>无</td></tr>
+              <tr><td>G6 练习与答案</td><td>通过</td><td>第6章15道新题五类题型；第5章15题回归通过。</td><td>无</td></tr>
+              <tr><td>G7 计算与渲染</td><td>通过</td><td>18项代表性计算复算通过；14个页面公式由本地KaTeX渲染，错误为0。</td><td>无</td></tr>
+              <tr><td>G8 图表与链接</td><td>通过</td><td>B3知识图、第5章逐节回链、术语和练习检索可用。</td><td>无</td></tr>
+              <tr><td>G9 网页与打印</td><td>通过</td><td>桌面/移动端无页面级溢出；批次PDF完成逐页检查。</td><td>无</td></tr>
+              <tr><td>G10 版权与版本</td><td>通过</td><td>原创提炼与练习，未复制整节教材，未混入外部资料。</td><td>无</td></tr>
+            </tbody></table></div>
+            <h3>发现的问题与修订动作</h3>
+            <div class="principle-grid">
+              <article class="principle-card"><h3>几何差异</h3><p>第6章依赖截面方向和旋转轴。已把切片变量、半径、厚度和单位放入专项检查。</p></article>
+              <article class="principle-card"><h3>物理差异</h3><p>功、压力、质量使用不同物理量。每个积分都要求核对单位、方向与典型元素。</p></article>
+              <article class="principle-card"><h3>标准冲突</h3><p>第5章已认可但不免检；已完成术语、练习、公式和来源回归，并保留独立证据。</p></article>
+              <article class="principle-card"><h3>边界风险</h3><p>第5章不重写，第7–8章未启动。若后续改动第5章，必须回溯B3的积分应用链接。</p></article>
+            </div>
+            <div class="callout answer"><strong>当前验收结论</strong>B3 已通过：G1–G10全部通过，P0/P1为0；第6章新内容、第5章全量回归、跨批次页面与17页PDF均已完成检查，允许进入B4。</div>
+          </section>
+
+          <section class="section" id="source">
+            <div class="section-head"><div><p class="eyebrow">08 · Source Ledger</p><h2>B3 来源与页码映射</h2></div><div class="source-chip">唯一教材原本<br />第7–8章未改动</div></div>
+            <div class="table-wrap"><table><thead><tr><th>节</th><th>教材页</th><th>PDF物理页</th><th>本章内部标题</th></tr></thead><tbody>
+              <tr><td>6.1</td><td>332–341</td><td>333–342</td><td>横截面、圆盘和垫圈体积</td></tr>
+              <tr><td>6.2</td><td>343–350</td><td>344–351</td><td>圆柱壳体积</td></tr>
+              <tr><td>6.3</td><td>351–355</td><td>352–356</td><td>弧长与弧长函数</td></tr>
+              <tr><td>6.4</td><td>356–361</td><td>357–362</td><td>旋转曲面面积</td></tr>
+              <tr><td>6.5</td><td>362–370</td><td>363–371</td><td>功、弹簧、抽液与液体作用力</td></tr>
+              <tr><td>6.6</td><td>371–382</td><td>372–383</td><td>矩、质心、形心与Pappus定理</td></tr>
+              <tr><td>Ch.5</td><td>266–331</td><td>267–332</td><td>调用已认可金样，仅做正式回归</td></tr>
+            </tbody></table></div>
+            <div class="callout warning"><strong>来源边界</strong>第6章内容只依据指定教材原本；第5章只回归既有金样。课程说明、旧试卷、旧复习稿不进入内容链。第7–8章没有因B3而修改。</div>
+            <div class="guide-grid">
+              <article class="info-card"><h3>公式源文件</h3><p><a href="source/formulas.tex" download>下载B3 LaTeX公式源文件</a></p></article>
+              <article class="info-card"><h3>知识图源文件</h3><p><a href="source/mindmap.mmd" download>下载B3 Mermaid源文件</a></p></article>
+              <article class="info-card"><h3>批次导航</h3><p><a href="../b02-ch03-04/index.html">上一批B2</a><br /><a href="../b04-ch07-08/index.html">下一批B4</a><br /><a href="../../index.html">第4–5章金样</a></p></article>
+            </div>
+          </section>
+        </div>
+        <footer class="footer-note">B3 · 第5–6章质量校准稿 · 第5章回归，第6章新增</footer>
+      </main>
+    </div>
+
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="batch-content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

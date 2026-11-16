@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">第 3–4 章知识依赖与回归关系</title>
+  <desc id="desc">第3章从某点导数、导函数和求导规则出发，连接到变化率、三角函数、链式法则、隐函数求导、相关变化率和线性化；这些方法共同支撑第4章极值、中值定理、图形分析、最优化、牛顿法和原函数。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#687670"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#19231f" flood-opacity=".08"/>
+    </filter>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;fill:#19231f}
+      .title{font-size:16px;font-weight:700}.sub{font-size:12px;fill:#596660}
+      .node{filter:url(#shadow)}.node rect{stroke-width:1.5;rx:12}
+      .new rect{fill:#dcebe6;stroke:#8dbbb1}.gold rect{fill:#f4e3ca;stroke:#d5aa73}
+      .bridge rect{fill:#223330;stroke:#223330}.bridge text{fill:#f5f0e6}
+      .edge{fill:none;stroke:#687670;stroke-width:1.8;marker-end:url(#arrow)}
+      .accent{fill:none;stroke:#a94b3e;stroke-width:2.2;stroke-dasharray:7 5;marker-end:url(#arrow)}
+      .lane{font-family:Georgia,serif;font-size:19px;font-weight:700;fill:#0f6761}
+      .label{font-size:11px;fill:#925b24;font-weight:700}
+    </style>
+  </defs>
+  <rect width="1120" height="620" fill="#fffdf8"/>
+  <path d="M560 30V590" stroke="#d8d1c4" stroke-dasharray="4 7"/>
+  <text x="32" y="42" class="lane">Chapter 3 · Derivatives</text>
+  <text x="590" y="42" class="lane">Chapter 4 · Applications of Derivatives</text>
+
+  <g class="node new" transform="translate(28 78)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.1 某点导数</text>
+    <text x="18" y="48" class="sub">差商 · 切线 · 瞬时率</text><text x="18" y="64" class="sub">同一极限的多种解释</text>
+  </g>
+  <g class="node new" transform="translate(292 78)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.2 导函数</text>
+    <text x="18" y="48" class="sub">可导 ⇒ 连续</text><text x="18" y="64" class="sub">角点 · 尖点 · 垂直切线</text>
+  </g>
+  <g class="node new" transform="translate(28 190)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.3 求导规则</text>
+    <text x="18" y="48" class="sub">幂 · 积 · 商 · 高阶</text><text x="18" y="64" class="sub">公式必须写适用域</text>
+  </g>
+  <g class="node new" transform="translate(292 190)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.4 变化率</text>
+    <text x="18" y="48" class="sub">速度 · 加速度 · 急动度</text><text x="18" y="64" class="sub">位移与路程要区分</text>
+  </g>
+  <g class="node new" transform="translate(28 302)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.5 三角导数</text>
+    <text x="18" y="48" class="sub">弧度制 · 六个函数</text><text x="18" y="64" class="sub">简谐运动</text>
+  </g>
+  <g class="node new" transform="translate(292 302)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.6 链式法则</text>
+    <text x="18" y="48" class="sub">外层导数 × 内层导数</text><text x="18" y="64" class="sub">复合函数与幂链式</text>
+  </g>
+  <g class="node new" transform="translate(28 414)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.7 隐函数求导</text>
+    <text x="18" y="48" class="sub">两侧对 x 求导</text><text x="18" y="64" class="sub">合并并解出 y′</text>
+  </g>
+  <g class="node new" transform="translate(292 414)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">3.8 相关变化率</text>
+    <text x="18" y="48" class="sub">关系式对 t 求导</text><text x="18" y="64" class="sub">几何量与符号</text>
+  </g>
+  <g class="node new" transform="translate(158 526)">
+    <rect width="226" height="66"/><text x="18" y="27" class="title">3.9 线性化与微分</text>
+    <text x="18" y="48" class="sub">切线近似 · 误差估计</text><text x="18" y="62" class="sub">Δf ≈ df</text>
+  </g>
+
+  <g class="node gold" transform="translate(590 78)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">4.1 极值</text>
+    <text x="18" y="48" class="sub">临界点 + 端点</text><text x="18" y="64" class="sub">Extreme Value Theorem</text>
+  </g>
+  <g class="node gold" transform="translate(854 78)">
+    <rect width="230" height="72"/><text x="18" y="27" class="title">4.2 中值定理</text>
+    <text x="18" y="48" class="sub">Rolle · Mean Value Theorem</text><text x="18" y="64" class="sub">连接平均与瞬时变化</text>
+  </g>
+  <g class="node gold" transform="translate(590 190)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">4.3 单调性</text>
+    <text x="18" y="48" class="sub">一阶导数判别法</text><text x="18" y="64" class="sub">临界点两侧符号</text>
+  </g>
+  <g class="node gold" transform="translate(854 190)">
+    <rect width="230" height="72"/><text x="18" y="27" class="title">4.4 凹凸与作图</text>
+    <text x="18" y="48" class="sub">f″ · 拐点 · 二阶导数检验</text><text x="18" y="64" class="sub">曲线七步法</text>
+  </g>
+  <g class="node gold" transform="translate(590 302)">
+    <rect width="226" height="72"/><text x="18" y="27" class="title">4.5 应用最优化</text>
+    <text x="18" y="48" class="sub">模型 · 约束 · 全局检查</text><text x="18" y="64" class="sub">边际收益 = 边际成本</text>
+  </g>
+  <g class="node gold" transform="translate(854 302)">
+    <rect width="230" height="72"/><text x="18" y="27" class="title">4.6 牛顿法</text>
+    <text x="18" y="48" class="sub">切线零点迭代</text><text x="18" y="64" class="sub">不保证收敛</text>
+  </g>
+  <g class="node gold" transform="translate(722 414)">
+    <rect width="362" height="72"/><text x="18" y="27" class="title">4.7 原函数与初值问题</text>
+    <text x="18" y="48" class="sub">F′ = f · F + C · 通解和特解</text><text x="18" y="64" class="sub">连接下一批第5章积分</text>
+  </g>
+
+  <g class="node bridge" transform="translate(590 526)">
+    <rect width="494" height="66"/>
+    <text x="20" y="27" class="title">第 4 章正式回归结论</text>
+    <text x="20" y="49" class="sub">41 个术语、15 道练习、公式与打印检查全部回归通过。</text>
+  </g>
+
+  <path class="edge" d="M254 114H292"/>
+  <path class="edge" d="M405 150V190"/>
+  <path class="edge" d="M141 150V190"/>
+  <path class="edge" d="M141 262V302"/>
+  <path class="edge" d="M405 262V302"/>
+  <path class="edge" d="M141 374V414"/>
+  <path class="edge" d="M405 374V414"/>
+  <path class="edge" d="M254 450C260 500 270 526 271 526"/>
+  <path class="edge" d="M405 450C425 500 405 526 384 526"/>
+  <path class="accent" d="M518 338C562 336 576 250 590 232"/>
+  <path class="accent" d="M518 450C560 470 580 470 590 450"/>
+  <path class="edge" d="M816 114H854"/>
+  <path class="edge" d="M703 150V190"/>
+  <path class="edge" d="M969 150V190"/>
+  <path class="edge" d="M816 226H854"/>
+  <path class="edge" d="M703 262V302"/>
+  <path class="edge" d="M969 262V302"/>
+  <path class="edge" d="M703 374C703 410 760 430 760 450"/>
+  <path class="edge" d="M969 374C969 410 920 430 905 450"/>
+  <text x="470" y="510" class="label">第3章方法进入第4章应用</text>
+</svg>

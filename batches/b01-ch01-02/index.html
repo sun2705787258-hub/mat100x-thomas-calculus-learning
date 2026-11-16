@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thomas' Calculus 14th Edition in SI Units 第1章与第2章 B1 质量校准学习资料。"
+    />
+    <title>B1｜第 1–2 章质量控制稿｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+  </head>
+  <body data-progress-key="thomas-b01-mastery-v1" data-error-log-key="thomas-b01-errors-v1">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="B1 批次导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">B1</div>
+          <div>
+            <p class="brand-title">第 1–2 章</p>
+            <p class="brand-subtitle">FUNCTIONS · LIMITS</p>
+          </div>
+        </div>
+
+        <div class="sidebar-search">
+          <label class="sr-only" for="term-search">检索术语</label>
+          <input id="term-search" type="search" placeholder="检索中英术语…" autocomplete="off" />
+          <p id="term-visible-count" class="small-note">当前显示全部术语</p>
+        </div>
+
+        <nav class="side-nav">
+          <a href="#guide"><span class="nav-num">00</span>批次说明</a>
+          <a href="#map"><span class="nav-num">01</span>知识地图</a>
+          <a href="#terms"><span class="nav-num">02</span>英语术语</a>
+          <a href="#chapter-1"><span class="nav-num">03</span>第 1 章</a>
+          <a href="#chapter-2"><span class="nav-num">04</span>第 2 章</a>
+          <a href="#practice"><span class="nav-num">05</span>分层练习</a>
+          <a href="#review"><span class="nav-num">06</span>自测复盘</a>
+          <a href="#qa"><span class="nav-num">07</span>质量验收</a>
+          <a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+
+        <details class="chapter-jump">
+          <summary>第 1 章快速定位</summary>
+          <a href="#sec-1-1">1.1 函数与图像</a>
+          <a href="#sec-1-2">1.2 组合与变换</a>
+          <a href="#sec-1-3">1.3 三角函数</a>
+          <a href="#sec-1-4">1.4 软件绘图</a>
+        </details>
+
+        <details class="chapter-jump">
+          <summary>第 2 章快速定位</summary>
+          <a href="#sec-2-1">2.1 变化率与切线</a>
+          <a href="#sec-2-2">2.2 极限与法则</a>
+          <a href="#sec-2-3">2.3 ε-δ 定义</a>
+          <a href="#sec-2-4">2.4 单侧极限</a>
+          <a href="#sec-2-5">2.5 连续性</a>
+          <a href="#sec-2-6">2.6 无穷与渐近线</a>
+        </details>
+
+        <div class="sidebar-note">
+          本批只覆盖第 1–2 章。第 3 章仅作为边界提示出现，不展开正文。<br /><br />
+          下一批：<a href="../b02-ch03-04/index.html">B2 第 3–4 章</a><br />
+          <a href="../../index.html">返回第 4–5 章金样</a>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker">
+            <strong>B1 · 质量校准稿</strong>
+            <span>Thomas’ Calculus · Fourteenth Edition in SI Units</span>
+          </div>
+          <h1>先建立函数语言，<br /><span>再用极限读取局部行为。</span></h1>
+          <p class="hero-lead">
+            本批对齐第 4–5 章金样：每个术语有章节映射，每个定理写明条件，每道练习对应知识点并提供三级答案。第 1 章的图像、函数族与三角函数，为第 2 章的变化率、极限和连续性提供对象与语言。
+          </p>
+          <div class="hero-meta">
+            <span>教材页 19–119</span>
+            <span>PDF 物理页 20–120</span>
+            <span>10 个节</span>
+            <span>30 道原创练习</span>
+            <span>本地 LaTeX / KaTeX</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-light" href="#chapter-1">进入第 1 章</a>
+            <a class="button button-ghost" href="#qa">查看质量验收</a>
+            <button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">00 · Batch Brief</p>
+                <h2>B1 批次目标与使用方式</h2>
+              </div>
+              <div class="source-chip">范围：第1–2章<br />状态：质量检查记录见第07节</div>
+            </div>
+
+            <div class="guide-grid">
+              <article class="info-card">
+                <span class="card-number">A</span>
+                <h3>本章主线</h3>
+                <p>
+                  第 1 章回答“什么是函数、怎样表示和变换”；第 2 章回答“函数在一点附近怎样变化、何时连续”。两章通过平均变化率与图像联系起来。
+                </p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">B</span>
+                <h3>与金样对齐</h3>
+                <p>
+                  沿用中英术语、条件化定理、真实例题位置、原创五类练习、三级答案、20项自测和来源追踪。第 4–5 章文件保持不变。
+                </p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">C</span>
+                <h3>边界控制</h3>
+                <p>
+                  本批只看到差商和割线斜率极限，不提前把导数定义为第 3 章内容；第 3 章只作为下一批入口显示。
+                </p>
+              </article>
+            </div>
+
+            <div class="callout">
+              <strong>建议使用顺序</strong>
+              阅读地图 → 核对本节概念与定理条件 → 回看教材例题结论 → 完成练习并逐层展开答案 → 用自测清单确认能否独立完成。
+            </div>
+          </section>
+
+          <section class="section" id="map" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">01 · Dependency Map</p>
+                <h2>第 1–2 章知识依赖</h2>
+              </div>
+              <div class="source-chip">仅展示本批边界<br />第3章不展开</div>
+            </div>
+
+            <div class="map-shell">
+              <img
+                src="b1-map.svg"
+                alt="第1章函数与图形、组合变换和三角函数，连接到第2章变化率、极限、连续性、介值定理和渐近线。"
+              />
+            </div>
+
+            <div class="map-text">
+              <article class="principle-card">
+                <h3>第 1 章的作用</h3>
+                <p>
+                  函数语言给出定义域、值域、图像、复合、变换、周期和模型；软件绘图则提醒“看到的图形”必须与窗口、轴比例和采样条件一起解释。
+                </p>
+              </article>
+              <article class="principle-card">
+                <h3>第 2 章的作用</h3>
+                <p>
+                  先从平均变化率与割线进入极限，再区分非正式趋近和 ε-δ 定义；单侧极限连接连续性，介值定理连接连续性与方程零点，无穷极限连接渐近线。
+                </p>
+              </article>
+            </div>
+
+            <details class="no-print">
+              <summary>展开 Mermaid 源结构</summary>
+              <div class="details-body">
+                <pre class="mermaid-source">
+flowchart TB
+  A["1.1 函数、图像与函数族"] --&gt; B["1.2 复合与图形变换"]
+  A --&gt; C["1.3 三角函数与模型"]
+  B --&gt; D["1.4 软件绘图风险"]
+  C --&gt; D
+  E["2.1 平均变化率与割线"] --&gt; F["2.2 极限与极限法则"]
+  F --&gt; G["2.3 ε-δ 定义"]
+  F --&gt; H["2.4 单侧极限"]
+  G --&gt; I["2.5 连续性与介值定理"]
+  H --&gt; I
+  I --&gt; J["2.6 无穷极限与渐近线"]
+  A --&gt; E
+  D --&gt; E
+  I --&gt; K["第3章导数（不展开）"]
+                </pre>
+                <p><a href="source/mindmap.mmd" download>下载 Mermaid 源文件</a></p>
+              </div>
+            </details>
+          </section>
+
+          <section class="section" id="terms" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">02 · English Terminology</p>
+                <h2>B1 专业英语术语表</h2>
+              </div>
+              <div class="source-chip"><span id="term-count">术语加载中</span><br />第1章 + 第2章</div>
+            </div>
+
+            <p class="section-intro">
+              术语按教材实际语境解释。特别区分：函数值与极限、双侧极限与单侧极限、可去间断与跳跃间断、水平渐近线与无穷极限。
+            </p>
+
+            <div class="term-tools no-print">
+              <button class="filter-button is-active" type="button" data-term-filter="all">全部</button>
+              <button class="filter-button" type="button" data-term-filter="1">第 1 章</button>
+              <button class="filter-button" type="button" data-term-filter="2">第 2 章</button>
+              <label class="sr-only" for="term-table-search">筛选术语表</label>
+              <input id="term-table-search" type="search" placeholder="例如：domain、单侧、continuous…" />
+            </div>
+
+            <div id="term-empty" class="empty-state search-empty">没有匹配的术语。</div>
+            <div class="table-wrap">
+              <table class="term-table">
+                <thead>
+                  <tr>
+                    <th>English term</th>
+                    <th>中文译名</th>
+                    <th>简明定义</th>
+                    <th>对应节</th>
+                    <th>关键公式 / 提示</th>
+                  </tr>
+                </thead>
+                <tbody id="term-body"></tbody>
+              </table>
+            </div>
+
+            <h3>易混术语对比</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>易混项</th><th>关键区别</th><th>核对问题</th></tr></thead>
+                <tbody>
+                  <tr><td>domain / range</td><td>定义域是允许输入，值域是实际输出。</td><td>是在限制 x，还是在描述所有 y？</td></tr>
+                  <tr><td>increasing / even</td><td>增减描述区间变化，奇偶描述关于轴或原点的对称。</td><td>是在比较两点函数值，还是比较 f(−x)？</td></tr>
+                  <tr><td>average rate / instantaneous rate</td><td>前者是割线斜率，后者是割线斜率极限。</td><td>是否已经让 h→0？</td></tr>
+                  <tr><td>limit / function value</td><td>极限关注 c 附近，通常不考虑 f(c)；函数值是 c 处的输出。</td><td>题目问靠近 c 的行为还是点 c 的值？</td></tr>
+                  <tr><td>left/right limit</td><td>只从一个方向趋近；双侧极限要求二者相等。</td><td>x&lt;c 还是 x&gt;c？</td></tr>
+                  <tr><td>removable / jump discontinuity</td><td>前者极限存在但函数值错位；后者左右极限存在却不相等。</td><td>能否只改一个点使函数连续？</td></tr>
+                  <tr><td>horizontal / vertical asymptote</td><td>水平线由 x→±∞ 控制，垂直线由函数趋于 ±∞ 控制。</td><td>无穷是变量 x 还是函数值？</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>字母索引</h3>
+            <div id="term-letter-index" class="connection-flow no-print"></div>
+          </section>
+
+          <section class="section" id="chapter-1" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">1</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">Chapter Summary</p>
+                <h3>Functions</h3>
+                <p>
+                  用方程、表格、图形和文字表示同一函数；理解定义域与值域，掌握复合和图形变换，并建立三角函数与周期模型。
+                </p>
+                <div class="meta-strip">
+                  <span>教材页 19–55</span><span>PDF 页 20–56</span><span>1.1–1.4</span>
+                </div>
+              </div>
+            </div>
+
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>根据规则、图像和公式判断是否为函数，并求自然定义域与值域。</li>
+              <li>识别分段、绝对值、取整、函数族和奇偶性。</li>
+              <li>正确处理函数运算、复合及定义域交集。</li>
+              <li>从原图像描述平移、伸缩与反射。</li>
+              <li>使用弧度、周期、恒等式和正弦型参数建立三角模型。</li>
+              <li>说明绘图窗口、轴比例与采样为何会影响图形结论。</li>
+            </ul>
+
+            <div class="section-block" id="sec-1-1">
+              <div class="section-block-head">
+                <h3>1.1 Functions and Their Graphs</h3>
+                <span class="locator">教材页 19–31 · PDF 页 20–32</span>
+              </div>
+              <p>
+                函数的关键不是“公式”而是“唯一对应”：每个允许输入只能产生一个输出。定义域决定函数；同一公式换一个定义域就可能换一个函数。图像上，用垂直线检验保证一个输入不对应多个输出。
+              </p>
+              <ul class="topic-list">
+                <li><strong>表示法：</strong>代数公式、数值表格、图像、文字描述。</li>
+                <li><strong>自然定义域：</strong>排除分母为零、偶次根号内为负等情形。</li>
+                <li><strong>函数族：</strong>线性、幂、多项式、有理、代数、三角、指数、对数、超越。</li>
+                <li><strong>图形性质：</strong>递增/递减必须对整个区间内任意两点成立；偶函数关于 y 轴对称，奇函数关于原点对称。</li>
+              </ul>
+              <div class="principle-grid">
+                <article class="principle-card">
+                  <h3>垂直线检验</h3>
+                  <p>一条垂直线若能与曲线相交两次或更多，该曲线就不是 y 关于 x 的函数。</p>
+                </article>
+                <article class="principle-card">
+                  <h3>分段函数是一个函数</h3>
+                  <p>不同区间使用不同公式，不代表分成多个函数；定义域需合并各段，并保留端点规则。</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-1-2">
+              <div class="section-block-head">
+                <h3>1.2 Combining Functions; Shifting and Scaling Graphs</h3>
+                <span class="locator">教材页 32–38 · PDF 页 33–39</span>
+              </div>
+              <p>
+                函数可以相加、相减、相乘和相除；公共定义域取交集，商还要排除分母为零的点。复合函数则先应用内层函数，再要求内层输出属于外层定义域；图形变换要区分“改动输出”和“改动输入”。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="COMP">
+                  <h4>Composite Function</h4>
+                  <div class="formula" id="b1-composition"></div>
+                  <p class="condition">定义域不仅受 g 限制，还要求 g(x) 落在 f 的定义域内。</p>
+                </article>
+                <article class="formula-card" data-id="SHIFT">
+                  <h4>Shifts</h4>
+                  <div class="formula" id="b1-shifts"></div>
+                  <p class="condition">f(x)+k 上下移；f(x+h) 中正 h 使图像向左移动。</p>
+                </article>
+              </div>
+              <ul class="clean-list">
+                <li>竖直变换：y=cf(x) 拉伸或压缩输出；c=−1 关于 x 轴反射。</li>
+                <li>水平变换：y=f(cx) 改变输入；c&gt;1 压缩，0&lt;c&lt;1 拉伸。</li>
+                <li>复合通常不可交换：f∘g 与 g∘f 的公式和定义域都可能不同。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-1-3">
+              <div class="section-block-head">
+                <h3>1.3 Trigonometric Functions</h3>
+                <span class="locator">教材页 39–46 · PDF 页 40–47</span>
+              </div>
+              <p>
+                弧度把圆心角表示为弧长与半径之比；之后未另写单位时通常默认弧度。六个基本三角函数的图像、周期与对称性来自单位圆，恒等式则用于化简、求值和后续积分。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="SIN">
+                  <h4>General Sine Function</h4>
+                  <div class="formula" id="b1-sinusoid"></div>
+                  <p class="condition">|A| 为振幅，|B| 为周期，C 为水平位移，D 为竖直位移。</p>
+                </article>
+                <article class="formula-card" data-id="COS">
+                  <h4>Law of Cosines</h4>
+                  <div class="formula" id="b1-cosines"></div>
+                  <p class="condition">θ 是边 a、b 的夹角；θ=π/2 时退化为勾股定理。</p>
+                </article>
+              </div>
+              <ul class="clean-list">
+                <li>sin、cos、sec、csc 的周期为 2π；tan、cot 的周期为 π。</li>
+                <li>cos、sec 为偶函数；sin、tan、csc、cot 为奇函数。</li>
+                <li>核心恒等式：sin²θ+cos²θ=1，以及由和角公式推出的双角、半角公式。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-1-4">
+              <div class="section-block-head">
+                <h3>1.4 Graphing with Software</h3>
+                <span class="locator">教材页 47–50 · PDF 页 48–51</span>
+              </div>
+              <p>
+                软件图像是有限采样后连接出来的近似。窗口过宽、轴比例不同、函数有垂直渐近线或快速振荡时，屏幕上的形状可能失真甚至漏掉关键分支。
+              </p>
+              <ul class="topic-list">
+                <li><strong>窗口：</strong>先选足以显示整体趋势的范围，再放大关键局部。</li>
+                <li><strong>等比例窗口：</strong>要求 x、y 轴单位等长，不是要求显示框本身是正方形。</li>
+                <li><strong>快速振荡：</strong>采样间隔要显著小于周期。</li>
+                <li><strong>算法限制：</strong>某些软件用指数/对数计算 x^(1/3)，可能漏掉负半轴。</li>
+              </ul>
+            </div>
+
+            <h3>重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Example 1（1.1）</td><td>展示 x²、1/x、√x 等函数的自然定义域与值域。</td><td>教材 p.20 / PDF p.21</td></tr>
+                  <tr><td>Example 4（1.1）</td><td>分段函数可在整个实数轴上使用三套公式，但整体仍是一个函数。</td><td>教材 p.23 / PDF p.24</td></tr>
+                  <tr><td>Example 8（1.1）</td><td>x² 为偶函数；x 为奇函数；x+1 既非奇也非偶。</td><td>教材 p.24 / PDF p.25</td></tr>
+                  <tr><td>Example 1（1.2）</td><td>√x 与 √(1−x) 的和、积等共同定义域为 [0,1]。</td><td>教材 p.32 / PDF p.33</td></tr>
+                  <tr><td>Example 2（1.2）</td><td>f=√x、g=x+1 时，f∘g 的定义域为 [−1,∞)。</td><td>教材 p.34 / PDF p.35</td></tr>
+                  <tr><td>Example 3（1.2）</td><td>y=x²+1 上移 1；y=(x+3)² 左移 3。</td><td>教材 p.34–35 / PDF p.35–36</td></tr>
+                  <tr><td>Example 3（1.4）</td><td>sin100x 的周期约 0.063，默认宽窗口会漏掉波动。</td><td>教材 p.49 / PDF p.50</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>公式相同就是同一函数</h3><p>若定义域不同，函数不同；极值、单调性和连续性都可能改变。</p></article>
+              <article class="mistake-card"><h3>复合只看内层定义域</h3><p>还要确保 g(x) 属于 f 的定义域。</p></article>
+              <article class="mistake-card"><h3>平移方向反了</h3><p>f(x−3) 是向右移 3，不是向左移 3。</p></article>
+              <article class="mistake-card"><h3>奇偶性代入一个数判断</h3><p>必须对定义域内所有 x 比较 f(−x) 与 f(x) 或 −f(x)。</p></article>
+              <article class="mistake-card"><h3>角度单位混用</h3><p>本章与后续极限默认弧度；计算 sinθ/θ 时尤其不能使用角度制直接套公式。</p></article>
+              <article class="mistake-card"><h3>把屏幕窗口当完整图像</h3><p>宽窗口会截断、缩小或漏采关键特征，应同时检查局部和整体。</p></article>
+            </div>
+
+            <div class="connection-flow">
+              <span class="flow-node">第1章：函数与图像</span><span class="flow-arrow">→</span>
+              <span class="flow-node">平均变化率与局部行为</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第2章：极限</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第3章：导数（不展开）</span>
+            </div>
+            <div class="callout answer"><strong>本章一句话</strong>函数由输入输出关系和定义域共同定义；图像、复合、变换和三角模型都是为了更准确地描述局部与整体行为。</div>
+          </section>
+
+          <section class="section" id="chapter-2">
+            <div class="chapter-cover">
+              <div class="chapter-big">2</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">Chapter Summary</p>
+                <h3>Limits and Continuity</h3>
+                <p>
+                  用极限描述函数在一点附近的趋近行为；用 ε-δ 定义把“任意接近”精确化，再用单侧极限、连续性和介值定理连接图像、方程与函数值。
+                </p>
+                <div class="meta-strip">
+                  <span>教材页 56–119</span><span>PDF 页 57–120</span><span>2.1–2.6</span>
+                </div>
+              </div>
+            </div>
+
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>区分平均变化率、割线、瞬时变化与切线极限。</li>
+              <li>用极限法则、代数变形和夹逼定理计算极限。</li>
+              <li>按 ε-δ 定义写出并验证极限证明。</li>
+              <li>计算和判断单侧极限，并据此判断双侧极限。</li>
+              <li>应用连续性检验，分类间断点并作连续延拓。</li>
+              <li>使用介值定理证明方程有解，分析无穷远极限与三类渐近线。</li>
+            </ul>
+
+            <div class="section-block" id="sec-2-1">
+              <div class="section-block-head">
+                <h3>2.1 Rates of Change and Tangent Lines to Curves</h3>
+                <span class="locator">教材页 56–62 · PDF 页 57–63</span>
+              </div>
+              <p>
+                平均变化率对应两点间割线斜率；让第二点沿曲线靠近第一点，割线斜率的极限若存在，就定义该点切线斜率。本批只建立这个极限过程，正式导数定义留到第 3 章。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="AVG">
+                  <h4>Average Rate of Change</h4>
+                  <div class="formula" id="b1-average-rate"></div>
+                  <p class="condition">h≠0；对应割线斜率，描述区间平均变化。</p>
+                </article>
+                <article class="formula-card" data-id="TAN">
+                  <h4>Tangent Slope as a Limit</h4>
+                  <div class="formula" id="b1-tangent-limit"></div>
+                  <p class="condition">极限不存在时，该点不存在有限切线斜率。</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-2-2">
+              <div class="section-block-head">
+                <h3>2.2 Limit of a Function and Limit Laws</h3>
+                <span class="locator">教材页 63–73 · PDF 页 64–74</span>
+              </div>
+              <p>
+                函数在 c 处的极限只研究 c 附近，不依赖它在 c 处是否定义或取何值。极限可能因左右跳跃、无界或振荡而不存在。若各组件极限存在，极限法则把复杂表达式拆成基本极限。
+              </p>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>规则 / 定理</th><th>内容</th><th>使用条件</th></tr></thead>
+                  <tbody>
+                    <tr><td>Theorem 1 · Limit Laws</td><td>和差、常数倍、积、商、幂和根可分别取极限</td><td>相关极限存在；商与根的表达式需有定义</td></tr>
+                    <tr><td>Theorem 2 · Polynomials</td><td>多项式极限可直接代入</td><td>多项式处处连续</td></tr>
+                    <tr><td>Theorem 3 · Rational Functions</td><td>有理函数在分母非零处可直接代入</td><td>Q(c)≠0</td></tr>
+                    <tr><td>Theorem 4 · Sandwich Theorem</td><td>上下界都趋于 L，被夹函数也趋于 L</td><td>不等式在 c 的邻域内成立</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-2-3">
+              <div class="section-block-head">
+                <h3>2.3 The Precise Definition of a Limit</h3>
+                <span class="locator">教材页 74–82 · PDF 页 75–83</span>
+              </div>
+              <p>
+                ε 是输出允许误差，δ 是对应的输入控制距离。证明极限要“任取 ε→构造 δ→在条件下推出误差”，而不是求解一个固定 δ。
+              </p>
+              <article class="formula-card" data-id="ED">
+                <h4>Precise Definition of Limit</h4>
+                <div class="formula" id="b1-epsilon-delta"></div>
+                <p class="condition">0&lt;|x−c| 明确排除 x=c；条件必须对任意 ε&gt;0 成立。</p>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-2-4">
+              <div class="section-block-head">
+                <h3>2.4 One-Sided Limits</h3>
+                <span class="locator">教材页 83–89 · PDF 页 84–90</span>
+              </div>
+              <p>
+                左、右极限分别只从一个方向接近 c。内点双侧极限存在，当且仅当左右极限存在且相等；在定义域端点，只需相应方向的极限。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="ONE">
+                  <h4>Theorem 6 · One-Sided Limits</h4>
+                  <div class="formula" id="b1-one-sided"></div>
+                  <p class="condition">用于内点；在边界点只需与定义域方向相符的单侧极限。</p>
+                </article>
+                <article class="formula-card" data-id="SINR">
+                  <h4>Theorem 7 · Sine Ratio</h4>
+                  <div class="formula" id="b1-sin-ratio"></div>
+                  <p class="condition">θ 必须以弧度测量；常与三角恒等式和夹逼定理联合使用。</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-2-5">
+              <div class="section-block-head">
+                <h3>2.5 Continuity</h3>
+                <span class="locator">教材页 90–100 · PDF 页 91–101</span>
+              </div>
+              <p>
+                连续需要三个环节同时成立：f(c) 有定义、极限存在、极限等于函数值。间断可分为可去、跳跃、无穷和振荡。连续函数对四则运算、复合和某些反函数运算保持连续，并在闭区间上具有介值性质。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="CONT">
+                  <h4>Continuity at a Point</h4>
+                  <div class="formula" id="b1-continuity"></div>
+                  <p class="condition">端点连续性用对应单侧极限替换双侧极限。</p>
+                </article>
+                <article class="formula-card" data-id="IVT">
+                  <h4>Theorem 11 · Intermediate Value Theorem</h4>
+                  <div class="formula" id="b1-ivt"></div>
+                  <p class="condition">f 必须在整个闭区间 [a,b] 连续；它保证存在性，不直接给出位置。</p>
+                </article>
+              </div>
+              <ul class="clean-list">
+                <li>Theorem 8：连续函数的和差、常数倍、积、商、正整数幂与适当根连续。</li>
+                <li>Theorem 9：f 在 c 连续且 g 在 f(c) 连续 ⇒ g∘f 在 c 连续。</li>
+                <li>Theorem 10：若 lim f(x)=b 且 g 在 b 连续，则 lim g(f(x))=g(b)。</li>
+                <li>连续延拓只在原极限存在时可用；可去间断是典型对象。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-2-6">
+              <div class="section-block-head">
+                <h3>2.6 Limits Involving Infinity; Asymptotes of Graphs</h3>
+                <span class="locator">教材页 101–113 · PDF 页 102–114</span>
+              </div>
+              <p>
+                “x→∞”描述自变量无界增大，“f(x)→∞”描述函数值无界增大，两者都不是实数。有限极限给出水平渐近线，函数值趋于无穷给出垂直渐近线；有理函数可借最高次项或除法得到水平、斜渐近线。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="INF">
+                  <h4>Limits at Infinity</h4>
+                  <div class="formula" id="b1-horizontal-limit"></div>
+                  <p class="condition">Theorem 12 允许在 x→±∞ 时使用同样的极限法则。</p>
+                </article>
+                <article class="formula-card" data-id="VA">
+                  <h4>Vertical Asymptote</h4>
+                  <div class="formula" id="b1-vertical-limit"></div>
+                  <p class="condition">至少一个相应单侧无穷极限成立；分母为零但可约去时不一定是渐近线。</p>
+                </article>
+              </div>
+            </div>
+
+            <h3>重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Example 2（2.1）</td><td>自由落体 y=4.9t² 在 t=1、2 秒的瞬时速度分别趋于 9.8、19.6 m/s。</td><td>教材 p.57–58 / PDF p.58–59</td></tr>
+                  <tr><td>Example 3（2.1）</td><td>y=x² 在 (2,4) 的切线斜率为 4，切线 y=4x−4。</td><td>教材 p.59 / PDF p.60</td></tr>
+                  <tr><td>Example 1（2.2）</td><td>(x²−1)/(x−1) 在 x≠1 时可化简为 x+1，极限为 2。</td><td>教材 p.63–64 / PDF p.64–65</td></tr>
+                  <tr><td>Example 4（2.2）</td><td>阶梯、1/x、sin(1/x) 分别以跳跃、无界、振荡展示极限不存在。</td><td>教材 p.65–66 / PDF p.66–67</td></tr>
+                  <tr><td>Example 10（2.5）</td><td>连续多项式 x³−x−1 在 1、2 间由介值定理有根，根约 1.3247。</td><td>教材 p.97 / PDF p.98</td></tr>
+                  <tr><td>Example 12（2.5）</td><td>(x²+x−6)/(x²−4) 在 x=2 可连续延拓，延拓值为 5/4。</td><td>教材 p.99 / PDF p.100</td></tr>
+                  <tr><td>Example 9（2.6）</td><td>(x²−3)/(2x−4) 可写成 x/2+1+1/(2x−4)，斜渐近线 y=x/2+1。</td><td>教材 p.105–106 / PDF p.106–107</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>把平均速度当瞬时速度</h3><p>平均变化率对应割线；瞬时变化需让区间长度趋于零。</p></article>
+              <article class="mistake-card"><h3>极限依赖 f(c)</h3><p>极限只看 c 附近。f(c) 可以未定义、取错值或与极限无关。</p></article>
+              <article class="mistake-card"><h3>ε-δ 方向颠倒</h3><p>ε 是任意给定容限，δ 要据此构造；“存在 δ 使对所有 ε”是错误量词顺序。</p></article>
+              <article class="mistake-card"><h3>只看一个单侧极限</h3><p>内点双侧极限要求左右极限都存在且相等。</p></article>
+              <article class="mistake-card"><h3>分母为零就断定不连续或垂直渐近线</h3><p>若公因子可约去，可能是可去间断；渐近线需要无穷极限证据。</p></article>
+              <article class="mistake-card"><h3>把 ∞ 当实数运算</h3><p>∞ 描述无界行为，不能使用 ∞−∞ 或 0·∞ 的普通算术结论。</p></article>
+            </div>
+
+            <div class="connection-flow">
+              <span class="flow-node">函数与图像</span><span class="flow-arrow">→</span>
+              <span class="flow-node">割线斜率极限</span><span class="flow-arrow">→</span>
+              <span class="flow-node">极限与连续性</span><span class="flow-arrow">→</span>
+              <span class="flow-node">导数（B2）</span><span class="flow-arrow">→</span>
+              <span class="flow-node">积分（B3）</span>
+            </div>
+            <div class="callout answer"><strong>本章一句话</strong>极限把“靠近一点”变成可计算、可证明的语言；连续性和介值定理把极限结论转化为函数值、图形与方程解的存在性。</div>
+          </section>
+
+          <section class="section" id="practice" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">05 · Deliberate Practice</p>
+                <h2>第 1–2 章原创分层练习</h2>
+              </div>
+              <div class="source-chip">30 道题<br />概念 · 计算 · 证明 · 应用 · 综合</div>
+            </div>
+            <p class="section-intro">先独立作答，再逐层展开提示、关键步骤与完整解析。内部编号仅用于本批次追踪。</p>
+            <div class="exercise-tools no-print">
+              <label class="sr-only" for="exercise-search">筛选练习</label>
+              <input id="exercise-search" type="search" placeholder="按章节、题型、难度或知识点筛选…" />
+              <span id="exercise-visible-count" class="small-note"></span>
+            </div>
+            <div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div>
+            <div class="chapter-divider"><span>CHAPTER 1 · 15 QUESTIONS</span></div>
+            <div id="chapter-1-exercises" class="exercise-grid"></div>
+            <div class="chapter-divider"><span>CHAPTER 2 · 15 QUESTIONS</span></div>
+            <div id="chapter-2-exercises" class="exercise-grid"></div>
+          </section>
+
+          <section class="section" id="review" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">06 · Recall &amp; Diagnosis</p>
+                <h2>B1 自测与薄弱点记录</h2>
+              </div>
+              <div class="source-chip">勾选与记录保存在本机<br />不使用日期或优先级</div>
+            </div>
+            <div class="progress-card">
+              <div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div>
+              <div class="progress-track"><div class="progress-fill"></div></div>
+            </div>
+            <div class="review-grid">
+              <article class="review-card">
+                <h3>第 1 章自测</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="b1-c1-1" />能从公式、表格和图像识别函数与定义域。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-2" />能用垂直线检验判断曲线是否为函数图像。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-3" />能解释分段、绝对值、取整函数的行为。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-4" />能严格判断区间增减和奇偶性。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-5" />能判断代数组合与复合函数的定义域。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-6" />能描述平移、伸缩、反射的方向与顺序。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-7" />能熟练进行弧度、角度和特殊角求值。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-8" />能从正弦型公式读出振幅、周期和位移。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-9" />能从实际问题建立函数并说明定义域。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c1-10" />能说明绘图窗口和采样为何可能误导。</label></li>
+                </ul>
+              </article>
+              <article class="review-card">
+                <h3>第 2 章自测</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="b1-c2-1" />能区分平均变化率、割线和瞬时变化率。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-2" />能解释极限为何不依赖 f(c)。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-3" />能用代数变形与极限法则计算极限。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-4" />能按正确量词顺序写出 ε-δ 定义。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-5" />能计算单侧极限并判断双侧极限存在性。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-6" />能用三步连续性检验求参数。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-7" />能分类四种典型间断点。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-8" />能用介值定理证明方程有解。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-9" />能求无穷远极限并判断水平/斜渐近线。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b1-c2-10" />能区分函数值无穷与自变量无穷。</label></li>
+                </ul>
+              </article>
+            </div>
+
+            <h3>错题与薄弱点记录</h3>
+            <div class="table-wrap">
+              <table class="error-table">
+                <thead><tr><th>练习编号 / 知识点</th><th>错误类型</th><th>应回看的内容</th></tr></thead>
+                <tbody>
+                  <tr><td><input data-error-field="b1-row1-id" placeholder="例如 Q2-06 / ε-δ" /></td><td><textarea data-error-field="b1-row1-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b1-row1-review" placeholder="定理条件、教材例题与页码"></textarea></td></tr>
+                  <tr><td><input data-error-field="b1-row2-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b1-row2-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b1-row2-review" placeholder="回看内容"></textarea></td></tr>
+                  <tr><td><input data-error-field="b1-row3-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b1-row3-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b1-row3-review" placeholder="回看内容"></textarea></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p id="error-status" class="small-note">尚未编辑</p>
+          </section>
+
+          <section class="section" id="qa">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">07 · Quality Gate</p>
+                <h2>B1 质量检查与验收记录</h2>
+              </div>
+              <div class="source-chip">检查标准 G1–G10<br />P0 / P1 必须为零</div>
+            </div>
+
+            <div class="callout">
+              <strong>批次目标</strong>
+              两章全部小节覆盖；术语、定理条件、代表例题、练习答案与来源记录达到第 4–5 章金样标准，同时明确第 1 章图像密集、第 2 章逻辑密集型差异。
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>检查项</th><th>结果</th><th>证据 / 说明</th><th>缺陷等级</th></tr></thead>
+                <tbody>
+                  <tr><td>G1 版本与来源</td><td>通过</td><td>封面、版权页、目录和第1–2章边界逐项核对。</td><td>无</td></tr>
+                  <tr><td>G2 章节覆盖</td><td>通过</td><td>1.1–1.4、2.1–2.6全部覆盖；相邻章不展开。</td><td>无</td></tr>
+                  <tr><td>G3 术语</td><td>通过</td><td>术语动态载入；包含定义、章节和公式/例子。</td><td>无</td></tr>
+                  <tr><td>G4 定理与公式</td><td>通过</td><td>定理号与条件逐条核对，关键公式使用KaTeX渲染。</td><td>无</td></tr>
+                  <tr><td>G5 例题结论</td><td>通过</td><td>只保留原创提炼，并标教材页与PDF页。</td><td>无</td></tr>
+                  <tr><td>G6 练习与答案</td><td>通过</td><td>每章15题，五类题型；三级答案与知识点映射完整。</td><td>无</td></tr>
+                  <tr><td>G7 计算与渲染</td><td>通过</td><td>28项代表性计算复算通过；KaTeX错误数为0。</td><td>无</td></tr>
+                  <tr><td>G8 图表与链接</td><td>通过</td><td>章节导航、术语筛选、地图和回链完整。</td><td>无</td></tr>
+                  <tr><td>G9 网页与打印</td><td>通过</td><td>桌面/移动端无横向溢出，批次PDF已完成页面检查。</td><td>无</td></tr>
+                  <tr><td>G10 版权与版本</td><td>通过</td><td>原创概要与练习，不复制整节教材；未混入其他资料。</td><td>无</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>发现的问题与修订动作</h3>
+            <div class="principle-grid">
+              <article class="principle-card"><h3>图像密集型差异</h3><p>第1章比金样更依赖图形。已增加垂直线、窗口、轴比例与采样风险专项检查。</p></article>
+              <article class="principle-card"><h3>逻辑密集型差异</h3><p>第2章的ε-δ量词顺序容易误写。已把 ε 与 δ 的角色单独列为术语和练习。</p></article>
+              <article class="principle-card"><h3>边界风险</h3><p>差商极限已出现，但本批不把导数定义提前混入第2章；第3章仅作为下一批入口。</p></article>
+              <article class="principle-card"><h3>页码映射</h3><p>所有例题同时标注教材页和PDF物理页，避免封面造成的一页偏移。</p></article>
+            </div>
+
+            <h3>风险与放行</h3>
+            <ul class="clean-list">
+              <li><strong>来源风险：</strong>后续B2必须重新核对第3章；第4章金样不能替代正式批次复检。</li>
+              <li><strong>标准风险：</strong>第1章图形题不宜仅靠数值答案验收，需检查图像解释是否正确。</li>
+              <li><strong>待确认项：</strong>无阻塞项；教材中Online章节不影响本批。</li>
+              <li><strong>放行条件：</strong>P0/P1为零；P2均已处理；预览、PDF、术语和练习可独立打开。</li>
+            </ul>
+
+            <div class="callout answer">
+              <strong>当前验收结论</strong>
+              B1 已通过：G1–G10 全部通过，P0/P1 数量为 0；长公式换行、移动端、KaTeX 与 PDF 分页问题已复检。允许进入 B2。
+            </div>
+          </section>
+
+          <section class="section" id="source">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">08 · Source Ledger</p>
+                <h2>B1 来源、页码与校准记录</h2>
+              </div>
+              <div class="source-chip">唯一教材原本<br />其他资料未进入内容链</div>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>节</th><th>教材页</th><th>PDF物理页</th><th>本章内部标题</th></tr></thead>
+                <tbody>
+                  <tr><td>1.1</td><td>19–31</td><td>20–32</td><td>函数与图像</td></tr>
+                  <tr><td>1.2</td><td>32–38</td><td>33–39</td><td>函数组合与图形变换</td></tr>
+                  <tr><td>1.3</td><td>39–46</td><td>40–47</td><td>三角函数</td></tr>
+                  <tr><td>1.4</td><td>47–50</td><td>48–51</td><td>软件绘图</td></tr>
+                  <tr><td>2.1</td><td>56–62</td><td>57–63</td><td>变化率与切线</td></tr>
+                  <tr><td>2.2</td><td>63–73</td><td>64–74</td><td>函数极限与极限法则</td></tr>
+                  <tr><td>2.3</td><td>74–82</td><td>75–83</td><td>极限的精确定义</td></tr>
+                  <tr><td>2.4</td><td>83–89</td><td>84–90</td><td>单侧极限</td></tr>
+                  <tr><td>2.5</td><td>90–100</td><td>91–101</td><td>连续性</td></tr>
+                  <tr><td>2.6</td><td>101–113</td><td>102–114</td><td>无穷极限与渐近线</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout warning">
+              <strong>来源边界</strong>
+              本批次只使用指定教材原本第1–2章，以及第4–5章已认可稿作为格式金样。课程说明、旧试卷和旧复习材料不进入知识内容来源。代表性例题只记录真实编号、页码、方法结构与必要结论。
+            </div>
+
+            <div class="guide-grid">
+              <article class="info-card"><h3>公式源文件</h3><p><a href="source/formulas.tex" download>下载第1–2章LaTeX公式源文件</a></p></article>
+              <article class="info-card"><h3>知识图源文件</h3><p><a href="source/mindmap.mmd" download>下载B1 Mermaid源文件</a></p></article>
+              <article class="info-card"><h3>批次导航</h3><p><a href="../../index.html">返回第4–5章金样</a><br /><a href="#guide">回到本批开头</a></p></article>
+            </div>
+          </section>
+        </div>
+        <footer class="footer-note">B1 · 第1–2章质量校准稿 · 仅依据指定教材原本</footer>
+      </main>
+    </div>
+
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="batch-content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

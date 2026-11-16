@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Thomas 微积分第 1 章中文概要、专业英语术语、公式、分层练习与自测。" />
+    <title>第 1 章 Functions｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/site.css" />
+  </head>
+  <body class="unified-site chapter-body">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    
+    <header class="site-header">
+      <a class="site-brand" href="../../index.html" aria-label="Thomas 微积分学习站首页">
+        <span class="site-brand-mark">T</span>
+        <span><strong>Thomas 微积分</strong><small>全书学习站</small></span>
+      </a>
+      <button class="site-menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-navigation">目录</button>
+      <nav class="site-nav" id="site-navigation" aria-label="全站主导航">
+        <a href="../../index.html">学习首页</a><a href="../../guide/index.html">使用说明</a><a href="../../overview/index.html">全书结构</a><a href="../../chapters/index.html" aria-current="page">章节目录</a><a href="../../terminology/index.html">术语</a><a href="../../exercises/index.html">练习</a><a href="../../review/index.html">复习</a><a href="../../reference/index.html">公式索引</a><a href="../../downloads/index.html">下载</a>
+      </nav>
+      <button class="site-search-button" type="button" data-search-open aria-label="搜索全站">
+        <span>搜索</span><kbd>/</kbd>
+      </button>
+    </header>
+    <main id="main-content">
+    <div class="chapter-page">
+      <aside class="chapter-spine" aria-label="全文章节导航">
+        <a class="spine-home" href="../../chapters/index.html">全部章节</a>
+        <nav><a href="../../chapters/ch01-functions/index.html" data-chapter-link="1"><span>01</span><strong>第 1 章</strong></a><a href="../../chapters/ch02-limits-continuity/index.html" data-chapter-link="2"><span>02</span><strong>第 2 章</strong></a><a href="../../chapters/ch03-derivatives/index.html" data-chapter-link="3"><span>03</span><strong>第 3 章</strong></a><a href="../../chapters/ch04-applications-derivatives/index.html" data-chapter-link="4"><span>04</span><strong>第 4 章</strong></a><a href="../../chapters/ch05-integrals/index.html" data-chapter-link="5"><span>05</span><strong>第 5 章</strong></a><a href="../../chapters/ch06-applications-definite-integrals/index.html" data-chapter-link="6"><span>06</span><strong>第 6 章</strong></a><a href="../../chapters/ch07-transcendental-functions/index.html" data-chapter-link="7"><span>07</span><strong>第 7 章</strong></a><a href="../../chapters/ch08-integration-techniques/index.html" data-chapter-link="8"><span>08</span><strong>第 8 章</strong></a><a href="../../chapters/ch09-sequences-series/index.html" data-chapter-link="9"><span>09</span><strong>第 9 章</strong></a><a href="../../chapters/ch10-parametric-polar/index.html" data-chapter-link="10"><span>10</span><strong>第 10 章</strong></a><a href="../../chapters/ch11-vectors-space/index.html" data-chapter-link="11"><span>11</span><strong>第 11 章</strong></a><a href="../../chapters/ch12-vector-functions-motion/index.html" data-chapter-link="12"><span>12</span><strong>第 12 章</strong></a><a href="../../chapters/ch13-partial-derivatives/index.html" data-chapter-link="13"><span>13</span><strong>第 13 章</strong></a><a href="../../chapters/ch14-multiple-integrals/index.html" data-chapter-link="14"><span>14</span><strong>第 14 章</strong></a><a href="../../chapters/ch15-vector-fields/index.html" data-chapter-link="15"><span>15</span><strong>第 15 章</strong></a><a href="../../chapters/ch16-first-order-equations/index.html" data-chapter-link="16"><span>16</span><strong>第 16 章</strong></a><a href="../../chapters/ch17-second-order-equations/index.html" data-chapter-link="17"><span>17</span><strong>第 17 章</strong></a></nav>
+      </aside>
+      <article class="reader">
+        <nav class="breadcrumbs" aria-label="面包屑"><a href="../../index.html">首页</a><span>/</span><a href="../../chapters/index.html">章节</a><span>/</span><span>第 1 章</span></nav>
+        <header class="chapter-hero">
+          <p class="chapter-group">函数与极限</p>
+          <div class="chapter-number">01</div>
+          <div><h1>Functions</h1><p>教材页 19-55 · 36 个术语 · 15 道练习 · 4 个公式</p></div>
+          <a class="chapter-pdf-link" href="../../pdf/Thomas_Calculus_%E7%AC%AC1%E7%AB%A0%E8%87%B32%E7%AB%A0_B1%E8%B4%A8%E9%87%8F%E6%A0%A1%E5%87%86%E7%A8%BF.pdf">下载本章 PDF</a>
+        </header>
+        <div class="chapter-quicklinks"><a href="#chapter-content">章概要</a><a href="#chapter-terms">英语术语</a><a href="#chapter-exercises">分层练习</a><a href="#chapter-review">自测</a><a href="../../archive/index.html">批次快照：B1</a></div>
+        <div class="reader-grid">
+          <div class="reader-main">
+            <section class="canonical-rich-content" id="chapter-content">
+            <div class="chapter-cover">
+              <div class="chapter-big">1</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">Chapter Summary</p>
+                <h3>Functions</h3>
+                <p>
+                  用方程、表格、图形和文字表示同一函数；理解定义域与值域，掌握复合和图形变换，并建立三角函数与周期模型。
+                </p>
+                <div class="meta-strip">
+                  <span>教材页 19–55</span><span>PDF 页 20–56</span><span>1.1–1.4</span>
+                </div>
+              </div>
+            </div>
+
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>根据规则、图像和公式判断是否为函数，并求自然定义域与值域。</li>
+              <li>识别分段、绝对值、取整、函数族和奇偶性。</li>
+              <li>正确处理函数运算、复合及定义域交集。</li>
+              <li>从原图像描述平移、伸缩与反射。</li>
+              <li>使用弧度、周期、恒等式和正弦型参数建立三角模型。</li>
+              <li>说明绘图窗口、轴比例与采样为何会影响图形结论。</li>
+            </ul>
+
+            <div class="section-block" id="sec-1-1">
+              <div class="section-block-head">
+                <h3>1.1 Functions and Their Graphs</h3>
+                <span class="locator">教材页 19–31 · PDF 页 20–32</span>
+              </div>
+              <p>
+                函数的关键不是“公式”而是“唯一对应”：每个允许输入只能产生一个输出。定义域决定函数；同一公式换一个定义域就可能换一个函数。图像上，用垂直线检验保证一个输入不对应多个输出。
+              </p>
+              <ul class="topic-list">
+                <li><strong>表示法：</strong>代数公式、数值表格、图像、文字描述。</li>
+                <li><strong>自然定义域：</strong>排除分母为零、偶次根号内为负等情形。</li>
+                <li><strong>函数族：</strong>线性、幂、多项式、有理、代数、三角、指数、对数、超越。</li>
+                <li><strong>图形性质：</strong>递增/递减必须对整个区间内任意两点成立；偶函数关于 y 轴对称，奇函数关于原点对称。</li>
+              </ul>
+              <div class="principle-grid">
+                <article class="principle-card">
+                  <h3>垂直线检验</h3>
+                  <p>一条垂直线若能与曲线相交两次或更多，该曲线就不是 y 关于 x 的函数。</p>
+                </article>
+                <article class="principle-card">
+                  <h3>分段函数是一个函数</h3>
+                  <p>不同区间使用不同公式，不代表分成多个函数；定义域需合并各段，并保留端点规则。</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-1-2">
+              <div class="section-block-head">
+                <h3>1.2 Combining Functions; Shifting and Scaling Graphs</h3>
+                <span class="locator">教材页 32–38 · PDF 页 33–39</span>
+              </div>
+              <p>
+                函数可以相加、相减、相乘和相除；公共定义域取交集，商还要排除分母为零的点。复合函数则先应用内层函数，再要求内层输出属于外层定义域；图形变换要区分“改动输出”和“改动输入”。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="COMP">
+                  <h4>Composite Function</h4>
+                  <div class="formula katex-rendered" id="b1-composition" data-tex="\begin{aligned}(f\circ g)(x)&amp;=f(g(x))\\[2pt]D(f\circ g)&amp;=\{x\in D(g):g(x)\in D(f)\}\end{aligned}"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>∘</mo><mi>g</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mi>D</mi><mo stretchy="false">(</mo><mi>f</mi><mo>∘</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mo>∈</mo><mi>D</mi><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo><mo>:</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>∈</mo><mi>D</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}(f\circ g)(x)&amp;=f(g(x))\\[2pt]D(f\circ g)&amp;=\{x\in D(g):g(x)\in D(f)\}\end{aligned}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.2em;vertical-align:-1.35em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span style="top:-4.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span><span style="top:-2.31em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.35em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span style="top:-4.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span><span style="top:-2.31em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mopen">{</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mclose">)}</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.35em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
+                  <p class="condition">定义域不仅受 g 限制，还要求 g(x) 落在 f 的定义域内。</p>
+                </article>
+                <article class="formula-card" data-id="SHIFT">
+                  <h4>Shifts</h4>
+                  <div class="formula katex-rendered" id="b1-shifts" data-tex="\begin{aligned}y&amp;=f(x)+k &amp;&amp;\text{vertical shift}\\[2pt]y&amp;=f(x+h) &amp;&amp;\text{horizontal shift}\end{aligned}"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right left right left" columnspacing="0em 1em 0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mi>y</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mi>k</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mtext>vertical&nbsp;shift</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mi>y</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mtext>horizontal&nbsp;shift</mtext></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}y&amp;=f(x)+k &amp;&amp;\text{vertical shift}\\[2pt]y&amp;=f(x+h) &amp;&amp;\text{horizontal shift}\end{aligned}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.2em;vertical-align:-1.35em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span style="top:-4.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span><span style="top:-2.31em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.35em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span style="top:-4.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span><span style="top:-2.31em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">h</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.35em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span style="top:-3.85em;"><span class="pstrut" style="height:2.84em;"></span><span class="mord"></span></span><span style="top:-2.15em;"><span class="pstrut" style="height:2.84em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.35em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.85em;"><span style="top:-4.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mord text"><span class="mord">vertical&nbsp;shift</span></span></span></span><span style="top:-2.31em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mord text"><span class="mord">horizontal&nbsp;shift</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.35em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
+                  <p class="condition">f(x)+k 上下移；f(x+h) 中正 h 使图像向左移动。</p>
+                </article>
+              </div>
+              <ul class="clean-list">
+                <li>竖直变换：y=cf(x) 拉伸或压缩输出；c=−1 关于 x 轴反射。</li>
+                <li>水平变换：y=f(cx) 改变输入；c&gt;1 压缩，0&lt;c&lt;1 拉伸。</li>
+                <li>复合通常不可交换：f∘g 与 g∘f 的公式和定义域都可能不同。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-1-3">
+              <div class="section-block-head">
+                <h3>1.3 Trigonometric Functions</h3>
+                <span class="locator">教材页 39–46 · PDF 页 40–47</span>
+              </div>
+              <p>
+                弧度把圆心角表示为弧长与半径之比；之后未另写单位时通常默认弧度。六个基本三角函数的图像、周期与对称性来自单位圆，恒等式则用于化简、求值和后续积分。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="SIN">
+                  <h4>General Sine Function</h4>
+                  <div class="formula katex-rendered" id="b1-sinusoid" data-tex="f(x)=A\sin\!\left(\frac{2\pi}{B}(x-C)\right)+D"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence="true">(</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>B</mi></mfrac><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>C</mi><mo stretchy="false">)</mo><mo fence="true">)</mo></mrow><mo>+</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">f(x)=A\sin\!\left(\frac{2\pi}{B}(x-C)\right)+D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span></span></div>
+                  <p class="condition">|A| 为振幅，|B| 为周期，C 为水平位移，D 为竖直位移。</p>
+                </article>
+                <article class="formula-card" data-id="COS">
+                  <h4>Law of Cosines</h4>
+                  <div class="formula katex-rendered" id="b1-cosines" data-tex="c^2=a^2+b^2-2ab\cos\theta"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">c^2=a^2+b^2-2ab\cos\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8641em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9474em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9474em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal">ab</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span></span></div>
+                  <p class="condition">θ 是边 a、b 的夹角；θ=π/2 时退化为勾股定理。</p>
+                </article>
+              </div>
+              <ul class="clean-list">
+                <li>sin、cos、sec、csc 的周期为 2π；tan、cot 的周期为 π。</li>
+                <li>cos、sec 为偶函数；sin、tan、csc、cot 为奇函数。</li>
+                <li>核心恒等式：sin²θ+cos²θ=1，以及由和角公式推出的双角、半角公式。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-1-4">
+              <div class="section-block-head">
+                <h3>1.4 Graphing with Software</h3>
+                <span class="locator">教材页 47–50 · PDF 页 48–51</span>
+              </div>
+              <p>
+                软件图像是有限采样后连接出来的近似。窗口过宽、轴比例不同、函数有垂直渐近线或快速振荡时，屏幕上的形状可能失真甚至漏掉关键分支。
+              </p>
+              <ul class="topic-list">
+                <li><strong>窗口：</strong>先选足以显示整体趋势的范围，再放大关键局部。</li>
+                <li><strong>等比例窗口：</strong>要求 x、y 轴单位等长，不是要求显示框本身是正方形。</li>
+                <li><strong>快速振荡：</strong>采样间隔要显著小于周期。</li>
+                <li><strong>算法限制：</strong>某些软件用指数/对数计算 x^(1/3)，可能漏掉负半轴。</li>
+              </ul>
+            </div>
+
+            <h3>重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Example 1（1.1）</td><td>展示 x²、1/x、√x 等函数的自然定义域与值域。</td><td>教材 p.20 / PDF p.21</td></tr>
+                  <tr><td>Example 4（1.1）</td><td>分段函数可在整个实数轴上使用三套公式，但整体仍是一个函数。</td><td>教材 p.23 / PDF p.24</td></tr>
+                  <tr><td>Example 8（1.1）</td><td>x² 为偶函数；x 为奇函数；x+1 既非奇也非偶。</td><td>教材 p.24 / PDF p.25</td></tr>
+                  <tr><td>Example 1（1.2）</td><td>√x 与 √(1−x) 的和、积等共同定义域为 [0,1]。</td><td>教材 p.32 / PDF p.33</td></tr>
+                  <tr><td>Example 2（1.2）</td><td>f=√x、g=x+1 时，f∘g 的定义域为 [−1,∞)。</td><td>教材 p.34 / PDF p.35</td></tr>
+                  <tr><td>Example 3（1.2）</td><td>y=x²+1 上移 1；y=(x+3)² 左移 3。</td><td>教材 p.34–35 / PDF p.35–36</td></tr>
+                  <tr><td>Example 3（1.4）</td><td>sin100x 的周期约 0.063，默认宽窗口会漏掉波动。</td><td>教材 p.49 / PDF p.50</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>公式相同就是同一函数</h3><p>若定义域不同，函数不同；极值、单调性和连续性都可能改变。</p></article>
+              <article class="mistake-card"><h3>复合只看内层定义域</h3><p>还要确保 g(x) 属于 f 的定义域。</p></article>
+              <article class="mistake-card"><h3>平移方向反了</h3><p>f(x−3) 是向右移 3，不是向左移 3。</p></article>
+              <article class="mistake-card"><h3>奇偶性代入一个数判断</h3><p>必须对定义域内所有 x 比较 f(−x) 与 f(x) 或 −f(x)。</p></article>
+              <article class="mistake-card"><h3>角度单位混用</h3><p>本章与后续极限默认弧度；计算 sinθ/θ 时尤其不能使用角度制直接套公式。</p></article>
+              <article class="mistake-card"><h3>把屏幕窗口当完整图像</h3><p>宽窗口会截断、缩小或漏采关键特征，应同时检查局部和整体。</p></article>
+            </div>
+
+            <div class="connection-flow">
+              <span class="flow-node">第1章：函数与图像</span><span class="flow-arrow">→</span>
+              <span class="flow-node">平均变化率与局部行为</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第2章：极限</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第3章：导数（不展开）</span>
+            </div>
+            <div class="callout answer"><strong>本章一句话</strong>函数由输入输出关系和定义域共同定义；图像、复合、变换和三角模型都是为了更准确地描述局部与整体行为。</div>
+          </section>
+            <section class="canonical-block" id="chapter-terms"><div class="canonical-block-head"><div><p class="mini-label">Terminology</p><h2>本章专业英语术语</h2></div><a href="../../terminology/index.html">打开术语中心</a></div><div class="table-wrap"><table class="term-table"><thead><tr><th>ID</th><th>English</th><th>中文</th><th>简明定义</th><th>节</th></tr></thead><tbody><tr id="term-T01-008" data-term-row><td><code>T01-008</code></td><td>absolute value function</td><td>绝对值函数</td><td>当 x≥0 时取 x，当 x&lt;0 时取 −x，值域为 [0,∞)。</td><td>1.1</td></tr><tr id="term-T01-020" data-term-row><td><code>T01-020</code></td><td>algebraic function</td><td>代数函数</td><td>由多项式通过加减乘除和开方构造出的函数。</td><td>1.1</td></tr><tr id="term-T01-012" data-term-row><td><code>T01-012</code></td><td>decreasing function</td><td>减函数</td><td>区间内 x₁&lt;x₂ 时必有 f(x₁)&gt;f(x₂)。</td><td>1.1</td></tr><tr id="term-T01-002" data-term-row><td><code>T01-002</code></td><td>domain</td><td>定义域</td><td>函数允许输入的全部实数集合；限制定义域会改变函数本身。</td><td>1.1</td></tr><tr id="term-T01-013" data-term-row><td><code>T01-013</code></td><td>even function</td><td>偶函数</td><td>对定义域内所有 x，f(−x)=f(x)；图像关于 y 轴对称。</td><td>1.1</td></tr><tr id="term-T01-001" data-term-row><td><code>T01-001</code></td><td>function</td><td>函数</td><td>从定义域 D 到集合 Y 的规则：每个输入 x 都对应唯一输出 f(x)。</td><td>1.1</td></tr><tr id="term-T01-005" data-term-row><td><code>T01-005</code></td><td>graph of a function</td><td>函数图像</td><td>笛卡尔平面中满足 y=f(x) 的全部点 (x,f(x))。</td><td>1.1</td></tr><tr id="term-T01-011" data-term-row><td><code>T01-011</code></td><td>increasing function</td><td>增函数</td><td>区间内 x₁&lt;x₂ 时必有 f(x₁)&lt;f(x₂)，且条件要对区间内任意两点成立。</td><td>1.1</td></tr><tr id="term-T01-010" data-term-row><td><code>T01-010</code></td><td>least integer / ceiling function</td><td>最小整数函数 / 上取整</td><td>返回不小于 x 的最小整数。</td><td>1.1</td></tr><tr id="term-T01-015" data-term-row><td><code>T01-015</code></td><td>linear function</td><td>线性函数</td><td>形式为 f(x)=mx+b 的函数；m 是斜率，b 是 y 截距。</td><td>1.1</td></tr><tr id="term-T01-004" data-term-row><td><code>T01-004</code></td><td>natural domain</td><td>自然定义域</td><td>未另行限制时，使公式产生实数值的最大实数集合。</td><td>1.1</td></tr><tr id="term-T01-014" data-term-row><td><code>T01-014</code></td><td>odd function</td><td>奇函数</td><td>对定义域内所有 x，f(−x)=−f(x)；图像关于原点对称。</td><td>1.1</td></tr><tr id="term-T01-007" data-term-row><td><code>T01-007</code></td><td>piecewise-defined function</td><td>分段函数</td><td>定义域的不同部分使用不同公式，但整体仍是一个函数。</td><td>1.1</td></tr><tr id="term-T01-018" data-term-row><td><code>T01-018</code></td><td>polynomial</td><td>多项式</td><td>有限个非负整数幂项相加的函数，定义域为 (−∞,∞)。</td><td>1.1</td></tr><tr id="term-T01-017" data-term-row><td><code>T01-017</code></td><td>power function</td><td>幂函数</td><td>形式为 f(x)=xᵃ 的函数；定义域与值域随指数 a 改变。</td><td>1.1</td></tr><tr id="term-T01-016" data-term-row><td><code>T01-016</code></td><td>proportional</td><td>正比例</td><td>两个变量满足 y=kx，其中 k 是非零常数。</td><td>1.1</td></tr><tr id="term-T01-003" data-term-row><td><code>T01-003</code></td><td>range</td><td>值域</td><td>当 x 遍历定义域时，实际出现的全部函数值集合。</td><td>1.1</td></tr><tr id="term-T01-019" data-term-row><td><code>T01-019</code></td><td>rational function</td><td>有理函数</td><td>两个多项式之比 p(x)/q(x)，定义域排除 q(x)=0 的点。</td><td>1.1</td></tr><tr id="term-T01-021" data-term-row><td><code>T01-021</code></td><td>transcendental function</td><td>超越函数</td><td>不是代数函数的函数，如三角函数、指数函数和对数函数。</td><td>1.1</td></tr><tr id="term-T01-006" data-term-row><td><code>T01-006</code></td><td>vertical line test</td><td>垂直线检验</td><td>曲线是函数图像，当且仅当每条垂直线与曲线至多相交一次。</td><td>1.1</td></tr><tr id="term-T01-009" data-term-row><td><code>T01-009</code></td><td>greatest integer / floor function</td><td>最大整数函数 / 下取整</td><td>返回不超过 x 的最大整数，图像呈阶梯状并在整数处右连续。</td><td>1.1 &amp; 2.5</td></tr><tr id="term-T01-022" data-term-row><td><code>T01-022</code></td><td>composite function</td><td>复合函数</td><td>先应用 g，再把 g(x) 作为 f 的输入；x 必须在 g 的定义域且 g(x) 在 f 的定义域。</td><td>1.2</td></tr><tr id="term-T01-026" data-term-row><td><code>T01-026</code></td><td>horizontal scaling</td><td>水平伸缩</td><td>用 c 乘输入；c&gt;1 水平压缩，0&lt;c&lt;1 水平拉伸。</td><td>1.2</td></tr><tr id="term-T01-024" data-term-row><td><code>T01-024</code></td><td>horizontal shift</td><td>水平平移</td><td>在输入 x 上加常数 h；加正数左移，加负数右移。</td><td>1.2</td></tr><tr id="term-T01-027" data-term-row><td><code>T01-027</code></td><td>reflection</td><td>反射</td><td>y=−f(x) 关于 x 轴反射；y=f(−x) 关于 y 轴反射。</td><td>1.2</td></tr><tr id="term-T01-025" data-term-row><td><code>T01-025</code></td><td>vertical scaling</td><td>竖直伸缩</td><td>用 c 乘函数输出；c&gt;1 拉伸，0&lt;c&lt;1 压缩。</td><td>1.2</td></tr><tr id="term-T01-023" data-term-row><td><code>T01-023</code></td><td>vertical shift</td><td>竖直平移</td><td>在函数外加常数 k；正数上移，负数下移。</td><td>1.2</td></tr><tr id="term-T01-033" data-term-row><td><code>T01-033</code></td><td>addition formulas</td><td>和角公式</td><td>用两个角的正弦、余弦表示其和或差的正弦、余弦。</td><td>1.3</td></tr><tr id="term-T01-031" data-term-row><td><code>T01-031</code></td><td>general sine function / sinusoid</td><td>一般正弦函数 / 正弦型函数</td><td>由振幅、周期、水平位移和竖直位移构成的 A sin((2π/B)(x−C))+D。</td><td>1.3</td></tr><tr id="term-T01-034" data-term-row><td><code>T01-034</code></td><td>law of cosines</td><td>余弦定理</td><td>三角形中边 c 与夹角 θ 的关系，是勾股定理的推广。</td><td>1.3</td></tr><tr id="term-T01-029" data-term-row><td><code>T01-029</code></td><td>periodic function</td><td>周期函数</td><td>存在正数 p，使定义域内所有 x 满足 f(x+p)=f(x)；最小的 p 为周期。</td><td>1.3</td></tr><tr id="term-T01-028" data-term-row><td><code>T01-028</code></td><td>radian</td><td>弧度</td><td>圆心角所对弧长除以半径；π 弧度等于 180°。</td><td>1.3</td></tr><tr id="term-T01-032" data-term-row><td><code>T01-032</code></td><td>trigonometric identity</td><td>三角恒等式</td><td>在定义域内恒成立的三角关系，如 sin²θ+cos²θ=1。</td><td>1.3</td></tr><tr id="term-T01-030" data-term-row><td><code>T01-030</code></td><td>amplitude</td><td>振幅</td><td>正弦函数偏离水平中心线的最大量，在 A sin(…) + D 中为 |A|。</td><td>1.3 &amp; 1.4</td></tr><tr id="term-T01-035" data-term-row><td><code>T01-035</code></td><td>graphing window</td><td>绘图窗口</td><td>软件显示的 x 区间与 y 区间；默认窗口可能截断图形或产生误导。</td><td>1.4</td></tr><tr id="term-T01-036" data-term-row><td><code>T01-036</code></td><td>square window</td><td>等比例窗口</td><td>x 轴与 y 轴的单位长度相同，不是说显示区域本身必须为正方形。</td><td>1.4</td></tr></tbody></table></div></section>
+            <section class="canonical-block" id="chapter-exercises"><div class="canonical-block-head"><div><p class="mini-label">Practice</p><h2>本章分层练习</h2></div><a href="../../exercises/index.html">打开练习中心</a></div><div class="exercise-grid"><article id="exercise-Q1-01" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="概念辨析" data-level="基础" data-search="Q1-01 概念辨析 基础 1.1 函数定义与垂直线检验 判断 y=x² 与 x=y² 是否表示 y 是 x 的函数。">
+    <div class="exercise-head"><span class="exercise-id">Q1-01</span><span class="tag teal">概念辨析</span><span class="tag orange">基础</span></div>
+    <p class="exercise-meta">第 1 章 · 1.1 · 函数定义与垂直线检验</p>
+    <div class="exercise-prompt"><p>判断 <code>y=x²</code> 与 <code>x=y²</code> 是否都表示 y 是 x 的函数，并用垂直线检验解释。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>固定一个输入 x，检查是否可能出现两个不同输出 y。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>对 x=y²，当 x=1 时 y=±1；一条垂直线与曲线有两个交点。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p><code>y=x²</code> 对每个 x 只给出一个 y，因此是函数。方程 <code>x=y²</code> 对 x&gt;0 给出两个 y 值，图像是向右开口的抛物线，垂直线 x=1 与它交于 (1,1) 和 (1,−1)，所以不是 y 关于 x 的函数。</p></div></details>
+  </article><article id="exercise-Q1-02" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="计算题" data-level="基础" data-search="Q1-02 计算题 基础 1.1 自然定义域与值域 求 f(x)=√(4−x) 的自然定义域和值域。">
+    <div class="exercise-head"><span class="exercise-id">Q1-02</span><span class="tag teal">计算题</span><span class="tag orange">基础</span></div>
+    <p class="exercise-meta">第 1 章 · 1.1 · 自然定义域与值域</p>
+    <div class="exercise-prompt"><p>求 <code>f(x)=√(4−x)</code> 的自然定义域与值域。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>根号内必须非负；平方根的输出不可能为负。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>4−x≥0 给 x≤4；根号值覆盖全部非负实数。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>要求 <code>4−x≥0</code>，因此 x≤4，定义域为 <code>(−∞,4]</code>。</p><p>当 x 从 −∞ 增加到 4 时，4−x 从 ∞ 降到 0，平方根覆盖 <code>[0,∞)</code>，即值域为 <code>[0,∞)</code>。</p></div></details>
+  </article><article id="exercise-Q1-03" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="计算题" data-level="标准" data-search="Q1-03 计算题 标准 1.2 复合函数及其定义域 f(x)=√x，g(x)=x−3，求 f∘g、g∘f 及定义域。">
+    <div class="exercise-head"><span class="exercise-id">Q1-03</span><span class="tag teal">计算题</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.2 · 复合函数及其定义域</p>
+    <div class="exercise-prompt"><p>设 <code>f(x)=√x</code>、<code>g(x)=x−3</code>。求 <code>f∘g</code>、<code>g∘f</code> 的公式和定义域。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>复合的定义域既受内层函数限制，也要求内层输出落入外层定义域。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>(f∘g)(x)=√(x−3)；(g∘f)(x)=√x−3。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p><code>(f∘g)(x)=f(x−3)=√(x−3)</code>，要求 x−3≥0，故定义域为 <code>[3,∞)</code>。</p><p><code>(g∘f)(x)=g(√x)=√x−3</code>，要求 x≥0，故定义域为 <code>[0,∞)</code>。两式定义域不同，说明 f∘g 与 g∘f 通常不是同一个函数。</p></div></details>
+  </article><article id="exercise-Q1-04" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="概念辨析" data-level="基础" data-search="Q1-04 概念辨析 基础 1.2 图形变换 从 y=x² 得到 y=2(x−3)²−1，描述变换。">
+    <div class="exercise-head"><span class="exercise-id">Q1-04</span><span class="tag teal">概念辨析</span><span class="tag orange">基础</span></div>
+    <p class="exercise-meta">第 1 章 · 1.2 · 图形变换</p>
+    <div class="exercise-prompt"><p>说明如何从 <code>y=x²</code> 的图像得到 <code>y=2(x−3)²−1</code>，并指出顶点。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>x−3 表示水平移动；系数 2 是竖直伸缩；末尾 −1 是竖直移动。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>先右移 3，再竖直拉伸 2 倍，最后下移 1；顶点为 (3,−1)。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>把图像向右平移 3 个单位得到 (x−3)²；竖直拉伸为原来的 2 倍得到 2(x−3)²；再向下平移 1 个单位。顶点由 (0,0) 移到 <code>(3,−1)</code>。</p></div></details>
+  </article><article id="exercise-Q1-05" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="计算题" data-level="标准" data-search="Q1-05 计算题 标准 1.1 奇偶性 判断 x⁴−3x²、x³+x、x²+x 的奇偶性。">
+    <div class="exercise-head"><span class="exercise-id">Q1-05</span><span class="tag teal">计算题</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.1 · 奇偶性</p>
+    <div class="exercise-prompt"><p>判断 <code>f(x)=x⁴−3x²</code>、<code>g(x)=x³+x</code>、<code>h(x)=x²+x</code> 的奇偶性。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>逐一代入 −x，并分别与 f(x)、−f(x) 比较。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>f(−x)=f(x)，g(−x)=−g(x)；h(−1)=0 而 ±h(1)=±2。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>f(−x)=x⁴−3x²=f(x)，所以 f 是偶函数。</p><p>g(−x)=−x³−x=−g(x)，所以 g 是奇函数。</p><p>h(−x)=x²−x，它既不总等于 x²+x，也不总等于 −(x²+x)，因此 h 既不是偶函数也不是奇函数。</p></div></details>
+  </article><article id="exercise-Q1-06" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="计算题" data-level="基础" data-search="Q1-06 计算题 基础 1.3 弧度与弧长 半径 6、角 3π/4，求弧长；并把 5π/6 转成度。">
+    <div class="exercise-head"><span class="exercise-id">Q1-06</span><span class="tag teal">计算题</span><span class="tag orange">基础</span></div>
+    <p class="exercise-meta">第 1 章 · 1.3 · 弧度与弧长</p>
+    <div class="exercise-prompt"><p>圆的半径为 6，圆心角为 <code>3π/4</code> 弧度，求弧长；并把 <code>5π/6</code> 弧度转换为角度。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>使用 s=rθ，并利用 π 弧度=180°。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>s=6·3π/4=9π/2；5π/6 对应 5·180/6=150°。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>弧长 <code>s=rθ=6·(3π/4)=9π/2</code> 个长度单位。</p><p><code>5π/6</code> 弧度等于 <code>(5/6)·180°=150°</code>。</p></div></details>
+  </article><article id="exercise-Q1-07" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="计算题" data-level="标准" data-search="Q1-07 计算题 标准 1.3 特殊角三角函数值 求 sin5π/6、cos4π/3、tan7π/4。">
+    <div class="exercise-head"><span class="exercise-id">Q1-07</span><span class="tag teal">计算题</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.3 · 特殊角三角函数值</p>
+    <div class="exercise-prompt"><p>不查表，求 <code>sin(5π/6)</code>、<code>cos(4π/3)</code>、<code>tan(7π/4)</code>。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>利用参考角和所在象限的符号。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>5π/6 参考角 π/6；4π/3 参考角 π/3；7π/4 参考角 π/4。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p><code>sin(5π/6)=1/2</code>，因为正弦在第二象限为正。</p><p><code>cos(4π/3)=−1/2</code>，因为余弦在第三象限为负。</p><p><code>tan(7π/4)=−1</code>，因为正切在第四象限为负且参考角为 π/4。</p></div></details>
+  </article><article id="exercise-Q1-08" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="证明/说明" data-level="标准" data-search="Q1-08 证明/说明 标准 1.3 三角恒等式 证明 (1−cos²x)/(1−cosx)=1+cosx。">
+    <div class="exercise-head"><span class="exercise-id">Q1-08</span><span class="tag teal">证明/说明</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.3 · 三角恒等式</p>
+    <div class="exercise-prompt"><p>在分母非零的条件下，证明 <code>(1−cos²x)/(1−cosx)=1+cosx</code>。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>把 sin²x+cos²x=1 改写成 1−cos²x 的因式形式。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>1−cos²x=(1−cosx)(1+cosx)，约去非零因子 1−cosx。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>由恒等式 <code>sin²x+cos²x=1</code>，得 <code>1−cos²x=sin²x=(1−cosx)(1+cosx)</code>。</p><p>当 <code>1−cosx≠0</code> 时可约分，得到 1+cosx。这个条件排除 x=2kπ；它不能因为约分完成后等号看似成立而省略。</p></div></details>
+  </article><article id="exercise-Q1-09" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="计算题" data-level="标准" data-search="Q1-09 计算题 标准 1.3 正弦型函数参数 分析 y=3sin(2x−π/2)+1。">
+    <div class="exercise-head"><span class="exercise-id">Q1-09</span><span class="tag teal">计算题</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.3 · 正弦型函数参数</p>
+    <div class="exercise-prompt"><p>求 <code>y=3sin(2x−π/2)+1</code> 的振幅、周期、水平位移、竖直位移和值域。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>先改写成 3sin[2(x−π/4)]+1，再与标准形式比较。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>|A|=3，2π/B=π，C=π/4，D=1。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>函数可写为 <code>3sin[2(x−π/4)]+1</code>。</p><p>振幅为 3；周期为 <code>2π/2=π</code>；图像向右平移 π/4；中心线上移 1。值域为 <code>[1−3,1+3]=[−2,4]</code>。</p></div></details>
+  </article><article id="exercise-Q1-10" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="应用题" data-level="标准" data-search="Q1-10 应用题 标准 1.3 余弦定理 a=5，b=7，夹角 C=π/3，求 c。">
+    <div class="exercise-head"><span class="exercise-id">Q1-10</span><span class="tag teal">应用题</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.3 · 余弦定理</p>
+    <div class="exercise-prompt"><p>三角形两边为 a=5、b=7，夹角 C=π/3。求第三边 c。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>使用 c²=a²+b²−2ab cos C。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>cos(π/3)=1/2，所以 c²=25+49−2·35·1/2。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p><code>c²=5²+7²−2·5·7·cos(π/3)=25+49−35=39</code>，所以 <code>c=√39</code>。</p></div></details>
+  </article><article id="exercise-Q1-11" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="综合题" data-level="挑战" data-search="Q1-11 综合题 挑战 1.1–1.2 分段函数、图像和单调性 分析 f=−x(x&lt;0),x²(0≤x≤1),1(x&gt;1)。">
+    <div class="exercise-head"><span class="exercise-id">Q1-11</span><span class="tag teal">综合题</span><span class="tag orange">挑战</span></div>
+    <p class="exercise-meta">第 1 章 · 1.1–1.2 · 分段函数、图像和单调性</p>
+    <div class="exercise-prompt"><p>函数 <code>f(x)=−x</code>（x&lt;0）、<code>x²</code>（0≤x≤1）、<code>1</code>（x&gt;1）。求定义域、值域，并说明各部分增减性。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>分别分析三段，再合并值域；注意分段函数仍是一个函数。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>定义域为全体实数；三段值域分别为 (0,∞)、[0,1]、{1}。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>定义域为 <code>ℝ</code>。x&lt;0 时 −x&gt;0，给出 (0,∞)；0≤x≤1 时 x² 给出 [0,1]；x&gt;1 时恒为 1。合并值域为 <code>[0,∞)</code>，且 1 可由多处取得。</p><p>第一段严格递减，第二段严格递增，第三段在 (1,∞) 上为常数，因此既不是严格增也不是严格减。</p></div></details>
+  </article><article id="exercise-Q1-12" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="应用题" data-level="标准" data-search="Q1-12 应用题 标准 1.1 &amp; 1.2 建立函数模型 16×30 纸板四角剪去 x，求盒体体积函数及定义域。">
+    <div class="exercise-head"><span class="exercise-id">Q1-12</span><span class="tag teal">应用题</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.1 &amp; 1.2 · 建立函数模型</p>
+    <div class="exercise-prompt"><p>从 16 cm×30 cm 的纸板四角各剪去边长为 x 的正方形，折成无盖盒。写出体积 V(x) 及定义域。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>盒底两边分别为 16−2x 与 30−2x，高为 x；所有边长都要为正。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>x&gt;0 且 16−2x&gt;0；30−2x 自动更大。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>体积为 <code>V(x)=x(16−2x)(30−2x)</code>。</p><p>要保证盒底尺寸为正，需要 x&gt;0 且 16−2x&gt;0，即 <code>0&lt;x&lt;8</code>。这就是该函数模型在此问题中的定义域。</p></div></details>
+  </article><article id="exercise-Q1-13" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="证明/说明" data-level="标准" data-search="Q1-13 证明/说明 标准 1.4 绘图软件的误导 解释 sin100x 的默认窗口为何可能错误。">
+    <div class="exercise-head"><span class="exercise-id">Q1-13</span><span class="tag teal">证明/说明</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.4 · 绘图软件的误导</p>
+    <div class="exercise-prompt"><p>为什么用绘图软件画 <code>sin(100x)</code> 时可能看到一段并不像正弦波动的曲线？应怎样调整窗口？</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>先求周期；采样点之间的间隔要远小于周期。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>周期为 2π/100=π/50≈0.063，需要使用很小的 x 区间或足够密的采样。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>sin(100x) 的周期约为 0.063。若默认窗口很宽、采样点间隔又较大，软件会漏掉大量峰和谷，再用线段连接，图像就会失真。</p><p>应缩小 x 窗口到若干个周期，例如 [−0.1,0.1]，并增加采样密度；y 窗口仍可保持 [−1,1]。绘图窗口本身和坐标轴比例应分开说明。</p></div></details>
+  </article><article id="exercise-Q1-14" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="计算题" data-level="标准" data-search="Q1-14 计算题 标准 1.2 由复合结果求函数 f(x)=2x+1，求 g 使 f(g(x))=x。">
+    <div class="exercise-head"><span class="exercise-id">Q1-14</span><span class="tag teal">计算题</span><span class="tag orange">标准</span></div>
+    <p class="exercise-meta">第 1 章 · 1.2 · 由复合结果求函数</p>
+    <div class="exercise-prompt"><p>若 <code>f(x)=2x+1</code>，求函数 g 使 <code>(f∘g)(x)=x</code>。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>2g(x)+1=x，解出 g(x)。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>g(x)=(x−1)/2，定义域为 ℝ。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>由 <code>2g(x)+1=x</code> 得 <code>g(x)=(x−1)/2</code>。</p><p>检查：<code>f(g(x))=2·(x−1)/2+1=x</code>，对所有实数成立。</p></div></details>
+  </article><article id="exercise-Q1-15" class="exercise-card canonical-exercise" data-exercise data-chapter="1" data-type="综合题" data-level="挑战" data-search="Q1-15 综合题 挑战 1.2–1.4 图形变换与三角函数 比较 sinx 与 3sin(2x−π)+1。">
+    <div class="exercise-head"><span class="exercise-id">Q1-15</span><span class="tag teal">综合题</span><span class="tag orange">挑战</span></div>
+    <p class="exercise-meta">第 1 章 · 1.2–1.4 · 图形变换与三角函数</p>
+    <div class="exercise-prompt"><p>比较 <code>f(x)=sin x</code> 与 <code>g(x)=3sin(2x−π)+1</code> 的振幅、周期、极值和图像变换。</p></div>
+    <details><summary>提示</summary><div class="details-body"><p>把 g 改写成 3sin[2(x−π/2)]+1，并分别处理振幅、周期和上下平移。</p></div></details>
+    <details><summary>关键步骤</summary><div class="details-body"><p>g 的振幅 3、周期 π、向右平移 π/2、上移 1。</p></div></details>
+    <details><summary>完整解析</summary><div class="details-body"><p>f 的振幅为 1、周期为 2π、值域为 [−1,1]。</p><p>g 可写为 <code>3sin[2(x−π/2)]+1</code>。其振幅为 3，周期为 π，图像向右平移 π/2，中心线上移 1，值域为 [−2,4]；局部最大值 4、局部最小值 −2 均每隔一个周期出现。</p><p>这说明图形变换要先识别输入中的因式，再确定水平平移和周期，不能直接把 π 当周期。</p></div></details>
+  </article></div></section>
+            <section class="canonical-block" id="chapter-review"><div class="canonical-block-head"><div><p class="mini-label">Self-check</p><h2>本章自测</h2></div><a href="../../review/index.html">复习与错题记录</a></div><div class="progress-card"><div class="progress-line"><span>本章掌握清单</span><span class="progress-value">0 / 10</span></div><div class="progress-track"><div class="progress-fill"></div></div></div><article class="review-card" data-review-chapter="1">
+                <h3>第 1 章自测</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="M01-01" data-legacy-mastery="b1-c1-1" data-legacy-store="thomas-b01-mastery-v1" />能从公式、表格和图像识别函数与定义域。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-02" data-legacy-mastery="b1-c1-2" data-legacy-store="thomas-b01-mastery-v1" />能用垂直线检验判断曲线是否为函数图像。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-03" data-legacy-mastery="b1-c1-3" data-legacy-store="thomas-b01-mastery-v1" />能解释分段、绝对值、取整函数的行为。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-04" data-legacy-mastery="b1-c1-4" data-legacy-store="thomas-b01-mastery-v1" />能严格判断区间增减和奇偶性。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-05" data-legacy-mastery="b1-c1-5" data-legacy-store="thomas-b01-mastery-v1" />能判断代数组合与复合函数的定义域。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-06" data-legacy-mastery="b1-c1-6" data-legacy-store="thomas-b01-mastery-v1" />能描述平移、伸缩、反射的方向与顺序。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-07" data-legacy-mastery="b1-c1-7" data-legacy-store="thomas-b01-mastery-v1" />能熟练进行弧度、角度和特殊角求值。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-08" data-legacy-mastery="b1-c1-8" data-legacy-store="thomas-b01-mastery-v1" />能从正弦型公式读出振幅、周期和位移。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-09" data-legacy-mastery="b1-c1-9" data-legacy-store="thomas-b01-mastery-v1" />能从实际问题建立函数并说明定义域。</label></li>
+                  <li><label><input type="checkbox" data-mastery="M01-10" data-legacy-mastery="b1-c1-10" data-legacy-store="thomas-b01-mastery-v1" />能说明绘图窗口和采样为何可能误导。</label></li>
+                </ul>
+              </article></section>
+            <nav class="chapter-pager" aria-label="章节前后导航"><span></span><a class="chapter-step next" href="../ch02-limits-continuity/index.html">下一章 <span>2</span></a></nav>
+          </div>
+          <aside class="reader-sidebar"><div class="reader-toc"><p>本章目录</p><a href="#sec-1-1">1.1 Functions and Their Graphs</a><a href="#sec-1-2">1.2 Combining Functions; Shifting and Scaling Graphs</a><a href="#sec-1-3">1.3 Trigonometric Functions</a><a href="#sec-1-4">1.4 Graphing with Software</a></div><div class="reader-source"><p>来源范围</p><strong>教材页 19-55</strong><span>批次 B1</span><a href="../../source/index.html">来源与版本</a></div></aside>
+        </div>
+      </article>
+    </div></main>
+    
+    <footer class="site-footer">
+      <div><strong>Thomas 微积分全书学习站</strong><p>中文学习资料、英文术语、LaTeX 公式、分层练习与打印稿。</p></div>
+      <div class="site-footer-links"><a href="../../source/index.html">来源与版本</a><a href="../../archive/index.html">批次归档</a><a href="../../quality/index.html">项目质量</a></div>
+    </footer>
+    
+    <div class="site-search-dialog" data-search-dialog hidden>
+      <div class="site-search-backdrop" data-search-close></div>
+      <section class="site-search-panel" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
+        <div class="site-search-head"><h2 id="site-search-title">搜索全书</h2><button type="button" data-search-close aria-label="关闭搜索">关闭</button></div>
+        <label for="site-search-input">输入章节、英文术语、中文术语、公式或题号</label>
+        <input id="site-search-input" type="search" autocomplete="off" placeholder="例如 derivative、Green 定理、Q13-04" />
+        <div class="site-search-filters"><button type="button" class="is-active" data-search-type="all">全部</button><button type="button" data-search-type="chapter">章节</button><button type="button" data-search-type="term">术语</button><button type="button" data-search-type="formula">公式</button><button type="button" data-search-type="exercise">练习</button></div>
+        <div class="site-search-results" data-search-results></div>
+        <p class="site-search-hint">Esc 关闭；结果最多显示 40 项。</p>
+      </section>
+    </div>
+    <script src="../../data/search-index.js"></script>
+    <script src="../../assets/site.js"></script>
+    
+  </body>
+</html>

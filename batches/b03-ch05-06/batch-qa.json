@@ -1,0 +1,76 @@
+{
+  "$schema": "../../quality/batch-qa.schema.json",
+  "schemaVersion": "thomas-batch-qa-v2",
+  "batch": "B3",
+  "chapters": [5, 6],
+  "status": "passed",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "metrics": {
+    "newTerms": 37,
+    "newExercises": 15,
+    "chapter6Terms": 37,
+    "chapter6Exercises": 15,
+    "chapter5RegressionTerms": 43,
+    "chapter5RegressionExercises": 15,
+    "renderedFormulas": 14,
+    "numericChecksPassed": 18,
+    "pdfPages": 17,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "desktopFormulaClipped": 0,
+    "mobileFormulaClipped": 0,
+    "mobileFormulaScrollable": 4,
+    "printFormulaClipped": 0,
+    "printFormulaOverflow": 0,
+    "katexErrors": 0,
+    "browserErrors": 0,
+    "crossBatchPagesPassed": 4,
+    "crossBatchPagesTotal": 4,
+    "chapter5RegressionSections": 6,
+    "crossBatchSmokeTest": "passed"
+  },
+  "checks": {
+    "G1_source": "passed",
+    "G2_coverage": "passed",
+    "G3_terms": "passed",
+    "G4_theorems_formulas": "passed",
+    "G5_examples": "passed",
+    "G6_exercises_answers": "passed",
+    "G7_math_rendering": "passed",
+    "G8_diagrams_links": "passed",
+    "G9_web_print": "passed",
+    "G10_copyright_version": "passed"
+  },
+  "defects": {
+    "P0": 0,
+    "P1": 0,
+    "P2Open": 0,
+    "closed": [
+      {
+        "id": "B3-P2-01",
+        "scope": "Hooke's Law typography",
+        "resolution": "replaced curly apostrophe and regenerated PDF"
+      },
+      {
+        "id": "B3-P2-02",
+        "scope": "acceptance wording",
+        "resolution": "updated only after all checks passed"
+      }
+    ]
+  },
+  "pdfSha256": "F1041AC053D9BFBEBD750989D9802BC08C58BD6D8516ADDFF8ED499612398D7D",
+  "nextBatch": {
+    "id": "B4",
+    "chapters": [7, 8],
+    "entryConditionMet": true,
+    "requires": [
+      "complete Chapters 7 and 8",
+      "formula-dense theorem and domain review",
+      "no advancement before B4 passes"
+    ]
+  }
+}
+

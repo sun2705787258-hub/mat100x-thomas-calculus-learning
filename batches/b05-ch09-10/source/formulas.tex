@@ -1,0 +1,208 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B5 quality-calibration formulas: Chapters 9-10
+
+\section*{Chapter 9 - Infinite Sequences and Series}
+
+% Limit of a sequence; textbook page 532, PDF page 533
+\[
+  \lim_{n\to\infty}a_n=L
+  \quad\Longleftrightarrow\quad
+  \forall\varepsilon>0,\ \exists N:
+  \ n>N\Rightarrow|a_n-L|<\varepsilon.
+\]
+
+% Monotonic Sequence Theorem; textbook page 538, PDF page 539
+\[
+  \{a_n\}\ \text{is bounded and monotonic}
+  \quad\Longrightarrow\quad
+  \{a_n\}\ \text{converges}.
+\]
+
+% Geometric series; textbook page 545, PDF page 546
+\[
+  \sum_{n=1}^{\infty}ar^{n-1}
+  =
+  \begin{cases}
+    \dfrac{a}{1-r}, & |r|<1,\\[2mm]
+    \text{diverges}, & |r|\ge1.
+  \end{cases}
+\]
+
+% nth-Term Test; textbook page 547, PDF page 548
+\[
+  \sum_{n=1}^{\infty}a_n\ \text{converges}
+  \quad\Longrightarrow\quad
+  a_n\to0.
+\]
+
+% Integral Test; textbook page 554, PDF page 555
+\[
+  f\ \text{continuous, positive, decreasing on }[N,\infty),
+  \quad a_n=f(n)
+  \quad\Longrightarrow\quad
+  \sum_{n=N}^{\infty}a_n
+  \text{ and }
+  \int_N^\infty f(x)\,dx
+  \text{ share convergence}.
+\]
+
+% p-series; textbook page 555, PDF page 556
+\[
+  \sum_{n=1}^{\infty}\frac{1}{n^p}
+  \ \text{converges for }p>1,
+  \qquad
+  \text{diverges for }p\le1.
+\]
+
+% Direct Comparison Test; textbook page 560, PDF page 561
+\[
+  0\le a_n\le b_n
+  \quad\Longrightarrow\quad
+  \left(
+  \sum b_n\ \text{converges}\Rightarrow\sum a_n\ \text{converges}
+  \right).
+\]
+
+% Ratio Test; textbook page 566, PDF page 567
+\[
+  \rho=\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|
+  \quad\Longrightarrow\quad
+  \begin{cases}
+    \rho<1: & \text{absolute convergence},\\
+    \rho>1\ \text{or}\ \rho=\infty: & \text{divergence},\\
+    \rho=1: & \text{inconclusive}.
+  \end{cases}
+\]
+
+% Root Test; textbook page 568, PDF page 569
+\[
+  \rho=\lim_{n\to\infty}\sqrt[n]{|a_n|}
+  \quad\Longrightarrow\quad
+  \begin{cases}
+    \rho<1: & \text{absolute convergence},\\
+    \rho>1\ \text{or}\ \rho=\infty: & \text{divergence},\\
+    \rho=1: & \text{inconclusive}.
+  \end{cases}
+\]
+
+% Alternating Series Estimation Theorem; textbook page 573, PDF page 574
+\[
+  \left|L-\sum_{k=1}^{n}(-1)^{k+1}u_k\right|<u_{n+1}.
+\]
+
+% Power series; textbook page 578, PDF page 579
+\[
+  \sum_{n=0}^{\infty}c_n(x-a)^n.
+\]
+
+% Radius and interval of convergence; textbook page 583, PDF page 584
+\[
+  |x-a|<R\ \text{converges absolutely},
+  \qquad
+  |x-a|>R\ \text{diverges}.
+\]
+\[
+  \text{Endpoints }x=a-R,\ a+R\ \text{must be tested separately}.
+\]
+
+% Geometric power series; textbook page 578, PDF page 579
+\[
+  \frac{1}{1-x}=\sum_{n=0}^{\infty}x^n,
+  \qquad |x|<1.
+\]
+
+% Taylor series; textbook page 590, PDF page 591
+\[
+  \sum_{k=0}^{\infty}\frac{f^{(k)}(a)}{k!}(x-a)^k.
+\]
+
+% Taylor remainder; textbook page 594, PDF page 595
+\[
+  R_n(x)=\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}
+  \quad\text{for some }c\text{ between }a\text{ and }x.
+\]
+
+% Remainder estimate; textbook page 595, PDF page 596
+\[
+  \left|f^{(n+1)}(t)\right|\le M
+  \quad\Longrightarrow\quad
+  |R_n(x)|\le\frac{M|x-a|^{n+1}}{(n+1)!}.
+\]
+
+% Standard series; textbook page 607, PDF page 608
+\[
+  e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!},
+  \qquad
+  \sin x=\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n+1}}{(2n+1)!},
+  \qquad
+  \cos x=\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n}}{(2n)!}.
+\]
+
+\section*{Chapter 10 - Parametric Equations and Polar Coordinates}
+
+% Parametric slope; textbook page 625, PDF page 626
+\[
+  \frac{dy}{dx}
+  =
+  \frac{dy/dt}{dx/dt},
+  \qquad
+  \frac{dx}{dt}\ne0.
+\]
+\[
+  \frac{d^2y}{dx^2}
+  =
+  \frac{\dfrac{d}{dt}\left(\dfrac{dy}{dx}\right)}{dx/dt},
+  \qquad
+  \frac{dx}{dt}\ne0.
+\]
+
+% Parametric length; textbook page 628, PDF page 629
+\[
+  L=\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\,dt.
+\]
+
+% Parametric surface area; textbook page 632, PDF page 633
+\[
+  S_x=2\pi\int_a^b y(t)\,ds,
+  \qquad
+  S_y=2\pi\int_a^b x(t)\,ds.
+\]
+
+% Polar conversion; textbook page 636, PDF page 637
+\[
+  x=r\cos\theta,
+  \qquad
+  y=r\sin\theta,
+  \qquad
+  r^2=x^2+y^2.
+\]
+
+% Polar slope; textbook page 639, PDF page 640
+\[
+  \frac{dy}{dx}
+  =
+  \frac{r'(\theta)\sin\theta+r(\theta)\cos\theta}
+       {r'(\theta)\cos\theta-r(\theta)\sin\theta},
+  \qquad
+  \frac{dx}{d\theta}\ne0.
+\]
+
+% Polar area; textbook page 643, PDF page 644
+\[
+  A=\frac12\int_\alpha^\beta r(\theta)^2\,d\theta,
+  \qquad
+  A=\frac12\int_\alpha^\beta\left(r_2^2-r_1^2\right)d\theta.
+\]
+
+% Polar length; textbook page 645, PDF page 646
+\[
+  L=\int_\alpha^\beta
+  \sqrt{r(\theta)^2+\left(r'(\theta)\right)^2}\,d\theta.
+\]
+
+% Polar conic; textbook page 657, PDF page 658
+\[
+  r=\frac{ke}{1+e\cos\theta}
+  \quad
+  \text{for directrix }x=k>0.
+\]

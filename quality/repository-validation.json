@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "thomas-repository-validation-v1",
+  "pass": true,
+  "htmlFiles": 39,
+  "chapters": 17,
+  "pdfs": 10,
+  "expected": {
+    "chapters": 17,
+    "terms": 638,
+    "exercises": 255,
+    "formulas": 208,
+    "pdfs": 10
+  },
+  "failures": []
+}

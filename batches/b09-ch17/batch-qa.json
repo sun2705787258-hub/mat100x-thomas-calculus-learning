@@ -1,0 +1,88 @@
+{
+  "$schema": "../../quality/batch-qa.schema.json",
+  "schemaVersion": "thomas-batch-qa-v2",
+  "batch": "B9",
+  "chapters": [17],
+  "status": "passed",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "metrics": {
+    "chapter17Terms": 46,
+    "newTerms": 46,
+    "chapter17Exercises": 15,
+    "newExercises": 15,
+    "masteryItems": 10,
+    "renderedFormulas": 15,
+    "formulaSourceEntries": 15,
+    "numericChecksPassed": 25,
+    "pdfPages": 15,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440,
+    "desktopFormulaClipped": 0,
+    "desktopFormulaOverflow": 0,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "mobileFormulaClipped": 0,
+    "mobileFormulaScrollable": 9,
+    "printFormulaClipped": 0,
+    "printFormulaOverflow": 0,
+    "katexErrors": 0,
+    "browserErrors": 0,
+    "crossBatchPagesPassed": 10,
+    "crossBatchPagesTotal": 10
+  },
+  "checks": {
+    "G1_source": "passed",
+    "G2_coverage": "passed",
+    "G3_terms": "passed",
+    "G4_theorems_formulas": "passed",
+    "G5_examples": "passed",
+    "G6_exercises_answers": "passed",
+    "G7_math_rendering": "passed",
+    "G8_diagrams_links": "passed",
+    "G9_web_print": "passed",
+    "G10_copyright_version": "passed"
+  },
+  "exerciseCoverage": {
+    "types": ["概念辨析", "计算题", "证明/说明", "应用题", "综合题"],
+    "levels": ["基础", "标准", "挑战"],
+    "allHaveHintStepsSolution": true,
+    "uniqueIds": true
+  },
+  "pdfFinalChecks": {
+    "pageSize": "A4",
+    "allExerciseIdsPresent": true,
+    "placeholderHits": 0,
+    "acceptanceTextPresent": true,
+    "allPagesRenderedAndInspected": true
+  },
+  "defects": {
+    "P0": 0,
+    "P1": 0,
+    "P2Open": 0,
+    "closed": [
+      {
+        "id": "B9-P1-01",
+        "scope": "source metadata rendering",
+        "resolution": "removed escaped line-break markup"
+      },
+      {
+        "id": "B9-P1-02",
+        "scope": "print exercise order",
+        "resolution": "changed print exercise layout to row-major order"
+      },
+      {
+        "id": "B9-P2-01",
+        "scope": "formula marker overflow",
+        "resolution": "replaced long identifiers with compact formula labels"
+      }
+    ]
+  },
+  "pdfSha256": "024065D404DBEC60596543B437912B29FC337BE7096EDFD4ADEB8AE268F1D446",
+  "nextBatch": {
+    "id": "complete",
+    "chapters": [],
+    "entryConditionMet": true,
+    "status": "complete"
+  }
+}

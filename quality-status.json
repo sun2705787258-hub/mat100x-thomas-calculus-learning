@@ -1,0 +1,155 @@
+{
+  "standard": "Thomas-full-book-qa-v1",
+  "batchQaSchemaVersion": "thomas-batch-qa-v2",
+  "integrationManifest": "book-manifest.json",
+  "hardening": {
+    "status": "passed",
+    "report": "HARDENING_REPORT.md",
+    "schema": "quality/batch-qa.schema.json",
+    "globalAudit": "quality/global-audit.json",
+    "auditScript": "source/quality_audit.mjs",
+    "pagesAudited": 10,
+    "localLinksChecked": 489,
+    "desktopFormulaOverflow": 0,
+    "formulaClipped": 0,
+    "mobileFormulaScrollable": 84
+  },
+  "unifiedSite": {
+    "status": "passed",
+    "audit": "quality/site-audit.json",
+    "build": "quality/unified-build.json",
+    "artifactInventory": "quality/artifact-inventory.json",
+    "pagesAudited": 29,
+    "chapters": 17,
+    "terms": 638,
+    "exercises": 255,
+    "formulas": 208,
+    "pdfs": 10,
+    "searchResultsForGreen": 8,
+    "failures": 0,
+    "manifest": "book-manifest.json"
+  },
+  "release": {
+    "version": "1.0.0",
+    "package": "../Thomas_Calculus_全书统一学习站_v1.0.0.zip",
+    "status": "passed"
+  },
+  "goldenSample": {
+    "id": "B0",
+    "chapters": [4, 5],
+    "status": "accepted-as-golden-sample",
+    "isFormalBatch": false
+  },
+  "currentBatch": null,
+  "currentBatchStatus": "complete",
+  "lastPassedBatch": "B9",
+  "batches": [
+    {
+      "id": "B1",
+      "chapters": [1, 2],
+      "status": "passed",
+      "report": "batches/b01-ch01-02/QA_REPORT.md",
+      "qaData": "batches/b01-ch01-02/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B2",
+      "chapters": [3, 4],
+      "status": "passed",
+      "entryCondition": "B1 passed",
+      "entryConditionMet": true,
+      "report": "batches/b02-ch03-04/QA_REPORT.md",
+      "qaData": "batches/b02-ch03-04/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B3",
+      "chapters": [5, 6],
+      "status": "passed",
+      "entryCondition": "B2 passed",
+      "entryConditionMet": true,
+      "report": "batches/b03-ch05-06/QA_REPORT.md",
+      "qaData": "batches/b03-ch05-06/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B4",
+      "chapters": [7, 8],
+      "status": "passed",
+      "entryCondition": "B3 passed",
+      "entryConditionMet": true,
+      "report": "batches/b04-ch07-08/QA_REPORT.md",
+      "qaData": "batches/b04-ch07-08/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B5",
+      "chapters": [9, 10],
+      "status": "passed",
+      "entryCondition": "B4 passed",
+      "entryConditionMet": true,
+      "report": "batches/b05-ch09-10/QA_REPORT.md",
+      "qaData": "batches/b05-ch09-10/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B6",
+      "chapters": [11, 12],
+      "status": "passed",
+      "entryCondition": "B5 passed",
+      "entryConditionMet": true,
+      "report": "batches/b06-ch11-12/QA_REPORT.md",
+      "qaData": "batches/b06-ch11-12/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B7",
+      "chapters": [13, 14],
+      "status": "passed",
+      "entryCondition": "B6 passed",
+      "entryConditionMet": true,
+      "report": "batches/b07-ch13-14/QA_REPORT.md",
+      "qaData": "batches/b07-ch13-14/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B8",
+      "chapters": [15, 16],
+      "status": "passed",
+      "entryCondition": "B7 passed",
+      "entryConditionMet": true,
+      "report": "batches/b08-ch15-16/PDF_QA_REPORT.md",
+      "qaData": "batches/b08-ch15-16/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0
+    },
+    {
+      "id": "B9",
+      "chapters": [17],
+      "status": "passed",
+      "entryCondition": "B8 passed",
+      "entryConditionMet": true,
+      "report": "batches/b09-ch17/PDF_QA_REPORT.md",
+      "qaData": "batches/b09-ch17/batch-qa.json",
+      "p0": 0,
+      "p1": 0,
+      "p2Open": 0,
+      "note": "single-chapter final batch because the source contains 17 chapters"
+    }
+  ]
+}

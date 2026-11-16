@@ -1,0 +1,1845 @@
+{
+  "schemaVersion": "thomas-repository-inventory-v1",
+  "summary": {
+    "files": 262,
+    "bytes": 35394136,
+    "html": 39,
+    "pdfs": 10
+  },
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 146,
+      "sha256": "BF4723A783384ABB68BA523B3C26A788EE2D83A2963B457AD1636DDA4C5CFADD"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "type": "workflow",
+      "destination": "CI / release automation",
+      "bytes": 11,
+      "sha256": "78884730E56DEACD474DC178D93E801BD832155D039711CBA2765210B469F969"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "workflow",
+      "destination": "CI / release automation",
+      "bytes": 769,
+      "sha256": "008A3D10F4C57EA079DD1E591E0BC8929DAA54AD8D2018418868E2661ADB7241"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "type": "workflow",
+      "destination": "CI / release automation",
+      "bytes": 968,
+      "sha256": "A90BA416DCCB2EA66BEEB2B52D3D7EF9875048A3DDF43F2EF663BD3398DE3E95"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "type": "workflow",
+      "destination": "CI / release automation",
+      "bytes": 1609,
+      "sha256": "822CB671C05290D35EA293FAAB0734B821E60CF46D1DFA70A47AB9C5BB9767B6"
+    },
+    {
+      "path": ".gitignore",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 205,
+      "sha256": "33DE6B39FBDB3A0352CB9309FDDCFB1F17FC7C3BE8BF830C0108427E129281D2"
+    },
+    {
+      "path": ".nojekyll",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 1,
+      "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "path": "ARTIFACT_INVENTORY.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 33031,
+      "sha256": "D130A0F5BC92A03D407B351930FCABAFB9A9E57441920816D3F3BE7187AE43B6"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 260,
+      "sha256": "5F4AB31589A73A222ED887B97BC3D5D3FCE535A541A5E5DAA119167F390FCB30"
+    },
+    {
+      "path": "CONTENT_MODEL.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 1820,
+      "sha256": "481A555CDA4CDEB16BC3043FD449095C525652D9553FB49D4C91B9A952F8CFAE"
+    },
+    {
+      "path": "HARDENING_REPORT.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 4135,
+      "sha256": "8C116CB8E49AAD3F45AC8374DC34E33AF0C064B60C154ED2D47C7DBF2B598732"
+    },
+    {
+      "path": "LICENSE.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 431,
+      "sha256": "0D6F3A3866C0A41101CC18CDBA42905C5C5461FE875E6B01986CE1AC66C6508D"
+    },
+    {
+      "path": "NOTICE.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 759,
+      "sha256": "0762ECE808F175EC69FA78EAA4E0449289A46C419DD3A00B2A6C50B456DC568D"
+    },
+    {
+      "path": "QA.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 1250,
+      "sha256": "2D707E06675F9636535DDFC59D623DE116794D0A3164672B8B5ABE36F6505D35"
+    },
+    {
+      "path": "README.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 1563,
+      "sha256": "58603325E9A0941EBF3AC94A083464097F258F1A1D89FBF3C1FF7EB969751218"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 847,
+      "sha256": "FAE2412ED514263D46313030AA149F253AAF2FED49DF13DC54F6B033EE338869"
+    },
+    {
+      "path": "ROLLBACK.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 956,
+      "sha256": "8F723BE9238C36A3975C4FF5F7512C19ED1343F1861B06021B9FCD794F9EF3C1"
+    },
+    {
+      "path": "STANDARDS_MAP.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 2445,
+      "sha256": "E8AAB86FEC8EA7DA31423A50C3E2C607EA4D2BDD020FAA196903A44E5B033B7C"
+    },
+    {
+      "path": "UNIFIED_SITE_REPORT.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 1824,
+      "sha256": "F7B15333B7A9483F979AA1BE594DA4062A37C5EEA13054AC8FCBDDFD1E413447"
+    },
+    {
+      "path": "USER_GUIDE.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 1303,
+      "sha256": "22417DF6B0CFC4544AA38367913C1F9196E4A4E26CE0B9B41B1A446EC6202E9A"
+    },
+    {
+      "path": "archive/b0-golden/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 69012,
+      "sha256": "EFCD82E76F1D93B6B4A19CD365197F63CD79CD41A9DAD0F1D6BDDC6E8F161E5E"
+    },
+    {
+      "path": "archive/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 4821,
+      "sha256": "944C081E3925A5320C6554D3666BA149F4AB78238AE71D2F671582E0B4D73049"
+    },
+    {
+      "path": "assets/app.js",
+      "type": "shared-asset",
+      "destination": "site runtime",
+      "bytes": 13209,
+      "sha256": "BCE8DB58BBAD29424BAB19A86D19D07288FC502936FE4CAB7B1AC11392739398"
+    },
+    {
+      "path": "assets/mindmap.svg",
+      "type": "shared-asset",
+      "destination": "site runtime",
+      "bytes": 8137,
+      "sha256": "B0FA6D85ADDC02A7EBFD9B6726E62649FC7866282E4EB4F0271D4430E666A8E1"
+    },
+    {
+      "path": "assets/site.css",
+      "type": "shared-asset",
+      "destination": "site runtime",
+      "bytes": 23043,
+      "sha256": "9AE1EC07DF3613E34722012008AA156DF4759ECD90ADBD64A2932D819B0E9F18"
+    },
+    {
+      "path": "assets/site.js",
+      "type": "shared-asset",
+      "destination": "site runtime",
+      "bytes": 6866,
+      "sha256": "9A723A6C08E526AA813AFC6EC9C915D76D54EF216A1B93D90B7A280F7E9B26CC"
+    },
+    {
+      "path": "assets/styles.css",
+      "type": "shared-asset",
+      "destination": "site runtime",
+      "bytes": 24154,
+      "sha256": "61CC1A2A4BABA70249CCB3421E0EF0DE1EBF326533063CC1153A7642859CD35A"
+    },
+    {
+      "path": "assets/vendor/katex/LICENSE",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 1107,
+      "sha256": "766CCC1F306C885AA45542A9846BBD0A505B27A0374F146778171C2254CE18E3"
+    },
+    {
+      "path": "assets/vendor/katex/README.md",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 7268,
+      "sha256": "F5A45FBE02CE38E1548193DD1D34135ED4EDE89EBD1617D1DBA2AE3E5E300DF9"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/auto-render.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 10508,
+      "sha256": "1F5492E68752A1B1FBCD500840CA1D0191C26131FDC36381B493A02C6B8D4BCF"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/auto-render.min.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 3467,
+      "sha256": "BB53EB953394531AAE36FDD537065C4244EB8542901A3CE914601D932675B8AC"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/auto-render.mjs",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 6840,
+      "sha256": "42D3240990D45436D6DD4DFB36E7792448CDC2B602C47AC424FD09B1E93DBDFE"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/copy-tex.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 4507,
+      "sha256": "2A0CBB0816EA3FA4558B2C810F833FD9C2E293708898C4A1E590617C9AB204EB"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/copy-tex.min.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 1673,
+      "sha256": "07770AF90943A1DE1A1010794BC78C6A7346D46D48FB63E35CC76BA76B827604"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/copy-tex.mjs",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 3640,
+      "sha256": "D037B7C4CDC73420285A580E5B8F9CB441AD67E661FD1AD31DD45AADCF047BF5"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/mathtex-script-type.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 4207,
+      "sha256": "642910D0C2189220F4D83F579D8C611EF0C2D74C430C5C5F5D0ACA861C5C6B12"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/mathtex-script-type.min.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 1290,
+      "sha256": "0799B28B8BC80621FC86D9CEE45CFD1CA499F77D3D6D71B0EE307158FC3B50B9"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/mathtex-script-type.mjs",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 751,
+      "sha256": "57F519B2230307C74D08020F52C859C969F5527EB40D24BB8AB3E2167808D5C6"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/mhchem.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 78705,
+      "sha256": "ADAE02881ECE750CE430AA5B250C54E23E0E3D1854C7FF348DFB5EB34DAF687A"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/mhchem.min.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 33712,
+      "sha256": "9F87E5E9C384A160472D0045035A8641F6013358EDDB3ECE708634A50F946A40"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/mhchem.mjs",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 75577,
+      "sha256": "C5D4B68A7921C218FFDCF4D7C17900D783AF7B48430513810CB14E791A54ABB4"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/render-a11y-string.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 23938,
+      "sha256": "A5FA0DD91B33D24CE6B6AB2D4132825842AA286C14B040F668DCD92717497387"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/render-a11y-string.min.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 8454,
+      "sha256": "79020F6CA629C07BDDF2271C6D057E8E55E8E251428A493DE839C894F713160D"
+    },
+    {
+      "path": "assets/vendor/katex/contrib/render-a11y-string.mjs",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 20283,
+      "sha256": "5DF820DD9376BD23EF424E5CFC45505D57AE646FB0C5533758E7AD51E048893B"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 63632,
+      "sha256": "68534840BCFDD2BFFB6F0E8DEB48684DD01E7F04EA2813267577AFB906DE1D13"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 33516,
+      "sha256": "30DA91E84C893F875E252689FAEBDC590B2871145E8ADC7F9A9D4DBD8CE0B251"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 28076,
+      "sha256": "0CDD387C9590A1A9F9794560022DBB59654A7D86F187AA0C81495AD42D3A7308"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 12368,
+      "sha256": "07D8E303CE4FC12B4BB54F1004170DD190A1F3DB45D400FE68060DF3E0897268"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 7716,
+      "sha256": "1AE6BD7475590E97E7F145A89E09CCDE322F7A6BC0B91607B1C8B8EE28290FED"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 6912,
+      "sha256": "DE7701E42CF1F4CF0B766C03FB27977207EEE2F4FD5D76FA82188406DA43EA4C"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 12344,
+      "sha256": "ED0B74372FEEFCBB9C0666B2E210DA37B7E49FA7FBBF3EEB11DB5F693DACFBB7"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 7656,
+      "sha256": "3398DD02302557A793F2863F88E02D96CE10DF2ABFFA07C8E9FA90775116E65C"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 6908,
+      "sha256": "5D53E70AD607C2352162DEC9E0923FB54ECDAFACCBF604CD8DCF7D00FACB989B"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 19584,
+      "sha256": "9163DF9C7122432E6495B4229FA9071CF9AE86A758AE5EFC4924EC2E1A6DBCE1"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 13296,
+      "sha256": "9BE7CEB88004AB8AD124082246FBFCCA4091E36385D4EC6ED1DF67375DAD50FB"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 11348,
+      "sha256": "74444EFD593C005E3F4573B44524704C0AF0A937FE911CCA9E94068D0D140D3F"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 19572,
+      "sha256": "1E6F9579E90E2CAC37F8F60A597C436E075C114385652B7CBEB0DEC0421291B3"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 13208,
+      "sha256": "5E28753BE717DAC97F559F49BC10BE9CF3C124DDCABDA6659D11CB68FEBC6463"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 11316,
+      "sha256": "51814D270D06FF0255DBA0799994FA4D8C84D11F09951D47595F4ABB1F3602DC"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Bold.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 51336,
+      "sha256": "138AC28D1663B3037E9C5F52371FA5C63D8324F4A38D22CD573E6EA3A3FD0CF8"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 29912,
+      "sha256": "C76C5D696297D51B9CB1639C7DA4334F0E7DEC81B42B11213B5E25EF671BB822"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 25324,
+      "sha256": "0F60D1B897938EC918C8CE073092411BAF9438F6739465693FF18B0F9D20B021"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 32968,
+      "sha256": "70EE1F64A20F2048C21940EF46D0144FD215BAA953CA69AFD1E31E98544F708F"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 19412,
+      "sha256": "A6F7EC0D846AC7AD975ADB8959C37ED49B94ACBC4AE436DB9CE9E20287E4A64C"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 16780,
+      "sha256": "99CD42A3C072D918F2F44984A807CF7AA16E13545FD0875FC07C6C65F99E715B"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Italic.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 33580,
+      "sha256": "0D85AE7CC30F23790A7F1A58C4A112FDCA8AAE769B6BA11429AF1D98B1B6CB3A"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 19676,
+      "sha256": "F1D6EF86F3B11A528BD5185199BD2443ECB2B0DEAD96D88674B5A2C12BE24BDF"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 16988,
+      "sha256": "97479CA6CCE906ABC961ECAC96FAA5F9CA2E61B8E7670D475826BCDEE9A7C267"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 53580,
+      "sha256": "D0332F52868370FD83AE7FA46470F90C8F2EAB2FCF12BC4F88080B340C95A830"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 30772,
+      "sha256": "C6368D87E8A1A3A5D337623D83D8DC4B868F242A9AD476237D6F8D1E0F168CDC"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 26272,
+      "sha256": "C2342CD8B869E01752A9321DC17213FC40D4D04C79688C1D43F2CF316ABD7866"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 31196,
+      "sha256": "F9377AB0271CDA59AF24BCFFBD46A4D0C8A3572FFAFDBB38DE2AD5EA7B0D5EE5"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 18668,
+      "sha256": "850C0AF5C2238497FEBAF5E461D880BF458C341F42F4F330F1B1AB5698B1998E"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 16400,
+      "sha256": "DC47344DBB6CB5B655C8460D561F4DF5F501B90C804AD3C6CEC65FE322351AB1"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Math-Italic.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 31308,
+      "sha256": "08CE98E51B04D58945A301E639E02B6998AF29FDFD61A7B8AFDD07BBFC479D4A"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 18748,
+      "sha256": "8A8D244581371912B8F3F5A23E2437CB2A59CD9BCAEBB0346E722C05737A2571"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 16440,
+      "sha256": "7AF58C5EC8F132A2DDDE9027C6D7814DECCE4D3B822A11192A42A20E2E973264"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 24504,
+      "sha256": "1ECE03F79F95277D57DC7F6B435A74E1379B0D46104A8530286B60FF49369EA0"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 14408,
+      "sha256": "ECE03CFD83E22C212CDEF66FEB8442D25A083BEB988DB3F1883F3F9738D750BA"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 12216,
+      "sha256": "E99AE51144BF1232EFCC1BFE5ADD36262C6866B0FAAB24FA75740E1B98577A62"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 22364,
+      "sha256": "3931DD81FAED86BA021BB2BBDC36F5BED9A38D6B4F4077ACA59B265AA1B02083"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 14112,
+      "sha256": "91EE67500CC0129AA0ACE3AC5C61FF1692102F0F31D02B69347FBA35DCB75BF2"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 12028,
+      "sha256": "00B26AC825E2095056396E0553B8AC26D3F8AD158C3826E28B4C45B385C4714A"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 19436,
+      "sha256": "F36EA897E19F4A2E571D1E900E4E3710E438DEB05A842486045BA0A3E616A4AD"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 12316,
+      "sha256": "11E4DC8A6471FF6D6EE561D53D10FDE8F7489E798257FF449C5D37C197435605"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 10344,
+      "sha256": "68E8C73EF42AFD3CCEC58BF0FBA302CCE448938E7FC020A5E31F8A952EEE1342"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Script-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 16648,
+      "sha256": "1C67F068FEA8BB09BF099C088B1CF64BD27516A6E07F4684344873564BB66A67"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 10588,
+      "sha256": "D96CDF2B3BDD4D64A8FD5F74A4C467F123A8A73931CD435889F08FFAF9BF947A"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 9644,
+      "sha256": "036D4E95149B69FF9BCC0CD55771EFEB25FFA3947293E69ACD78D5AC328C684B"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size1-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 12228,
+      "sha256": "95B6D2F1A50173BFEDB8C63E1D1C99B10427D0A4DF4201CB44513B226951A22B"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 6496,
+      "sha256": "C943CC986384F59E86BEA5FD7DC50A9C4DFE567A7C05EB40D6790720DEAD97C9"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 5468,
+      "sha256": "6B47C40166B6DBE21A5DFCA7718413F2147FD2399BE1BA605D8AD39CEDF25DFE"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size2-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 11508,
+      "sha256": "A6B2099FB555C60E3A0DB3A08842EBF1D732C6EB4E4BF44913613BED4FC4E39B"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 6188,
+      "sha256": "2014C523C3210BCC166648C4D4CC57F05B747DF07A24277BF71C51E67DC79E3D"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 5208,
+      "sha256": "D04C54219F9EAEC6D4D4FD42DFB28785975A4794D6B2FC71E566B9CD6DB842DD"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size3-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 7588,
+      "sha256": "500E04D54F0D51666332C9D2089AA803BE22AA878ECA539E59FA53C6E522B082"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 4420,
+      "sha256": "6AB6B62E9B62DAE2C00DD90F791BD10950BE0ECC3490D7D6045F51C2E8FE0949"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 3624,
+      "sha256": "73D591271B1604960CB10BB90FEE021670AF7297017E0E98480B332D11F51995"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size4-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 10364,
+      "sha256": "C647367D1DD4E162468717D020E1FC0F1DC5C26EBFDFFBE55261713BF88C5877"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 5980,
+      "sha256": "99F9C6750B489C9462BF04900BD3F939DF9B829339DAAAAA99EF5495CDDDEA58"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 4928,
+      "sha256": "A4AF7D414440A1C1790825CFB700CF9CF43B0F2C4B04F0EBC523011AD9853EC0"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 27556,
+      "sha256": "F01F3E87D9C6A61C0C081CEB577ABD864EB00A612F7AC1620DD6915FAD2EF5AA"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 16028,
+      "sha256": "E14FED02B1ABA7CE9F5AFD5844B5D0321B22351FEBC720E0DE8B8723527609F7"
+    },
+    {
+      "path": "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 13568,
+      "sha256": "71D517D67827787CFABDF186914CC3358EDA539E37931941F2B2FD4A21F68C0B"
+    },
+    {
+      "path": "assets/vendor/katex/katex.css",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 31329,
+      "sha256": "009F1E58806819E90D02E90FFECAFA988A3EE4B54418F8CAB70F4F2CBF8CE2D8"
+    },
+    {
+      "path": "assets/vendor/katex/katex.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 622663,
+      "sha256": "8F1F4FB1080439C012BB8FDDF424FA253E9144AB4CDD7DC0EAE0E92CD04A5E33"
+    },
+    {
+      "path": "assets/vendor/katex/katex.min.css",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 23352,
+      "sha256": "19095127357ED6D29FE0A63A6B000C913A89F7F1963B765DD3715E97C9852E75"
+    },
+    {
+      "path": "assets/vendor/katex/katex.min.js",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 276701,
+      "sha256": "E8D885505949F3A5F4ABDD5DD0D53696BD1371AD26FFBF4F310DCD77C8CDAE89"
+    },
+    {
+      "path": "assets/vendor/katex/katex.mjs",
+      "type": "third-party-asset",
+      "destination": "offline runtime dependency",
+      "bytes": 610145,
+      "sha256": "7AF1AA5E484A4AE881E181FF97DDFFDCE2DEABEF42596D2679658B9FE4CD4615"
+    },
+    {
+      "path": "batches/b01-ch01-02/QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 3922,
+      "sha256": "88F74896C276E534CB213C22FF034A0C46FD8FB359A1740ED27D5E1EF993F21B"
+    },
+    {
+      "path": "batches/b01-ch01-02/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 852,
+      "sha256": "D883EDE302D63D4C1413CC7DAA2C64A5474EE5CC3D3308AB7EF1D14563C2ECA4"
+    },
+    {
+      "path": "batches/b01-ch01-02/b1-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 6413,
+      "sha256": "022DF08BF927A3B5BCDB818673756DB92895BFE5DCF91BB0A88E38EC45EF4D5C"
+    },
+    {
+      "path": "batches/b01-ch01-02/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 40901,
+      "sha256": "774361C9E05071514AC60A95BDF351F4869F8C2CEB32A0BF174704F317265B61"
+    },
+    {
+      "path": "batches/b01-ch01-02/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2225,
+      "sha256": "A122A74F6FE13DE1A61F8CADD08EAD5357CC1F8AC3E6F0ECE274EF573A613042"
+    },
+    {
+      "path": "batches/b01-ch01-02/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 48852,
+      "sha256": "9E7D78837E4C5734B2E3D11A5FC2D73BFE9752862F20C2499963131B0B8C30ED"
+    },
+    {
+      "path": "batches/b01-ch01-02/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2841,
+      "sha256": "BEDCAB7A4B9C44871E6A6E40F43C51C8C45D61E7151450ED670CCFE08AD22ADB"
+    },
+    {
+      "path": "batches/b01-ch01-02/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 705,
+      "sha256": "6910DAB5854160AEF73B35127790809CAA8163BFAD6999C0E2E80410589D0B5C"
+    },
+    {
+      "path": "batches/b01-ch01-02/source/render_batch.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4793,
+      "sha256": "FB886A0347CC429360007E87B89E3D5757B814FCCC4F832EA80E99FC5648E6FB"
+    },
+    {
+      "path": "batches/b01-ch01-02/source/smoke_test.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 3319,
+      "sha256": "0F55FDEF4BD46ACBF75BDE8B268C9713A210E2A35B995C4A8941895C58922D48"
+    },
+    {
+      "path": "batches/b02-ch03-04/QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4565,
+      "sha256": "66CC79E825CB7BC2BE0C16199976620BB48D304E91484D69FFBC3048A0225CD2"
+    },
+    {
+      "path": "batches/b02-ch03-04/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 578,
+      "sha256": "3D160A22A50823A9B998A97F5A9953D7DB242E9E4CFADB6F7B40CCA8229E5617"
+    },
+    {
+      "path": "batches/b02-ch03-04/b2-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 7652,
+      "sha256": "EDDB6C8DA92806DE4A5575C1E083632961AFECA19EEC24C4C9F1D71EC570E101"
+    },
+    {
+      "path": "batches/b02-ch03-04/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 22818,
+      "sha256": "BD60834D2C7EBC2E24E3B01A6FA5C56665DC9CF506C1A56BBE9557C4D7B37958"
+    },
+    {
+      "path": "batches/b02-ch03-04/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2229,
+      "sha256": "AF36C3529E587457D25EAECD4CECE39E31857620EA74808C48622974341C6A3B"
+    },
+    {
+      "path": "batches/b02-ch03-04/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 40407,
+      "sha256": "3BB8D1C99E50C1F5AC16727E9742E7D1B4EF8F3A35542358C467BAE06924EF00"
+    },
+    {
+      "path": "batches/b02-ch03-04/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 1956,
+      "sha256": "E0479DB58B03B4D01994A936302C4C1E4A5E5C8BA57AAE0858D8C7571D3DC20A"
+    },
+    {
+      "path": "batches/b02-ch03-04/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 496,
+      "sha256": "FB128474560E0E2BE0B815C12A7DB37ABCFD6068372AF20D95F36A96A6BAADB3"
+    },
+    {
+      "path": "batches/b02-ch03-04/source/render_batch.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4701,
+      "sha256": "89C9A12A43A05E870DBB015221600D0BCFF9BA64E67F0554D71B81C8D9BDF5F3"
+    },
+    {
+      "path": "batches/b03-ch05-06/QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4211,
+      "sha256": "A0DAF1587D5DF0BC0F2D75B9C6C0ED9A64F0977B172C858BC0214D05C8A55521"
+    },
+    {
+      "path": "batches/b03-ch05-06/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 574,
+      "sha256": "6C421D34C10535629EDD7B6341482808CB75AFB47D9D3C4B276BC98AF9291D9C"
+    },
+    {
+      "path": "batches/b03-ch05-06/b3-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 5636,
+      "sha256": "844C82FD7F3FE1648F7CD0BECDB81846DB3ED9B0DD08E34442A050FD6B6DB9E9"
+    },
+    {
+      "path": "batches/b03-ch05-06/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 19372,
+      "sha256": "050432134E378BF499530D2222476B245ECB8BC8B1FA0F820FCC4A70AC633E09"
+    },
+    {
+      "path": "batches/b03-ch05-06/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2086,
+      "sha256": "2C7027B75349CD3F504A2AE4190E148FB3D92E061D268A6527536E7A44817732"
+    },
+    {
+      "path": "batches/b03-ch05-06/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 31918,
+      "sha256": "CE59605E09F35F25FBD2C0A1339D332540E1CC6137E2453B8D39857D3B305A47"
+    },
+    {
+      "path": "batches/b03-ch05-06/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 1356,
+      "sha256": "2C5CC4511C4700EEDFE3B06A4EC7097714315D8CDADE7B0B520488A07D1DED26"
+    },
+    {
+      "path": "batches/b03-ch05-06/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 416,
+      "sha256": "BB379809E6BEC757A4A77933082B6328C4BEE6FE707E3EFAE2317938BFC2F89E"
+    },
+    {
+      "path": "batches/b03-ch05-06/source/render_batch.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4679,
+      "sha256": "BE04593B16C5E0102C1795098BB585605CFD1C8E0FC60A64978D4AF7B1EEC12D"
+    },
+    {
+      "path": "batches/b04-ch07-08/QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 5911,
+      "sha256": "31AC0837E272F24D227E78F930AD942B7D2D376479FF62A54D16D5F0CEAB8402"
+    },
+    {
+      "path": "batches/b04-ch07-08/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 798,
+      "sha256": "DDCF79742F4FC2F9A50CFA84F98F536081C3430747AA19D1125CB7AC409EC85E"
+    },
+    {
+      "path": "batches/b04-ch07-08/b4-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 6806,
+      "sha256": "AE2734BE63FDF5ABD9E127295477E5B1E3F19E5707543C5E458ACE64658AB3AB"
+    },
+    {
+      "path": "batches/b04-ch07-08/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 31210,
+      "sha256": "E5F04A3333C74BB90BBD2C53E9B000645D46F32C2D685C7C7DB31EE5D503BDC0"
+    },
+    {
+      "path": "batches/b04-ch07-08/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2652,
+      "sha256": "CEF1952ED91DCBBD091B1F58C9C2BD0E07CCDD56E023959E4FE6F7D5C9D16330"
+    },
+    {
+      "path": "batches/b04-ch07-08/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 38637,
+      "sha256": "F8482BA7EDF4E8D37E69C35673D68D2D95AF4FF91805E877E1EB8AE37A58B1B2"
+    },
+    {
+      "path": "batches/b04-ch07-08/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2202,
+      "sha256": "E2DEBEBEDBAE83D52BEDEE8D629A7986C4D722E77BC84AB5107DCFF5B9D7843F"
+    },
+    {
+      "path": "batches/b04-ch07-08/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 783,
+      "sha256": "3B531DE4071F801FBBAECA60682E7FEDC28144E6248E563B8FE2CC35C2533159"
+    },
+    {
+      "path": "batches/b04-ch07-08/source/render_batch.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4644,
+      "sha256": "83184D000BE2E145AC7C225A1487034720A90893B9FD7E5CC8FB351B22975DBC"
+    },
+    {
+      "path": "batches/b05-ch09-10/QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 6706,
+      "sha256": "272C20221416F255FE8CF28D31D89CBABA2348A6EDB63A92903CDA3DE06077DB"
+    },
+    {
+      "path": "batches/b05-ch09-10/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 815,
+      "sha256": "602172932B8FB6B97A83BEFA42CBC114FC022DE027A0F3DBFB39E5BE8688FB09"
+    },
+    {
+      "path": "batches/b05-ch09-10/b5-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 8669,
+      "sha256": "789B5FDD0D8CC4445C71D318C0F56FF8E4869A3294663E342D6742FAAD64D957"
+    },
+    {
+      "path": "batches/b05-ch09-10/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 42141,
+      "sha256": "E45A5DAB545E906C2AAA3C689CF12A4F095764E6D4F98B4FC3ABD780AA5FFD70"
+    },
+    {
+      "path": "batches/b05-ch09-10/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2776,
+      "sha256": "025259146E709848A8D03D9A2E5C8D71D90C55F2BC2281D783F130F94183AF67"
+    },
+    {
+      "path": "batches/b05-ch09-10/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 60082,
+      "sha256": "EABA7A937E40CB4C9A4BE4FDFB9CC478551E351AEC2E1FBE610DA00108C61EA8"
+    },
+    {
+      "path": "batches/b05-ch09-10/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4642,
+      "sha256": "569BDF4F8F59466380D7B94D8662B149AABF50DC2A67127FFFB8E51F0F99A32C"
+    },
+    {
+      "path": "batches/b05-ch09-10/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 1211,
+      "sha256": "674E877C20110772525D925F5E1141EFAF0F759A654682CB2FFD317FC21AF582"
+    },
+    {
+      "path": "batches/b05-ch09-10/source/render_batch.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 5287,
+      "sha256": "DCD944C044A4EF5301B2C0CEDABD649AE57AD961E99B01F0AC8552124AA773CB"
+    },
+    {
+      "path": "batches/b06-ch11-12/QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 7056,
+      "sha256": "CB3F01E33E8FC10819F7DB1C1D9ED7AECC2A5ECAD35D2A2089D6F66F62E11262"
+    },
+    {
+      "path": "batches/b06-ch11-12/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 825,
+      "sha256": "2C5AF418106BF12627DD52970049E6CBA5F40C7FAE499F855446E8683A32AE86"
+    },
+    {
+      "path": "batches/b06-ch11-12/b6-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 9490,
+      "sha256": "67AF50EAA52793054C9914008B3086E890B35B907C2E8B9E1B82AAC9F7CAD559"
+    },
+    {
+      "path": "batches/b06-ch11-12/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 39530,
+      "sha256": "1C0927CA64FA260569D031D46865537815B9DFF54876A264C956B4A59EE528C9"
+    },
+    {
+      "path": "batches/b06-ch11-12/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 3015,
+      "sha256": "E506220A078F19FAE3C38C7A9960D9BD40733C44DD070AF1CBFD2459E4F5F3B6"
+    },
+    {
+      "path": "batches/b06-ch11-12/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 44400,
+      "sha256": "67F332F43981AB581B91419BA9E5420E275BD7715AE7E4FB67E54A1E4E7C47B2"
+    },
+    {
+      "path": "batches/b06-ch11-12/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4378,
+      "sha256": "AFFBB971DC918D2B23885D31F941911D2101B5D41055D2E8D2AF20EADB737380"
+    },
+    {
+      "path": "batches/b06-ch11-12/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 850,
+      "sha256": "5A184C281B34126BAC92FB7AD2A3230B9E2D97A1E2D7BD2436333155F60A4D9F"
+    },
+    {
+      "path": "batches/b06-ch11-12/source/render_batch.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 5293,
+      "sha256": "684AA4BA32429B5E927BD61152C817323EDFCF215EE6ED666D314D057CBF0999"
+    },
+    {
+      "path": "batches/b07-ch13-14/QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 7152,
+      "sha256": "A93108BB642D5FB671312A999CA4A3DCA327FBF0CC879797DE643FB464C55DCC"
+    },
+    {
+      "path": "batches/b07-ch13-14/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 919,
+      "sha256": "50805706000DDE2FC81BEEA846B10D9A6FB73CF0128D31E2CFACA93B0D1FB3D7"
+    },
+    {
+      "path": "batches/b07-ch13-14/b7-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 8930,
+      "sha256": "5F7ECF8E232C1C2CE8D079E54728C74B66E9FC9A92CEE18FEBC448FB91EA2AAF"
+    },
+    {
+      "path": "batches/b07-ch13-14/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 38237,
+      "sha256": "97F2C7FB793CA2A4C30A30C9A39A0ED7A25B257E68325BB6B23275AEFE989143"
+    },
+    {
+      "path": "batches/b07-ch13-14/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2751,
+      "sha256": "F084DC2438C41A94741A8625CE6A793189726C120A96B4CCB1A9D4714D719F08"
+    },
+    {
+      "path": "batches/b07-ch13-14/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 43002,
+      "sha256": "1E98281F956D40385AD92C5E1D6BE4CF0AC670922997353484CE8550920ED849"
+    },
+    {
+      "path": "batches/b07-ch13-14/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 4436,
+      "sha256": "4D7A5D34EBBF09B8D88FFB57A82A0B6F585AF51D8FFC3B2905BBD39AC4CE0DE0"
+    },
+    {
+      "path": "batches/b07-ch13-14/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 1160,
+      "sha256": "5F68AA16853EAC1E8F9554AC494F7CFF8BE77E67382CEF078A8988128DC6E2A1"
+    },
+    {
+      "path": "batches/b07-ch13-14/source/render_batch.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 5992,
+      "sha256": "95CF2125B2E3DC6FAE9AFA1EBD343298A4EDF9947D70E9CC8FC4A7F19AE2A4C0"
+    },
+    {
+      "path": "batches/b08-ch15-16/PDF_QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2717,
+      "sha256": "59FFC735E4EA4970BDD6836F42F1581AC0347C46D2EA8B6F1FA460CDA59187BF"
+    },
+    {
+      "path": "batches/b08-ch15-16/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 619,
+      "sha256": "C2DD15175DAFFA1E50BFF5A9860B4589A0E9B8B71D183E20972CEB055A466392"
+    },
+    {
+      "path": "batches/b08-ch15-16/b8-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 5253,
+      "sha256": "876F13CBD1B9F2915FBA9ABDBDBABBCC0A0DD6A0DDCA1D1BC4E2E7A3E580A630"
+    },
+    {
+      "path": "batches/b08-ch15-16/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 41560,
+      "sha256": "7503687FC125226C1199A96448EDEAA521B0ECFCBC1F8D0514CCE2CA24DD65DF"
+    },
+    {
+      "path": "batches/b08-ch15-16/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2583,
+      "sha256": "7DFE1B1674A79511EF3ABEB657CE6A2A253329A05A00DA45BCEC25E70DA45DBE"
+    },
+    {
+      "path": "batches/b08-ch15-16/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 36317,
+      "sha256": "2488EF34F591D6C146ABBF4AF64DA3F2A086A00586C02CCC8BA27B5CBA93B320"
+    },
+    {
+      "path": "batches/b08-ch15-16/pdf-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2923,
+      "sha256": "5ED80C0B8CDB922D68458B31397F5466522B2FD920897F84F816FA281285A1D0"
+    },
+    {
+      "path": "batches/b08-ch15-16/source/batch-data.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 49634,
+      "sha256": "BB56770796F36DBA920B1C8BBA7AA46CEDD2AC6037BBE41EED55A2C856436D7D"
+    },
+    {
+      "path": "batches/b08-ch15-16/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 3306,
+      "sha256": "9635275A48BAB26A92EFE18E3F5090ABA78C054B8A74E5E206DFAAC1D3F3992E"
+    },
+    {
+      "path": "batches/b08-ch15-16/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 913,
+      "sha256": "34361F989BC43911570EB7B9237B910AC9464EA1BAAC8041F8229C767768A2D8"
+    },
+    {
+      "path": "batches/b09-ch17/PDF_QA_REPORT.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2406,
+      "sha256": "DC94EFF5F0A087535A6DCB726979D1A033843E5894FD6A80233F924E24DE4BA7"
+    },
+    {
+      "path": "batches/b09-ch17/README.md",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 627,
+      "sha256": "607650EF4917ABC1BC8FDBDE4C9C7D441D8871F94A7303D9C59B73D296B91E6E"
+    },
+    {
+      "path": "batches/b09-ch17/b9-map.svg",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 3617,
+      "sha256": "A8E4DC474A0A49AAAE18D29C90D77BE8E0371EECCD7611470DA902D30E3EC39C"
+    },
+    {
+      "path": "batches/b09-ch17/batch-content.js",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 19069,
+      "sha256": "04C332613C767DAFF071D68B0F06D13FD3DDDE566FCFEAC1DDB937F7A882C361"
+    },
+    {
+      "path": "batches/b09-ch17/batch-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2485,
+      "sha256": "FA51CC9318F364F842937AEF2E0CF9ED3E2B83B5DAAE5AE4FB54CDA4F9DCA2AB"
+    },
+    {
+      "path": "batches/b09-ch17/index.html",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 23832,
+      "sha256": "7B71A86DC35B34073915209597B111C63C782DE68D1B1C186701803B8F7C3EDA"
+    },
+    {
+      "path": "batches/b09-ch17/pdf-qa.json",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2629,
+      "sha256": "CA7BA2E78E24E6AF53C3586153CCD61250DB6AF2517327A0764949BD9875C129"
+    },
+    {
+      "path": "batches/b09-ch17/source/batch-data.mjs",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 24202,
+      "sha256": "25B9681C7FFC825F2BC2CEE8D07E81636709A1348839E4F99745683890940DDE"
+    },
+    {
+      "path": "batches/b09-ch17/source/formulas.tex",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 2216,
+      "sha256": "984415882641A53FEAE9BBAFC74C64E4579AEBC11061A4099CAE7DEBE9C09EB1"
+    },
+    {
+      "path": "batches/b09-ch17/source/mindmap.mmd",
+      "type": "batch-archive",
+      "destination": "historical acceptance snapshot",
+      "bytes": 357,
+      "sha256": "1A4FCB23E3706DDCA9FD0ABD12ADBD65A6B40262727104FD9167EB63CE1AB70C"
+    },
+    {
+      "path": "book-manifest.json",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 10966,
+      "sha256": "4A000C9C06FBC834C77690FA2A04CF1EE6689DD9EADB27B7A03FBD599C0A7458"
+    },
+    {
+      "path": "chapters/ch01-functions/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 65263,
+      "sha256": "F6D85B713D3E2C58B955D7DDE7B2D2A7555A1C4F16E3D9C9AA3E32EF209DB115"
+    },
+    {
+      "path": "chapters/ch02-limits-continuity/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 88897,
+      "sha256": "AB61487216DE653CCC607C57E7E079331F6113A7C0CC2F2684FF53376751D9BC"
+    },
+    {
+      "path": "chapters/ch03-derivatives/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 98827,
+      "sha256": "DD7DAEECCE0759EC7BF10E9ED611DF33C12D4FD39D1DD355B807E602CD5A651B"
+    },
+    {
+      "path": "chapters/ch04-applications-derivatives/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 100315,
+      "sha256": "0316B73AD970077259BC9C847D1371EFA6502314436083F05E90E3CFA2E595F0"
+    },
+    {
+      "path": "chapters/ch05-integrals/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 105452,
+      "sha256": "D70891751827045849E3205FDBEEEED1C9369E5F0408F9D03120C2B53D7EF3B9"
+    },
+    {
+      "path": "chapters/ch06-applications-definite-integrals/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 86393,
+      "sha256": "F9C53DDE41F04256278C3B7F0291E6C3955D219F27BF689CA480DA34B47466E1"
+    },
+    {
+      "path": "chapters/ch07-transcendental-functions/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 81618,
+      "sha256": "598C9C134BC31F3F79FA45586AAAAC21B9840BE232DD85BBDC39FD5FD14788D1"
+    },
+    {
+      "path": "chapters/ch08-integration-techniques/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 74718,
+      "sha256": "BC63E70FC4EC8398E49DD0A07643E066638ACF680C0D58A20743901CEDCC2343"
+    },
+    {
+      "path": "chapters/ch09-sequences-series/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 171306,
+      "sha256": "1D93EC7A9EE2BB9CBDE4928DC905010951ABE2ACD87669FEC3C3B464DB186383"
+    },
+    {
+      "path": "chapters/ch10-parametric-polar/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 110454,
+      "sha256": "CEE98670DA90EC0312055D1A6F7D7E8D26DD8A39D24535480C3565CE6C4C51C3"
+    },
+    {
+      "path": "chapters/ch11-vectors-space/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 154503,
+      "sha256": "71CEA43412A54DF723B3B704E49C816C871DF42048BDB365F492AA4FB21A4FF9"
+    },
+    {
+      "path": "chapters/ch12-vector-functions-motion/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 143157,
+      "sha256": "5FD3CAD5B983793076898321EF4159489670F7D1BAC7C99AE6D713521D0236A7"
+    },
+    {
+      "path": "chapters/ch13-partial-derivatives/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 162372,
+      "sha256": "7FB6222D2E53847F71BEC89DBB4A1CD28BA2B128A8A8CACB8DB69131107FE779"
+    },
+    {
+      "path": "chapters/ch14-multiple-integrals/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 177306,
+      "sha256": "E05045CB8A5F19DD14D7B07A8EE2C6139DB3CFF13401A94B34D9AFA4E9FFF207"
+    },
+    {
+      "path": "chapters/ch15-vector-fields/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 138466,
+      "sha256": "7202B835D65C5DE8DC2278FFD56E9E479801DE6A978754C8C7A44F9E4EC8359A"
+    },
+    {
+      "path": "chapters/ch16-first-order-equations/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 66315,
+      "sha256": "5D46ED2F9417A24FC67B3A7949D8FFD6A1BB2E0EF3DA3FAE561C7C50BA8A1363"
+    },
+    {
+      "path": "chapters/ch17-second-order-equations/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 112286,
+      "sha256": "93A42BB8F02E12AC83975C361FB259BB8DEA54A5DEA1D59FE8AEEF182C0DD030"
+    },
+    {
+      "path": "chapters/index.html",
+      "type": "canonical-chapter",
+      "destination": "learner site",
+      "bytes": 9212,
+      "sha256": "4B7F984700C789C223B8210580E79A69A9BC0C12A6E279D5DE03E3E02CA9FA80"
+    },
+    {
+      "path": "config/release.env.example",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 176,
+      "sha256": "C71BBEA91CDCD171B58AD32560C4BB3C8319D4B00381A52FD894E57749136770"
+    },
+    {
+      "path": "content.js",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 50622,
+      "sha256": "A53826D6C9AF4F0445A6AFCFB4374772EA919970B5DD21B5C43845A1777944F7"
+    },
+    {
+      "path": "data/canonical-book.js",
+      "type": "runtime-data",
+      "destination": "offline search and chapter metadata",
+      "bytes": 19183,
+      "sha256": "893BADC363C013AC2C0EE9A5EFBD5F4237BBA0E1D9953A505716D59C0FC11E55"
+    },
+    {
+      "path": "data/search-index.js",
+      "type": "runtime-data",
+      "destination": "offline search and chapter metadata",
+      "bytes": 281811,
+      "sha256": "C5693004150F789C715CB63E295338A9B013E0B4E1ECC852EF75E53787C9E826"
+    },
+    {
+      "path": "docs/RELEASE_PROCESS.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 762,
+      "sha256": "A685098CFDBF635093DE1EC2ACDD392D535174DDF0D37BD66D8E112813EEBD98"
+    },
+    {
+      "path": "downloads/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 7454,
+      "sha256": "C7D777E9565D439F2C7F7A3DFC35D293E7421CEF72965C9AAC3269D034597391"
+    },
+    {
+      "path": "exercises/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 313074,
+      "sha256": "BD1957DE86712BC66C7609ADF76051B2A7BF5FD2B2CA2DFC8220D7972148F97F"
+    },
+    {
+      "path": "guide/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 4585,
+      "sha256": "138AA46FCA098D6CA10DD79DAEB23FFD30E3E6A9CCFABC222E72A386353A8F51"
+    },
+    {
+      "path": "index.html",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 8760,
+      "sha256": "E57E867C02E2B395156961D2F7AD4B7216D32C27FA79851CFEC73410C4BDDEC4"
+    },
+    {
+      "path": "overview/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 13569,
+      "sha256": "DE215585A54C4FFC43826A05995D35C877E405406D7E0C8B2B7673D504316707"
+    },
+    {
+      "path": "package.json",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 562,
+      "sha256": "44B62B522EE01F7F1091679F5A9540B93AAE1F15B8C1A967042A54F63E172D41"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第11章至12章_B6质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2834967,
+      "sha256": "B09BDF90C9DC1BF01F035E91DFEFE76A052E54A46CBC8F977C4C2F55539F4B55"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第13章至14章_B7质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2804751,
+      "sha256": "D77D4DC9F052123DE5ABCA0EB80321CEC182411517CF05BEB0328D97E66B4D47"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第15章至16章_B8质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2455393,
+      "sha256": "CA2C8C2152AE57E356ADE80241EEAF7D6ACB319925AB3A74F4C54FD26DD90A17"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第17章_B9质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2029113,
+      "sha256": "024065D404DBEC60596543B437912B29FC337BE7096EDFD4ADEB8AE268F1D446"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第1章至2章_B1质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2791368,
+      "sha256": "7662AE9512DB08C97CA2845A47426A34F26A7CBB756DBECEFFBF0C21DD512FC9"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第3章至4章_B2质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2426790,
+      "sha256": "1A6AB4E97931BB6BF2153BCE2F303AC70C585C68DE9F880D476E5D4837D88449"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第4章至5章_示范学习资料.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 3102892,
+      "sha256": "11632762977835B12013B211FD6FCD82D0482106CA17A64082BDD3D026C18B3E"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第5章至6章_B3质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2282062,
+      "sha256": "F1041AC053D9BFBEBD750989D9802BC08C58BD6D8516ADDFF8ED499612398D7D"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第7章至8章_B4质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2616436,
+      "sha256": "99A29B7F69B8D4DA1D5C2DEB83B94EE47330CC3068A090201EDC2FF3A999B7C4"
+    },
+    {
+      "path": "pdf/Thomas_Calculus_第9章至10章_B5质量校准稿.pdf",
+      "type": "pdf",
+      "destination": "GitHub Release asset",
+      "bytes": 2989345,
+      "sha256": "D9A03C1B55D828EF93A23E73D31116A828AA57392C6ED0C80B802BDA79131412"
+    },
+    {
+      "path": "quality-status.json",
+      "type": "repository-file",
+      "destination": "repository support",
+      "bytes": 4061,
+      "sha256": "350D355107DEFA0FB9805054857A2A2017276149661CDE264FC0B551B4D5817D"
+    },
+    {
+      "path": "quality/README.md",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 1976,
+      "sha256": "1E855F2D9F61E42D3B433653ED1B7BD3FDF8DFCA751D940429CF2BF7475CF4B3"
+    },
+    {
+      "path": "quality/artifact-inventory.json",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 68487,
+      "sha256": "A634AFA276AEC61B87BF840D51E1EC395F64B1F3B6FD6D96C5BF339E146AB0C7"
+    },
+    {
+      "path": "quality/batch-qa.schema.json",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 4290,
+      "sha256": "7653698A87D57716165F967CE58B4120DEA554B1BE9142C56B8664BDFBA03C19"
+    },
+    {
+      "path": "quality/global-audit.json",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 30475,
+      "sha256": "AAE731AC81B1F4D8288659461CF1A66DEDEC5D655F12BEC11B069101C2D85CF5"
+    },
+    {
+      "path": "quality/index.html",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 4988,
+      "sha256": "22FFF0367716FAD42BD7F553CCF8E86717CF0D3000DD97C0B4ED7544CD5B175F"
+    },
+    {
+      "path": "quality/repository-validation.json",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 259,
+      "sha256": "B9706E4A49330E401202F9127E6AEE20B6FA5C91E5AB06879977B681A2C389C0"
+    },
+    {
+      "path": "quality/site-audit.json",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 498406,
+      "sha256": "B6D3AE88C4294CC11D0371AE1F01D40B1760C81C47C142759DC2A1520E410066"
+    },
+    {
+      "path": "quality/unified-build.json",
+      "type": "quality-evidence",
+      "destination": "quality dashboard",
+      "bytes": 4083,
+      "sha256": "23019C89D6446F6F8FFAEC41CC9DC0782DD68C627A7EC598152ED051C863C57F"
+    },
+    {
+      "path": "reference/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 1204334,
+      "sha256": "2F95A5E990C0E65515D3E9ABE80EA17A3084F3A865345045F8008E500484F192"
+    },
+    {
+      "path": "review/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 41515,
+      "sha256": "9B70B03062A5BCC3FA313F755F281440A917E81B16BDEDF32D6A48F48DD7126D"
+    },
+    {
+      "path": "scripts/build-inventory.mjs",
+      "type": "automation",
+      "destination": "CI and release tooling",
+      "bytes": 3569,
+      "sha256": "73C8D20ECFC478F1660BF812BDF41B6AD680D164F95EF8B147A93172BA19C1DB"
+    },
+    {
+      "path": "scripts/package-release.mjs",
+      "type": "automation",
+      "destination": "CI and release tooling",
+      "bytes": 3653,
+      "sha256": "0CE57C975DBAFF2AF1DBA81D62BB7A8499D117ACB03009BDF09AE8395CD28561"
+    },
+    {
+      "path": "scripts/prepare-pages.mjs",
+      "type": "automation",
+      "destination": "CI and release tooling",
+      "bytes": 992,
+      "sha256": "9386C533E616B7D4D4E473438C2B5595EAC55B987488E65475AC38A5C2531D6F"
+    },
+    {
+      "path": "scripts/validate-site.mjs",
+      "type": "automation",
+      "destination": "CI and release tooling",
+      "bytes": 5231,
+      "sha256": "83ECB4452069B7E56319CC08365515DA91FDE1204506836DB46791ED0327FCE0"
+    },
+    {
+      "path": "scripts/verify-release.mjs",
+      "type": "automation",
+      "destination": "CI and release tooling",
+      "bytes": 1315,
+      "sha256": "246DD3071F45E65F52456D81F3C63314C1E84981E4822C1CF033FF58A1762B14"
+    },
+    {
+      "path": "source/audit_unified_site.mjs",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 8902,
+      "sha256": "67FDF104BC4776E9A322CAC2D988B5E955CEA133C5701B409146DAA7B213D417"
+    },
+    {
+      "path": "source/build_artifact_inventory.mjs",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 8487,
+      "sha256": "B48B71D752F05C1256CA7B59FDDA9DAE60F89EAF765B08A9D8ABF8DA9F58F06B"
+    },
+    {
+      "path": "source/build_learning_batch.mjs",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 20608,
+      "sha256": "C6558A9487E74D745FD08D12163D05D65A752CB5AF38A77869D043E8923A7F2B"
+    },
+    {
+      "path": "source/build_unified_site.mjs",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 47806,
+      "sha256": "EA03CF467D2CC2CB0EB242996F70BCD350AEF6499D0DD504777844CCA9D251CD"
+    },
+    {
+      "path": "source/chapter-template.md",
+      "type": "documentation",
+      "destination": "repository or published docs",
+      "bytes": 2104,
+      "sha256": "5CE57605BE3AB0C7263C6F2C0718499606BE432B71A2519131D844BE46CC7B35"
+    },
+    {
+      "path": "source/formulas.tex",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 4259,
+      "sha256": "D0E79E2F7E6F169E569D2B9AF456177D06696C387C8169795B5A4AA531F08B93"
+    },
+    {
+      "path": "source/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 4245,
+      "sha256": "16EB6A5AA487DBA266D538B9A86882B3D03DE8A24F7FB0BBF3AFC3B4A5ED194B"
+    },
+    {
+      "path": "source/mindmap.mmd",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 1086,
+      "sha256": "447D0DD0AB79526352DFCC08278228DAE63C7FF2A3734A1791642242CDF0C0F2"
+    },
+    {
+      "path": "source/quality_audit.mjs",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 12666,
+      "sha256": "5DD416C2DACE90E945D2C7552EB2CFD3077CBB05CAAB81D7CA452951A5517020"
+    },
+    {
+      "path": "source/render_learning_batch_pdf.mjs",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 8284,
+      "sha256": "AB4E87372DB73E23DF84760B31D785F05A9F7C5A7B40C96577E075F96909D61A"
+    },
+    {
+      "path": "source/render_site.mjs",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 4442,
+      "sha256": "8B707E548183EFF469156E3875A68BBCFF83A8840F9FD9871AEB2078A74173D9"
+    },
+    {
+      "path": "source/validate_b8_b9_math.py",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 5771,
+      "sha256": "1E916AC9C50DFE563A87D07F172910AA4050CDB93C8E85DD814F2B481E6C816C"
+    },
+    {
+      "path": "terminology/index.html",
+      "type": "learning-module",
+      "destination": "learner site",
+      "bytes": 314951,
+      "sha256": "22870C8CE3463CAB777CE3A4849379893F7C04066B3F2EC3C5B45B760EF1B515"
+    }
+  ]
+}

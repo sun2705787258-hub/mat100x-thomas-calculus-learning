@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">第7–8章超越函数与积分技巧依赖图</title>
+  <desc id="desc">第7章从反函数到ln、e、分离变量、极限、反三角、双曲函数和增长比较；第8章从基本积分公式扩展到分部积分、三角积分、三角换元、部分分式、积分表和数值/反常积分。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#687670"/></marker><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#19231f" flood-opacity=".08"/></filter><style>
+    text{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;fill:#19231f}.title{font-size:15px;font-weight:700}.sub{font-size:11.5px;fill:#596660}.node{filter:url(#shadow)}.node rect{stroke-width:1.5;rx:12}.c7 rect{fill:#dcebe6;stroke:#8dbbb1}.c8 rect{fill:#f4e3ca;stroke:#d5aa73}.bridge rect{fill:#223330;stroke:#223330}.bridge text{fill:#f5f0e6}.edge{fill:none;stroke:#687670;stroke-width:1.8;marker-end:url(#arrow)}.lane{font-family:Georgia,serif;font-size:19px;font-weight:700;fill:#0f6761}
+  </style></defs>
+  <rect width="1120" height="620" fill="#fffdf8"/><path d="M560 30V590" stroke="#d8d1c4" stroke-dasharray="4 7"/>
+  <text x="32" y="42" class="lane">Chapter 7 · Transcendental Functions</text><text x="590" y="42" class="lane">Chapter 8 · Techniques of Integration</text>
+
+  <g class="node c7" transform="translate(28 78)"><rect width="210" height="68"/><text x="16" y="26" class="title">7.1 反函数</text><text x="16" y="46" class="sub">一一对应 · 反函数导数</text><text x="16" y="61" class="sub">定义域与值域交换</text></g>
+  <g class="node c7" transform="translate(268 78)"><rect width="210" height="68"/><text x="16" y="26" class="title">7.2 ln x</text><text x="16" y="46" class="sub">积分定义 · 导数1/x</text><text x="16" y="61" class="sub">对数性质</text></g>
+  <g class="node c7" transform="translate(28 184)"><rect width="210" height="68"/><text x="16" y="26" class="title">7.3 eˣ 与 aˣ</text><text x="16" y="46" class="sub">互为反函数</text><text x="16" y="61" class="sub">指数导数与对数求导</text></g>
+  <g class="node c7" transform="translate(268 184)"><rect width="210" height="68"/><text x="16" y="26" class="title">7.4 指数变化</text><text x="16" y="46" class="sub">分离变量 · 增长/衰减</text><text x="16" y="61" class="sub">半衰期 · 冷却</text></g>
+  <g class="node c7" transform="translate(28 290)"><rect width="210" height="68"/><text x="16" y="26" class="title">7.5 未定式</text><text x="16" y="46" class="sub">L’Hôpital与Cauchy MVT</text><text x="16" y="61" class="sub">0/0、∞/∞、幂型</text></g>
+  <g class="node c7" transform="translate(268 290)"><rect width="210" height="68"/><text x="16" y="26" class="title">7.6 反三角函数</text><text x="16" y="46" class="sub">主值区间 · 导数</text><text x="16" y="61" class="sub">基本反三角积分</text></g>
+  <g class="node c7" transform="translate(28 396)"><rect x="0" width="450" height="86" fill="#dcebe6" stroke="#8dbbb1"/><text x="16" y="26" class="title">7.7 双曲函数 · 7.8 增长比较</text><text x="16" y="49" class="sub">sinh、cosh、tanh 与反函数；悬链线。</text><text x="16" y="69" class="sub">相对增长率 f′/f，指数 ≫ 幂 ≫ 对数。</text></g>
+
+  <g class="node c8" transform="translate(590 78)"><rect width="226" height="68"/><text x="16" y="26" class="title">8.1 基本积分公式</text><text x="16" y="46" class="sub">配方 · 化简 · 换元</text><text x="16" y="61" class="sub">反向求导验证</text></g>
+  <g class="node c8" transform="translate(854 78)"><rect width="230" height="68"/><text x="16" y="26" class="title">8.2 分部积分</text><text x="16" y="46" class="sub">∫u dv=uv−∫v du</text><text x="16" y="61" class="sub">选择u与dv</text></g>
+  <g class="node c8" transform="translate(590 184)"><rect width="226" height="68"/><text x="16" y="26" class="title">8.3 三角积分</text><text x="16" y="46" class="sub">奇次幂换元 · 偶次幂降幂</text><text x="16" y="61" class="sub">积化和差</text></g>
+  <g class="node c8" transform="translate(854 184)"><rect width="230" height="68"/><text x="16" y="26" class="title">8.4 三角换元</text><text x="16" y="46" class="sub">a²−x²、a²+x²、x²−a²</text><text x="16" y="61" class="sub">回代与限变换</text></g>
+  <g class="node c8" transform="translate(590 290)"><rect width="226" height="68"/><text x="16" y="26" class="title">8.5 部分分式</text><text x="16" y="46" class="sub">长除法 · 因式分解</text><text x="16" y="61" class="sub">线性/二次因子系数</text></g>
+  <g class="node c8" transform="translate(854 290)"><rect width="230" height="68"/><text x="16" y="26" class="title">8.6 表格与CAS</text><text x="16" y="46" class="sub">匹配形式 · 化简后查找</text><text x="16" y="61" class="sub">符号结果需验证</text></g>
+  <g class="node c8" transform="translate(590 402)"><rect width="226" height="82"/><text x="16" y="26" class="title">8.7 数值积分</text><text x="16" y="46" class="sub">梯形 · Simpson</text><text x="16" y="64" class="sub">误差界与样本数</text><text x="16" y="78" class="sub">数据积分</text></g>
+  <g class="node c8" transform="translate(854 402)"><rect width="230" height="82"/><text x="16" y="26" class="title">8.8 反常积分</text><text x="16" y="46" class="sub">无穷限 · 无界被积函数</text><text x="16" y="64" class="sub">p积分 · 比较判别</text><text x="16" y="78" class="sub">收敛/发散</text></g>
+  <g class="node bridge" transform="translate(590 522)"><rect width="494" height="62"/><text x="20" y="25" class="title">方法选择不是背公式清单</text><text x="20" y="47" class="sub">先识别结构：复合、乘积、幂、根式、有理式，再选换元/分部/三角/部分分式/数值法。</text></g>
+
+  <path class="edge" d="M238 112H268"/><path class="edge" d="M373 146V184"/><path class="edge" d="M133 146V184"/>
+  <path class="edge" d="M373 252V290"/><path class="edge" d="M373 358V396"/><path class="edge" d="M133 436V396"/>
+  <path class="edge" d="M478 350C520 340 548 120 590 112"/>
+  <path class="edge" d="M816 112H854"/><path class="edge" d="M703 146V184"/><path class="edge" d="M969 146V184"/>
+  <path class="edge" d="M816 218H854"/><path class="edge" d="M703 252V290"/><path class="edge" d="M969 252V290"/>
+  <path class="edge" d="M816 324H854"/><path class="edge" d="M703 358V402"/><path class="edge" d="M969 358V402"/>
+  <path class="edge" d="M816 443C825 478 835 522 837 522"/>
+</svg>

@@ -1,0 +1,195 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B6 quality-calibration formulas: Chapters 11-12
+
+\section*{Chapter 11 - Vectors and the Geometry of Space}
+
+% Distance and sphere; textbook pages 669-670, PDF pages 670-671
+\[
+  |P_1P_2|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}.
+\]
+\[
+  (x-x_0)^2+(y-y_0)^2+(z-z_0)^2=a^2.
+\]
+
+% Magnitude and unit vector; textbook pages 673-676, PDF pages 674-677
+\[
+  |\mathbf v|=\sqrt{v_1^2+v_2^2+v_3^2},
+  \qquad
+  \mathbf u_{\mathbf v}=\frac{\mathbf v}{|\mathbf v|}
+  \quad(\mathbf v\ne\mathbf0).
+\]
+
+% Dot product and angle; textbook pages 681-684, PDF pages 682-685
+\[
+  \mathbf u\cdot\mathbf v
+  =
+  |\mathbf u||\mathbf v|\cos\theta,
+  \qquad
+  \theta=\cos^{-1}\frac{\mathbf u\cdot\mathbf v}{|\mathbf u||\mathbf v|}.
+\]
+
+% Projection and work; textbook pages 684-687, PDF pages 685-688
+\[
+  \operatorname{proj}_{\mathbf v}\mathbf u
+  =
+  \frac{\mathbf u\cdot\mathbf v}{|\mathbf v|^2}\mathbf v,
+  \qquad
+  W=\mathbf F\cdot\mathbf D.
+\]
+
+% Cross product; textbook pages 689-694, PDF pages 690-695
+\[
+  \mathbf u\times\mathbf v
+  =
+  \begin{vmatrix}
+    \mathbf i&\mathbf j&\mathbf k\\
+    u_1&u_2&u_3\\
+    v_1&v_2&v_3
+  \end{vmatrix}.
+\]
+\[
+  |\mathbf u\times\mathbf v|
+  =
+  |\mathbf u||\mathbf v|\sin\theta,
+  \qquad
+  A_{\text{parallelogram}}=|\mathbf u\times\mathbf v|.
+\]
+
+% Triple scalar product; textbook pages 693-694, PDF pages 694-695
+\[
+  V=|(\mathbf u\times\mathbf v)\cdot\mathbf w|.
+\]
+
+% Lines and planes; textbook pages 695-702, PDF pages 696-703
+\[
+  \mathbf r(t)=\mathbf r_0+t\mathbf v,
+  \qquad
+  x=x_0+tv_1,\ y=y_0+tv_2,\ z=z_0+tv_3.
+\]
+\[
+  \mathbf n\cdot(\mathbf r-\mathbf r_0)=0,
+  \qquad
+  A(x-x_0)+B(y-y_0)+C(z-z_0)=0.
+\]
+\[
+  d=\frac{|\overrightarrow{PS}\times\mathbf v|}{|\mathbf v|},
+  \qquad
+  d=\frac{|\overrightarrow{PS}\cdot\mathbf n|}{|\mathbf n|}.
+\]
+
+% Basic quadric surfaces; textbook page 707, PDF page 708
+\[
+  \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1
+  \quad\text{ellipsoid},
+\]
+\[
+  \frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}
+  \quad\text{elliptic paraboloid},
+  \qquad
+  \frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z^2}{c^2}
+  \quad\text{cone},
+\]
+\[
+  \frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1
+  \quad\text{one-sheet hyperboloid},
+  \qquad
+  \frac{z^2}{c^2}-\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
+  \quad\text{two-sheet hyperboloid}.
+\]
+
+\section*{Chapter 12 - Vector-Valued Functions and Motion in Space}
+
+% Derivative, velocity, and acceleration; textbook pages 719-720, PDF pages 720-721
+\[
+  \mathbf r'(t)=\mathbf v(t),
+  \qquad
+  \mathbf v'(t)=\mathbf a(t).
+\]
+
+% Vector integration; textbook page 725, PDF page 726
+\[
+  \int_a^b\mathbf r(t)\,dt
+  =
+  \left(\int_a^b x(t)\,dt\right)\mathbf i
+  +
+  \left(\int_a^b y(t)\,dt\right)\mathbf j
+  +
+  \left(\int_a^b z(t)\,dt\right)\mathbf k.
+\]
+
+% Ideal projectile motion; textbook pages 728-729, PDF pages 729-730
+\[
+  \mathbf r(t)
+  =
+  (v_0\cos\alpha)t\,\mathbf i
+  +
+  \left((v_0\sin\alpha)t-\frac12gt^2\right)\mathbf j.
+\]
+\[
+  y_{\max}=\frac{(v_0\sin\alpha)^2}{2g},
+  \qquad
+  t_{\text{flight}}=\frac{2v_0\sin\alpha}{g},
+  \qquad
+  R=\frac{v_0^2}{g}\sin2\alpha.
+\]
+
+% Arc length and unit tangent; textbook pages 734-737, PDF pages 735-738
+\[
+  L=\int_a^b|\mathbf v(t)|\,dt,
+  \qquad
+  s(t)=\int_{t_0}^{t}|\mathbf v(\tau)|\,d\tau.
+\]
+\[
+  \mathbf T=\frac{\mathbf v}{|\mathbf v|}
+  =
+  \frac{d\mathbf r}{ds}.
+\]
+
+% Curvature and normal; textbook pages 738-745, PDF pages 739-746
+\[
+  \kappa=\left|\frac{d\mathbf T}{ds}\right|
+  =
+  \frac1{|\mathbf v|}\left|\frac{d\mathbf T}{dt}\right|,
+  \qquad
+  \mathbf N=
+  \frac{d\mathbf T/dt}{|d\mathbf T/dt|}.
+\]
+\[
+  \rho=\frac1\kappa,
+  \qquad
+  \mathbf C=\mathbf r+\rho\mathbf N.
+\]
+
+% TNB and acceleration components; textbook pages 745-750, PDF pages 746-751
+\[
+  \mathbf B=\mathbf T\times\mathbf N,
+  \qquad
+  \mathbf a=a_T\mathbf T+a_N\mathbf N.
+\]
+\[
+  a_T=\frac{d}{dt}|\mathbf v|,
+  \qquad
+  a_N=\kappa|\mathbf v|^2
+  =
+  \sqrt{|\mathbf a|^2-a_T^2}.
+\]
+\[
+  \kappa=\frac{|\mathbf v\times\mathbf a|}{|\mathbf v|^3}.
+\]
+
+% Torsion; textbook pages 747-749, PDF pages 748-750
+\[
+  \tau=-\frac{d\mathbf B}{ds}\cdot\mathbf N.
+\]
+
+% Polar velocity and acceleration; textbook pages 751-752, PDF pages 752-753
+\[
+  \mathbf v=\dot r\,\mathbf u_r+r\dot\theta\,\mathbf u_\theta,
+\]
+\[
+  \mathbf a
+  =
+  (\ddot r-r\dot\theta^2)\mathbf u_r
+  +
+  (r\ddot\theta+2\dot r\dot\theta)\mathbf u_\theta.
+\]

@@ -1,0 +1,94 @@
+{
+  "$schema": "../../quality/batch-qa.schema.json",
+  "schemaVersion": "thomas-batch-qa-v2",
+  "batch": "B5",
+  "chapters": [9, 10],
+  "status": "passed",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "metrics": {
+    "chapter9Terms": 35,
+    "chapter10Terms": 25,
+    "newTerms": 60,
+    "chapter9Exercises": 15,
+    "chapter10Exercises": 15,
+    "newExercises": 30,
+    "masteryItems": 20,
+    "renderedFormulas": 26,
+    "formulaSourceEntries": 27,
+    "numericChecksPassed": 52,
+    "pdfPages": 32,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440,
+    "desktopFormulaClipped": 0,
+    "desktopFormulaOverflow": 0,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "mobileFormulaClipped": 0,
+    "mobileFormulaScrollable": 0,
+    "printFormulaClipped": 0,
+    "printFormulaOverflow": 0,
+    "mobileFormulaOverflow": 0,
+    "katexErrors": 0,
+    "browserErrors": 0,
+    "crossBatchPagesPassed": 6,
+    "crossBatchPagesTotal": 6,
+    "localLinksChecked": 59,
+    "localLinksMissing": 0
+  },
+  "checks": {
+    "G1_source": "passed",
+    "G2_coverage": "passed",
+    "G3_terms": "passed",
+    "G4_theorems_formulas": "passed",
+    "G5_examples": "passed",
+    "G6_exercises_answers": "passed",
+    "G7_math_rendering": "passed",
+    "G8_diagrams_links": "passed",
+    "G9_web_print": "passed",
+    "G10_copyright_version": "passed"
+  },
+  "exerciseCoverage": {
+    "types": ["概念辨析", "计算题", "证明/说明", "应用题", "综合题"],
+    "levels": ["基础", "标准", "挑战"],
+    "allHaveHintStepsSolution": true,
+    "uniqueIds": true
+  },
+  "pdfFinalChecks": {
+    "pageSize": "A4",
+    "allExerciseIdsPresent": true,
+    "placeholderHits": 0,
+    "acceptanceTextPresent": true,
+    "sourcePagePresent": true,
+    "allPagesRenderedAndInspected": true
+  },
+  "defects": {
+    "P0": 0,
+    "P1": 0,
+    "P2Open": 0,
+    "closed": [
+      {
+        "id": "B5-P1-01",
+        "scope": "exercise renderer chapter range",
+        "resolution": "extended shared renderer from chapters 1-8 to chapters 1-10 and retested B0-B5"
+      },
+      {
+        "id": "B5-P1-02",
+        "scope": "formula overflow",
+        "resolution": "converted long formulas to aligned multi-line layouts and added mobile sizing; zero overflow at 1440 and 390"
+      },
+      {
+        "id": "B5-P2-01",
+        "scope": "callout page split",
+        "resolution": "added print break-inside avoidance and inspected all 32 rendered pages"
+      }
+    ]
+  },
+  "pdfSha256": "D9A03C1B55D828EF93A23E73D31116A828AA57392C6ED0C80B802BDA79131412",
+  "nextBatch": {
+    "id": "B6",
+    "chapters": [11, 12],
+    "entryConditionMet": true,
+    "status": "ready"
+  }
+}

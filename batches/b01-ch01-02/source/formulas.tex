@@ -1,0 +1,143 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B1 quality-calibration formulas: Chapters 1-2
+
+\section*{Chapter 1 - Functions}
+
+% Function; textbook page 19, PDF page 20
+\[
+  f:D\to Y
+\]
+
+% Arc length and radian measure; textbook page 39, PDF page 40
+\[
+  \theta=\frac{s}{r},
+  \qquad
+  s=r\theta,
+  \qquad
+  \pi\ \text{radians}=180^\circ.
+\]
+
+% Composite function; textbook page 33, PDF page 34
+\[
+  (f\circ g)(x)=f(g(x)).
+\]
+
+% Shift formulas; textbook page 34, PDF page 35
+\[
+  y=f(x)+k
+  \qquad\text{(vertical shift)},
+\]
+\[
+  y=f(x+h)
+  \qquad\text{(horizontal shift)}.
+\]
+
+% General sine function; textbook page 45, PDF page 46
+\[
+  f(x)=A\sin\!\left(\frac{2\pi}{B}(x-C)\right)+D.
+\]
+
+% Pythagorean identity, double-angle and half-angle formulas;
+% textbook pages 42-43, PDF pages 43-44
+\[
+  \cos^2\theta+\sin^2\theta=1.
+\]
+\[
+  \cos 2\theta=\cos^2\theta-\sin^2\theta,
+  \qquad
+  \sin 2\theta=2\sin\theta\cos\theta.
+\]
+\[
+  \cos^2\theta=\frac{1+\cos 2\theta}{2},
+  \qquad
+  \sin^2\theta=\frac{1-\cos 2\theta}{2}.
+\]
+
+% Law of cosines; textbook page 43, PDF page 44
+\[
+  c^2=a^2+b^2-2ab\cos\theta.
+\]
+
+\section*{Chapter 2 - Limits and Continuity}
+
+% Average rate of change; textbook page 58, PDF page 59
+\[
+  \frac{\Delta y}{\Delta x}
+  =
+  \frac{f(x_2)-f(x_1)}{x_2-x_1}
+  =
+  \frac{f(x_1+h)-f(x_1)}{h},
+  \qquad h\ne0.
+\]
+
+% Tangent slope; textbook page 59, PDF page 60
+\[
+  m=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}.
+\]
+
+% Precise definition of limit; textbook page 75, PDF page 76
+\[
+  \lim_{x\to c}f(x)=L
+\]
+means that for every \(\varepsilon>0\), there exists \(\delta>0\) such that
+\[
+  0<|x-c|<\delta
+  \quad\Longrightarrow\quad
+  |f(x)-L|<\varepsilon.
+\]
+
+% One-sided limit equivalence; textbook page 84, PDF page 85
+\[
+  \lim_{x\to c}f(x)=L
+  \quad\Longleftrightarrow\quad
+  \lim_{x\to c^-}f(x)=L
+  =
+  \lim_{x\to c^+}f(x).
+\]
+
+% Sine ratio limit; textbook page 86, PDF page 87
+\[
+  \lim_{\theta\to0}\frac{\sin\theta}{\theta}=1
+  \qquad(\theta\ \text{in radians}).
+\]
+
+% Continuity at a point; textbook page 91, PDF page 92
+\[
+  f\ \text{is continuous at }c
+  \quad\Longleftrightarrow\quad
+  \lim_{x\to c}f(x)=f(c).
+\]
+
+% Intermediate Value Theorem; textbook page 96, PDF page 97
+\[
+  f\ \text{continuous on }[a,b],
+  \quad
+  y_0\ \text{between }f(a),f(b)
+  \quad\Longrightarrow\quad
+  \exists c\in[a,b],\ f(c)=y_0.
+\]
+
+% Limits at infinity; textbook page 102, PDF page 103
+\[
+  \lim_{x\to\infty}\frac1x=0,
+  \qquad
+  \lim_{x\to-\infty}\frac1x=0.
+\]
+
+% Horizontal and vertical asymptotes; textbook pages 104 and 108,
+% PDF pages 105 and 109
+\[
+  \lim_{x\to\infty}f(x)=b
+  \quad\text{or}\quad
+  \lim_{x\to-\infty}f(x)=b
+  \quad\Longrightarrow\quad
+  y=b\ \text{is horizontal}.
+\]
+\[
+  \lim_{x\to a^+}f(x)=\pm\infty
+  \quad\text{or}\quad
+  \lim_{x\to a^-}f(x)=\pm\infty
+  \quad\Longrightarrow\quad
+  x=a\ \text{is vertical}.
+\]
+

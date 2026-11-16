@@ -1,0 +1,15 @@
+flowchart TB
+  A["11.1 Three-Dimensional Coordinate Systems<br/>distance and spheres"] --> B["11.2 Vectors<br/>components, length, operations"]
+  B --> C["11.3 Dot Product<br/>angles, projection, work"]
+  B --> D["11.4 Cross Product<br/>normals, area, torque, volume"]
+  C --> E["11.5 Lines and Planes<br/>equations, distances, intersections"]
+  D --> E
+  E --> F["11.6 Cylinders and Quadric Surfaces<br/>cross-sections and standard forms"]
+
+  G["12.1 Curves and Tangents<br/>position, velocity, acceleration"] --> H["12.2 Integrals and Projectile Motion"]
+  H --> I["12.3 Arc Length<br/>arc-length parameter and T"]
+  I --> J["12.4 Curvature and Normal<br/>osculating circle"]
+  J --> K["12.5 TNB Frame<br/>a=a_T T+a_N N, curvature and torsion"]
+  K --> L["12.6 Polar and Cylindrical Motion<br/>radial and angular components"]
+  B -.-> G
+  D -.-> K

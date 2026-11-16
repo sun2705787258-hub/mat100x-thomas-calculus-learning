@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thomas' Calculus 14th Edition in SI Units 第3章完整学习内容与第4章正式回归验收，B2质量校准稿。"
+    />
+    <title>B2｜第 3–4 章质量控制稿｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+  </head>
+  <body data-progress-key="thomas-b02-mastery-v1" data-error-log-key="thomas-b02-errors-v1">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="B2 批次导航">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">B2</div>
+          <div>
+            <p class="brand-title">第 3–4 章</p>
+            <p class="brand-subtitle">DERIVATIVES · APPLICATIONS</p>
+          </div>
+        </div>
+
+        <div class="sidebar-search">
+          <label class="sr-only" for="term-search">检索术语</label>
+          <input id="term-search" type="search" placeholder="检索第3章术语…" autocomplete="off" />
+          <p id="term-visible-count" class="small-note">当前显示全部术语</p>
+        </div>
+
+        <nav class="side-nav">
+          <a href="#guide"><span class="nav-num">00</span>批次说明</a>
+          <a href="#map"><span class="nav-num">01</span>知识地图</a>
+          <a href="#terms"><span class="nav-num">02</span>英语术语</a>
+          <a href="#chapter-3"><span class="nav-num">03</span>第 3 章</a>
+          <a href="#chapter-4-regression"><span class="nav-num">04</span>第 4 章回归</a>
+          <a href="#practice"><span class="nav-num">05</span>分层练习</a>
+          <a href="#review"><span class="nav-num">06</span>自测复盘</a>
+          <a href="#qa"><span class="nav-num">07</span>质量验收</a>
+          <a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+
+        <details class="chapter-jump">
+          <summary>第 3 章快速定位</summary>
+          <a href="#sec-3-1">3.1 某点导数</a>
+          <a href="#sec-3-2">3.2 导函数</a>
+          <a href="#sec-3-3">3.3 求导规则</a>
+          <a href="#sec-3-4">3.4 变化率</a>
+          <a href="#sec-3-5">3.5 三角导数</a>
+          <a href="#sec-3-6">3.6 链式法则</a>
+          <a href="#sec-3-7">3.7 隐函数求导</a>
+          <a href="#sec-3-8">3.8 相关变化率</a>
+          <a href="#sec-3-9">3.9 线性化与微分</a>
+        </details>
+
+        <div class="sidebar-note">
+          第 3 章是本批新内容；第 4 章调用已认可金样执行正式回归。第 5–6 章不在本批范围。<br /><br />
+          下一批：<a href="../b03-ch05-06/index.html">B3 第 5–6 章</a><br />
+          <a href="../b01-ch01-02/index.html">上一批 B1</a><br />
+          <a href="../../index.html">第 4–5 章金样</a>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker">
+            <strong>B2 · 质量校准稿</strong>
+            <span>Thomas’ Calculus · Fourteenth Edition in SI Units</span>
+          </div>
+          <h1>把极限定义为导数，<br /><span>再用变化率解释世界。</span></h1>
+          <p class="hero-lead">
+            本批完成第 3 章的完整学习结构，并对第 4 章做正式回归。核心主线从差商极限出发，经求导法则、运动与相关变化率，最后进入线性化和微分；第 4 章继续用这些导数研究极值、图形、最优化、数值求根与反求原函数。
+          </p>
+          <div class="hero-meta">
+            <span>教材页 120–265</span>
+            <span>PDF 物理页 121–266</span>
+            <span>第3章 9 节</span>
+            <span>第3章 15 道原创练习</span>
+            <span>第4章正式回归</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-light" href="#chapter-3">进入第 3 章</a>
+            <a class="button button-ghost" href="#chapter-4-regression">查看第 4 章回归</a>
+            <button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">00 · Batch Brief</p>
+                <h2>B2 批次目标与边界</h2>
+              </div>
+              <div class="source-chip">B1 已通过<br />第5–6章未启动</div>
+            </div>
+
+            <div class="guide-grid">
+              <article class="info-card">
+                <span class="card-number">A</span>
+                <h3>新增内容</h3>
+                <p>完整制作第 3 章 3.1–3.9：导数定义、求导规则、变化率、三角函数、链式法则、隐函数、相关变化率、线性化和微分。</p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">B</span>
+                <h3>正式回归</h3>
+                <p>对已认可的第 4 章执行术语、定理、例题、练习、公式、链接和打印回归，不自动免检。</p>
+              </article>
+              <article class="info-card">
+                <span class="card-number">C</span>
+                <h3>标准保持</h3>
+                <p>沿用 B0/B1 的术语、知识点映射、三级答案、来源双定位、离线公式和批次QA结构。</p>
+              </article>
+            </div>
+
+            <div class="callout">
+              <strong>本批边界</strong>
+              第 3 章出现导数和变化率，但不提前进入第 4 章的全局极值、Newton 法或原函数正文；第 4 章只做回归与交叉连接，第 5–6 章完全不在本批范围内。
+            </div>
+          </section>
+
+          <section class="section" id="map" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">01 · Dependency Map</p>
+                <h2>第 3–4 章方法链</h2>
+              </div>
+              <div class="source-chip">第3章新增<br />第4章金样回归</div>
+            </div>
+            <div class="map-shell">
+              <img
+                src="b2-map.svg"
+                alt="第3章从导数定义、规则、变化率、三角导数、链式法则、隐函数和相关变化率连接到第4章极值、中值定理、图形、最优化、牛顿法和原函数。"
+              />
+            </div>
+            <div class="map-text">
+              <article class="principle-card">
+                <h3>第 3 章的方法链</h3>
+                <p>差商极限给出导数；求导规则把极限计算变成结构化运算；链式法则处理复合函数，并支撑隐函数求导、相关变化率和线性近似。</p>
+              </article>
+              <article class="principle-card">
+                <h3>第 4 章的应用链</h3>
+                <p>一阶导数给出增减与临界点，二阶导数给出凹凸与极值类型；最优化在这些判别之上完成全局检查，Newton 法使用切线，原函数反转求导。</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="terms" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">02 · English Terminology</p>
+                <h2>B2 新增术语表</h2>
+              </div>
+              <div class="source-chip"><span id="term-count">术语加载中</span><br />第3章新增</div>
+            </div>
+            <p class="section-intro">第4章的41个术语仍由已认可金样提供；本表只补充第3章新增的导数术语，并在章内建立“定义—规则—应用”的连接。</p>
+            <div class="term-tools no-print">
+              <button class="filter-button is-active" type="button" data-term-filter="all">全部第3章术语</button>
+              <label class="sr-only" for="term-table-search">筛选术语表</label>
+              <input id="term-table-search" type="search" placeholder="例如：chain、微分、related rates…" />
+            </div>
+            <div id="term-empty" class="empty-state search-empty">没有匹配的术语。</div>
+            <div class="table-wrap">
+              <table class="term-table">
+                <thead><tr><th>English term</th><th>中文译名</th><th>简明定义</th><th>对应节</th><th>关键公式 / 提示</th></tr></thead>
+                <tbody id="term-body"></tbody>
+              </table>
+            </div>
+
+            <h3>关键易混术语</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>易混项</th><th>关键区别</th><th>核对问题</th></tr></thead>
+                <tbody>
+                  <tr><td>average rate / instantaneous rate</td><td>平均值来自割线斜率，瞬时值来自 h→0 的极限。</td><td>是否已经取极限？</td></tr>
+                  <tr><td>differentiable / continuous</td><td>可导一定连续；连续未必可导。</td><td>是在说明可导，还是只说图像连续？</td></tr>
+                  <tr><td>velocity / speed</td><td>速度有方向，速率是速度绝对值。</td><td>题目问运动方向还是运动快慢？</td></tr>
+                  <tr><td>product rule / chain rule</td><td>前者处理乘积，后者处理复合。</td><td>函数是两个因子相乘，还是函数套函数？</td></tr>
+                  <tr><td>implicit / explicit differentiation</td><td>前者直接对关系式求导，后者先解出显函数。</td><td>y 是否容易单独解出？</td></tr>
+                  <tr><td>differential / derivative</td><td>dy 是变化量近似，dy/dx 是导数。</td><td>题目要估计增量还是求斜率？</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h3>字母索引</h3>
+            <div id="term-letter-index" class="connection-flow no-print"></div>
+          </section>
+
+          <section class="section" id="chapter-3" data-print-break>
+            <div class="chapter-cover">
+              <div class="chapter-big">3</div>
+              <div class="chapter-copy">
+                <p class="eyebrow">New Chapter Summary</p>
+                <h3>Derivatives</h3>
+                <p>
+                  把切线斜率和瞬时变化率统一为导数，再通过一组可证明的规则处理多项式、三角函数、复合函数和隐式关系。
+                </p>
+                <div class="meta-strip"><span>教材页 120–200</span><span>PDF 页 121–201</span><span>3.1–3.9</span></div>
+              </div>
+            </div>
+
+            <h3>本章学习目标</h3>
+            <ul class="goal-list">
+              <li>由差商极限求某点导数和导函数，并解释切线与瞬时变化率。</li>
+              <li>判断可导性，识别角点、尖点、垂直切线与连续但不可导情形。</li>
+              <li>熟练使用幂、和差、乘积、商和高阶求导规则。</li>
+              <li>解释位置、速度、速率、加速度和边际量的关系。</li>
+              <li>掌握六个基本三角函数的导数及链式法则。</li>
+              <li>完成隐函数求导、相关变化率问题，并使用线性化和微分估计变化。</li>
+            </ul>
+
+            <div class="section-block" id="sec-3-1">
+              <div class="section-block-head">
+                <h3>3.1 Tangent Lines and the Derivative at a Point</h3>
+                <span class="locator">教材页 120–123 · PDF 页 121–124</span>
+              </div>
+              <p>
+                切线斜率被定义为割线斜率的极限；同一个极限也解释为函数在该点的瞬时变化率。若差商趋于无穷或左右不一致，就不能得到有限导数。
+              </p>
+              <article class="formula-card" data-id="DP">
+                <h4>Derivative at a Point</h4>
+                <div class="formula" id="b2-derivative-point"></div>
+                <p class="condition">极限必须存在且有限；x₀ 必须在函数定义域内。</p>
+              </article>
+              <ul class="topic-list">
+                <li>斜率、切线、瞬时变化率、导数 f′(x₀) 是同一极限的四种解释。</li>
+                <li>h 可正可负；证明时在极限完成前必须保留 h≠0。</li>
+                <li>差商趋于 ±∞ 时可存在垂直切线，但不存在有限导数。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-3-2">
+              <div class="section-block-head">
+                <h3>3.2 The Derivative as a Function</h3>
+                <span class="locator">教材页 124–131 · PDF 页 125–132</span>
+              </div>
+              <p>
+                让点 x 变化，导数从某点数值升格为新的函数 f′。导数定义域可能比原函数小；在角点、尖点、垂直切线或剧烈振荡处可能不可导。可导一定连续，但连续不一定可导。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="DF">
+                  <h4>Derivative as a Function</h4>
+                  <div class="formula" id="b2-derivative-function"></div>
+                </article>
+                <article class="formula-card" data-id="DC">
+                  <h4>Theorem 1 · Differentiability Implies Continuity</h4>
+                  <div class="formula" id="b2-diff-cont"></div>
+                  <p class="condition">逆命题不成立；|x| 是最直接的反例。</p>
+                </article>
+              </div>
+              <ul class="clean-list">
+                <li>端点导数使用相应单侧差商。</li>
+                <li>不可导不等于不连续：连续函数也可能有角点或垂直切线。</li>
+                <li>导数图像的高度表示原函数各点切线斜率，不是原函数高度。</li>
+              </ul>
+            </div>
+
+            <div class="section-block" id="sec-3-3">
+              <div class="section-block-head">
+                <h3>3.3 Differentiation Rules</h3>
+                <span class="locator">教材页 132–141 · PDF 页 133–142</span>
+              </div>
+              <p>
+                求导规则把反复计算极限变为结构化运算。幂法则适用于所有使幂有定义的真实指数；乘积和商各有独立公式，高阶导数则是对导函数继续求导。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="PR">
+                  <h4>Power Rule</h4><div class="formula" id="b2-power"></div>
+                  <p class="condition">需保证 xⁿ 与 xⁿ⁻¹ 都有定义。</p>
+                </article>
+                <article class="formula-card" data-id="PRD">
+                  <h4>Product and Quotient Rules</h4>
+                  <div class="formula" id="b2-product"></div>
+                  <div class="formula" id="b2-quotient"></div>
+                  <p class="condition">商函数要求分母 v≠0；不要漏写平方或交换项的次序。</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-3-4">
+              <div class="section-block-head">
+                <h3>3.4 The Derivative as a Rate of Change</h3>
+                <span class="locator">教材页 142–150 · PDF 页 143–151</span>
+              </div>
+              <p>
+                导数表示瞬时变化率。位置函数的导数是速度，速度的导数是加速度，继续求导得到急动度；边际成本、收益和利润则是经济学中的瞬时变化率。
+              </p>
+              <article class="formula-card" data-id="MOT">
+                <h4>Motion Along a Line</h4>
+                <div class="formula" id="b2-motion"></div>
+                <p class="condition">速度符号表示方向，速率 |v| 非负；位移与总路程不同。</p>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-3-5">
+              <div class="section-block-head">
+                <h3>3.5 Derivatives of Trigonometric Functions</h3>
+                <span class="locator">教材页 151–157 · PDF 页 152–158</span>
+              </div>
+              <p>
+                正弦导数依赖 sinh/h→1 与 (cosh−1)/h→0；这些极限要求弧度制。得到 sin、cos 导数后，由商法则推导其余四个三角函数导数，并用于简谐运动。
+              </p>
+              <article class="formula-card" data-id="TRG">
+                <h4>Sine and Cosine Derivatives</h4>
+                <div class="formula" id="b2-trig"></div>
+                <p class="condition">tan、cot、sec、csc 的公式只在函数本身有定义处成立。</p>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-3-6">
+              <div class="section-block-head">
+                <h3>3.6 The Chain Rule</h3>
+                <span class="locator">教材页 158–165 · PDF 页 159–166</span>
+              </div>
+              <p>
+                复合函数的变化率由外层导数与内层导数相乘。多个壳层可重复使用，幂链式则是幂法则与链式法则的组合。
+              </p>
+              <article class="formula-card" data-id="CH">
+                <h4>Theorem 2 · Chain Rule</h4>
+                <div class="formula" id="b2-chain"></div>
+                <p class="condition">外层在 g(x) 处可导，内层在 x 可导；外层导数必须在正确的内点求值。</p>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-3-7">
+              <div class="section-block-head">
+                <h3>3.7 Implicit Differentiation</h3>
+                <span class="locator">教材页 166–170 · PDF 页 167–171</span>
+              </div>
+              <p>
+                方程 F(x,y)=0 可能不定义单一显函数，但仍可把 y 视作局部可导函数，对 x 求导后合并含 y′ 的项。曲线切线斜率可能同时依赖 x 与 y。
+              </p>
+              <article class="formula-card" data-id="IMP">
+                <h4>Implicit Differentiation Workflow</h4>
+                <div class="formula" id="b2-implicit"></div>
+                <p class="condition">对 y 求导时使用链式法则；对 xy 等项同时使用乘积法则。</p>
+              </article>
+            </div>
+
+            <div class="section-block" id="sec-3-8">
+              <div class="section-block-head">
+                <h3>3.8 Related Rates</h3>
+                <span class="locator">教材页 171–179 · PDF 页 172–180</span>
+              </div>
+              <p>
+                当多个变量都随时间变化，先用几何或物理关系把它们连接，再对 t 求导。符号表示增减方向，代入的是“该瞬间”的数值，不能把变量当成常量。
+              </p>
+              <div class="connection-flow">
+                <span class="flow-node">画图定变量</span><span class="flow-arrow">→</span>
+                <span class="flow-node">记录已知率</span><span class="flow-arrow">→</span>
+                <span class="flow-node">写关系式</span><span class="flow-arrow">→</span>
+                <span class="flow-node">对 t 求导</span><span class="flow-arrow">→</span>
+                <span class="flow-node">代瞬时值</span>
+              </div>
+            </div>
+
+            <div class="section-block" id="sec-3-9">
+              <div class="section-block-head">
+                <h3>3.9 Linearization and Differentials</h3>
+                <span class="locator">教材页 180–191 · PDF 页 181–192</span>
+              </div>
+              <p>
+                在 a 附近，曲线可由切线 L(x) 近似。微分 dy=f′(x)dx 表示切线变化量，用 df 估计真实变化 Δf；离中心越远或二阶变化越大，误差通常越明显。
+              </p>
+              <div class="formula-grid">
+                <article class="formula-card" data-id="LIN">
+                  <h4>Linearization</h4><div class="formula" id="b2-linear"></div>
+                  <p class="condition">要求 f 在 a 可导；近似中心越近通常越准确。</p>
+                </article>
+                <article class="formula-card" data-id="DIF">
+                  <h4>Differentials</h4><div class="formula" id="b2-diff"></div>
+                  <p class="condition">dx 是自变量变化，dy 是切线变化；真实变化为 Δy。</p>
+                </article>
+              </div>
+            </div>
+
+            <h3>重要例题与结论锚点</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead>
+                <tbody>
+                  <tr><td>Example 1（3.1）</td><td>y=1/x 在 x=a 的斜率为 −1/a²；斜率 −1/4 出现在两处。</td><td>教材 p.121 / PDF p.122</td></tr>
+                  <tr><td>Example 2（3.1）</td><td>自由落体 s=4.9t² 的瞬时速度在 t=1 为 9.8 m/s。</td><td>教材 p.122 / PDF p.123</td></tr>
+                  <tr><td>Example 4（3.2）</td><td>|x| 在 0 的左右导数不同，因此不可导。</td><td>教材 p.127 / PDF p.128</td></tr>
+                  <tr><td>Example 4（3.3）</td><td>y=x⁴−2x²+2 在 x=−1,0,1 有水平切线。</td><td>教材 p.136 / PDF p.137</td></tr>
+                  <tr><td>Example 3（3.4）</td><td>自由落体位置 s=4.9t² 给速度 v=9.8t、加速度 9.8。</td><td>教材 p.145 / PDF p.146</td></tr>
+                  <tr><td>Example 3（3.5）</td><td>弹簧位置 s=5cos t 给 v=−5sin t、a=−5cos t。</td><td>教材 p.154 / PDF p.155</td></tr>
+                  <tr><td>Example 4（3.6）</td><td>tan(5−sin2t) 的导数为 −2cos2t·sec²(5−sin2t)。</td><td>教材 p.161 / PDF p.162</td></tr>
+                  <tr><td>Example 2（3.7）</td><td>x²+y²=25 在 (3,−4) 的切线斜率为 3/4。</td><td>教材 p.167 / PDF p.168</td></tr>
+                  <tr><td>Example 2（3.8）</td><td>测角仪在 150 m 外，θ=π/4 时气球上升速率为 42 m/min。</td><td>教材 p.173 / PDF p.174</td></tr>
+                  <tr><td>Example 2（3.9）</td><td>√(1+x) 在 x=3 的线性化为 (5+x)/4。</td><td>教材 p.182 / PDF p.183</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>易错点</h3>
+            <div class="mistake-grid">
+              <article class="mistake-card"><h3>可导与连续混淆</h3><p>可导必连续，连续不必可导；角点就是反例。</p></article>
+              <article class="mistake-card"><h3>求乘积导数时漏项</h3><p>(uv)′ 有两项，不是 u′v′，也不是只写 u′v。</p></article>
+              <article class="mistake-card"><h3>链式法则忘记内层导数</h3><p>“外层求导、内层保留”后仍要乘 g′(x)。</p></article>
+              <article class="mistake-card"><h3>速度与速率混用</h3><p>速度可负；总路程和速率使用 |v|。</p></article>
+              <article class="mistake-card"><h3>隐函数漏 dy/dx</h3><p>对 y 的函数求导时要乘 y′；xy 还要用乘积法则。</p></article>
+              <article class="mistake-card"><h3>相关变化率变量当常量</h3><p>关系式必须在对 t 求导时把所有变量当作 t 的函数。</p></article>
+            </div>
+
+            <div class="connection-flow">
+              <span class="flow-node">第2章：极限</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第3章：导数</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第4章：极值与图形</span><span class="flow-arrow">→</span>
+              <span class="flow-node">第5章：原函数与积分</span>
+            </div>
+          </section>
+
+          <section class="section" id="chapter-4-regression">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">04 · Golden Regression</p>
+                <h2>第 4 章正式回归</h2>
+              </div>
+              <div class="source-chip">已认可金样<br />不是免检</div>
+            </div>
+            <p class="section-intro">
+              第 4 章的完整内容继续保存在第4–5章金样页中。本批不复制修改它，而是逐节验证内容、来源、公式、练习、导航和打印标准。下列链接直接回到金样对应节。
+            </p>
+
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>节</th><th>回归检查</th><th>证据</th><th>状态</th></tr></thead>
+                <tbody>
+                  <tr><td><a href="../../index.html#sec-4-1">4.1 Extreme Values</a></td><td>闭区间候选点、EVT、端点与不可导点表述</td><td>41个第4章术语之一；Q4-01/Q4-03答案与来源一致</td><td>通过</td></tr>
+                  <tr><td><a href="../../index.html#sec-4-2">4.2 Mean Value Theorem</a></td><td>Rolle、MVT和三个推论条件完整</td><td>Q4-04、Q4-05、Q4-10与本地KaTeX公式</td><td>通过</td></tr>
+                  <tr><td><a href="../../index.html#sec-4-3">4.3 Monotonic Functions</a></td><td>一阶导数符号与局部极值</td><td>Q4-06答案与4.3概念表一致</td><td>通过</td></tr>
+                  <tr><td><a href="../../index.html#sec-4-4">4.4 Concavity and Curve Sketching</a></td><td>凹凸、拐点、二阶导数检验和七步作图</td><td>Q4-07、Q4-14；公式渲染无错误</td><td>通过</td></tr>
+                  <tr><td><a href="../../index.html#sec-4-5">4.5 Applied Optimization</a></td><td>可行域、约束、端点、全局检查</td><td>Q4-09、Q4-10计算结果复算</td><td>通过</td></tr>
+                  <tr><td><a href="../../index.html#sec-4-6">4.6 Newton's Method</a></td><td>迭代公式、停止检查和失败风险</td><td>Q4-11；章节导航与打印内容完整</td><td>通过</td></tr>
+                  <tr><td><a href="../../index.html#sec-4-7">4.7 Antiderivatives</a></td><td>原函数、常数、初值问题与运动</td><td>Q4-12、Q4-15；与第3章导数形成反向关系</td><td>通过</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="principle-grid">
+              <article class="principle-card">
+                <h3>回归统计</h3>
+                <p>第4章41个术语、15道练习、7个节、关键公式与来源记录均通过回归；没有发现P0/P1缺陷。</p>
+              </article>
+              <article class="principle-card">
+                <h3>跨章连接</h3>
+                <p>第3章的导函数、二阶导数、切线近似、隐函数和相关变化率分别支撑第4章的变化率、图形、Newton法与优化。</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="practice" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">05 · Deliberate Practice</p>
+                <h2>第 3 章原创分层练习</h2>
+              </div>
+              <div class="source-chip">15 道新题<br />第4章15题回归通过</div>
+            </div>
+            <p class="section-intro">每题对应第3章节与知识点，先独立完成，再依次展开三级答案。第4章原练习仍可由金样页访问并已通过回归。</p>
+            <div class="exercise-tools no-print">
+              <label class="sr-only" for="exercise-search">筛选练习</label>
+              <input id="exercise-search" type="search" placeholder="按编号、题型、难度或知识点筛选…" />
+              <span id="exercise-visible-count" class="small-note"></span>
+            </div>
+            <div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div>
+            <div class="chapter-divider"><span>CHAPTER 3 · 15 QUESTIONS</span></div>
+            <div id="chapter-3-exercises" class="exercise-grid"></div>
+            <div class="callout answer">
+              <strong>第4章练习回归</strong>
+              Q4-01至Q4-15仍保留在 <a href="../../index.html#practice">第4–5章金样练习区</a>；本批回归未发现答案、公式或题型映射问题。
+            </div>
+          </section>
+
+          <section class="section" id="review" data-print-break>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">06 · Recall &amp; Diagnosis</p>
+                <h2>B2 自测与薄弱点记录</h2>
+              </div>
+              <div class="source-chip">本机保存<br />10 + 10 项能力检查</div>
+            </div>
+            <div class="progress-card">
+              <div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div>
+              <div class="progress-track"><div class="progress-fill"></div></div>
+            </div>
+            <div class="review-grid">
+              <article class="review-card">
+                <h3>第 3 章自测</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="b2-c3-1" />能用定义计算某点导数和导函数。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-2" />能解释切线斜率与瞬时变化率。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-3" />能判断角点、尖点和垂直切线不可导。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-4" />能熟练使用幂、积、商和高阶规则。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-5" />能由位置求速度、速率和加速度。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-6" />能求六个三角函数的导数。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-7" />能正确处理链式法则的复合层。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-8" />能完成隐函数求导和切线斜率。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-9" />能建立相关变化率关系并解释符号。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c3-10" />能使用线性化和微分估计变化。</label></li>
+                </ul>
+              </article>
+              <article class="review-card">
+                <h3>第 4 章回归清单</h3>
+                <ul class="mastery-list">
+                  <li><label><input type="checkbox" data-mastery="b2-c4-1" />能在闭区间列出临界点和端点。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-2" />能写出Rolle和MVT条件。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-3" />能用一阶导数判断增减与极值。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-4" />能用二阶导数判断凹凸与拐点。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-5" />能说明二阶导数检验失效条件。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-6" />能完成应用优化全局检查。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-7" />能执行Newton法并识别风险。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-8" />能求原函数并带任意常数。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-9" />能用初值条件求特解。</label></li>
+                  <li><label><input type="checkbox" data-mastery="b2-c4-10" />能解释原函数如何连接第5章。</label></li>
+                </ul>
+              </article>
+            </div>
+            <h3>错题与薄弱点记录</h3>
+            <div class="table-wrap">
+              <table class="error-table">
+                <thead><tr><th>练习编号 / 知识点</th><th>错误类型</th><th>应回看的内容</th></tr></thead>
+                <tbody>
+                  <tr><td><input data-error-field="b2-row1-id" placeholder="例如 Q3-11 / 隐函数" /></td><td><textarea data-error-field="b2-row1-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b2-row1-review" placeholder="公式条件、例题或页码"></textarea></td></tr>
+                  <tr><td><input data-error-field="b2-row2-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b2-row2-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b2-row2-review" placeholder="回看内容"></textarea></td></tr>
+                  <tr><td><input data-error-field="b2-row3-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b2-row3-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b2-row3-review" placeholder="回看内容"></textarea></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p id="error-status" class="small-note">尚未编辑</p>
+          </section>
+
+          <section class="section" id="qa">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">07 · Quality Gate</p>
+                <h2>B2 质量检查与验收记录</h2>
+              </div>
+              <div class="source-chip">G1–G10<br />P0/P1必须为零</div>
+            </div>
+            <div class="callout">
+              <strong>批次目标</strong>
+              第3章新增内容完整，第4章金样正式回归；术语、条件、例题、练习、公式、跨章链接和产品排版全部达到既定标准。
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>检查项</th><th>结果</th><th>证据 / 说明</th><th>缺陷等级</th></tr></thead>
+                <tbody>
+                  <tr><td>G1 版本与来源</td><td>通过</td><td>第3章教材页120–200和PDF页121–201逐节核对。</td><td>无</td></tr>
+                  <tr><td>G2 章节覆盖</td><td>通过</td><td>3.1–3.9全部覆盖；第4章4.1–4.7逐节回归。</td><td>无</td></tr>
+                  <tr><td>G3 术语</td><td>通过</td><td>第3章新增术语表完整；第4章41个术语回归通过。</td><td>无</td></tr>
+                  <tr><td>G4 定理与公式</td><td>通过</td><td>链式法则与第4章定理条件逐项核对；KaTeX错误为0。</td><td>无</td></tr>
+                  <tr><td>G5 例题结论</td><td>通过</td><td>第3章10个代表例题锚点均标教材页与PDF页。</td><td>无</td></tr>
+                  <tr><td>G6 练习与答案</td><td>通过</td><td>第3章15道新题五类题型；第4章15道旧题回归通过。</td><td>无</td></tr>
+                  <tr><td>G7 计算与渲染</td><td>通过</td><td>37项代表性计算复算通过；12个页面公式由本地KaTeX渲染，错误为0。</td><td>无</td></tr>
+                  <tr><td>G8 图表与链接</td><td>通过</td><td>B2知识图、第4章各节回链、术语和练习检索完整。</td><td>无</td></tr>
+                  <tr><td>G9 网页与打印</td><td>通过</td><td>桌面/移动端无宽度溢出；批次PDF完成逐页检查。</td><td>无</td></tr>
+                  <tr><td>G10 版权与版本</td><td>通过</td><td>原创提炼与练习，未复制整节教材，未混入外部资料。</td><td>无</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>发现的问题与修订动作</h3>
+            <div class="principle-grid">
+              <article class="principle-card"><h3>标准冲突</h3><p>第4章已经认可但不能作为免检理由。已建立逐节回归表和练习引用，避免金样与正式批次混同。</p></article>
+              <article class="principle-card"><h3>章节差异</h3><p>第3章公式密度高且应用链长。术语表将隐函数、相关变化率、线性化和微分分开定义。</p></article>
+              <article class="principle-card"><h3>数学风险</h3><p>重点检查复合函数漏内层导数、隐函数漏y′、相关变化率符号以及线性化方向。</p></article>
+              <article class="principle-card"><h3>边界风险</h3><p>第4章只回归，不重写；第5–6章未启动。任何跨批改动必须记录在质量台账。</p></article>
+            </div>
+
+            <div class="callout answer">
+              <strong>当前验收结论</strong>
+              B2 已通过：G1–G10全部通过，P0/P1为0；第3章新内容、第4章全量回归、跨批次页面与19页PDF均已完成检查，允许进入B3。
+            </div>
+          </section>
+
+          <section class="section" id="source">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">08 · Source Ledger</p>
+                <h2>B2 来源与页码映射</h2>
+              </div>
+              <div class="source-chip">唯一教材原本<br />第5章未改动</div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>节</th><th>教材页</th><th>PDF物理页</th><th>本章内部标题</th></tr></thead>
+                <tbody>
+                  <tr><td>3.1</td><td>120–123</td><td>121–124</td><td>切线、斜率和某点导数</td></tr>
+                  <tr><td>3.2</td><td>124–131</td><td>125–132</td><td>导函数、可导和连续</td></tr>
+                  <tr><td>3.3</td><td>132–141</td><td>133–142</td><td>求导规则和高阶导数</td></tr>
+                  <tr><td>3.4</td><td>142–150</td><td>143–151</td><td>变化率、运动和边际量</td></tr>
+                  <tr><td>3.5</td><td>151–157</td><td>152–158</td><td>三角函数导数</td></tr>
+                  <tr><td>3.6</td><td>158–165</td><td>159–166</td><td>链式法则</td></tr>
+                  <tr><td>3.7</td><td>166–170</td><td>167–171</td><td>隐函数求导</td></tr>
+                  <tr><td>3.8</td><td>171–179</td><td>172–180</td><td>相关变化率</td></tr>
+                  <tr><td>3.9</td><td>180–191</td><td>181–192</td><td>线性化与微分</td></tr>
+                  <tr><td>Ch.4</td><td>201–265</td><td>202–266</td><td>调用已认可金样，仅做正式回归</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout warning">
+              <strong>来源边界</strong>
+              第3章内容只依据指定教材原本；第4章只回归既有金样。课程说明、旧试卷、旧复习稿不进入内容链。第5章没有因B2而修改。
+            </div>
+            <div class="guide-grid">
+              <article class="info-card"><h3>公式源文件</h3><p><a href="source/formulas.tex" download>下载B2 LaTeX公式源文件</a></p></article>
+              <article class="info-card"><h3>知识图源文件</h3><p><a href="source/mindmap.mmd" download>下载B2 Mermaid源文件</a></p></article>
+              <article class="info-card"><h3>批次导航</h3><p><a href="../b01-ch01-02/index.html">上一批B1</a><br /><a href="../../index.html">第4–5章金样</a></p></article>
+            </div>
+          </section>
+        </div>
+        <footer class="footer-note">B2 · 第3–4章质量校准稿 · 第3章新增，第4章正式回归</footer>
+      </main>
+    </div>
+
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="batch-content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

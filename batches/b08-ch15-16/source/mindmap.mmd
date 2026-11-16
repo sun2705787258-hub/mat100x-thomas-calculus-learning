@@ -1,0 +1,17 @@
+flowchart TB
+  A["15.1 Scalar Line Integrals<br/>ds, mass, moments"] --> B["15.2 Vector Fields<br/>work, circulation, flux"]
+  B --> C["15.3 Path Independence<br/>potential functions, component test"]
+  B --> D["15.4 Green's Theorem<br/>circulation and flux forms"]
+  C --> D
+  D --> E["15.5 Surfaces and Area<br/>ru x rv, surface element"]
+  E --> F["15.6 Surface Integrals<br/>scalar area and vector flux"]
+  F --> G["15.7 Stokes' Theorem<br/>curl through a surface"]
+  G --> H["15.8 Divergence Theorem<br/>flux through closed surface"]
+
+  I["16.1 Slope Fields<br/>Euler's method"] --> J["16.2 First-Order Linear<br/>integrating factor"]
+  J --> K["16.3 Applications<br/>cooling, mixtures, rate models"]
+  I --> L["16.4 Autonomous Equations<br/>phase line stability"]
+  L --> M["16.5 Phase Planes<br/>systems and trajectories"]
+
+  C -. same boundary theorem family .-> G
+  H -. both sides of the boundary .-> M

@@ -1,0 +1,83 @@
+{
+  "$schema": "../../quality/batch-qa.schema.json",
+  "schemaVersion": "thomas-batch-qa-v2",
+  "batch": "B1",
+  "chapters": [1, 2],
+  "status": "passed",
+  "textbook": "Thomas' Calculus, Fourteenth Edition in SI Units",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "textbookPages": "19-119",
+  "pdfPhysicalPages": "20-120",
+  "metrics": {
+    "newTerms": 66,
+    "newExercises": 30,
+    "terms": 66,
+    "exercises": 30,
+    "chapter1Exercises": 15,
+    "chapter2Exercises": 15,
+    "exerciseTypes": 5,
+    "masteryItems": 20,
+    "renderedFormulas": 13,
+    "numericChecksPassed": 28,
+    "pdfPages": 27,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "desktopFormulaClipped": 0,
+    "mobileFormulaClipped": 0,
+    "mobileFormulaScrollable": 7,
+    "printFormulaClipped": 0,
+    "printFormulaOverflow": 0,
+    "katexErrors": 0,
+    "browserErrors": 0,
+    "crossBatchPagesPassed": 2,
+    "crossBatchPagesTotal": 2,
+    "goldenSampleRegression": "passed"
+  },
+  "checks": {
+    "G1_source": "passed",
+    "G2_coverage": "passed",
+    "G3_terms": "passed",
+    "G4_theorems_formulas": "passed",
+    "G5_examples": "passed",
+    "G6_exercises_answers": "passed",
+    "G7_math_rendering": "passed",
+    "G8_diagrams_links": "passed",
+    "G9_web_print": "passed",
+    "G10_copyright_version": "passed"
+  },
+  "defects": {
+    "P0": 0,
+    "P1": 0,
+    "P2Open": 0,
+    "closed": [
+      {
+        "id": "B1-P2-01",
+        "scope": "long formulas",
+        "resolution": "converted to aligned multi-line KaTeX"
+      },
+      {
+        "id": "B1-P2-02",
+        "scope": "print pagination",
+        "resolution": "removed unnecessary print section breaks"
+      },
+      {
+        "id": "B1-P2-03",
+        "scope": "discontinuity prompt",
+        "resolution": "specified each discontinuity point explicitly"
+      }
+    ]
+  },
+  "pdfSha256": "7662AE9512DB08C97CA2845A47426A34F26A7CBB756DBECEFFBF0C21DD512FC9",
+  "nextBatch": {
+    "id": "B2",
+    "chapters": [3, 4],
+    "requires": [
+      "complete Chapter 3",
+      "regression-test accepted Chapter 4",
+      "no advancement before B2 passes"
+    ]
+  }
+}
+

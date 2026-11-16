@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" role="img" aria-labelledby="title desc">
+  <title id="title">B9 第17章知识图</title>
+  <desc id="desc">第17章从二阶线性方程与特征根，分支到非齐次方程、振动与电路、Euler方程和幂级数解。</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbf9f2}.panel{fill:#fff}.head{font:700 24px Georgia,serif;fill:#173f38}.node{stroke:#b9c9c3;fill:#f6fbf9;rx:16}.accent{stroke:#d7c9a7;fill:#fffaf0;rx:16}.title{font:700 15px "Microsoft YaHei",Arial,sans-serif;fill:#173f38}.sub{font:12px "Microsoft YaHei",Arial,sans-serif;fill:#536c66}.label{font:700 12px Arial,sans-serif;fill:#7d6c49;letter-spacing:1px}.edge{stroke:#7ba398;stroke-width:2;fill:none;marker-end:url(#arrow)}.dash{stroke:#c2a86d;stroke-width:2;stroke-dasharray:7 6;fill:none;marker-end:url(#arrow2)}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7ba398"/></marker>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c2a86d"/></marker>
+  </defs>
+  <rect width="1120" height="560" class="bg"/>
+  <rect x="24" y="24" width="1072" height="512" class="panel" rx="22" opacity=".76"/>
+  <text x="50" y="58" class="label">EQUATION → CHARACTERISTIC ROOTS → BEHAVIOR</text>
+  <text x="50" y="92" class="head">第 17 章 · 二阶微分方程</text>
+  <g transform="translate(70 120)"><rect width="360" height="112" class="node"/><text x="20" y="31" class="title">17.1 二阶线性方程</text><text x="20" y="57" class="sub">ar² + br + c = 0</text><text x="20" y="79" class="sub">real · repeated · complex roots</text><text x="20" y="101" class="sub">fundamental solutions + Wronskian</text></g>
+  <g transform="translate(500 120)"><rect width="360" height="112" class="accent"/><text x="20" y="31" class="title">17.2 非齐次线性方程</text><text x="20" y="57" class="sub">y = y_h + y_p</text><text x="20" y="79" class="sub">undetermined coefficients</text><text x="20" y="101" class="sub">variation of parameters · resonance</text></g>
+  <g transform="translate(70 302)"><rect width="330" height="112" class="node"/><text x="20" y="31" class="title">17.3 振动与电路</text><text x="20" y="57" class="sub">m y″ + b y′ + k y = F(t)</text><text x="20" y="79" class="sub">damped / forced response</text><text x="20" y="101" class="sub">L q″ + R q′ + q/C = E(t)</text></g>
+  <g transform="translate(430 302)"><rect width="275" height="112" class="node"/><text x="20" y="31" class="title">17.4 Euler 方程</text><text x="20" y="57" class="sub">x²y″ + bxy′ + cy = 0</text><text x="20" y="79" class="sub">x=e^t or y=x^r</text><text x="20" y="101" class="sub">real · repeated · complex</text></g>
+  <g transform="translate(740 302)"><rect width="300" height="112" class="accent"/><text x="20" y="31" class="title">17.5 幂级数解</text><text x="20" y="57" class="sub">y = Σ aₙ xⁿ</text><text x="20" y="79" class="sub">match powers of x</text><text x="20" y="101" class="sub">coefficient recurrence</text></g>
+  <path d="M430 176 H488" class="edge"/>
+  <path d="M250 232 V294" class="edge"/>
+  <path d="M430 232 C430 270 500 270 540 294" class="edge"/>
+  <path d="M680 232 C720 270 815 270 860 294" class="edge"/>
+  <path d="M567 358 H724" class="dash"/>
+  <path d="M888 232 C980 262 990 300 980 330 C952 350 935 350 920 350" class="dash"/>
+  <text x="560" y="500" text-anchor="middle" class="label">ROOTS DETERMINE FREE RESPONSE · FORCING DETERMINES LONG-TERM RESPONSE</text>
+</svg>

@@ -1,0 +1,200 @@
+% Thomas' Calculus, Fourteenth Edition in SI Units
+% B7 quality-calibration formulas: Chapters 13-14
+
+\section*{Chapter 13 - Partial Derivatives}
+
+% Partial derivatives; textbook pages 776-779, PDF pages 777-780
+\[
+  f_x(x_0,y_0)=\lim_{h\to0}\frac{f(x_0+h,y_0)-f(x_0,y_0)}h,
+  \qquad
+  f_y(x_0,y_0)=\lim_{h\to0}\frac{f(x_0,y_0+h)-f(x_0,y_0)}h.
+\]
+
+% Differentiability; textbook pages 784-785, PDF pages 785-786
+\[
+  \Delta z=f_x(a,b)\Delta x+f_y(a,b)\Delta y+\varepsilon_1\Delta x+\varepsilon_2\Delta y,
+  \qquad \varepsilon_1,\varepsilon_2\to0.
+\]
+
+% Mixed derivatives; textbook page 783, PDF page 784
+\[
+  f_{xy}(a,b)=f_{yx}(a,b)
+\]
+when the required mixed partials are continuous.
+
+% Chain rule; textbook pages 789-792, PDF pages 790-793
+\[
+  \frac{dw}{dt}
+  =
+  \frac{\partial f}{\partial x}\frac{dx}{dt}
+  +
+  \frac{\partial f}{\partial y}\frac{dy}{dt}
+  +
+  \frac{\partial f}{\partial z}\frac{dz}{dt}.
+\]
+
+% Gradient and directional derivative; textbook pages 800-802, PDF pages 801-803
+\[
+  \nabla f=f_x\mathbf i+f_y\mathbf j+f_z\mathbf k,
+  \qquad
+  D_{\mathbf u}f=\nabla f\cdot\mathbf u,
+  \quad |\mathbf u|=1.
+\]
+\[
+  \max_{\mathbf u}D_{\mathbf u}f=|\nabla f|,
+  \qquad
+  \mathbf u_{\max}=\frac{\nabla f}{|\nabla f|}.
+\]
+
+% Tangent plane; textbook pages 807-809, PDF pages 808-810
+\[
+  f_x(P_0)(x-x_0)+f_y(P_0)(y-y_0)+f_z(P_0)(z-z_0)=0.
+\]
+\[
+  z=z_0+f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0).
+\]
+
+% Linearization and differential; textbook pages 810-813, PDF pages 811-814
+\[
+  L(x,y)=f(x_0,y_0)+f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0).
+\]
+\[
+  df=f_x(x_0,y_0)\,dx+f_y(x_0,y_0)\,dy.
+\]
+
+% Second derivative test; textbook page 818, PDF page 819
+\[
+  D=f_{xx}f_{yy}-f_{xy}^2.
+\]
+\[
+  \begin{cases}
+    D>0,\ f_{xx}<0 &: \text{local maximum},\\
+    D>0,\ f_{xx}>0 &: \text{local minimum},\\
+    D<0 &: \text{saddle point},\\
+    D=0 &: \text{inconclusive}.
+  \end{cases}
+\]
+
+% Lagrange multipliers; textbook pages 825-830, PDF pages 826-831
+\[
+  \nabla f=\lambda\nabla g,
+  \qquad
+  g(x,y,z)=0.
+\]
+
+% Taylor quadratic approximation; textbook pages 835-839, PDF pages 836-840
+\[
+  Q(a+h,b+k)
+  =
+  f(a,b)+h f_x+k f_y
+  +\frac12\left(h^2f_{xx}+2hkf_{xy}+k^2f_{yy}\right),
+\]
+with derivatives evaluated at \((a,b)\).
+
+\section*{Chapter 14 - Multiple Integrals}
+
+% Double integral; textbook pages 850-854, PDF pages 851-855
+\[
+  \iint_R f(x,y)\,dA
+  =
+  \lim_{\|P\|\to0}\sum_{k=1}^{n}f(x_k,y_k)\Delta A_k.
+\]
+
+% Fubini for rectangles; textbook page 853, PDF page 854
+\[
+  \iint_R f(x,y)\,dA
+  =
+  \int_c^d\int_a^b f(x,y)\,dx\,dy
+  =
+  \int_a^b\int_c^d f(x,y)\,dy\,dx.
+\]
+
+% Fubini over general regions; textbook page 857, PDF page 858
+\[
+  \iint_R f\,dA
+  =
+  \int_a^b\int_{g_1(x)}^{g_2(x)}f(x,y)\,dy\,dx
+  =
+  \int_c^d\int_{h_1(y)}^{h_2(y)}f(x,y)\,dx\,dy.
+\]
+
+% Area and average value; textbook pages 864-866, PDF pages 865-867
+\[
+  A(R)=\iint_R1\,dA,
+  \qquad
+  \operatorname{av}(f)=\frac1{A(R)}\iint_R f\,dA.
+\]
+
+% Polar double integrals; textbook pages 867-871, PDF pages 868-872
+\[
+  x=r\cos\theta,\quad y=r\sin\theta,\quad dA=r\,dr\,d\theta.
+\]
+\[
+  \iint_R f(x,y)\,dA
+  =
+  \int_\alpha^\beta\int_{r_1(\theta)}^{r_2(\theta)}
+  f(r\cos\theta,r\sin\theta)\,r\,dr\,d\theta.
+\]
+
+% Triple integrals; textbook pages 874-883, PDF pages 875-884
+\[
+  \iiint_D F(x,y,z)\,dV
+  =
+  \lim_{\|P\|\to0}\sum_{k=1}^{n}F(x_k,y_k,z_k)\Delta V_k.
+\]
+\[
+  \iiint_D F\,dV
+  =
+  \int_a^b\int_{g_1(x)}^{g_2(x)}
+  \int_{f_1(x,y)}^{f_2(x,y)}
+  F(x,y,z)\,dz\,dy\,dx.
+\]
+
+% Mass, first moments, centroid; textbook pages 884-887, PDF pages 885-888
+\[
+  M=\iiint_D\delta\,dV,
+  \quad
+  M_{yz}=\iiint_Dx\delta\,dV,
+  \quad
+  \bar x=\frac{M_{yz}}M.
+\]
+
+% Joint probability density; textbook pages 890-892, PDF pages 891-893
+\[
+  f(x,y)\ge0,
+  \qquad
+  \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x,y)\,dx\,dy=1.
+\]
+
+% Cylindrical coordinates; textbook pages 894-898, PDF pages 895-899
+\[
+  x=r\cos\theta,\quad y=r\sin\theta,\quad z=z,
+  \qquad
+  dV=dz\,r\,dr\,d\theta.
+\]
+
+% Spherical coordinates; textbook pages 898-903, PDF pages 899-904
+\[
+  x=\rho\sin\phi\cos\theta,\quad
+  y=\rho\sin\phi\sin\theta,\quad
+  z=\rho\cos\phi,
+\]
+\[
+  dV=\rho^2\sin\phi\,d\rho\,d\phi\,d\theta.
+\]
+
+% Jacobian and substitution; textbook pages 906-915, PDF pages 907-916
+\[
+  J(u,v)=
+  \frac{\partial(x,y)}{\partial(u,v)}
+  =
+  \begin{vmatrix}
+    x_u & x_v\\
+    y_u & y_v
+  \end{vmatrix}.
+\]
+\[
+  \iint_R f(x,y)\,dx\,dy
+  =
+  \iint_G f(g(u,v),h(u,v))\,|J(u,v)|\,du\,dv.
+\]

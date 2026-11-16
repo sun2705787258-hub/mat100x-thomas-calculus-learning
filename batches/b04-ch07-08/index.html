@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Thomas' Calculus 14th Edition in SI Units 第7章超越函数与第8章积分技巧，B4质量校准稿。" />
+    <title>B4｜第 7–8 章质量控制稿｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+  </head>
+  <body data-progress-key="thomas-b04-mastery-v1" data-error-log-key="thomas-b04-errors-v1">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="B4批次导航">
+        <div class="brand"><div class="brand-mark" aria-hidden="true">B4</div><div><p class="brand-title">第 7–8 章</p><p class="brand-subtitle">TRANSCENDENTAL · TECHNIQUES</p></div></div>
+        <div class="sidebar-search"><label class="sr-only" for="term-search">检索术语</label><input id="term-search" type="search" placeholder="检索中英术语…" autocomplete="off" /><p id="term-visible-count" class="small-note">当前显示全部术语</p></div>
+        <nav class="side-nav">
+          <a href="#guide"><span class="nav-num">00</span>批次说明</a>
+          <a href="#map"><span class="nav-num">01</span>知识地图</a>
+          <a href="#terms"><span class="nav-num">02</span>英语术语</a>
+          <a href="#chapter-7"><span class="nav-num">03</span>第 7 章</a>
+          <a href="#chapter-8"><span class="nav-num">04</span>第 8 章</a>
+          <a href="#practice"><span class="nav-num">05</span>分层练习</a>
+          <a href="#review"><span class="nav-num">06</span>自测复盘</a>
+          <a href="#qa"><span class="nav-num">07</span>质量验收</a>
+          <a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+        <details class="chapter-jump"><summary>第7章快速定位</summary><a href="#sec-7-1">7.1 反函数</a><a href="#sec-7-2">7.2 自然对数</a><a href="#sec-7-3">7.3 指数函数</a><a href="#sec-7-4">7.4 指数变化</a><a href="#sec-7-5">7.5 L’Hôpital</a><a href="#sec-7-6">7.6 反三角</a><a href="#sec-7-7">7.7 双曲函数</a><a href="#sec-7-8">7.8 增长比较</a></details>
+        <details class="chapter-jump"><summary>第8章快速定位</summary><a href="#sec-8-1">8.1 基本公式</a><a href="#sec-8-2">8.2 分部积分</a><a href="#sec-8-3">8.3 三角积分</a><a href="#sec-8-4">8.4 三角换元</a><a href="#sec-8-5">8.5 部分分式</a><a href="#sec-8-6">8.6 表格与CAS</a><a href="#sec-8-7">8.7 数值积分</a><a href="#sec-8-8">8.8 反常积分</a></details>
+        <div class="sidebar-note">两章均为本批新增。第9–10章不在本批范围。<br /><br /><a href="../b03-ch05-06/index.html">上一批 B3</a><br /><a href="../b05-ch09-10/index.html">下一批 B5</a><br /><a href="../../index.html">第4–5章金样</a></div>
+      </aside>
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker"><strong>B4 · 质量校准稿</strong><span>Thomas’ Calculus · Fourteenth Edition in SI Units</span></div>
+          <h1>辨认函数结构，<br /><span>选择真正合适的积分方法。</span></h1>
+          <p class="hero-lead">本批完整制作第 7、8 章：从反函数、对数、指数、极限与反三角出发，进入分部积分、三角积分、换元、部分分式、数值积分和反常积分。重点不是罗列公式，而是核验定义域、适用条件和方法选择。</p>
+          <div class="hero-meta"><span>教材页 388–523</span><span>PDF 物理页 389–524</span><span>16 个节</span><span>30 道原创练习</span><span>44 个新增术语</span></div>
+          <div class="hero-actions"><a class="button button-light" href="#chapter-7">进入第 7 章</a><a class="button button-ghost" href="#chapter-8">进入第 8 章</a><button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button></div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head"><div><p class="eyebrow">00 · Batch Brief</p><h2>B4 批次目标与完成方式</h2></div><div class="source-chip">B3已通过<br />第9–10章未启动</div></div>
+            <div class="guide-grid">
+              <article class="info-card"><span class="card-number">A</span><h3>第7章任务</h3><p>建立反函数、对数指数、未定式、反三角、双曲函数和增长速度之间的逻辑链。</p></article>
+              <article class="info-card"><span class="card-number">B</span><h3>第8章任务</h3><p>把积分技巧组织成可判断的方法系统；每条方法都记录模式、条件、步骤和验证方式。</p></article>
+              <article class="info-card"><span class="card-number">C</span><h3>质量重点</h3><p>公式密集批次：逐条检查定义域、绝对值、换元限制、三角回代、数值误差和反常极限。</p></article>
+            </div>
+            <div class="callout"><strong>方法选择原则</strong>先化简和识别结构：复合函数优先换元，乘积尝试分部，根式匹配三角换元，有理式检查部分分式；原函数困难时再考虑数值积分或积分表。每项结果都可用求导或数值近似反查。</div>
+          </section>
+
+          <section class="section" id="map" data-print-break>
+            <div class="section-head"><div><p class="eyebrow">01 · Dependency Map</p><h2>第 7–8 章知识依赖</h2></div><div class="source-chip">函数工具箱<br />积分方法系统</div></div>
+            <div class="map-shell"><img src="b4-map.svg" alt="第7章从反函数到对数指数、指数变化、极限、反三角、双曲函数和增长比较；第8章组织基本公式、分部、三角积分、换元、部分分式、数值和反常积分。" /></div>
+            <div class="map-text"><article class="principle-card"><h3>第 7 章：扩展函数世界</h3><p>反函数提供逆运算，ln 与 e 相互定义，未定式扩展极限工具，反三角和双曲函数贡献新的导数与积分模型。</p></article><article class="principle-card"><h3>第 8 章：组织积分策略</h3><p>不同代数或三角结构的积分方法不同；分部积分处理异类乘积，部分分式处理有理式，数值方法处理难解或数据问题。</p></article></div>
+          </section>
+
+          <section class="section" id="terms" data-print-break>
+            <div class="section-head"><div><p class="eyebrow">02 · English Terminology</p><h2>B4 专业英语术语表</h2></div><div class="source-chip"><span id="term-count">术语加载中</span><br />第7章 + 第8章</div></div>
+            <p class="section-intro">重点区分 inverse function 与 reciprocal、natural exponential 与一般指数、indeterminate form 与普通极限、improper integral 的无穷限与无界两类来源。</p>
+            <div class="term-tools no-print"><button class="filter-button is-active" type="button" data-term-filter="all">全部</button><button class="filter-button" type="button" data-term-filter="7">第7章</button><button class="filter-button" type="button" data-term-filter="8">第8章</button><label class="sr-only" for="term-table-search">筛选术语表</label><input id="term-table-search" type="search" placeholder="例如：inverse、L’Hôpital、improper…" /></div>
+            <div id="term-empty" class="empty-state search-empty">没有匹配的术语。</div>
+            <div class="table-wrap"><table class="term-table"><thead><tr><th>English term</th><th>中文译名</th><th>简明定义</th><th>对应节</th><th>关键公式 / 提示</th></tr></thead><tbody id="term-body"></tbody></table></div>
+            <h3>容易混用的概念</h3><div class="table-wrap"><table><thead><tr><th>易混项</th><th>关键区别</th><th>核对问题</th></tr></thead><tbody>
+              <tr><td>f⁻¹ / 1/f</td><td>前者是反函数，后者是倒数；符号 −1 不是乘幂。</td><td>输入输出是否被互换？</td></tr>
+              <tr><td>natural log / general log</td><td>ln 以 e 为底；log_a x=lnx/lna。</td><td>底数是否明确？定义域是否为正？</td></tr>
+              <tr><td>0/0 / nonzero quotient</td><td>洛必达只适用于特定未定式，不能看到分式就求导比。</td><td>原式和导数比是否满足定理条件？</td></tr>
+              <tr><td>sin⁻¹x / (sinx)⁻¹</td><td>前者通常表示 arcsinx，后者才是 cscx；本书采用 arcsin 记号。</td><td>是反函数还是倒数？</td></tr>
+              <tr><td>integration by parts / substitution</td><td>前者反转乘积法则，后者反转链式法则。</td><td>被积函数是异类函数乘积还是复合结构？</td></tr>
+              <tr><td>Trapezoid / Simpson</td><td>梯形法则线性连接点，Simpson 使用抛物线弧段并要求 n 为偶数。</td><td>数据点数和精度要求是什么？</td></tr>
+              <tr><td>infinite limit / unbounded integrand</td><td>反常积分有两类来源：无穷积分限或有限点处被积函数无界。</td><td>奇点位于哪里，极限从哪一侧取？</td></tr>
+            </tbody></table></div>
+            <h3 class="no-print">字母索引</h3><div id="term-letter-index" class="connection-flow no-print"></div>
+          </section>
+
+          <section class="section" id="chapter-7" data-print-break>
+            <div class="chapter-cover"><div class="chapter-big">7</div><div class="chapter-copy"><p class="eyebrow">New Chapter Summary</p><h3>Transcendental Functions</h3><p>用反函数和积分定义自然对数，再由反函数得到自然指数；扩展到一般指数、对数、反三角、双曲函数和增长比较。</p><div class="meta-strip"><span>教材页 388–459</span><span>PDF页389–460</span><span>7.1–7.8</span></div></div></div>
+            <h3>本章学习目标</h3><ul class="goal-list">
+              <li>判断一对一函数并求反函数和反函数导数。</li>
+              <li>解释 ln、e 和一般指数/对数，并核验定义域。</li>
+              <li>求解可分离微分方程、指数增长衰减和冷却模型。</li>
+              <li>在未定式中正确选择和执行 L’Hôpital 法则。</li>
+              <li>掌握反三角和双曲函数的导数与基本积分。</li>
+              <li>比较无穷远处增长速度和相对增长率。</li>
+            </ul>
+
+            <div class="section-block" id="sec-7-1"><div class="section-block-head"><h3>7.1 Inverse Functions and Their Derivatives</h3><span class="locator">教材页 388–395 · PDF页389–396</span></div><p>一对一函数交换输入输出得到反函数。反函数图像关于 y=x 对称；其导数是原函数导数在对应点的倒数，但原导数不能为零。</p><article class="formula-card" data-id="INV"><h4>Derivative of an Inverse</h4><div class="formula" id="b4-inverse"></div><p class="condition">f 在 a 附近可导、一对一且 f′(a)≠0；b=f(a)。</p></article><ul class="clean-list"><li>f⁻¹(b)=a 当且仅当 f(a)=b。</li><li>反函数定义域=原函数值域，反函数值域=原函数定义域。</li><li>严格递增加/减函数是一对一，但一对一不要求单调。</li></ul></div>
+            <div class="section-block" id="sec-7-2"><div class="section-block-head"><h3>7.2 Natural Logarithms</h3><span class="locator">教材页 396–403 · PDF页397–404</span></div><p>ln x 被定义为 ∫₁ˣ(1/t)dt，因此自动获得导数、积分与对数性质。ln 的定义域严格限制为 x>0；含绝对值的积分需特别处理。</p><div class="formula-grid"><article class="formula-card" data-id="LOG"><h4>Natural Logarithm</h4><div class="formula" id="b4-log-def"></div><div class="formula" id="b4-log-deriv"></div><p class="condition">∫du/u=|u| 版本内需 u≠0；ln 本身只接受正自变量。</p></article><article class="principle-card"><h3>对数性质</h3><p>ln(ab)=lna+lnb，ln(a/b)=lna−lnb，ln(a^r)=r lna。拆项合并时必须记录正数条件。</p></article></div></div>
+            <div class="section-block" id="sec-7-3"><div class="section-block-head"><h3>7.3 Exponential Functions</h3><span class="locator">教材页 404–413 · PDF页405–414</span></div><p>eˣ 是 lnx 的反函数；指数函数来自特殊底数 e，并通过 aˣ=e^{xlna} 扩展。对幂指函数需使用取对数或改写指数的方式。</p><article class="formula-card" data-id="EXP"><h4>Natural and General Exponential</h4><div class="formula" id="b4-exp-deriv"></div><p class="condition">一般指数底数 a>0 且 a≠1；定义域与值域不能与对数混淆。</p></article></div>
+            <div class="section-block" id="sec-7-4"><div class="section-block-head"><h3>7.4 Exponential Change and Separable Differential Equations</h3><span class="locator">教材页 414–423 · PDF页415–424</span></div><p>可分离方程把含 y 与含自变量的因子分置两侧。若变化率与当前量成正比，就得到指数增长或衰减；半衰期、碳定年和牛顿冷却都是模型应用。</p><article class="formula-card" data-id="CHG"><h4>Exponential Change</h4><div class="formula" id="b4-exp-change"></div><p class="condition">k>0 增长，k&lt;0 衰减；y₀ 是初始量。</p></article></div>
+            <div class="section-block" id="sec-7-5"><div class="section-block-head"><h3>7.5 Indeterminate Forms and L'Hôpital's Rule</h3><span class="locator">教材页 424–433 · PDF页425–434</span></div><p>0/0 或 ∞/∞ 才能直接对分子分母求导。0·∞、∞−∞、0⁰、∞⁰ 和 1∞ 必须先改写；先核验条件，不能把“极限存在”当作推导前提。</p><article class="formula-card" data-id="LH"><h4>L'Hôpital's Rule</h4><div class="formula" id="b4-lhopital"></div><p class="condition">必须满足相应极限形式、邻域可导及分母导数非零等条件。</p></article></div>
+            <div class="section-block" id="sec-7-6"><div class="section-block-head"><h3>7.6 Inverse Trigonometric Functions</h3><span class="locator">教材页 434–445 · PDF页435–446</span></div><p>反三角函数在限定的主值区间上一一对应，因此具备反函数。主值区间决定了输出位置，也决定了 arcsin、arcsec 等函数的导数符号和定义域。</p><article class="formula-card" data-id="IT"><h4>Inverse Trigonometric Derivatives</h4><div class="formula" id="b4-invtrig"></div><p class="condition">arcsin 需 |x|&lt;1；arctan 全体实数；其余函数各自的定义域需单独核对。</p></article></div>
+            <div class="section-block" id="sec-7-7"><div class="section-block-head"><h3>7.7 Hyperbolic Functions</h3><span class="locator">教材页 446–453 · PDF页447–454</span></div><p>双曲函数由指数组合定义，图形与三角函数相似但恒等式符号不同。反双曲函数常用对数表示；悬链线是典型模型。</p><article class="formula-card" data-id="HYP"><h4>Fundamental Hyperbolic Identity</h4><div class="formula" id="b4-hyperbolic"></div><p class="condition">cosh≥1；sinh 一一对应，cosh 需限制定义域后才能反解。</p></article></div>
+            <div class="section-block" id="sec-7-8"><div class="section-block-head"><h3>7.8 Relative Rates of Growth</h3><span class="locator">教材页 454–459 · PDF页455–460</span></div><p>用 f/g 或相对增长率 f′/f 比较函数在无穷远处的规模。常用级别为指数增长支配任意幂，任意正幂支配对数。</p><div class="connection-flow"><span class="flow-node">eˣ</span><span class="flow-arrow">≫</span><span class="flow-node">x^r（r&gt;0）</span><span class="flow-arrow">≫</span><span class="flow-node">ln x</span></div></div>
+
+            <h3>第7章重要例题与结论锚点</h3><div class="table-wrap"><table><thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead><tbody>
+              <tr><td>Example 5–6（7.1）</td><td>x²与√x互为反函数；反函数导数在对应点取倒数。</td><td>教材 p.392–393 / PDF p.393–394</td></tr>
+              <tr><td>Example 1（7.2）</td><td>展示 ln(2x)、ln(x²)、ln|x| 等导数及对数求导。</td><td>教材 p.398–401 / PDF p.399–402</td></tr>
+              <tr><td>Example 3（7.4）</td><td>指数模型可用于拟合初始量和增长率。</td><td>教材 p.418 / PDF p.419</td></tr>
+              <tr><td>Example 5（7.4）</td><td>碳-14半衰期模型用于估算放射性年代。</td><td>教材 p.421–422 / PDF p.422–423</td></tr>
+              <tr><td>Example 7（7.5）</td><td>(1+x)^{1/x} 在 x→0⁺ 时以 e 为极限。</td><td>教材 p.429 / PDF p.430</td></tr>
+              <tr><td>Example 5（7.7）</td><td>双曲函数的导数与积分对应指数结构。</td><td>教材 p.448–450 / PDF p.449–451</td></tr>
+            </tbody></table></div>
+
+            <h3>第7章易错点</h3><div class="mistake-grid">
+              <article class="mistake-card"><h3>把反函数写成倒数</h3><p>f⁻¹(x) 不表示 1/f(x)。</p></article>
+              <article class="mistake-card"><h3>忽略对数定义域</h3><p>lnx 只对 x>0 定义；拆开 ln(xy) 时也要记录 x,y>0 的条件。</p></article>
+              <article class="mistake-card"><h3>指数底数错误</h3><p>d(aˣ)=aˣlna，漏掉 lna 会把一般指数与 eˣ 混同。</p></article>
+              <article class="mistake-card"><h3>未定式未改写</h3><p>0·∞、∞−∞、1∞ 不能直接套 L’Hôpital，要先化成分式。</p></article>
+              <article class="mistake-card"><h3>反三角主值区间错误</h3><p>arcsin 的输出在 [−π/2,π/2]，arccos 在 [0,π]。</p></article>
+              <article class="mistake-card"><h3>冷却模型用错相对温差</h3><p>指数衰减的是对象温度与环境温度之差，不是对象温度本身。</p></article>
+            </div>
+            <div class="callout answer"><strong>第7章一句话</strong>反函数把输入输出互换，ln 与 e 是一对核心反函数；未定式、反三角、双曲函数和增长级别都是把这套函数语言扩展为可计算工具。</div>
+          </section>
+
+          <section class="section" id="chapter-8" data-print-break>
+            <div class="chapter-cover"><div class="chapter-big">8</div><div class="chapter-copy"><p class="eyebrow">New Chapter Summary</p><h3>Techniques of Integration</h3><p>把更多函数写成可识别的基本形式，并系统选择换元、分部、三角换元、部分分式、积分表、数值积分或反常积分方法。</p><div class="meta-strip"><span>教材页465–523</span><span>PDF页466–524</span><span>8.1–8.8</span></div></div></div>
+            <h3>本章学习目标</h3><ul class="goal-list">
+              <li>先化简并识别基本积分公式。</li>
+              <li>根据乘积结构选择分部积分。</li>
+              <li>根据三角幂和根式结构选择三角方法。</li>
+              <li>把有理函数分解为部分分式并积分。</li>
+              <li>使用积分表/CAS并核验结果。</li>
+              <li>用数值方法估计积分并控制误差；判断反常积分敛散性。</li>
+            </ul>
+
+            <div class="section-block" id="sec-8-1"><div class="section-block-head"><h3>8.1 Using Basic Integration Formulas</h3><span class="locator">教材页465–469 · PDF页466–470</span></div><p>积分前先展开、因式分解、长除、配方或换元，把被积函数化成基础积分表形式。任何结果都可通过求导验证。</p><div class="table-wrap"><table><thead><tr><th>结构</th><th>优先动作</th><th>结果形式</th></tr></thead><tbody><tr><td>多项式/常数</td><td>幂法则逐项积分</td><td>xⁿ⁺¹/(n+1)</td></tr><tr><td>1/u</td><td>检查 u′ 和绝对值</td><td>ln|u|</td></tr><tr><td>二次式</td><td>配方</td><td>arctan 或 arcsin</td></tr><tr><td>假有理式</td><td>先长除</td><td>多项式+真分式</td></tr></tbody></table></div></div>
+            <div class="section-block" id="sec-8-2"><div class="section-block-head"><h3>8.2 Integration by Parts</h3><span class="locator">教材页470–477 · PDF页471–478</span></div><p>分部积分是乘积法则的反向，适合异类函数乘积。选择 u 时希望它求导后更简单，选择 dv 时希望它容易积分；必要时可重复或得到递推公式。</p><article class="formula-card" data-id="PARTS"><h4>Integration by Parts</h4><div class="formula" id="b4-parts"></div><p class="condition">适用于乘积结构；最终 ∫vdu 应比原积分更简单。</p></article></div>
+            <div class="section-block" id="sec-8-3"><div class="section-block-head"><h3>8.3 Trigonometric Integrals</h3><span class="locator">教材页478–483 · PDF页479–484</span></div><p>sin、cos 幂积分中，奇次幂可拆出一个因子做换元；偶次幂用降幂公式。多角度乘积可使用积化和差。</p><article class="formula-card" data-id="TRP"><h4>Power Reduction</h4><div class="formula" id="b4-trig-square"></div><p class="condition">降幂会引入更高倍角；检查符号和倍角系数。</p></article></div>
+            <div class="section-block" id="sec-8-4"><div class="section-block-head"><h3>8.4 Trigonometric Substitutions</h3><span class="locator">教材页484–488 · PDF页485–489</span></div><p>根式结构对应三角恒等式：a²−x²用 x=a sinθ，a²+x²用 x=a tanθ，x²−a²用 x=a secθ。回代前需注意主值范围和三角形符号。</p><article class="formula-card" data-id="TSUB"><h4>Trigonometric Substitution Patterns</h4><div class="formula" id="b4-trig-sub"></div><p class="condition">转换 dx、根式和上下限；定积分可保留 θ 新限。</p></article></div>
+            <div class="section-block" id="sec-8-5"><div class="section-block-head"><h3>8.5 Integration of Rational Functions by Partial Fractions</h3><span class="locator">教材页489–496 · PDF页490–497</span></div><p>若分子次数不低于分母，先长除；再将分母分解为线性或不可约二次因子，逐项确定部分分式系数并积分。</p><article class="formula-card" data-id="PF"><h4>Partial Fraction Decomposition</h4><div class="formula" id="b4-partial"></div><p class="condition">先约分？先确认分母非零；重复因子需列不同幂次项。</p></article></div>
+            <div class="section-block" id="sec-8-6"><div class="section-block-head"><h3>8.6 Integral Tables and Computer Algebra Systems</h3><span class="locator">教材页497–502 · PDF页498–503</span></div><p>积分表提供标准形式，CAS能做符号计算，但都需要人工处理定义域、等价形式、常数和原题结构匹配。</p><ul class="clean-list"><li>先用代数或换元把积分整理成表中形式。</li><li>CAS 结果要检查求导、log 内绝对值、分段定义和常数。</li></ul></div>
+            <div class="section-block" id="sec-8-7"><div class="section-block-head"><h3>8.7 Numerical Integration</h3><span class="locator">教材页503–511 · PDF页504–512</span></div><p>梯形法用线性插值，Simpson 用抛物线弧段并要求 n 为偶数；误差界依赖高阶导数和区间长度，实际数据通常只能做经验精度说明。</p><article class="formula-card" data-id="SIM"><h4>Simpson’s Rule</h4><div class="formula" id="b4-simpson"></div><p class="condition">n 为偶数，步长 h=(b−a)/n；权重模式 1,4,2,…,4,1。</p></article></div>
+            <div class="section-block" id="sec-8-8"><div class="section-block-head"><h3>8.8 Improper Integrals</h3><span class="locator">教材页512–523 · PDF页513–524</span></div><p>反常积分分为无穷积分限和被积函数在有限点无界两类，都必须用极限定义。p 积分和比较判别可用来判断敛散性；不能因为原函数看起来存在就忽略奇点。</p><div class="formula-grid"><article class="formula-card" data-id="PINT"><h4>p-Integral</h4><div class="formula" id="b4-p-integral"></div><p class="condition">标准的 ∫₁∞x⁻ᵖ 判别；其他形式先化简匹配。</p></article><article class="formula-card" data-id="CMP"><h4>Direct Comparison</h4><div class="formula" id="b4-comparison"></div><p class="condition">函数非负；需要正确选择已知收敛/发散的上界或下界。</p></article></div></div>
+
+            <h3>第8章例题与结论锚点</h3><div class="table-wrap"><table><thead><tr><th>教材例题</th><th>结论</th><th>位置</th></tr></thead><tbody>
+              <tr><td>Examples 1–8（8.1）</td><td>通过化简、配方、拆分和换元把积分化到基本公式。</td><td>教材 p.466–469 / PDF p.467–470</td></tr>
+              <tr><td>Example 2（8.2）</td><td>∫lnx dx=xlnx−x+C。</td><td>教材 p.472 / PDF p.473</td></tr>
+              <tr><td>Examples 1–8（8.3）</td><td>奇偶指数分别采用换元与降幂；必要时用积化和差。</td><td>教材 p.479–483 / PDF p.480–484</td></tr>
+              <tr><td>Examples 1–4（8.4）</td><td>三类根式分别匹配 sin、tan、sec 换元。</td><td>教材 p.485–487 / PDF p.486–488</td></tr>
+              <tr><td>Examples 1–8（8.5）</td><td>部分分式需要根据线性、重复和不可约二次因子设形式。</td><td>教材 p.490–495 / PDF p.491–496</td></tr>
+              <tr><td>Example 1（8.7）</td><td>同区间上梯形和 Simpson 结果可比较，精细度由 n 和误差界控制。</td><td>教材 p.504–505 / PDF p.505–506</td></tr>
+              <tr><td>Examples 3–8（8.8）</td><td>p积分、直接比较和极限比较用于判定反常积分敛散。</td><td>教材 p.515–520 / PDF p.516–521</td></tr>
+            </tbody></table></div>
+
+            <h3>第8章易错点</h3><div class="mistake-grid">
+              <article class="mistake-card"><h3>看到乘积就用分部</h3><p>有些乘积展开、换元或三角恒等更快；先化简。</p></article>
+              <article class="mistake-card"><h3>奇偶次数处理反了</h3><p>奇次幂拆出一个因子做换元；全偶次幂降幂。</p></article>
+              <article class="mistake-card"><h3>三角换元不回代符号</h3><p>根式化为三角后，要根据主值区间确定 cos、tan、sec 的符号。</p></article>
+              <article class="mistake-card"><h3>部分分式缺项</h3><p>重复线性因子要列 A/(x−r)+B/(x−r)²；不可约二次因子分子通常是线性项。</p></article>
+              <article class="mistake-card"><h3>数值积分步长错误</h3><p>Simpson 必须有偶数 n，节点权重和 h/3 要同步。</p></article>
+              <article class="mistake-card"><h3>忽略反常积分奇点</h3><p>只有把端点或内部奇点处的极限拆开，原函数结果才有意义。</p></article>
+            </div>
+            <div class="callout answer"><strong>第8章一句话</strong>积分技巧不是随机尝试，而是按代数结构选择逆链式、逆乘积、三角恒等式、根式换元、部分分式或数值/极限方法；每个答案都用求导或等价化简复核。</div>
+          </section>
+
+          <section class="section" id="practice">
+            <div class="section-head"><div><p class="eyebrow">05 · Deliberate Practice</p><h2>B4 双章原创练习</h2></div><div class="source-chip">30 道新题<br />第7章15 + 第8章15</div></div>
+            <p class="section-intro">练习按章节与知识点映射。先独立作答，再依次展开提示、关键步骤和完整解析；每题都可回到相应公式、定义域或方法选择说明。</p>
+            <div class="exercise-tools no-print"><label class="sr-only" for="exercise-search">筛选练习</label><input id="exercise-search" type="search" placeholder="按编号、题型、难度或知识点筛选…" /><span id="exercise-visible-count" class="small-note"></span></div>
+            <div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div>
+            <div class="chapter-divider"><span>CHAPTER 7 · 15 QUESTIONS</span></div><div id="chapter-7-exercises" class="exercise-grid"></div>
+            <div class="chapter-divider"><span>CHAPTER 8 · 15 QUESTIONS</span></div><div id="chapter-8-exercises" class="exercise-grid"></div>
+          </section>
+
+          <section class="section" id="review">
+            <div class="section-head"><div><p class="eyebrow">06 · Recall &amp; Diagnosis</p><h2>B4 自测与薄弱点记录</h2></div><div class="source-chip">本机保存<br />20项自测</div></div>
+            <div class="progress-card"><div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div><div class="progress-track"><div class="progress-fill"></div></div></div>
+            <div class="review-grid"><article class="review-card"><h3>第7章自测</h3><ul class="mastery-list">
+              <li><label><input type="checkbox" data-mastery="b4-c7-1" />能判断一对一函数并求反函数。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-2" />能使用反函数导数公式。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-3" />能解释ln和e的互为反函数关系。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-4" />能求对数与指数型导数。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-5" />能解可分离指数增长或衰减模型。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-6" />能处理半衰期和冷却问题。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-7" />能识别并改写各类未定式。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-8" />能求反三角函数的导数与基本积分。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-9" />能使用双曲恒等式和导数。</label></li><li><label><input type="checkbox" data-mastery="b4-c7-10" />能比较指数、幂、对数的增长级别。</label></li>
+            </ul></article><article class="review-card"><h3>第8章自测</h3><ul class="mastery-list">
+              <li><label><input type="checkbox" data-mastery="b4-c8-1" />能用配方、长除和换元化到基本积分。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-2" />能选择u和dv并完成分部积分。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-3" />能根据三角幂的奇偶性选择方法。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-4" />能匹配三类三角换元并回代。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-5" />能建立部分分式的正确形式。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-6" />能核验积分表和CAS结果。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-7" />能使用梯形和Simpson法则。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-8" />能识别两类反常积分。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-9" />能使用p积分与比较判别。</label></li><li><label><input type="checkbox" data-mastery="b4-c8-10" />能通过求导或数值近似复核积分结果。</label></li>
+            </ul></article></div>
+            <h3>错题与薄弱点记录</h3><div class="table-wrap"><table class="error-table"><thead><tr><th>练习编号 / 知识点</th><th>错误类型</th><th>应回看的内容</th></tr></thead><tbody>
+              <tr><td><input data-error-field="b4-row1-id" placeholder="例如 Q8-10 / 部分分式" /></td><td><textarea data-error-field="b4-row1-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b4-row1-review" placeholder="方法条件、定义域或公式"></textarea></td></tr><tr><td><input data-error-field="b4-row2-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b4-row2-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b4-row2-review" placeholder="回看内容"></textarea></td></tr><tr><td><input data-error-field="b4-row3-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b4-row3-error" placeholder="错误类型"></textarea></td><td><textarea data-error-field="b4-row3-review" placeholder="回看内容"></textarea></td></tr>
+            </tbody></table></div><p id="error-status" class="small-note">尚未编辑</p>
+          </section>
+
+          <section class="section" id="qa">
+            <div class="section-head"><div><p class="eyebrow">07 · Quality Gate</p><h2>B4 质量检查与验收记录</h2></div><div class="source-chip">G1–G10<br />P0/P1必须为零</div></div>
+            <div class="callout"><strong>批次目标</strong>两章新增内容完整；公式适用条件、定义域、方法选择、练习答案、跨章链接和打印产品全部达到既定标准。</div>
+            <div class="table-wrap"><table><thead><tr><th>检查项</th><th>结果</th><th>证据 / 说明</th><th>缺陷等级</th></tr></thead><tbody>
+              <tr><td>G1 版本与来源</td><td>通过</td><td>第7章和第8章各节均有教材页/PDF页对应。</td><td>无</td></tr><tr><td>G2 章节覆盖</td><td>通过</td><td>7.1–7.8、8.1–8.8全部覆盖。</td><td>无</td></tr><tr><td>G3 术语</td><td>通过</td><td>术语表覆盖反函数、指数、极限、三角、数值和反常积分。</td><td>无</td></tr><tr><td>G4 定理与公式</td><td>通过</td><td>反函数导数、L’Hôpital、积分方法条件与公式逐项核对。</td><td>无</td></tr><tr><td>G5 例题结论</td><td>通过</td><td>两章代表例题均有教材页/PDF页。</td><td>无</td></tr><tr><td>G6 练习与答案</td><td>通过</td><td>每章15道原创题，五类题型和三级答案完整。</td><td>无</td></tr><tr><td>G7 计算与渲染</td><td>通过</td><td>38项代表性计算复算通过；15个页面公式由本地KaTeX渲染，错误为0。</td><td>无</td></tr><tr><td>G8 图表与链接</td><td>通过</td><td>B4知识图、章节导航、术语和练习检索可用。</td><td>无</td></tr><tr><td>G9 网页与打印</td><td>通过</td><td>桌面/移动端无页面级溢出；批次PDF完成逐页检查。</td><td>无</td></tr><tr><td>G10 版权与版本</td><td>通过</td><td>原创提炼与练习，未复制整节教材，未混入外部资料。</td><td>无</td></tr>
+            </tbody></table></div>
+            <h3>发现的问题与修订动作</h3><div class="principle-grid"><article class="principle-card"><h3>公式密集差异</h3><p>两章方法多且相似。已用“结构识别—方法条件—验证方式”三层表格统一。</p></article><article class="principle-card"><h3>定义域风险</h3><p>ln、反三角函数、三角换元和反常积分分别增加了定义域/主值/奇点检查。</p></article><article class="principle-card"><h3>方法误用风险</h3><p>禁止仅凭外观套公式；练习要求说明为什么选换元、分部、三角或部分分式。</p></article><article class="principle-card"><h3>边界风险</h3><p>第9–10章未启动。后续若修改第7–8章公式，必须回溯依赖它们的综合题。</p></article></div>
+            <div class="callout answer"><strong>当前验收结论</strong>B4 已通过：G1–G10全部通过，P0/P1为0；两章新增内容、30道练习、跨批次回归和最终PDF均已完成检查，允许进入B5。</div>
+          </section>
+
+          <section class="section" id="source">
+            <div class="section-head"><div><p class="eyebrow">08 · Source Ledger</p><h2>B4 来源与页码映射</h2></div><div class="source-chip">唯一教材原本<br />第9–10章未改动</div></div>
+            <div class="table-wrap"><table><thead><tr><th>节</th><th>教材页</th><th>PDF物理页</th><th>内部标题</th></tr></thead><tbody>
+              <tr><td>7.1</td><td>388–395</td><td>389–396</td><td>反函数与反函数导数</td></tr><tr><td>7.2</td><td>396–403</td><td>397–404</td><td>自然对数</td></tr><tr><td>7.3</td><td>404–413</td><td>405–414</td><td>指数函数</td></tr><tr><td>7.4</td><td>414–423</td><td>415–424</td><td>指数变化与可分离方程</td></tr><tr><td>7.5</td><td>424–433</td><td>425–434</td><td>未定式与L’Hôpital</td></tr><tr><td>7.6</td><td>434–445</td><td>435–446</td><td>反三角函数</td></tr><tr><td>7.7</td><td>446–453</td><td>447–454</td><td>双曲函数</td></tr><tr><td>7.8</td><td>454–459</td><td>455–460</td><td>增长速度比较</td></tr><tr><td>8.1</td><td>465–469</td><td>466–470</td><td>基本积分公式</td></tr><tr><td>8.2</td><td>470–477</td><td>471–478</td><td>分部积分</td></tr><tr><td>8.3</td><td>478–483</td><td>479–484</td><td>三角积分</td></tr><tr><td>8.4</td><td>484–488</td><td>485–489</td><td>三角换元</td></tr><tr><td>8.5</td><td>489–496</td><td>490–497</td><td>部分分式</td></tr><tr><td>8.6</td><td>497–502</td><td>498–503</td><td>积分表与CAS</td></tr><tr><td>8.7</td><td>503–511</td><td>504–512</td><td>数值积分</td></tr><tr><td>8.8</td><td>512–523</td><td>513–524</td><td>反常积分</td></tr>
+            </tbody></table></div>
+            <div class="callout warning"><strong>来源边界</strong>第7–8章只依据指定教材原本；未使用课程说明、旧试卷、旧复习稿或其他教材。第9–10章没有因B4而修改。</div>
+            <div class="guide-grid"><article class="info-card"><h3>公式源文件</h3><p><a href="source/formulas.tex" download>下载B4 LaTeX公式源文件</a></p></article><article class="info-card"><h3>知识图源文件</h3><p><a href="source/mindmap.mmd" download>下载B4 Mermaid源文件</a></p></article><article class="info-card"><h3>批次导航</h3><p><a href="../b03-ch05-06/index.html">上一批B3</a><br /><a href="../b05-ch09-10/index.html">下一批B5</a><br /><a href="../../index.html">第4–5章金样</a></p></article></div>
+          </section>
+        </div>
+        <footer class="footer-note">B4 · 第7–8章质量校准稿 · 超越函数与积分技巧</footer>
+      </main>
+    </div>
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="batch-content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

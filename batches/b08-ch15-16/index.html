@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Thomas' Calculus 14th Edition in SI Units 第15章向量场积分与第16章一阶微分方程，B8内容与PDF校准备。" />
+    <title>B8｜第 15-16 章 A4 校准备｜Thomas 微积分学习站</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css" />
+    <style>
+      @media print {
+        body[data-batch="b8"] .exercise-grid,
+        body[data-batch="b9"] .exercise-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          column-count: auto;
+        }
+      }
+    </style>
+  </head>
+  <body data-batch="b8" data-progress-key="thomas-b8-mastery-v1" data-error-log-key="thomas-b8-errors-v1">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="B8 批次导航">
+        <div class="brand"><div class="brand-mark" aria-hidden="true">B8</div><div><p class="brand-title">第 15-16 章</p><p class="brand-subtitle">VECTOR INTEGRALS · FIRST-ORDER EQUATIONS</p></div></div>
+        <div class="sidebar-search"><label class="sr-only" for="term-search">检索术语</label><input id="term-search" type="search" placeholder="检索中英术语…" autocomplete="off" /><p id="term-visible-count" class="small-note">当前显示全部术语</p></div>
+        <nav class="side-nav">
+          <a href="#guide"><span class="nav-num">00</span>批次说明</a><a href="#map"><span class="nav-num">01</span>知识地图</a><a href="#terms"><span class="nav-num">02</span>英语术语</a><a href="#chapter-15"><span class="nav-num">03</span>第 15 章</a><a href="#chapter-16"><span class="nav-num">04</span>第 16 章</a><a href="#practice"><span class="nav-num">05</span>分层练习</a><a href="#review"><span class="nav-num">06</span>自测复盘</a><a href="#qa"><span class="nav-num">07</span>PDF检查</a><a href="#source"><span class="nav-num">08</span>来源记录</a>
+        </nav>
+        <details class="chapter-jump"><summary>第15章快速定位</summary><a href="#sec-15-1">15.1 标量线积分</a><a href="#sec-15-2">15.2 向量场与线积分</a><a href="#sec-15-3">15.3 路径独立与保守场</a><a href="#sec-15-4">15.4 Green 定理</a><a href="#sec-15-5">15.5 曲面与面积</a><a href="#sec-15-6">15.6 曲面积分</a><a href="#sec-15-7">15.7 Stokes 定理</a><a href="#sec-15-8">15.8 散度定理与统一理论</a></details><details class="chapter-jump"><summary>第16章快速定位</summary><a href="#sec-16-1">16.1 斜率场与 Euler 法</a><a href="#sec-16-2">16.2 一阶线性方程</a><a href="#sec-16-3">16.3 变化率应用</a><a href="#sec-16-4">16.4 自治方程图解法</a><a href="#sec-16-5">16.5 方程组与相平面</a></details>
+        <div class="sidebar-note">本页只用于 B8 内容与 PDF 校准备。<br /><br /><a href="../b07-ch13-14/index.html">上一批 B7</a><br />第17章另行按 B9 校准备。</div>
+      </aside>
+      <main id="main-content">
+        <header class="hero">
+          <div class="hero-kicker"><strong>B8 · A4 校准备</strong><span>Thomas’ Calculus · Fourteenth Edition in SI Units</span></div>
+          <h1>把边界上的累积，<br /><span>转成内部微分结构。</span></h1>
+          <p class="hero-lead">第 15 章把定积分推广到曲线与曲面，并用 Green、Stokes 和 Divergence 定理连接边界积分与内部导数；第 16 章从斜率场与 Euler 法进入一阶微分方程，研究线性模型、自治方程稳定性和相平面。</p>
+          <div class="hero-meta"><span>教材页 922-1015、教材页 1016-1052</span><span>PDF 923-1016、PDF 1017-1053</span><span>13 个节</span><span>95 个新增术语</span><span>30 道原创练习</span></div>
+          <div class="hero-actions"><a class="button button-light" href="#chapter-15">进入第 15 章</a><a class="button button-light" href="#chapter-16">进入第 16 章</a><button class="button button-ghost" type="button" data-print>打印 / 导出 PDF</button></div>
+        </header>
+        <div class="content-wrap">
+          <section class="section" id="guide">
+            <div class="section-head"><div><p class="eyebrow">00 · Batch Brief</p><h2>B8 目标与完成方式</h2></div><div class="source-chip">PDF 终检已通过 / 暂未并入全站导航</div></div>
+            <div class="guide-grid"><article class="info-card"><span class="card-number">A</span><h3>第15章：沿边界累积</h3><p>曲线和曲面的参数化决定 ds 或 dσ；有向积分还要统一 r′(t) 或 n 的方向。</p></article><article class="info-card"><span class="card-number">B</span><h3>第16章：从变化率反求函数</h3><p>一阶方程既可用积分因子求解，也可从斜率场、Euler 法或相线读取定性行为。</p></article><article class="info-card"><span class="card-number">C</span><h3>PDF 质量重点</h3><p>公式长、方向符号多、定理条件容易遗漏。打印稿将逐页检查公式、例题锚点、练习解析和分页。</p></article></div>
+            <div class="callout"><strong>统一判断链</strong>向量场问题：定向曲线/曲面 → 选择积分类型 → 检查定理方向与条件 → 转成边界或内部积分；微分方程问题：识别方程类型 → 选择解析/数值/几何方法 → 检查平衡点和初始条件 → 解释长期行为。</div>
+          </section>
+          <section class="section" id="map" data-print-break>
+            <div class="section-head"><div><p class="eyebrow">01 · Dependency Map</p><h2>第 15-16 章知识依赖</h2></div><div class="source-chip">边界 ↔ 内部 / 几何 ↔ 动力系统</div></div>
+            <div class="map-shell"><img src="b8-map.svg" alt="第15章从标量线积分、向量线积分、路径独立、Green定理、曲面面积、曲面积分、Stokes定理到Divergence定理；第16章从斜率场、Euler法、一阶线性方程、应用、自治方程到相平面。" /></div>
+            <div class="map-text"><article class="principle-card"><h3>第15章主线</h3><p>曲线积分先区分弧长型与向量型；保守场把端点决定积分值推广为 Fundamental Theorem；Green、Stokes、Divergence 则分别连接平面边界与旋度、空间边界与旋度、闭曲面与散度。</p></article><article class="principle-card"><h3>第16章主线</h3><p>解析公式、斜率场、Euler 数值逼近、自治方程符号分析和相平面从不同角度研究同一微分方程。选择方法前先识别阶数、线性性和是否自治。</p></article></div>
+          </section>
+          <section class="section" id="terms">
+            <div class="section-head"><div><p class="eyebrow">02 · English Terminology</p><h2>按章节整理的英语数学术语</h2></div><div class="source-chip"><span id="term-count">95 个术语</span><br />中英对照 + 条件</div></div>
+            <div class="term-tools no-print"><div><button type="button" class="filter-button is-active" data-term-filter="all">全部</button><button type="button" class="filter-button" data-term-filter="15">第15章</button><button type="button" class="filter-button" data-term-filter="16">第16章</button></div><div><label class="sr-only" for="term-table-search">筛选术语</label><input id="term-table-search" type="search" placeholder="筛选英文、中文或定义…" /><span id="term-visible-count-table" class="small-note"></span></div></div>
+            <div class="table-wrap"><table class="term-table"><thead><tr><th>English</th><th>中文</th><th>简明定义</th><th>节</th><th>关键公式 / 记号</th></tr></thead><tbody id="term-body"></tbody></table></div><div id="term-empty" class="empty-state">没有匹配的术语。</div>
+          </section>
+          
+          <section class="section chapter-section" id="chapter-15" data-print-break>
+            <div class="chapter-cover"><div class="chapter-big">15</div><div class="chapter-copy"><p class="eyebrow">New Chapter Summary</p><h3>Integrals and Vector Fields</h3><p>沿曲线和曲面积分，用定向边界连接旋度、散度和内部累加；核心是参数化、方向、元素和定理条件同时一致。</p><div class="meta-strip"><span>教材页922-1015</span><span>PDF页923-1016</span><span>15.1-15.8</span><span>8个节</span></div></div></div>
+            <div class="chapter-objectives"><h3>本章学习目标</h3><ul><li>区分标量线积分、向量线积分、弧长、circulation 与 flux。</li><li>判断路径独立和保守场，并正确使用势函数。</li><li>分别使用 Green 定理的 circulation 形式与 flux 形式。</li><li>建立曲面参数化、面积元素和向量面积分。</li><li>正确使用 Stokes 定理与 Divergence 定理，并核对边界方向。</li></ul></div>
+            
+        <div class="section-block" id="sec-15-1">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.1 Line Integrals of Scalar Functions</h3><span class="locator">教材页922-928 · PDF页923-929</span></div>
+            <p>标量线积分把函数值沿曲线的弧长累积。参数化 r(t) 后，把 ds 换成 |r′(t)|dt；质量、质心、转动惯量和曲面面积都可用同一元素结构表达。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F01"><h4>Scalar Line Integral</h4><div class="formula" id="b8-scalar-line"></div><p class="condition">曲线光滑或分段光滑，参数化覆盖指定方向的对象。</p></article><article class="formula-card" data-id="F02"><h4>Arc-Length Element</h4><div class="formula" id="b8-ds"></div><p class="condition">这是对弧长积分；与向量场的点积积分不同。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-15-2">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.2 Vector Fields and Line Integrals: Work, Circulation, and Flux</h3><span class="locator">教材页929-942 · PDF页930-943</span></div>
+            <p>向量场给空间每一点分配向量。F·dr 累积切向分量并给出 work/flow；平面闭曲线上的切向积分为 circulation，法向积分为 outward flux。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F03"><h4>Vector Line Integral</h4><div class="formula" id="b8-vector-line"></div><p class="condition">反向遍历曲线会改变符号。</p></article><article class="formula-card" data-id="F04"><h4>Work and Flow</h4><div class="formula" id="b8-work"></div><p class="condition">T=r'/|r'| 是沿曲线方向的单位切向量。</p></article><article class="formula-card" data-id="F05"><h4>Circulation</h4><div class="formula" id="b8-circulation"></div><p class="condition">闭曲线方向决定 circulation 的正负。</p></article><article class="formula-card" data-id="F06"><h4>Flux Across a Plane Curve</h4><div class="formula" id="b8-flux-2d"></div><p class="condition">n 必须与曲线方向使用一致的取向约定。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-15-3">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.3 Path Independence, Conservative Fields, and Potential Functions</h3><span class="locator">教材页942-953 · PDF页943-954</span></div>
+            <p>保守场是某个标量函数的梯度。线积分只依赖端点；在合适区域内，可用偏导相等的分量检验寻找势函数。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F07"><h4>Fundamental Theorem for Line Integrals</h4><div class="formula" id="b8-ftli"></div><p class="condition">F=∇f 且曲线从 A 到 B 时适用于任意分段光滑路径。</p></article><article class="formula-card" data-id="F08"><h4>Component Test</h4><div class="formula" id="b8-conservative-test"></div><p class="condition">在适当定义域上连续；二维情形还要检查区域无“洞”。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-15-4">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.4 Green's Theorem in the Plane</h3><span class="locator">教材页953-964 · PDF页954-965</span></div>
+            <p>Green 定理把正方向简单闭曲线上的线积分转换为区域内部的二重积分；circulation 形式用二维 curl，flux 形式用二维 divergence。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F09"><h4>Green's Theorem: Circulation Form</h4><div class="formula" id="b8-green-curl"></div><p class="condition">C 取正方向，R 在左侧；P、Q 与偏导连续。</p></article><article class="formula-card" data-id="F10"><h4>Green's Theorem: Flux Form</h4><div class="formula" id="b8-green-flux"></div><p class="condition">闭曲线的单位外法向 n 与正方向配套。</p></article><article class="formula-card" data-id="F11"><h4>Area from Green's Theorem</h4><div class="formula" id="b8-green-area"></div><p class="condition">曲线必须简单闭合并取正方向。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-15-5">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.5 Surfaces and Area</h3><span class="locator">教材页965-974 · PDF页966-975</span></div>
+            <p>参数曲面用 ru×rv 描述局部平行四边形，曲面面积元素为 |ru×rv|du dv；图像曲面的面积元素为 √(1+fx²+fy²)dxdy。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F12"><h4>Parameterized Surface</h4><div class="formula" id="b8-surface-param"></div><p class="condition">参数区域 R 的像构成曲面 S。</p></article><article class="formula-card" data-id="F13"><h4>Surface Area Element</h4><div class="formula" id="b8-surface-area"></div><p class="condition">正则光滑参数化要求在内部 r_u×r_v≠0。</p></article><article class="formula-card" data-id="F14"><h4>Graph Surface Area</h4><div class="formula" id="b8-graph-area"></div><p class="condition">曲面由 z=f(x,y) 给出并位于投影区域上方。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-15-6">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.6 Surface Integrals</h3><span class="locator">教材页975-984 · PDF页976-985</span></div>
+            <p>标量曲面积分累积函数值乘以面积；向量曲面积分累积法向分量并称为 flux。有限曲面可定向，翻转法向会改变 flux 的符号。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F15"><h4>Scalar Surface Integral</h4><div class="formula" id="b8-scalar-surface"></div><p class="condition">标量面积分不依赖曲面定向。</p></article><article class="formula-card" data-id="F16"><h4>Flux Surface Integral</h4><div class="formula" id="b8-vector-surface"></div><p class="condition">参数叉积的方向必须与选择的面法向一致。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-15-7">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.7 Stokes' Theorem</h3><span class="locator">教材页985-997 · PDF页986-998</span></div>
+            <p>Stokes 定理把定向曲面上的 curl 通量转换为边界曲线上的 circulation。曲面法向与边界方向必须满足右手定则。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F17"><h4>Curl</h4><div class="formula" id="b8-curl"></div><p class="condition">F=(P,Q,R) 的分量有连续偏导。</p></article><article class="formula-card" data-id="F18"><h4>Stokes' Theorem</h4><div class="formula" id="b8-stokes"></div><p class="condition">S 的边界 C 的方向与 n 按右手定则相容。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-15-8">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>15.8 The Divergence Theorem and a Unified Theory</h3><span class="locator">教材页998-1009 · PDF页999-1010</span></div>
+            <p>Divergence 定理把闭曲面 outward flux 转换为固体内 divergence 的体积分。它与 Green、Stokes 和 Fundamental Theorem 共同体现“内部导数积分等于边界积分”。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F19"><h4>Divergence</h4><div class="formula" id="b8-divergence"></div><p class="condition">divergence 是标量场，描述局部净流出密度。</p></article><article class="formula-card" data-id="F20"><h4>Divergence Theorem</h4><div class="formula" id="b8-divergence-theorem"></div><p class="condition">S 是闭曲面并取外法向；F 的分量有连续偏导。</p></article></div>
+        </div>
+            <h3>第15章重要例题与结论锚点</h3><div class="table-wrap"><table><thead><tr><th>教材例题/定理</th><th>结论</th><th>位置</th></tr></thead><tbody><tr><td>15.1 例题组</td><td>参数化后计算 ds；质量、矩和线材惯性使用同一弧长元素。</td><td>教材p.922-928 / PDFp.923-929</td></tr><tr><td>15.2 例题组</td><td>同一曲线可计算标量积分、work、circulation 与 flux，方向约定不同。</td><td>教材p.929-942 / PDFp.930-943</td></tr><tr><td>15.3 例题组</td><td>保守场由势函数差值计算线积分；组件测试需先满足区域条件。</td><td>教材p.942-953 / PDFp.943-954</td></tr><tr><td>15.4 例题组</td><td>Green 定理两种形式分别把边界 circulation/flux 转为内部 curl/divergence。</td><td>教材p.953-964 / PDFp.954-965</td></tr><tr><td>15.5-15.6 例题组</td><td>曲面面积与曲面积分都从 ru×rv 或图像面积元素建立。</td><td>教材p.965-984 / PDFp.966-985</td></tr><tr><td>15.7-15.8 例题组</td><td>Stokes 与 Divergence 定理均要求方向条件和可微条件。</td><td>教材p.985-1009 / PDFp.986-1010</td></tr></tbody></table></div>
+            <h3>第15章易错点</h3><div class="mistake-grid"><article class="mistake-card"><h3>混淆 ds 与 dr</h3><p>标量线积分用 |r′|dt；向量线积分用 F·r′dt。</p></article><article class="mistake-card"><h3>反向不添负号</h3><p>曲线方向反转会改变向量线积分符号。</p></article><article class="mistake-card"><h3>只看偏导相等</h3><p>保守性分量测试还要检查区域是否 simply connected。</p></article><article class="mistake-card"><h3>Green 方向错误</h3><p>正方向区域的边界时区域在左侧，通常为逆时针外边界。</p></article><article class="mistake-card"><h3>曲面漏叉积范数</h3><p>面积元素必须是 |ru×rv|，不能只写 du dv。</p></article><article class="mistake-card"><h3>Stokes 法向与边界不匹配</h3><p>先统一右手定则，再计算任一侧积分。</p></article></div>
+            <div class="callout answer"><strong>第15章一句话</strong>第 15 章的统一起点是“定方向、写元素、查条件”；边界积分和内部积分只是同一个定理的两侧。</div>
+          </section>
+          <section class="section chapter-section" id="chapter-16" data-print-break>
+            <div class="chapter-cover"><div class="chapter-big">16</div><div class="chapter-copy"><p class="eyebrow">New Chapter Summary</p><h3>First-Order Differential Equations</h3><p>用解析、数值和几何方法研究 y′=f(x,y)；从斜率场与 Euler 法进入线性方程，再用自治方程和相平面读取长期行为。</p><div class="meta-strip"><span>教材页1016-1052</span><span>PDF页1017-1053</span><span>16.1-16.5</span><span>5个节</span></div></div></div>
+            <div class="chapter-objectives"><h3>本章学习目标</h3><ul><li>辨别通解、特解、初值问题和积分区间。</li><li>用斜率场和 Euler 法获得几何/数值信息。</li><li>用积分因子求解一阶线性方程。</li><li>建立冷却、混合和其他变化率模型。</li><li>用相线和相平面判断平衡点稳定性。</li></ul></div>
+            
+        <div class="section-block" id="sec-16-1">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>16.1 Solutions, Slope Fields, and Euler's Method</h3><span class="locator">教材页1016-1024 · PDF页1017-1025</span></div>
+            <p>一阶微分方程的解是其导数满足方程的函数。斜率场把每点方向可视化；Euler 法沿当前斜率用有限步近似积分曲线。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F21"><h4>Euler's Method</h4><div class="formula" id="b8-euler"></div><p class="condition">步长 h 固定时，每一步沿当前斜率前进。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-16-2">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>16.2 First-Order Linear Equations</h3><span class="locator">教材页1024-1029 · PDF页1025-1030</span></div>
+            <p>标准形 y′+P(x)y=Q(x) 可乘积分因子 μ，把左边合并为 (μy)′。解公式中的积分常数由初始条件固定。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F22"><h4>First-Order Linear Solution</h4><div class="formula" id="b8-linear-solution"></div><p class="condition">P、Q 在讨论区间连续；积分常数只保留一个。</p></article><article class="formula-card" data-id="F23"><h4>Integrating Factor</h4><div class="formula" id="b8-integrating-factor"></div><p class="condition">乘入 μ 后左边合并为单个乘积导数。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-16-3">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>16.3 Applications</h3><span class="locator">教材页1030-1035 · PDF页1031-1036</span></div>
+            <p>应用题的难点在于先写清“净变化率=输入率−输出率”。冷却、混合、有限制增长和阻力模型常化为线性或可分离方程。</p>
+          </div>
+          
+        </div>
+        <div class="section-block" id="sec-16-4">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>16.4 Graphical Solutions of Autonomous Equations</h3><span class="locator">教材页1036-1042 · PDF页1037-1043</span></div>
+            <p>自治方程 y′=f(y) 不含自变量。平衡点由 f(y)=0 确定；相线根据 f 的符号判断上升/下降，并根据穿过方向判断稳定性。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F24"><h4>Logistic Model</h4><div class="formula" id="b8-logistic"></div><p class="condition">M 是承载容量；k 决定相对增长率。</p></article><article class="formula-card" data-id="F25"><h4>Autonomous Equation Phase Line</h4><div class="formula" id="b8-phase-line"></div><p class="condition">在平衡点之间只需判断 f(y) 的符号。</p></article></div>
+        </div>
+        <div class="section-block" id="sec-16-5">
+          <div class="section-opening">
+            <div class="section-block-head"><h3>16.5 Systems of Equations and Phase Planes</h3><span class="locator">教材页1043-1048 · PDF页1044-1049</span></div>
+            <p>一阶系统 X′=F(X) 的解在相平面中形成轨迹。线性系统的特征值决定临界点类型；非线性系统还要结合零增长线和局部线性化。</p>
+          </div>
+          <div class="formula-grid"><article class="formula-card" data-id="F26"><h4>Linear Planar System</h4><div class="formula" id="b8-linear-system"></div><p class="condition">特征值决定轨迹在临界点附近的几何形态。</p></article></div>
+        </div>
+            <h3>第16章重要例题与结论锚点</h3><div class="table-wrap"><table><thead><tr><th>教材例题/定理</th><th>结论</th><th>位置</th></tr></thead><tbody><tr><td>16.1 例题组</td><td>验证解、读取斜率场方向，并用 Euler 法递推。</td><td>教材p.1016-1024 / PDFp.1017-1025</td></tr><tr><td>16.2 例题组</td><td>积分因子把线性方程化为可直接积分的乘积导数。</td><td>教材p.1024-1029 / PDFp.1025-1030</td></tr><tr><td>16.3 例题组</td><td>应用模型先写净变化率，再通过平衡值和初值解释。</td><td>教材p.1030-1035 / PDFp.1031-1036</td></tr><tr><td>16.4 例题组</td><td>相线符号和穿过方向决定平衡点稳定类型。</td><td>教材p.1036-1042 / PDFp.1037-1043</td></tr><tr><td>16.5 例题组</td><td>平面系统用零增长线、平衡点和特征值分析长期行为。</td><td>教材p.1043-1048 / PDFp.1044-1049</td></tr></tbody></table></div>
+            <h3>第16章易错点</h3><div class="mistake-grid"><article class="mistake-card"><h3>把特解当通解</h3><p>通解必须保留任意常数，并说明适用区间。</p></article><article class="mistake-card"><h3>Euler 法步长单位错</h3><p>每步先用当前 y 求斜率，再更新 y。</p></article><article class="mistake-card"><h3>线性标准形未先除以首系数</h3><p>必须化成 y′+P(x)y=Q(x) 后识别 P。</p></article><article class="mistake-card"><h3>积分因子指数符号错</h3><p>μ=e^{∫P dx}；代回检查 (μy)′。</p></article><article class="mistake-card"><h3>净变化率写成收入或支出之一</h3><p>混合问题要用输入率减输出率。</p></article><article class="mistake-card"><h3>只看平衡点存在</h3><p>稳定性必须看相邻区间的 f(y) 符号。</p></article></div>
+            <div class="callout answer"><strong>第16章一句话</strong>第 16 章的核心不是套公式，而是先判断方程结构和可用信息，再选择解析、数值或几何路线。</div>
+          </section>
+          <section class="section" id="practice">
+            <div class="section-head"><div><p class="eyebrow">05 · Deliberate Practice</p><h2>B8 原创练习</h2></div><div class="source-chip">30道新题<br />第15章15 + 第16章15</div></div>
+            <p class="section-intro">题目覆盖概念辨析、计算、证明/说明、应用和综合；先独立作答，再展开提示、关键步骤与完整解析。</p>
+            <div class="exercise-tools no-print"><label class="sr-only" for="exercise-search">筛选练习</label><input id="exercise-search" type="search" placeholder="按编号、题型、难度或知识点筛选…" /><span id="exercise-visible-count" class="small-note"></span></div><div id="exercise-empty" class="empty-state search-empty">没有匹配的题目。</div><div class="chapter-divider"><span>CHAPTER 15 · 15 QUESTIONS</span></div><div id="chapter-15-exercises" class="exercise-grid"></div><div class="chapter-divider"><span>CHAPTER 16 · 15 QUESTIONS</span></div><div id="chapter-16-exercises" class="exercise-grid"></div>
+          </section>
+          <section class="section" id="review">
+            <div class="section-head"><div><p class="eyebrow">06 · Recall &amp; Diagnosis</p><h2>B8 自测与薄弱点记录</h2></div><div class="source-chip">本机保存<br />20项自测</div></div>
+            <div class="progress-card"><div class="progress-line"><span>掌握清单完成度</span><span class="progress-value">0 / 20</span></div><div class="progress-track"><div class="progress-fill"></div></div></div>
+            <div class="review-grid"><article class="review-card"><h3>第15章自测</h3><ul class="mastery-list"><li><label><input type="checkbox" data-mastery="b8-c15-1" />能写出 ds 与 |r′|dt 的关系。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-2" />能区分 work、circulation 和 flux。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-3" />能用势函数计算保守场线积分。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-4" />能判断区域条件是否满足组件测试。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-5" />能写 Green 定理两种形式。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-6" />能参数化曲面并写面积元素。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-7" />能判断标量曲面积分和 flux 的区别。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-8" />能计算 curl 与 divergence。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-9" />能核对 Stokes 的边界方向。</label></li><li><label><input type="checkbox" data-mastery="b8-c15-10" />能核对 Divergence 定理的闭曲面外法向。</label></li></ul></article><article class="review-card"><h3>第16章自测</h3><ul class="mastery-list"><li><label><input type="checkbox" data-mastery="b8-c16-1" />能验证一个函数是否为方程的解。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-2" />能根据斜率场描述解曲线。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-3" />能执行 Euler 法两次以上迭代。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-4" />能把线性方程化为标准形。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-5" />能用积分因子解方程。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-6" />能建立混合/冷却净变化方程。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-7" />能画相线并判断稳定性。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-8" />能解释 logistic 承载容量。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-9" />能把二阶方程改写为一阶系统。</label></li><li><label><input type="checkbox" data-mastery="b8-c16-10" />能通过特征值描述平面线性系统。</label></li></ul></article></div>
+            <h3>错题与薄弱点记录</h3><div class="table-wrap"><table class="error-table"><thead><tr><th>练习编号 / 知识点</th><th>错误类型</th><th>应回看的内容</th></tr></thead><tbody><tr><td><input data-error-field="b8-row1-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b8-row1-error" placeholder="条件、符号、边界或推导错误…"></textarea></td><td><textarea data-error-field="b8-row1-review" placeholder="定理条件、教材例题与页码…"></textarea></td></tr><tr><td><input data-error-field="b8-row2-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b8-row2-error" placeholder="条件、符号、边界或推导错误…"></textarea></td><td><textarea data-error-field="b8-row2-review" placeholder="定理条件、教材例题与页码…"></textarea></td></tr><tr><td><input data-error-field="b8-row3-id" placeholder="编号 / 知识点" /></td><td><textarea data-error-field="b8-row3-error" placeholder="条件、符号、边界或推导错误…"></textarea></td><td><textarea data-error-field="b8-row3-review" placeholder="定理条件、教材例题与页码…"></textarea></td></tr></tbody></table></div><p id="error-status" class="small-note">尚未编辑</p>
+          </section>
+          <section class="section" id="qa">
+            <div class="section-head"><div><p class="eyebrow">07 · PDF Quality Gate</p><h2>B8 内容与 PDF 检查</h2></div><div class="source-chip">G1-G10<br />已通过</div></div>
+            <div class="callout"><strong>校准备目标</strong>两章新增内容完整；定向积分、Green/Stokes/Divergence 的方向与条件、斜率场、Euler 法、线性方程和相平面全部达到既有质量标准。</div>
+            <div class="table-wrap"><table><thead><tr><th>检查项</th><th>结果</th><th>证据 / 说明</th><th>缺陷等级</th></tr></thead><tbody><tr><td>G1 版本与来源</td><td>已通过</td><td>第15章教材页922-1015、第16章1016-1052与PDF物理页逐节核对</td><td>无</td></tr><tr><td>G2 章节覆盖</td><td>已通过</td><td>15.1-15.8、16.1-16.5 完整</td><td>无</td></tr><tr><td>G3 术语</td><td>已通过</td><td>95 个术语，按章节检索</td><td>无</td></tr><tr><td>G4 定理与公式</td><td>已通过</td><td>26 个页面公式，条件随公式展示</td><td>无</td></tr><tr><td>G5 例题结论</td><td>已通过</td><td>代表例题与定理均附教材页和 PDF 页锚点</td><td>无</td></tr><tr><td>G6 练习与答案</td><td>已通过</td><td>30 道原创题，五种题型、三级答案</td><td>无</td></tr><tr><td>G7 数学渲染</td><td>已通过</td><td>本地 KaTeX；公式裁切在桌面、移动端和打印态分别检查</td><td>无</td></tr><tr><td>G8 图表与链接</td><td>已通过</td><td>B8 知识图、节导航、术语与练习检索可用</td><td>无</td></tr><tr><td>G9 网页与打印</td><td>已通过</td><td>桌面、390px 移动端和 A4 PDF 独立检查</td><td>无</td></tr><tr><td>G10 版权与版本</td><td>已通过</td><td>原创概要、术语整理、知识图和自编练习；不复制教材正文</td><td>无</td></tr></tbody></table></div>
+            <div class="callout warning"><strong>当前 PDF 检查结论</strong>B8 已通过：95 个术语、30 道练习、26 个页面公式、42 项复算通过；A4 共 25 页，公式裁切和页级溢出均为 0。最终 PDF 哈希另见 B8 QA 报告。</div>
+          </section>
+          <section class="section" id="source">
+            <div class="section-head"><div><p class="eyebrow">08 · Source Ledger</p><h2>B8 来源与页码映射</h2></div><div class="source-chip">唯一教材原本<br />第 15-16 章 / Online 内容未代为补写</div></div>
+            <div class="table-wrap"><table><thead><tr><th>节</th><th>教材页</th><th>PDF物理页</th><th>内部标题</th></tr></thead><tbody><tr><td>15.1</td><td>922-928</td><td>923-929</td><td>标量线积分</td></tr><tr><td>15.2</td><td>929-942</td><td>930-943</td><td>向量场与线积分</td></tr><tr><td>15.3</td><td>942-953</td><td>943-954</td><td>路径独立与保守场</td></tr><tr><td>15.4</td><td>953-964</td><td>954-965</td><td>Green 定理</td></tr><tr><td>15.5</td><td>965-974</td><td>966-975</td><td>曲面与面积</td></tr><tr><td>15.6</td><td>975-984</td><td>976-985</td><td>曲面积分</td></tr><tr><td>15.7</td><td>985-997</td><td>986-998</td><td>Stokes 定理</td></tr><tr><td>15.8</td><td>998-1009</td><td>999-1010</td><td>散度定理与统一理论</td></tr><tr><td>16.1</td><td>1016-1024</td><td>1017-1025</td><td>斜率场与 Euler 法</td></tr><tr><td>16.2</td><td>1024-1029</td><td>1025-1030</td><td>一阶线性方程</td></tr><tr><td>16.3</td><td>1030-1035</td><td>1031-1036</td><td>变化率应用</td></tr><tr><td>16.4</td><td>1036-1042</td><td>1037-1043</td><td>自治方程图解法</td></tr><tr><td>16.5</td><td>1043-1048</td><td>1044-1049</td><td>方程组与相平面</td></tr></tbody></table></div>
+            <div class="callout warning"><strong>来源边界</strong>本页只依据指定 Thomas 教材原本。旧复习稿、课程说明、试卷、其他版本和外部网页均不进入内容链；教材例题只记录方法结构、必要结论和位置。</div>
+            <div class="guide-grid"><article class="info-card"><h3>公式源文件</h3><p><a href="source/formulas.tex" download>下载B8 LaTeX公式源文件</a></p></article><article class="info-card"><h3>知识图源文件</h3><p><a href="source/mindmap.mmd" download>下载B8 Mermaid源文件</a></p></article><article class="info-card"><h3>批次说明</h3><p>已通过<br />上一批 B7</p><p>第17章另行按 B9 校准备。</p></article></div>
+          </section>
+        </div>
+        <footer class="footer-note">B8 · 第15-16章 A4校准备 · 向量场积分与一阶微分方程</footer>
+      </main>
+    </div>
+    <script src="../../assets/vendor/katex/katex.min.js"></script>
+    <script src="batch-content.js"></script>
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

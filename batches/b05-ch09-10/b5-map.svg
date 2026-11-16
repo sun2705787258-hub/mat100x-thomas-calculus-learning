@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 780" role="img" aria-labelledby="title desc">
+  <title id="title">第9-10章无穷级数与参数方程、极坐标依赖图</title>
+  <desc id="desc">第9章从数列极限建立无穷级数、收敛判别、幂级数与Taylor展开；第10章从参数曲线建立参数微积分、极坐标、极坐标面积和长度以及圆锥曲线。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#687670"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#19231f" flood-opacity=".08"/>
+    </filter>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;fill:#19231f}
+      .lane{font-family:Georgia,serif;font-size:19px;font-weight:700;fill:#315f87}
+      .title{font-size:13px;font-weight:700}
+      .sub{font-size:10.5px;fill:#596660}
+      .row{font-size:10px;font-weight:700;fill:#73817b;letter-spacing:.08em}
+      .node{filter:url(#shadow)}
+      .node rect{stroke-width:1.5;rx:12}
+      .c9 rect{fill:#dfe9f1;stroke:#89aac5}
+      .c10 rect{fill:#f4e3ca;stroke:#d5aa73}
+      .bridge rect{fill:#223330;stroke:#223330}
+      .bridge text{fill:#f5f0e6}
+      .edge{fill:none;stroke:#687670;stroke-width:1.8;marker-end:url(#arrow)}
+      .soft{fill:none;stroke:#95a19b;stroke-width:1.4;stroke-dasharray:5 5}
+    </style>
+  </defs>
+  <rect width="1180" height="780" fill="#fffdf8"/>
+  <path d="M24 382H1156" stroke="#d8d1c4" stroke-dasharray="4 7"/>
+
+  <text x="32" y="38" class="lane">Chapter 9 · Infinite Sequences and Series</text>
+  <text x="32" y="58" class="sub">有限部分的极限 → 无穷对象的可计算性 → 函数的多项式表示</text>
+
+  <text x="32" y="91" class="row">A · 收敛语言与级数基本工具</text>
+  <g class="node c9" transform="translate(28 108)"><rect width="205" height="78"/><text x="14" y="24" class="title">9.1 Sequences</text><text x="14" y="45" class="sub">数列极限 · 夹逼</text><text x="14" y="62" class="sub">有界单调 ⇒ 收敛</text></g>
+  <g class="node c9" transform="translate(257 108)"><rect width="205" height="78"/><text x="14" y="24" class="title">9.2 Infinite Series</text><text x="14" y="45" class="sub">部分和 · 几何级数</text><text x="14" y="62" class="sub">nth-Term Test</text></g>
+  <g class="node c9" transform="translate(486 108)"><rect width="205" height="78"/><text x="14" y="24" class="title">9.3 Integral Test</text><text x="14" y="45" class="sub">正项 · 连续 · 递减</text><text x="14" y="62" class="sub">p-series 与调和级数</text></g>
+  <g class="node c9" transform="translate(715 108)"><rect width="205" height="78"/><text x="14" y="24" class="title">9.4 Comparison</text><text x="14" y="45" class="sub">Direct / Limit</text><text x="14" y="62" class="sub">用已知级数作标尺</text></g>
+  <g class="node c9" transform="translate(944 108)"><rect width="205" height="78"/><text x="14" y="24" class="title">9.5 Ratio &amp; Root</text><text x="14" y="45" class="sub">绝对收敛 · ρ 判别</text><text x="14" y="62" class="sub">ρ=1 时不判定</text></g>
+
+  <text x="32" y="223" class="row">B · 交错结构与函数级数</text>
+  <g class="node c9" transform="translate(28 240)"><rect width="205" height="92"/><text x="14" y="24" class="title">9.6 Alternating Series</text><text x="14" y="45" class="sub">三项条件 · 误差界限</text><text x="14" y="62" class="sub">绝对/条件收敛</text><text x="14" y="79" class="sub">条件收敛不可随意重排</text></g>
+  <g class="node c9" transform="translate(257 240)"><rect width="205" height="92"/><text x="14" y="24" class="title">9.7 Power Series</text><text x="14" y="45" class="sub">半径 R · 区间端点</text><text x="14" y="62" class="sub">逐项求导/积分</text><text x="14" y="79" class="sub">几何级数是起点</text></g>
+  <g class="node c9" transform="translate(486 240)"><rect width="205" height="92"/><text x="14" y="24" class="title">9.8 Taylor/Maclaurin</text><text x="14" y="45" class="sub">系数 f⁽ᵏ⁾(a)/k!</text><text x="14" y="62" class="sub">Taylor polynomial</text><text x="14" y="79" class="sub">可生成 ≠ 必收敛到 f</text></g>
+  <g class="node c9" transform="translate(715 240)"><rect width="205" height="92"/><text x="14" y="24" class="title">9.9 Remainder</text><text x="14" y="45" class="sub">Taylor 定理 · 余项</text><text x="14" y="62" class="sub">界 M|x−a|ⁿ⁺¹/(n+1)!</text><text x="14" y="79" class="sub">Rₙ→0 才保证收敛到 f</text></g>
+  <g class="node c9" transform="translate(944 240)"><rect width="205" height="92"/><text x="14" y="24" class="title">9.10 Applications</text><text x="14" y="45" class="sub">二项级数 · 积分 · 极限</text><text x="14" y="62" class="sub">常用 Taylor 表</text><text x="14" y="79" class="sub">Euler identity</text></g>
+
+  <text x="32" y="355" class="row">依赖判断：先问“对象是什么”，再问“可否用有限步骤逼近”，最后问“误差是否受控”。</text>
+
+  <text x="32" y="414" class="lane">Chapter 10 · Parametric Equations and Polar Coordinates</text>
+  <text x="32" y="434" class="sub">坐标不是曲线本身；选择能揭示运动、方向、对称性和积分元素的表示。</text>
+
+  <text x="32" y="468" class="row">C · 参数曲线与微积分</text>
+  <g class="node c10" transform="translate(28 484)"><rect width="250" height="76"/><text x="14" y="24" class="title">10.1 Parametrizations</text><text x="14" y="45" class="sub">x=f(t), y=g(t)</text><text x="14" y="62" class="sub">方向 · 初始终点 · 消参</text></g>
+  <g class="node c10" transform="translate(310 484)"><rect width="250" height="76"/><text x="14" y="24" class="title">10.2 Calculus</text><text x="14" y="45" class="sub">dy/dx=(dy/dt)/(dx/dt)</text><text x="14" y="62" class="sub">面积 · 弧长 · 旋转曲面</text></g>
+  <g class="node c10" transform="translate(592 484)"><rect width="250" height="76"/><text x="14" y="24" class="title">10.3 Polar Coordinates</text><text x="14" y="45" class="sub">(r,θ) 不唯一 · 有向距离</text><text x="14" y="62" class="sub">x=r cosθ, y=r sinθ</text></g>
+  <g class="node c10" transform="translate(874 484)"><rect width="250" height="76"/><text x="14" y="24" class="title">10.4 Polar Graphs</text><text x="14" y="45" class="sub">对称性 · dy/dx</text><text x="14" y="62" class="sub">cardioid · rose · lemniscate</text></g>
+
+  <text x="32" y="587" class="row">D · 极坐标几何量与圆锥统一</text>
+  <g class="node c10" transform="translate(28 604)"><rect width="330" height="76"/><text x="14" y="24" class="title">10.5 Areas and Lengths</text><text x="14" y="45" class="sub">dA=½r²dθ · ds=√(r²+r′²)dθ</text><text x="14" y="62" class="sub">交点可能藏在 r 的另一种表示中</text></g>
+  <g class="node c10" transform="translate(390 604)"><rect width="330" height="76"/><text x="14" y="24" class="title">10.6 Conic Sections</text><text x="14" y="45" class="sub">抛物线的焦点-准线关系</text><text x="14" y="62" class="sub">椭圆 PF₁+PF₂ · 双曲线 |PF₁−PF₂|</text></g>
+  <g class="node c10" transform="translate(752 604)"><rect width="372" height="76"/><text x="14" y="24" class="title">10.7 Conics in Polar Coordinates</text><text x="14" y="45" class="sub">PF=e·PD · e&lt;1, e=1, e&gt;1</text><text x="14" y="62" class="sub">r=ke/(1+e cosθ) 及准线方向变体</text></g>
+
+  <g class="node bridge" transform="translate(28 702)"><rect width="1096" height="52"/><text x="18" y="21" class="title">统一策略</text><text x="18" y="40" class="sub">先确定曲线或数列的表示与收敛域，再构造面积、长度、误差或函数近似元素；每一步都检查定义域、方向、端点和余项。</text></g>
+
+  <path class="edge" d="M233 147H257"/><path class="edge" d="M462 147H486"/><path class="edge" d="M691 147H715"/><path class="edge" d="M920 147H944"/>
+  <path class="soft" d="M1046 186V218C1046 229 1035 240 1024 240"/>
+  <path class="edge" d="M233 286H257"/><path class="edge" d="M462 286H486"/><path class="edge" d="M691 286H715"/><path class="edge" d="M920 286H944"/>
+  <path class="edge" d="M153 560V604"/><path class="edge" d="M435 560V604"/><path class="edge" d="M717 560V604"/>
+  <path class="edge" d="M278 522H310"/><path class="edge" d="M560 522H592"/><path class="edge" d="M842 522H874"/>
+  <path class="soft" d="M435 560C470 575 470 590 490 604"/>
+  <path class="soft" d="M717 560C730 577 735 590 742 604"/>
+</svg>

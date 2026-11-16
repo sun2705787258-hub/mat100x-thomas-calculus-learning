@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "thomas-unified-site-build-v1",
+  "sourcePdfSha256": "03597823863F899FD71847F306551DA6CF70D3D327578B62C7FFAB4C136CEB39",
+  "generatedAt": "2026-11-16T00:33:34.046Z",
+  "extractionErrors": [],
+  "canonical": {
+    "chapters": 17,
+    "terms": 638,
+    "exercises": 255,
+    "formulas": 208,
+    "chapterCounts": [
+      {
+        "number": 1,
+        "terms": 36,
+        "exercises": 15,
+        "formulas": 4
+      },
+      {
+        "number": 2,
+        "terms": 30,
+        "exercises": 15,
+        "formulas": 9
+      },
+      {
+        "number": 3,
+        "terms": 47,
+        "exercises": 15,
+        "formulas": 12
+      },
+      {
+        "number": 4,
+        "terms": 41,
+        "exercises": 15,
+        "formulas": 8
+      },
+      {
+        "number": 5,
+        "terms": 43,
+        "exercises": 15,
+        "formulas": 10
+      },
+      {
+        "number": 6,
+        "terms": 37,
+        "exercises": 15,
+        "formulas": 14
+      },
+      {
+        "number": 7,
+        "terms": 29,
+        "exercises": 15,
+        "formulas": 8
+      },
+      {
+        "number": 8,
+        "terms": 15,
+        "exercises": 15,
+        "formulas": 7
+      },
+      {
+        "number": 9,
+        "terms": 35,
+        "exercises": 15,
+        "formulas": 17
+      },
+      {
+        "number": 10,
+        "terms": 25,
+        "exercises": 15,
+        "formulas": 9
+      },
+      {
+        "number": 11,
+        "terms": 42,
+        "exercises": 15,
+        "formulas": 16
+      },
+      {
+        "number": 12,
+        "terms": 31,
+        "exercises": 15,
+        "formulas": 17
+      },
+      {
+        "number": 13,
+        "terms": 50,
+        "exercises": 15,
+        "formulas": 15
+      },
+      {
+        "number": 14,
+        "terms": 36,
+        "exercises": 15,
+        "formulas": 21
+      },
+      {
+        "number": 15,
+        "terms": 51,
+        "exercises": 15,
+        "formulas": 20
+      },
+      {
+        "number": 16,
+        "terms": 44,
+        "exercises": 15,
+        "formulas": 6
+      },
+      {
+        "number": 17,
+        "terms": 46,
+        "exercises": 15,
+        "formulas": 15
+      }
+    ]
+  },
+  "pdfs": [
+    {
+      "name": "Thomas_Calculus_第11章至12章_B6质量校准稿.pdf",
+      "sha256": "B09BDF90C9DC1BF01F035E91DFEFE76A052E54A46CBC8F977C4C2F55539F4B55",
+      "bytes": 2834967
+    },
+    {
+      "name": "Thomas_Calculus_第13章至14章_B7质量校准稿.pdf",
+      "sha256": "D77D4DC9F052123DE5ABCA0EB80321CEC182411517CF05BEB0328D97E66B4D47",
+      "bytes": 2804751
+    },
+    {
+      "name": "Thomas_Calculus_第15章至16章_B8质量校准稿.pdf",
+      "sha256": "CA2C8C2152AE57E356ADE80241EEAF7D6ACB319925AB3A74F4C54FD26DD90A17",
+      "bytes": 2455393
+    },
+    {
+      "name": "Thomas_Calculus_第17章_B9质量校准稿.pdf",
+      "sha256": "024065D404DBEC60596543B437912B29FC337BE7096EDFD4ADEB8AE268F1D446",
+      "bytes": 2029113
+    },
+    {
+      "name": "Thomas_Calculus_第1章至2章_B1质量校准稿.pdf",
+      "sha256": "7662AE9512DB08C97CA2845A47426A34F26A7CBB756DBECEFFBF0C21DD512FC9",
+      "bytes": 2791368
+    },
+    {
+      "name": "Thomas_Calculus_第3章至4章_B2质量校准稿.pdf",
+      "sha256": "1A6AB4E97931BB6BF2153BCE2F303AC70C585C68DE9F880D476E5D4837D88449",
+      "bytes": 2426790
+    },
+    {
+      "name": "Thomas_Calculus_第4章至5章_示范学习资料.pdf",
+      "sha256": "11632762977835B12013B211FD6FCD82D0482106CA17A64082BDD3D026C18B3E",
+      "bytes": 3102892
+    },
+    {
+      "name": "Thomas_Calculus_第5章至6章_B3质量校准稿.pdf",
+      "sha256": "F1041AC053D9BFBEBD750989D9802BC08C58BD6D8516ADDFF8ED499612398D7D",
+      "bytes": 2282062
+    },
+    {
+      "name": "Thomas_Calculus_第7章至8章_B4质量校准稿.pdf",
+      "sha256": "99A29B7F69B8D4DA1D5C2DEB83B94EE47330CC3068A090201EDC2FF3A999B7C4",
+      "bytes": 2616436
+    },
+    {
+      "name": "Thomas_Calculus_第9章至10章_B5质量校准稿.pdf",
+      "sha256": "D9A03C1B55D828EF93A23E73D31116A828AA57392C6ED0C80B802BDA79131412",
+      "bytes": 2989345
+    }
+  ]
+}
