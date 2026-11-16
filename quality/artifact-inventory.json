@@ -2,7 +2,7 @@
   "schemaVersion": "thomas-repository-inventory-v1",
   "summary": {
     "files": 263,
-    "bytes": 35404669,
+    "bytes": 35404758,
     "html": 39,
     "pdfs": 10
   },
@@ -61,7 +61,7 @@
       "type": "documentation",
       "destination": "repository or published docs",
       "bytes": 43457,
-      "sha256": "885118FF2FFF5527EE61F873F0B4038445551636206627E753264A96A5D2EC12"
+      "sha256": "4A7BF35008E6BE6CFF961A60ADD180FDD546D388E80DE95FACFF096C38F12D04"
     },
     {
       "path": "CHANGELOG.md",
@@ -1664,7 +1664,7 @@
       "type": "quality-evidence",
       "destination": "quality dashboard",
       "bytes": 66762,
-      "sha256": "E5779BE6ACC5709848B119733A9490A77DFBC57D9CC234651D47D458CAF92C01"
+      "sha256": "566C1750E4A05D2BDAE5998C008D0EC82D93B976B39B4457F362C1F1CD64E5CB"
     },
     {
       "path": "quality/batch-qa.schema.json",
@@ -1733,8 +1733,8 @@
       "path": "scripts/package-release.mjs",
       "type": "automation",
       "destination": "CI and release tooling",
-      "bytes": 3650,
-      "sha256": "EF6A6F3BB088A60063F0F1504F6B64FFA960BF2A6D8BA91132DEAE255A2A9212"
+      "bytes": 3739,
+      "sha256": "0FDFD43D2AFED3EDAF443165A23854858B19BBD16EE39B6B817A24CFA5FFC872"
     },
     {
       "path": "scripts/prepare-pages.mjs",

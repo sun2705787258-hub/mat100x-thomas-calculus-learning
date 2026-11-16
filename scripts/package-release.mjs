@@ -6,8 +6,11 @@ import { spawnSync } from "node:child_process";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pkg = JSON.parse(await fs.readFile(path.join(root, "package.json"), "utf8"));
-const tag = process.env.GITHUB_REF_NAME || `v${pkg.version}`;
-if (tag !== `v${pkg.version}`) throw new Error(`Tag ${tag} does not match package version ${pkg.version}`);
+const refName = process.env.GITHUB_REF_NAME || "";
+const tag = refName.startsWith("v") ? refName : `v${pkg.version}`;
+if (refName.startsWith("v") && tag !== `v${pkg.version}`) {
+  throw new Error(`Tag ${tag} does not match package version ${pkg.version}`);
+}
 
 const dist = path.join(root, "dist", "release");
 const packageName = `${pkg.name}-v${pkg.version}`;
